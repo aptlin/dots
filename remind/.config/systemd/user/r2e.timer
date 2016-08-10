@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer for RSS
+
+[Timer]
+RandomizedDelaySec=5
+OnBootSec=300s
+OnCalendar=daily
+Persistent=True
+[Install]
+WantedBy=timers.target

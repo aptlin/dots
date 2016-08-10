@@ -1,0 +1,182 @@
+  (require 'package)
+(add-to-list 'package-archives
+                          '("melpa" . "https://melpa.org/packages/"))
+(package-initialize)
+(load-theme 'badwolf t)
+;;
+;;(load "auctex.el" nil t t)
+;;(load "preview-latex.el" nil t t)
+(add-to-list 'load-path "~/elisp")
+(add-to-list 'load-path "~/elisp/artbollocks-mode")
+(unless (package-installed-p 'use-package)
+    (package-install 'use-package))
+(setq use-package-verbose t)
+(setq use-package-always-ensure t)
+(require 'use-package)
+(use-package auto-compile
+               :config (auto-compile-on-load-mode))
+(setq load-prefer-newer t)
+
+(use-package dash)
+
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+(setq delete-old-versions -1)
+(setq version-control t)
+(setq vc-make-backup-files t)
+(setq auto-save-file-name-transforms '((".*" "~/.emacs.d/auto-save-list/" t)))
+
+(setq savehist-file "~/.emacs.d/savehist")
+(savehist-mode 1)
+(setq history-length t)
+(setq history-delete-duplicates t)
+(setq savehist-save-minibuffer-history 1)
+(setq savehist-additional-variables
+    '(kill-ring
+    search-ring
+    regexp-search-ring))
+
+(use-package helm
+  :diminish helm-mode
+  :init
+  (progn
+    (require 'helm-config)
+    (setq helm-candidate-number-limit 100)
+    ;; From https://gist.github.com/antifuchs/9238468
+    (setq helm-idle-delay 0.0 ; update fast sources immediately (doesn't).
+	  helm-input-idle-delay 0.01  ; this actually updates things
+					; reeeelatively quickly.
+	  helm-yas-display-key-on-candidate t
+	  helm-quick-update t
+	  helm-M-x-requires-pattern nil
+	  helm-ff-skip-boring-files t)
+    (helm-mode))
+  :bind (("C-c h" . helm-mini)
+	 ("C-h a" . helm-apropos)
+	 ("C-x C-b" . helm-buffers-list)
+	 ("C-x b" . helm-buffers-list)
+	 ("M-y" . helm-show-kill-ring)
+	 ("M-x" . helm-M-x)
+	 ("C-x c o" . helm-occur)
+	 ("C-x c s" . helm-swoop)
+	 ("C-x c y" . helm-yas-complete)
+	 ("C-x c Y" . helm-yas-create-snippet-on-region)
+	 ("C-x c b" . my/helm-do-grep-book-notes)
+	 ("C-x c SPC" . helm-all-mark-rings)))
+(ido-mode -1) ;; Turn off ido mode in case I enabled it accidentally
+
+
+(use-package helm-descbinds
+  :defer t
+  :bind (("C-h b" . helm-descbinds)
+	 ("C-h w" . helm-descbinds)))
+
+(use-package smart-mode-line)
+(fset 'yes-or-no-p 'y-or-n-p)
+(use-package miniedit
+  :commands minibuffer-edit
+  :init (miniedit-install))
+(use-package undo-tree
+  :diminish undo-tree-mode
+  :config
+  (progn
+    (global-undo-tree-mode)
+    (setq undo-tree-visualizer-timestamps t)
+    (setq undo-tree-visualizer-diff t)))
+(use-package guide-key
+  :defer t
+  :diminish guide-key-mode
+  :config
+  (progn
+    (setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-c"))
+    (guide-key-mode 1)))  ; Enable guide-key-mode
+
+(prefer-coding-system 'utf-8)
+(when (display-graphic-p)
+  (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING)))
+(defadvice kill-region (before slick-cut activate compile)
+  "When called interactively with no active region, kill a single line instead."
+  (interactive
+   (if mark-active (list (region-beginning) (region-end))
+     (list (line-beginning-position)
+	   (line-beginning-position 2)))))
+
+(defun my/def-rep-command (alist)
+      "Return a lambda that calls the first function of ALIST.
+It sets the transient map to all functions of ALIST,
+allowing you to repeat those functions as needed."
+      (let ((keymap (make-sparse-keymap))
+	    (func (cdar alist)))
+	(mapc (lambda (x)
+		(when x
+		  (define-key keymap (kbd (car x)) (cdr x))))
+	      alist)
+	(lambda (arg)
+	  (interactive "p")
+	  (when func
+	    (funcall func arg))
+	  (set-transient-map keymap t))))
+
+(bind-key "C-x p" 'pop-to-mark-command)
+(setq set-mark-command-repeat-pop t)
+
+(use-package helm-swoop
+  :bind
+  (("C-S-s" . helm-swoop)
+   ("M-i" . helm-swoop)
+   ("M-s s" . helm-swoop)
+   ("M-s M-s" . helm-swoop)
+   ("M-I" . helm-swoop-back-to-last-point)
+   ("C-c M-i" . helm-multi-swoop)
+   ("C-x M-i" . helm-multi-swoop-all)
+   )
+  :config
+  (progn
+    (define-key isearch-mode-map (kbd "M-i") 'helm-swoop-from-isearch)
+    (define-key helm-swoop-map (kbd "M-i") 'helm-multi-swoop-all-from-helm-swoop))
+  )
+(use-package windmove
+  :bind
+  (("<f2> <right>" . windmove-right)
+   ("<f2> <left>" . windmove-left)
+   ("<f2> <up>" . windmove-up)
+   ("<f2> <down>" . windmove-down)
+   ))
+(use-package switch-window
+  :bind (("C-x o" . switch-window)))
+(require 'find-dired)
+(setq find-ls-option '("-print0 | xargs -0 ls -ld" . "-ld"))
+(use-package peep-dired
+  :bind (:map peep-dired-mode-map
+	      ("SPC" . nil)
+	      ("<backspace>" . nil)))
+(defun my/smarter-move-beginning-of-line (arg)
+  "Move point back to indentation of beginning of line.
+
+Move point to the first non-whitespace character on this line.
+If point is already there, move to the beginning of the line.
+Effectively toggle between the first non-whitespace character and
+the beginning of the line.
+
+If ARG is not nil or 1, move forward ARG - 1 lines first.  If
+point reaches the beginning or end of the buffer, stop there."
+(interactive "^p")
+(setq arg (or arg 1))
+
+;; Move lines first
+(when (/= arg 1)
+  (let ((line-move-visual nil))
+    (forward-line (1- arg))))
+
+(let ((orig-point (point)))
+  (back-to-indentation)
+  (when (= orig-point (point))
+    (move-beginning-of-line 1))))
+
+;; remap C-a to `smarter-move-beginning-of-line'
+(global-set-key [remap move-beginning-of-line]
+		                'my/smarter-move-beginning-of-line)
+(require 'recentf)
+(setq recentf-max-saved-items 200
+      recentf-max-menu-items 15)
+(recentf-mode)
+(bind-key "M-SPC" 'cycle-spacing)

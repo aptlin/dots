@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs remmail.sh every week on Sunday
+
+[Timer]
+OnCalendar=Sun
+OnBootSec=300
+RandomizedDelaySec=5
+Persistent=True
+[Install]
+WantedBy=timers.target

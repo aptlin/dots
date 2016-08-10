@@ -1,0 +1,7 @@
+[Unit]
+Description=Birthday Email Reminder
+
+[Service]
+User=aleph
+Type=simple
+ExecStart=/home/aleph/.config/remmail.sh

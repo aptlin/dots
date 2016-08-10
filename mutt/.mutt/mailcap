@@ -1,0 +1,16 @@
+# MS Word documents
+application/msword; /usr/bin/libreoffice %s
+
+# Images
+image/jpg; jfbview %s
+image/jpeg; jfbview %s
+image/pjpeg; jfbview %s jpg
+image/png; jfbview %s png
+image/gif; jfbview %s gif
+
+# PDFs
+application/pdf; jfbview %s
+
+# HTML
+text/html; lynx -dump -width=78 -nolist %s ; copiousoutput; needsterminal;
+

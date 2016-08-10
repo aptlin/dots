@@ -1,0 +1,281 @@
+# -*- muttrc -*-
+
+#
+# rc file for mutt
+
+# protect imap and sendmail passwords with GPG
+
+set realname="Alexander Illarionov"
+
+set imap_user="sasha.delly@gmail.com"
+set imap_keepalive=60
+set imap_passive=no
+set imap_check_subscribed=yes
+set imap_idle=yes
+set mail_check=0
+
+
+# Sidebar Patch --------------------------------------
+set status_chars  = " *%A"
+set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+set date_format = "%m/%d"
+set index_format = "[%Z]  %D  %-20.20F  %s"
+set sort = threads                         # like gmail
+set sort_aux = reverse-last-date-received  # like gmail
+set uncollapse_jump                        # don't collapse on an unread message
+set sort_re                                # thread based on regex
+set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
+
+
+ignore *                                # ignore all headers
+unignore from: to: cc: date: subject:   # show only these
+unhdr_order *                           # some distros order things by default
+hdr_order from: to: cc: date: subject:  # and in this order
+
+# Sidebar Patch --------------------------------------
+ set sidebar_delim_chars   = '  │'
+ set sidebar_visible = yes
+ set sidebar_width   = 24
+
+# Sidebar Navigation ---------------------------------
+ bind index,pager <down>   sidebar-next
+ bind index,pager <up>     sidebar-prev
+ bind index,pager <right>  sidebar-open
+
+
+
+
+
+
+
+
+
+
+
+
+
+set from="sasha.delly@gmail.com"
+set sendmail = "msmtp -a sasha.delly"
+set sendmail_wait = 0
+unset record
+
+
+set folder="~/.mail"
+
+set spoolfile="+delly/INBOX"
+#set postponed="+/Drafts"
+mailboxes +delly/INBOX \
+          +delly/Mama\
+          +delly/Papa\
+          +delly/Tosha\
+          +delly/uoft\
+          +delly/Westminster\
+          +delly/archive \
+          +delly/sent \
+          +delly/drafts \
+          +delly/physicsworld\
+          +temporary/search\
+          +delly/reminders
+
+# Other special folders.
+set mbox      = "+delly/archive"
+set postponed = "+delly/drafts"
+
+# unset ssl_ca_certificates_file
+unset ssl_usesystemcerts
+
+# SSL hardening
+set ssl_force_tls=yes
+set ssl_starttls=yes
+set ssl_use_sslv2=no
+set ssl_use_sslv3=no
+set ssl_use_tlsv1=no
+set ssl_use_tlsv1_1=no
+set ssl_use_tlsv1_2=yes
+set ssl_verify_dates=yes
+set ssl_verify_host=yes
+
+#set header_cache=~/.mutt/gmailcache
+set certificate_file=~/.mutt/gmailcertificates
+# looks like you must explicitly do this to make sure you
+# don't save local copies of sent mail >:(
+unset record
+
+set move = no
+set hostname=delly                  # Name of our local host.
+set hidden_host                           # Hide host details.
+set reverse_name=yes                      # build From: in the reply based on the To: address (must have
+set alias_file=~/.mutt/aliases            # Keep aliases in this file.
+set postpone=ask-no                       # Ask about postponing.
+set print=ask-yes                         # Ask before printing.
+set delete=yes                             # Ask before doing a delete.
+set sort_aux=date-received                # Sort threads by date received.
+set charset=utf-8                    # One of those days in England...
+set noallow_8bit                          # 8bit isn't safe via Demon.
+set ascii_chars=yes                       # use ascii characters when displaying trees
+set meta_key=yes                          # allow to use alt or ESC
+set edit_headers                          # I want to edit the message headers.
+set fast_reply                            # skip initial prompts when replying
+set nohelp                                # don't show the help line at the top
+set editor="vim +13 -c 'set nobackup' -c 'set noswapfile' -c 'set nowritebackup' -c 'set tw=72 ft=mail noautoindent'"
+set nomark_old                            # Don't mark unread new msgs as old.
+set beep_new                                # We don't need no beeping software.
+set nosmart_wrap                          # Don't want smart wrapping.
+set nomarkers                             # Don't want any wrap markers.
+set pager_context=3                       # Display 3 lines of context in pager.
+set pager_index_lines=20
+set nostrict_threads                      # Lets have some fuzzy threading.
+set pipe_decode                         # Don't decode messages when piping.
+set text_flowed                           # label messages as format-flowed
+set print_command="enscript --font=Times-Roman10 --pretty-print"
+set tilde                                 # Fill out messages with '~'.
+set read_inc=100                          # Read counter ticks every 100 msgs.
+set write_inc=100                         # Write counter ticks every 100 msgs.
+set noconfirmappend                       # Just append, don't hassle me.
+set thorough_search
+
+# Compose View Options -------------------------------
+set envelope_from                    # which from?
+set sig_dashes                       # dashes before sig
+set askcc                            # ask for CC:
+set fcc_attach                       # save attachments with the body
+unset mime_forward                   # forward attachments as part of body
+set forward_format = "Fwd: %s"       # format of subject when forwarding
+set forward_decode                   # decode when forwarding
+set attribution = "On %d, %n wrote:" # format of quoting header
+set reply_to                         # reply to Reply to: field
+set reverse_name                     # reply as whomever it was to
+set include                          # include message in replies
+set forward_quote                    # include message in forwards
+
+# Pager View Options ---------------------------------
+set pager_index_lines = 10 # number of index lines to show
+set pager_context = 3      # number of context lines to show
+set pager_stop             # don't go to next message automatically
+set menu_scroll            # scroll in menus
+set tilde                  # show tildes like in vim
+unset markers              # no ugly plus signs
+
+set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
+alternative_order text/plain text/enriched text/html
+
+macro index <esc>m "T~N<enter>;WNT~O<enter>;WO\CT~T<enter>" "mark all messages read"
+
+# What we consider to be a quote.
+set quote_regexp="^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
+set to_chars=" +TCF "                     # Drop the "L".
+
+source ~/.mutt/gpg.rc         # Use GPG
+# source ~/.mutt/solarized_light_16.muttrc
+# source ~/.mutt/headers        # Configure header display.
+set crypt_use_gpgme=yes
+
+# Last, but not least, get mutt to display its version on startup.
+#push <show-version>
+#message-hook '!(~g|~G) ~b"^-----BEGIN\ PGP\ (SIGNED\ )?MESSAGE"' "exec check-traditional-pgp"
+#auto_view text/html                       # eg with links --dump
+
+auto_view text/x-vcard text/html text/enriched
+
+# Index Key Bindings ---------------------------------
+bind index gg       first-entry
+bind index G        last-entry
+
+bind index R        group-reply
+bind index <tab>    sync-mailbox
+bind index <space>  collapse-thread
+# Pager Key Bindings ---------------------------------
+bind pager k  previous-line
+bind pager j  next-line
+bind pager gg top
+bind pager G  bottom
+
+bind pager R  group-reply
+
+bind compose p postpone-message
+
+bind index p recall-message
+bind index N search-opposite
+bind pager N search-opposite
+
+# View attachments properly.
+
+bind attach <return> view-mailcap
+
+set mailcap_path    = ~/.mutt/mailcap
+# Ctrl-R to mark all as read
+macro index \Cr "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all messages as read"
+
+# Sync email
+macro index O "<shell-escape>offlineimap<enter>"           "run offlineimap to sync all mail"
+macro index o "<shell-escape>offlineimap -qf INBOX<enter>" "run offlineimap to sync inbox"
+
+# Saner copy/move dialogs
+macro index C "<copy-message>?<toggle-mailboxes>" "copy a message to a mailbox"
+macro index M "<save-message>?<toggle-mailboxes>" "move a message to a mailbox"
+
+macro pager \Cu "|urlview<enter>" "call urlview to open links"
+
+#macro index S "<enter-command>unset wait_key<enter><shell-escape>mutt-notmuch-py ~/.mail/temporary/search<enter><change-folder-readonly>+temporary/search<enter>" "search mail (using notmuch)"
+
+macro index S \
+"<enter-command>set my_old_pipe_decode=\$pipe_decode my_old_wait_key=\$wait_key nopipe_decode nowait_key<enter>\
+<shell-escape>notmuch-mutt -r --prompt search<enter>\
+<change-folder-readonly>`echo ${XDG_CACHE_HOME:-$HOME/.cache}/notmuch/mutt/results`<enter>\
+<enter-command>set pipe_decode=\$my_old_pipe_decode wait_key=\$my_old_wait_key<enter>" \
+"notmuch: search mail"
+
+macro index <F9> \
+"<enter-command>set my_old_pipe_decode=\$pipe_decode my_old_wait_key=\$wait_key nopipe_decode nowait_key<enter>\
+<pipe-message>notmuch-mutt -r thread<enter>\
+<change-folder-readonly>`echo ${XDG_CACHE_HOME:-$HOME/.cache}/notmuch/mutt/results`<enter>\
+<enter-command>set pipe_decode=\$my_old_pipe_decode wait_key=\$my_old_wait_key<enter>" \
+"notmuch: reconstruct thread"
+
+color header yellow black "^X-WebTV-Stationery:"
+
+color header red black "^x-spam-rule:"
+color header green black "^x-mailer:"
+color header yellow black "^message-id:"
+color header yellow black "^Organization:"
+color header yellow black "^Organisation:"
+color header yellow black "^User-Agent:"
+color header yellow black "^message-id: .*pine"
+color header yellow black "^X-Fnord:"
+color header yellow black "^X-WebTV-Stationery:"
+color header yellow black "^X-Message-Flag:"
+color header yellow black "^X-Spam-Status:"
+color header yellow black "^X-SpamProbe:"
+color header red black "^X-SpamProbe: SPAM"
+
+## Coloring quoted text - coloring the first 7 levels:
+color quoted cyan black
+color quoted1 yellow black
+color quoted2 red black
+color quoted3 green black
+color quoted4 cyan black
+color quoted5 yellow black
+color quoted6 red black
+color quoted7 green black
+
+## Default color definitions
+#color hdrdefault white green
+color signature brightmagenta black
+color indicator black cyan
+color attachment black green
+color error red black
+color message brightwhite black
+color search brightwhite magenta
+color status brightyellow blue
+color tree brightblue black
+color normal brightwhite black
+color tilde green black
+color bold brightyellow black
+#color underline magenta black
+color markers brightcyan black
+
+## Colour definitions when on a mono screen
+mono bold bold
+mono underline underline
+mono indicator reverse
+
