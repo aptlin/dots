@@ -1,5 +1,5 @@
 *Font:                       ter-c32n
-
+Xft.dpi:                     227
 Xft.lcdfilter:               lcddefault
 Xft.autohint:                0
 Xft.hintstyle:               hintfull
@@ -8,7 +8,7 @@ Xft.antialias:               1
 Xft.rgba:                    rgb
 
 Xcursor.theme:               Adwaita
-
+Xcursor.size:                32
 URxvt.intensityStyles: false
 ! ---- SOLARIZED xresources ----
 ! Solarized color scheme for the X Window System
