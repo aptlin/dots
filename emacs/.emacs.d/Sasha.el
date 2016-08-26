@@ -373,7 +373,7 @@ USAGE:  (org-get-entries-fn '(6 1 2015) '(6 30 2015))"
 ;;
 ;;  (defun my/setup-color-theme ()
 ;;    (interactive)
-;;    (load-theme 'badwolf t))
+;;    (load-theme 'solarized t))
 ;;  (eval-after-load 'color-theme (my/setup-color-theme))
 ;;
 ;;  (add-hook 'after-make-frame-functions
@@ -382,29 +382,29 @@ USAGE:  (org-get-entries-fn '(6 1 2015) '(6 30 2015))"
 ;;              (my/setup-color-theme)))
 
 
-  (load-theme 'badwolf t t)
+  (load-theme 'solarized t t)
 
   (defun mb/pick-color-theme (frame)
     (select-frame frame)
     (if (window-system frame)
     (progn
-          (enable-theme 'badwolf))
+          (enable-theme 'solarized))
       (progn
-        (enable-theme 'badwolf))))
+        (enable-theme 'solarized))))
   (add-hook 'after-make-frame-functions 'mb/pick-color-theme)
 
   ;; For when started with emacs or emacs -nw rather than emacs --daemon
   (if window-system
-      (enable-theme 'badwolf)
-    (enable-theme 'badwolf))
+      (enable-theme 'solarized)
+    (enable-theme 'solarized))
 
   ;;#+BEGIN_SRC emacs-lisp :tangle yes
-  ;;(load-theme 'badwolf t)
+  ;;(load-theme 'solarized t)
   ;;(custom-set-variables
-  ;; '(custom-enabled-themes (quote (badwolf)))
+  ;; '(custom-enabled-themes (quote (solarized)))
   ;; '(inhibit-startup-screen t))
 
-  ;;(defvar my:theme 'badwolf)
+  ;;(defvar my:theme 'solarized)
   ;;(defvar my:theme-window-loaded nil)
   ;;(defvar my:theme-terminal-loaded nil)
   ;;
@@ -430,12 +430,12 @@ USAGE:  (org-get-entries-fn '(6 1 2015) '(6 30 2015))"
   ;;  (add-hook 'after-make-frame-functions                                                
   ;;            (lambda (frame)                                                                               
   ;;            (select frame ;;frame)                                                                                                                            
-  ;;            (load-theme 'badwolf t)))
+  ;;            (load-theme 'solarized t)))
 
   ;;  (add-hook 'after-make-frame-functions
   ;;            (lambda (frame)
   ;;              (select-frame  frame)
-  ;;              (load-theme 'badwolf t)))
+  ;;              (load-theme 'solarized t)))
 
 (use-package undo-tree
   :diminish undo-tree-mode
@@ -897,15 +897,15 @@ This command is convenient when reading novel, documentation."
 (global-set-key (kbd "<f6>") 'my/yank-more)
 
 (defun my/org-insert-heading-for-next-day ()
-  "Insert a same-level heading for the following day."
-  (interactive)
-  (let ((new-date
-         (seconds-to-time
-          (+ 86400.0
-             (float-time
-              (org-read-date nil 'to-time (elt (org-heading-components) 4)))))))
-    (org-insert-heading-after-current)
-    (insert (format-time-string "%Y-%m-%d\n\n" new-date))))
+        "Insert a same-level heading for the following day."
+        (interactive)
+        (let ((new-date
+                                 (seconds-to-time
+                                        (+ 86400.0
+                                                 (float-time
+                                                        (org-read-date nil 'to-time (elt (org-heading-components) 4)))))))
+                (org-insert-heading-after-current)
+                (insert (format-time-string "%Y-%m-%d\n\n" new-date))))
 
 (defun my/org-contacts-template-email (&optional return-value)
     "Try to return the contact email for a template.
@@ -1112,10 +1112,10 @@ LOCATION and FILE can also be regular expressions for `my/org-refile-get-locatio
       (org-narrow-to-subtree)
       (goto-char (point-min))
       (let* ((words (count-words-region (point-min) (point-max)))
-       (minutes (org-clock-sum-current-item))
-       (wpm (/ words minutes)))
-  (message "WPM: %d (words: %d, minutes: %d)" wpm words minutes)
-  (kill-new (number-to-string wpm))))))
+             (minutes (org-clock-sum-current-item))
+             (wpm (/ words minutes)))
+        (message "WPM: %d (words: %d, minutes: %d)" wpm words minutes)
+        (kill-new (number-to-string wpm))))))
 
 (setq org-todo-keywords
  '((sequence
@@ -3059,27 +3059,27 @@ undoes the expansion."
   (add-hook 'jasminejs-mode-hook 'jasminejs-add-snippets-to-yas-snippet-dirs))
 
 (defvar my/javascript-test-regexp (concat (regexp-quote "/** Testing **/") "\\(.*\n\\)*")
-  "Regular expression matching testing-related code to remove.
+        "Regular expression matching testing-related code to remove.
 See `my/copy-javascript-region-or-buffer'.")
 
 (defun my/copy-javascript-region-or-buffer (beg end)
-  "Copy the active region or the buffer, wrapping it in script tags.
+        "Copy the active region or the buffer, wrapping it in script tags.
 Add a comment with the current filename and skip test-related
 code. See `my/javascript-test-regexp' to change the way
 test-related code is detected."
-  (interactive "r")
-  (unless (region-active-p)
-    (setq beg (point-min) end (point-max)))
-  (kill-new
-   (concat
-    "<script type=\"text/javascript\">\n"
-    (if (buffer-file-name) (concat "// " (file-name-nondirectory (buffer-file-name)) "\n") "")
-    (replace-regexp-in-string
-     my/javascript-test-regexp
-     ""
-     (buffer-substring (point-min) (point-max))
-     nil)
-    "\n</script>")))
+        (interactive "r")
+        (unless (region-active-p)
+                (setq beg (point-min) end (point-max)))
+        (kill-new
+         (concat
+                "<script type=\"text/javascript\">\n"
+                (if (buffer-file-name) (concat "// " (file-name-nondirectory (buffer-file-name)) "\n") "")
+                (replace-regexp-in-string
+                 my/javascript-test-regexp
+                 ""
+                 (buffer-substring (point-min) (point-max))
+                 nil)
+                "\n</script>")))
 
 (defvar my/debug-counter 1)
 (defun my/insert-or-flush-debug (&optional reset beg end)
@@ -3284,7 +3284,7 @@ test-related code is detected."
 (use-package bundler)
     (use-package robe
       :init
-      (progn (add-hook 'ruby-mode-hook 'robe-mode)
+                  (progn (add-hook 'ruby-mode-hook 'robe-mode)
              (add-hook 'robe-mode-hook 'ac-robe-setup)
              (add-hook 'ruby-mode-hook 'auto-complete-mode)))
 
@@ -3318,15 +3318,15 @@ test-related code is detected."
   :config
   (setq erc-hide-list '("PART" "QUIT" "JOIN"))
   (setq erc-autojoin-channels-alist '(("freenode.net"
-        "#org-mode"
-        "#hacklabto"
-        "#emacs"
+                                    "#org-mode"
+                                    "#hacklabto"
+                                    "#emacs"
         "#emacs-beginners"
         "#emacs-ops"
         "#math"
         ))
- erc-server "irc.freenode.net"
- erc-nick "sdll")
+     erc-server "irc.freenode.net"
+     erc-nick "sdll")
   (defun erc-cmd-OPME ()
     "Request chanserv to op me."
     (erc-message "PRIVMSG"

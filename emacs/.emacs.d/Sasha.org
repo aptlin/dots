@@ -560,7 +560,7 @@ Lazy people like me never want to type "yes" when "y" will suffice.
   ;;
   ;;  (defun my/setup-color-theme ()
   ;;    (interactive)
-  ;;    (load-theme 'badwolf t))
+  ;;    (load-theme 'solarized t))
   ;;  (eval-after-load 'color-theme (my/setup-color-theme))
   ;;
   ;;  (add-hook 'after-make-frame-functions
@@ -569,29 +569,29 @@ Lazy people like me never want to type "yes" when "y" will suffice.
   ;;              (my/setup-color-theme)))
 
 
-    (load-theme 'badwolf t t)
+    (load-theme 'solarized t t)
 
     (defun mb/pick-color-theme (frame)
       (select-frame frame)
       (if (window-system frame)
       (progn
-            (enable-theme 'badwolf))
+            (enable-theme 'solarized))
         (progn
-          (enable-theme 'badwolf))))
+          (enable-theme 'solarized))))
     (add-hook 'after-make-frame-functions 'mb/pick-color-theme)
 
     ;; For when started with emacs or emacs -nw rather than emacs --daemon
     (if window-system
-        (enable-theme 'badwolf)
-      (enable-theme 'badwolf))
+        (enable-theme 'solarized)
+      (enable-theme 'solarized))
 
     ;;#+BEGIN_SRC emacs-lisp :tangle yes
-    ;;(load-theme 'badwolf t)
+    ;;(load-theme 'solarized t)
     ;;(custom-set-variables
-    ;; '(custom-enabled-themes (quote (badwolf)))
+    ;; '(custom-enabled-themes (quote (solarized)))
     ;; '(inhibit-startup-screen t))
 
-    ;;(defvar my:theme 'badwolf)
+    ;;(defvar my:theme 'solarized)
     ;;(defvar my:theme-window-loaded nil)
     ;;(defvar my:theme-terminal-loaded nil)
     ;;
@@ -617,13 +617,15 @@ Lazy people like me never want to type "yes" when "y" will suffice.
     ;;  (add-hook 'after-make-frame-functions                                                
     ;;            (lambda (frame)                                                                               
     ;;            (select frame ;;frame)                                                                                                                            
-    ;;            (load-theme 'badwolf t)))
+    ;;            (load-theme 'solarized t)))
 
     ;;  (add-hook 'after-make-frame-functions
     ;;            (lambda (frame)
     ;;              (select-frame  frame)
-    ;;              (load-theme 'badwolf t)))
+    ;;              (load-theme 'solarized t)))
 #+END_SRC
+
+#+RESULTS:
 
 *** Undo tree mode - visualize your undos and branches
 
