@@ -1,7 +1,7 @@
 ### ZSH
 
 ## PLUGINS
-plugins=(git archlinux)
+plugins=(git debian)
 
 
 ## THEME

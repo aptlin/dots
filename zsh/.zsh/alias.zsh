@@ -3,7 +3,7 @@ alias lss="ls -hF --color=auto"
 alias lsl="ls -lhF --color=auto"
 alias bacu='rsync -aAXv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*"} / /run/media/aleph/A/REC/$(date +%m%y)'
 alias bdot='mkdir -p /run/media/aleph/A/REC/dot$(date +%d%m%y) &&  rsync -aAXv --delete /home/aleph/.emacs.d /home/aleph/H /home/aleph/.[^.]* /etc /home/aleph/elisp /run/media/aleph/A/REC/dot$(date +%m%y)/'
-alias bu="cd /run/media/aleph/A/REC"
+alias bu="cd /media/A"
 alias build_blog="gemset;cd ~/WERKE/SDLL/sdll.github.io.raw; bundle exec jekyll build;cp -r ~/WERKE/SDLL/sdll.github.io.raw/_site/* ~/WERKE/SDLL/sdll.github.io;cd ~/WERKE/SDLL/sdll.github.io;git add .;git commit -am 'Latest build.';git push -u origin master"
 alias ec="emacsclient -nw --alternate-editor="
 alias emacs="emacs -nw"
@@ -14,7 +14,6 @@ alias gt="git add .; read -p 'Comment: ' comment; git commit -am '$comment'; git
 alias hw="cd ~/HW/"
 alias mou="devmon -a"
 alias rd="cd ~/LIB/"
-alias rm="/usr/local/bin/rm"
 alias ru='setxkbmap ru'
 alias sd="cd /home/aleph/WERKE/SDLL/sll.gitlab.io"
 alias sdd="cd /home/aleph/WERKE/SDLL/sdll.github.io.raw"
@@ -36,6 +35,7 @@ alias ан='setxkbmap us'
 alias "cd.."="cd ../"
 alias up="cd ../"
 alias rmrf="rm -rf"
+alias rbt="sudo reboot"
 alias psef="ps -ef"
 alias mkdir="mkdir -p"
 alias cp="cp -r"
