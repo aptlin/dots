@@ -14,6 +14,7 @@ alias gt="git add .; read -p 'Comment: ' comment; git commit -am '$comment'; git
 alias hw="cd ~/HW/"
 alias mou="devmon -a"
 alias rd="cd ~/LIB/"
+alias rm="/usr/local/bin/rm"
 alias ru='setxkbmap ru'
 alias sd="cd /home/aleph/WERKE/SDLL/sll.gitlab.io"
 alias sdd="cd /home/aleph/WERKE/SDLL/sdll.github.io.raw"
