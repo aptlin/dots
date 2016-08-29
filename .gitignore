@@ -1,3 +1,9 @@
 mutt/.offlineimappass.gpg
 remind/.reminders
 *#
+gnupg/.gnupg/gpg-agent-info-zeta
+gnupg/.gnupg/pubring.gpg*
+gnupg/.gnupg/random_seed
+gnupg/.gnupg/secring.gpg
+gnupg/.gnupg/trustdb.gpg
+vimperator/.vimperator/info/
