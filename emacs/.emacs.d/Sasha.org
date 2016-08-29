@@ -3920,7 +3920,6 @@ does the job in a much cooler way. =) I thought he had a blog post
 about it, but I can't seem to find it. Anyway, there's my little hack
 above!
 
-
 *** DONE Org Mode tables and fill-in quizzes - Latin verb conjugations in Emacs
     CLOSED: [2015-11-26 Thu 21:48]
     :PROPERTIES:
@@ -5066,6 +5065,9 @@ Make it easier to review my credit card transactions
     :DRILL_LAST_QUALITY: 3
     :DRILL_LAST_REVIEWED: [2013-02-27 Wed 21:18]
     :END:
+
+aeua
+aeua
 
 I often define keyboard macros to process multiple lines in a region.
 Maybe =multiple-cursors= will be an even better way. Looks promising!
