@@ -27,9 +27,8 @@ alias tor='sudo chroot --userspec=tor:tor /opt/torchroot /usr/bin/tor'
 alias transk='sudo killall transmission-daemon'
 alias trans='transmission-daemon && iceweasel http://localhost:9091/'
 alias unm="devmon -u"
-alias updg='sudo pacman -Syua --devel'
 alias updk='sudo mkinitcpio -p linux-libre'
-alias upd='sudo pacman -Syu'
+alias upd='sudo aptitude update && sudo aptitude full-upgrade'
 alias v="jfbview"
 alias wsnet='pushd /home/aleph/H/conf && ./wsnet.sh && popd'
 alias ан='setxkbmap us'
@@ -50,7 +49,6 @@ alias tempwatch="while :; do sensors; sleep 1 && clear; done;"
 alias term="urxvtc -hold -e " #used for run menu
 alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
 alias clbin="curl -F 'clbin=<-' https://clbin.com"
-alias pacman="sudo pacman"
 alias systemctl="sudo systemctl"
 alias :q="sudo systemctl poweroff"
 alias ZZ="quit"
