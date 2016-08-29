@@ -70,10 +70,6 @@ email() {
 #l() {
 #  pygmentize -O style=sourcerer -f console256 -g $1 | less -r 
 #}
-# read markdown files like manpages
-md() {
-    pandoc -s -f markdown -t man "$*" | man -l -
-}
 # nullpointer url shortener
 short() {
   curl -F"shorten=$*" https://0x0.st

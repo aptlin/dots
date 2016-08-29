@@ -1093,6 +1093,8 @@ openssh-sftp-server
 openssl
 os-prober
 oxygen-icon-theme
+pandoc
+pandoc-data
 parted
 passwd
 patch
