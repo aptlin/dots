@@ -2,6 +2,9 @@ acl
 acpi
 adduser
 adwaita-icon-theme
+alsa-base
+alsa-oss
+alsa-utils
 anacron
 apt
 apt-listchanges
@@ -34,6 +37,7 @@ ca-certificates
 ca-certificates-java
 calligra-data
 calligra-libs
+caps
 coinor-libcbc3
 coinor-libcgl1
 coinor-libclp1
@@ -235,6 +239,7 @@ libarchive-extract-perl
 libasan0:amd64
 libasound2:amd64
 libasound2-data
+libasound2-plugin-equal:amd64
 libaspell15:amd64
 libasprintf0c2:amd64
 libass5:amd64
