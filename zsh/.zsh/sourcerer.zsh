@@ -35,3 +35,4 @@ then
     echo -en "\e]PFc1cdc1" #white
     clear #for background artifacting
 fi
+

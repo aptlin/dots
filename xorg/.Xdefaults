@@ -1,0 +1,89 @@
+Xft.dpi:                     227
+Xft.lcdfilter:               lcddefault
+Xft.autohint:                0
+Xft.hintstyle:               hintfull
+Xft.hinting:                 1
+Xft.antialias:               1
+Xft.rgba:                    rgb
+
+Xcursor.theme:               Adwaita
+Xcursor.size:                32
+
+URxvt.intensityStyles: false
+URxvt.font:                  xft:terminus:pixelsize=32
+URxvt.imFont:                xft:terminus:pixelsize=32
+URxvt.boldFont:              xft:terminus:pixelsize=32
+URxvt.italicFont:            xft:terminus:pixelsize=32
+URxvt.boldItalicFont:        xft:terminus:pixelsize=32
+
+URxvt.saveLines:             2048
+URxvt.skipScroll:            true
+
+URxvt.borderless:            true
+
+URxvt.cursorBlink:           true
+URxvt.cursorUnderline:       false
+
+URxvt.depth:                 32
+URxvt.internalBorder:        5
+
+! ScrollBar
+URxvt.scrollBar:             false
+URxvt.scrollBar_right:       true
+URxvt.scrollstyle:           plain
+URxvt.scrollColor:           #ffffff
+
+URxvt.scrollWithBuffer:      true
+URxvt.scrollTtyKeypress:     true
+URxvt.scrollTtyOutput:       false
+
+URxvt.buffered:              true
+URxvt.pointerBlank:          true
+URxvt.underlineURLs:         true
+
+! Transparency
+URxvt.transparent:           false
+URxvt.shading:               5
+
+! URLs
+URxvt.perl-ext:              default,url-select
+URxvt.keysym.M-u:            perl:url-select:select_next
+URxvt.url-select.launcher:   /usr/bin/xdg-open
+URxvt.url-select.underline:  true
+
+!! Tango color palette
+!URxvt*background:         #2e3436
+!URxvt*foreground:         #eeeeec
+!URxvt*cursorColor:        #8ae234
+!! foreground color for underline
+!URxvt*colorUL:            #8ae234
+!! line color for underline
+!URxvt*underlineColor:     #92659a
+!! black dark/light
+!URxvt*color0:             #2e3436
+!URxvt*color8:             #6e706b
+!! red dark/light
+!URxvt*color1:             #cc0000
+!URxvt*color9:             #ef2929
+!! green dark/light
+!URxvt*color2:             #4e9a06
+!URxvt*color10:            #8ae234
+!! yellow dark/light
+!URxvt*color3:             #edd400
+!URxvt*color11:            #fce94f
+!! blue dark/light
+!URxvt*color4:             #3465a4
+!URxvt*color12:            #729fcf
+!! magenta dark/light
+!URxvt*color5:             #92659a
+!URxvt*color13:            #c19fbe
+!! cyan dark/light
+!URxvt*color6:             #07c7ca
+!URxvt*color14:            #63e9e9
+!! white dark/light
+!URxvt*color7:             #d3d7cf
+!URxvt*color15:            #eeeeec
+
+/* vim: set ts=4 sw=4 tw=0 ft=xdefaults :*/
+
+

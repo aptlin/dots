@@ -40,7 +40,7 @@ bindsym $mod+Shift+e exit
 #start gimp
 bindsym $mod+g exec gimp
 #start icecat 
-bindsym $mod+w exec icecat
+bindsym $mod+w exec iceweasel
 # kill focused window
 bindsym $mod+Shift+quotedbl kill
 

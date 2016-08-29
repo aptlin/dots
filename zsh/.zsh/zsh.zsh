@@ -3,9 +3,6 @@
 ## PLUGINS
 plugins=(git archlinux)
 
-## SOURCE CONFIG
-source /etc/profile.d/autojump.zsh
-source $ZSH/oh-my-zsh.sh
 
 ## THEME
 ZSH_THEME="robbyrussell"
@@ -17,6 +14,5 @@ COMPLETION_WAITING_DOTS="true"
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 ## SOURCE CONFIG
-source /etc/profile.d/autojump.zsh
 source $ZSH/oh-my-zsh.sh
-
+. /usr/share/autojump/autojump.sh

@@ -172,7 +172,17 @@ endif
 
 syntax on
 set background=dark
-colorscheme solarized
+let g:badwolf_tabline = 2
+let g:badwolf_html_link_underline = 0
+colorscheme goodwolf
+
+" Reload the colorscheme whenever we write the file.
+augroup color_badwolf_dev
+    au!
+    au BufWritePost badwolf.vim color badwolf
+    au BufWritePost goodwolf.vim color goodwolf
+augroup END
+
 " Highlight VCS conflict markers
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
