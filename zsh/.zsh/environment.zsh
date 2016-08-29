@@ -45,6 +45,9 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LESSCHARSET=utf-8
 
+# Midnight Commander
+
+MC_SKIN=$HOME/.mc/lib/mc-solarized/solarized.ini
 # GPG agent
 
 eval $(gpg-agent --daemon)
