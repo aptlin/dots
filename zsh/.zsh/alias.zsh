@@ -1,3 +1,5 @@
+alias al="vim ~/.zsh/alias.zsh && source ~/.zsh/alias.zsh"
+alias dot="cd ~/DOTS"
 alias ll="ls -lahF --color=auto"
 alias lss="ls -hF --color=auto"
 alias lsl="ls -lhF --color=auto"
@@ -15,13 +17,12 @@ alias hw="cd ~/HW/"
 alias mou="devmon -a"
 alias rd="cd ~/LIB/"
 alias ru='setxkbmap ru'
-alias sd="cd /home/aleph/WERKE/SDLL/sll.gitlab.io"
-alias sdd="cd /home/aleph/WERKE/SDLL/sdll.github.io.raw"
+alias s="cd ~/WERKE/sdll.github.io"
 alias shtd='shutdown -h now'
 alias st="sudo ntpdate pool.ntp.org; sudo hwclock --systohc"
 alias tm="tmux"
 alias tmux="tmux -2 attach-session -d"
-alias torb='pushd /home/aleph/Downloads/tor-browser_en-US && setfattr -n user.pax.flags -v m "/home/aleph/Downloads/tor-browser_en-US/Browser/firefox" && ./start-tor-browser.desktop && popd'
+alias torb='pushd /home/aleph/Downloads/tor-browser_en-US && ./start-tor-browser.desktop && popd'
 alias tor='sudo chroot --userspec=tor:tor /opt/torchroot /usr/bin/tor'
 alias transk='sudo killall transmission-daemon'
 alias trans='transmission-daemon && iceweasel http://localhost:9091/'
