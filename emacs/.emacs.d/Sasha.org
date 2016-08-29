@@ -75,7 +75,12 @@ in a directory in my =load-path=, Emacs can find them.
 (use-package auto-compile
   :config (auto-compile-on-load-mode))
 (setq load-prefer-newer t)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 #+END_SRC
+
+#+RESULTS:
+| ~/.emacs.d/themes | /home/aleph/.emacs.d/elpa/smart-mode-line-20160818.508/ | custom-theme-directory | t |
+
 *** no splash screen and a message in the echo area
 (setq inhibit-startup-message t
 inhibit-startup-echo-area-message t)
@@ -556,11 +561,11 @@ Lazy people like me never want to type "yes" when "y" will suffice.
     contents of the minibuffer before submitting it.
 
 #+BEGIN_SRC emacs-lisp :tangle yes
-  ;;  (require 'color-theme)
+    (require 'color-theme)
   ;;
   ;;  (defun my/setup-color-theme ()
   ;;    (interactive)
-  ;;    (load-theme 'solarized t))
+  ;;    (load-theme 'color-theme-solarized t))
   ;;  (eval-after-load 'color-theme (my/setup-color-theme))
   ;;
   ;;  (add-hook 'after-make-frame-functions
