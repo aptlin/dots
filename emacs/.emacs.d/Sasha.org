@@ -219,6 +219,15 @@ helm-grep? Bit slow and hard to read, though.
   (interactive)
   (helm-do-grep-1 (list my/book-notes-directory)))
 #+END_SRC
+*** Remember the last cursor position
+#+begin_src emacs-lisp tangle: yes
+(setq save-place-file "~/elisp/saveplace")
+(setq-default save-place t)
+(require 'saveplace)
+#+end_src
+
+#+RESULTS:
+: saveplace
 
 **** Getting Helm and org-refile to clock in or create tasks :emacs:org:helm:
      CLOSED: [2015-02-02 Mon 08:40]
