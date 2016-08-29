@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+cd ~/DOTS
+git add --all
+echo "Comment:"
+read comment
+git commit -a -m "$comment"
+git push

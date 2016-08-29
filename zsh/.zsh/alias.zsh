@@ -14,7 +14,7 @@ alias eth='sudo netctl start ethernet-dhcp'
 alias gb='gemset && sd && rm -r _site && bundle exec jekyll serve'
 alias gemset='export PATH=$PATH:$HOME/.gem/ruby/2.3.0/bin'
 alias gt="git add .; read -p 'Comment: ' comment; git commit -am '$comment'; git push -u origin master"
-alias gdot="dot; gaa ; echo "Comment: " ; read comment ; gcam "$comment" ; gp"
+alias gdot="pushd ~/.zsh/ && ./gdot && popd"
 alias hw="cd ~/HW/"
 alias mou="devmon -a"
 alias rd="cd ~/LIB/"
