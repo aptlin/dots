@@ -3,10 +3,5 @@
 # update the list of packages
 dpkg-query -f '${binary:Package}\n' -W > ~/DOTS/zsh/ORG/PKG/list_$(date +%m%y).pkg
 
-# push to the .files repo
-cd ~/DOTS
-git add --all
-echo "Comment:"
-read comment
-git commit -a -m "$comment"
-git push
+source ~/.zsh/alias.zsh
+gdir .emacs DOTS
