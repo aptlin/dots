@@ -75,13 +75,17 @@ short() {
   curl -f"shorten=$*" https://0x0.st
 }
 gdir() {
-  for var in $@:
-    if [ -d "~/$var" ]; then
-      cd ~/$var
+  for var in $@
+  do
+    if [ -d "$HOME/$var" ]; then
+      cd $HOME/$var
       git add --all
       echo "Comment for $var:"
       read comment
       git commit -a -m "$comment"
       git push
+    elif; then
+      echo "No such directory: $var"
     fi
+  done
 }
