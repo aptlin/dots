@@ -8,7 +8,7 @@ alias bdot='mkdir -p /run/media/aleph/A/REC/dot$(date +%d%m%y) &&  rsync -aAXv -
 alias bu="cd /media/A"
 alias build_blog="gemset;cd ~/WERKE/SDLL/sdll.github.io.raw; bundle exec jekyll build;cp -r ~/WERKE/SDLL/sdll.github.io.raw/_site/* ~/WERKE/SDLL/sdll.github.io;cd ~/WERKE/SDLL/sdll.github.io;git add .;git commit -am 'Latest build.';git push -u origin master"
 alias ec="emacsclient -nw --alternate-editor="
-alias ecc="ec ~/DOTS/emacs/.emacs.d/Sasha.org"
+alias ecc="ec ~/.emacs.d/init.el"
 alias emacs="emacs -nw"
 alias eth='sudo netctl start ethernet-dhcp'
 alias gb='gemset && sd && rm -r _site && bundle exec jekyll serve'
