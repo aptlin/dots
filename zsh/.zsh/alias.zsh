@@ -1,15 +1,15 @@
 alias al="vim ~/.zsh/alias.zsh && source ~/.zsh/alias.zsh"
-alias dot="cd ~/dots"
+alias dot="cd ~/DOTS"
 alias ll="ls -lahf --color=auto"
 alias lss="ls -hf --color=auto"
 alias lsl="ls -lhf --color=auto"
 alias bacu='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*"} / /run/media/aleph/a/rec/$(date +%m%y)'
 alias bdot='mkdir -p /run/media/aleph/a/rec/dot$(date +%d%m%y) &&  rsync -aaxv --delete /home/aleph/.emacs.d /home/aleph/h /home/aleph/.[^.]* /etc /home/aleph/elisp /run/media/aleph/a/rec/dot$(date +%m%y)/'
-alias bu="cd /media/a"
-alias build_blog="gemset;cd ~/werke/sdll/sdll.github.io.raw; bundle exec jekyll build;cp -r ~/werke/sdll/sdll.github.io.raw/_site/* ~/werke/sdll/sdll.github.io;cd ~/werke/sdll/sdll.github.io;git add .;git commit -am 'latest build.';git push -u origin master"
+alias bu="cd /media/A"
+alias build_blog="gemset;cd ~/WERKE/sdll/sdll.github.io.raw; bundle exec jekyll build;cp -r ~/WERKE/sdll/sdll.github.io.raw/_site/* ~/WERKE/sdll/sdll.github.io;cd ~/WERKE/sdll/sdll.github.io;git add .;git commit -am 'latest build.';git push -u origin master"
 alias ec="emacsclient -nw --alternate-editor="
-alias ecc="ec ~/.emacs.d/init.el"
-alias emacs="emacs -nw"
+alias ecc="cd ~/.emacs.d && ec ~/.emacs.d/init.el"
+#alias emacs="emacs -nw"
 alias eth='sudo netctl start ethernet-dhcp'
 alias gb='gemset && sd && rm -r _site && bundle exec jekyll serve'
 alias gemset='export path=$path:$home/.gem/ruby/2.3.0/bin'
@@ -19,7 +19,7 @@ alias hw="cd ~/hw/"
 alias mou="devmon -a"
 alias rd="cd ~/lib/"
 alias ru='setxkbmap ru'
-alias s="cd ~/werke/sdll.github.io"
+alias s="cd ~/WERKE/sdll.github.io"
 alias shtd='shutdown -h now'
 alias st="sudo ntpdate pool.ntp.org; sudo hwclock --systohc"
 alias tm="tmux"

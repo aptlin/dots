@@ -51,6 +51,10 @@ URxvt.keysym.M-u:            perl:url-select:select_next
 URxvt.url-select.launcher:   /usr/bin/xdg-open
 URxvt.url-select.underline:  true
 
+! C-S mapping
+
+URxvt.iso14755_52: False
+
 !! Tango color palette
 !URxvt*background:         #2e3436
 !URxvt*foreground:         #eeeeec
