@@ -32,7 +32,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec urxvt
 #start telegram
-bindsym $mod+x exec cd /home/aleph/Downloads/Telegram/ && ./Telegram
+bindsym $mod+x exec cd /home/aleph/DLD/Telegram/ && ./Telegram
 #re/re/re
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+w reload

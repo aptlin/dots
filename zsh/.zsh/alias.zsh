@@ -3,7 +3,9 @@ alias dot="cd ~/DOTS"
 alias ll="ls -lahf --color=auto"
 alias lss="ls -hf --color=auto"
 alias lsl="ls -lhf --color=auto"
-alias bacu='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*"} / /run/media/aleph/a/rec/$(date +%m%y)'
+alias bach='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /home /media/A-2/REC/home$(date +%m%y)'
+alias bace='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /etc /media/A-2/REC/etc$(date +%m%y)'
+alias bacu="bach && bace"
 alias bdot='mkdir -p /run/media/aleph/a/rec/dot$(date +%d%m%y) &&  rsync -aaxv --delete /home/aleph/.emacs.d /home/aleph/h /home/aleph/.[^.]* /etc /home/aleph/elisp /run/media/aleph/a/rec/dot$(date +%m%y)/'
 alias bu="cd /media/A"
 alias build_blog="gemset;cd ~/WERKE/sdll/sdll.github.io.raw; bundle exec jekyll build;cp -r ~/WERKE/sdll/sdll.github.io.raw/_site/* ~/WERKE/sdll/sdll.github.io;cd ~/WERKE/sdll/sdll.github.io;git add .;git commit -am 'latest build.';git push -u origin master"
@@ -24,7 +26,7 @@ alias shtd='shutdown -h now'
 alias st="sudo ntpdate pool.ntp.org; sudo hwclock --systohc"
 alias tm="tmux"
 alias tmux="tmux -2 attach-session -d"
-alias torb='pushd /home/aleph/downloads/tor-browser_en-us && ./start-tor-browser.desktop && popd'
+alias torb='pushd /home/aleph/DLD/tor-browser_en-us && ./start-tor-browser.desktop && popd'
 alias tor='sudo chroot --userspec=tor:tor /opt/torchroot /usr/bin/tor'
 alias transk='sudo killall transmission-daemon'
 alias trans='transmission-daemon && iceweasel http://localhost:9091/'

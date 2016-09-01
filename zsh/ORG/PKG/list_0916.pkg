@@ -32,6 +32,7 @@ bluez
 bsd-mailx
 bsdmainutils
 bsdutils
+build-essential
 busybox
 bzip2
 ca-certificates
@@ -92,6 +93,7 @@ docutils-common
 docutils-doc
 dosfstools
 dpkg
+dpkg-dev
 dunst
 e2fslibs:amd64
 e2fsprogs
@@ -107,6 +109,7 @@ exim4
 exim4-base
 exim4-config
 exim4-daemon-light
+fakeroot
 file
 findutils
 firebird2.5-common
@@ -130,8 +133,12 @@ fonts-sil-gentium-basic
 fonts-vlgothic
 ftp
 fuse
+g++
+g++-4.9
+gcc
 gcc-4.8
 gcc-4.8-base:amd64
+gcc-4.9
 gcc-4.9-base:amd64
 gconf-service
 gconf2
@@ -236,6 +243,9 @@ libaacs0:amd64
 libabw-0.1-1
 libacl1:amd64
 libalgorithm-c3-perl
+libalgorithm-diff-perl
+libalgorithm-diff-xs-perl
+libalgorithm-merge-perl
 libamd2.3.1:amd64
 libanyevent-i3-perl
 libanyevent-perl
@@ -243,6 +253,7 @@ libapt-inst1.5:amd64
 libapt-pkg4.12:amd64
 libarchive-extract-perl
 libasan0:amd64
+libasan1:amd64
 libasound2:amd64
 libasound2-data
 libasound2-plugin-equal:amd64
@@ -312,6 +323,7 @@ libcgi-pm-perl
 libcgraph6
 libcholmod2.1.2:amd64
 libchromaprint0:amd64
+libcilkrts5:amd64
 libclass-accessor-perl
 libclass-c3-perl
 libclass-c3-xs-perl
@@ -355,6 +367,7 @@ libdirectfb-1.2-9:amd64
 libdlrestrictions1
 libdns-export100
 libdns100
+libdpkg-perl
 libdrm-intel1:amd64
 libdrm-nouveau2:amd64
 libdrm-radeon1:amd64
@@ -388,6 +401,7 @@ libexpat1:amd64
 libexttextcat-2.0-0
 libexttextcat-data
 libfaad2:amd64
+libfakeroot:amd64
 libfam0
 libfbclient2:amd64
 libfbembed2.5
@@ -397,6 +411,7 @@ libfftw3-double3:amd64
 libfile-basedir-perl
 libfile-copy-recursive-perl
 libfile-desktopentry-perl
+libfile-fcntllock-perl
 libfile-homedir-perl
 libfile-listing-perl
 libfile-mimeinfo-perl
@@ -424,6 +439,7 @@ libfuse2:amd64
 libgbm1:amd64
 libgc1c2:amd64
 libgcc-4.8-dev:amd64
+libgcc-4.9-dev:amd64
 libgcc1:amd64
 libgconf-2-4:amd64
 libgconf2-4:amd64
@@ -597,6 +613,7 @@ liblog-message-simple-perl
 liblogging-stdlog0:amd64
 liblognorm1:amd64
 liblqr-1-0:amd64
+liblsan0:amd64
 libltdl7:amd64
 liblua5.1-0:amd64
 liblua5.2-0:amd64
@@ -841,6 +858,7 @@ libssh-gcrypt-4:amd64
 libssh2-1:amd64
 libssl1.0.0:amd64
 libstartup-notification0:amd64
+libstdc++-4.9-dev:amd64
 libstdc++6:amd64
 libstreamanalyzer0
 libstreams0
@@ -881,6 +899,7 @@ libtokyocabinet9:amd64
 libtsan0:amd64
 libtwolame0
 libtxc-dxtn-s2tc0:amd64
+libubsan0:amd64
 libudev1:amd64
 libudisks2-0:amd64
 libumfpack5.6.2:amd64
@@ -1062,6 +1081,7 @@ lynx
 lynx-cur
 m17n-db
 m4
+make
 man-db
 manpages
 manpages-dev
@@ -1136,24 +1156,39 @@ python
 python-apt
 python-apt-common
 python-cairo
+python-cffi
 python-chardet
+python-colorama
+python-cryptography
 python-debian
 python-debianbts
 python-defusedxml
+python-distlib
 python-docutils
 python-gobject-2
 python-gtk2
+python-html5lib
 python-minimal
+python-ndg-httpsclient
 python-numpy
+python-openssl
 python-pil:amd64
+python-pip
 python-pkg-resources
+python-ply
+python-pyasn1
+python-pycparser
 python-pygments
 python-reportbug
+python-requests
 python-roman
+python-setuptools
 python-six
 python-soappy
 python-support
 python-talloc
+python-urllib3
+python-wheel
 python-wstools
 python2.7
 python2.7-minimal
