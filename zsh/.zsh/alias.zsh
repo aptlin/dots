@@ -1,4 +1,5 @@
 alias al="vim ~/.zsh/alias.zsh && source ~/.zsh/alias.zsh"
+alias ae="vim ~/.zsh/environment.zsh && source ~/.zsh/environment.zsh"
 alias dot="cd ~/DOTS"
 alias ll="ls -lahf --color=auto"
 alias lss="ls -hf --color=auto"
@@ -19,13 +20,13 @@ alias gt="git add .; read -p 'comment: ' comment; git commit -am '$comment'; git
 alias gdot="pushd ~/.zsh/ && ./gdot && popd"
 alias hw="cd ~/hw/"
 alias mou="devmon -a"
+alias ra="ranger"
 alias rd="cd ~/lib/"
 alias ru='setxkbmap ru'
 alias s="cd ~/WERKE/sdll.github.io"
 alias shtd='shutdown -h now'
 alias st="sudo ntpdate pool.ntp.org; sudo hwclock --systohc"
-alias tm="tmux"
-alias tmux="tmux -2 attach-session -d"
+alias tm="tmux -2 attach-session -d"
 alias torb='pushd /home/aleph/DLD/tor-browser_en-us && ./start-tor-browser.desktop && popd'
 alias tor='sudo chroot --userspec=tor:tor /opt/torchroot /usr/bin/tor'
 alias transk='sudo killall transmission-daemon'
@@ -43,6 +44,8 @@ alias rmrf="rm -rf"
 alias rbt="sudo reboot"
 alias psef="ps -ef"
 alias mkdir="mkdir -p"
+alias ng="workon nikola; cd $BLOG_DIR; nikola github_deploy"
+alias nb="workon nikola; cd $BLOG_DIR; nikola auto"
 alias cp="cp -r"
 alias scp="scp -r"
 alias mkdir="mkdir -p"

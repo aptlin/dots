@@ -9,7 +9,7 @@ image/png; jfbview %s png
 image/gif; jfbview %s gif
 
 # PDFs
-application/pdf; jfbview %s
+application/pdf; zathura %s
 
 # HTML
 text/html; lynx -dump -width=78 -nolist %s ; copiousoutput; needsterminal;

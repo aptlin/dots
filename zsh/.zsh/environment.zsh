@@ -44,6 +44,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LESSCHARSET=utf-8
+export BLOG_DIR=~/WERKE/sdll.github.io
 
 # Midnight Commander
 
@@ -55,4 +56,13 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
   . "${HOME}/.gpg-agent-info"
   export GPG_AGENT_INFO
   export SSH_AUTH_SOCK
+fi
+
+# Python
+
+export WORKON_HOME=${HOME}/PROG/PIT
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+elif [ -f /usr/bin/virtualenvwrapper.sh ]; then
+   source /usr/bin/virtualenvwrapper.sh
 fi
