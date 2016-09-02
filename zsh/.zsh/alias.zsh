@@ -1,7 +1,7 @@
 alias al="vim ~/.zsh/alias.zsh && source ~/.zsh/alias.zsh; git commit -m 'added aliases' ~/DOTS/zsh/.zsh/alias.zsh; git push ~/DOTS/"
 alias ae="vim ~/.zsh/environment.zsh && source ~/.zsh/environment.zsh; git commit -m 'added aliases' ~/DOTS/zsh/.zsh/alias.zsh; git push ~/DOTS/"
 alias ale="ec ~/.zsh/alias.zsh && source ~/.zsh/alias.zsh; git commit -m 'added aliases' ~/DOTS/zsh/.zsh/alias.zsh; git push ~/DOTS/"
-alias aee="ec ~/.zsh/environment.zsh && source ~/.zsh/environment.zsh; git add --all ~/DOTS;git commit -m 'added aliases' ~/DOTS/zsh/.zsh/alias.zsh; git push ~/DOTS/"
+alias aee="ec ~/.zsh/environment.zsh && source ~/.zsh/environment.zsh; git commit -m 'added aliases' ~/DOTS/zsh/.zsh/alias.zsh; git push ~/DOTS/"
 alias dot="cd ~/DOTS"
 alias ll="ls -lahf --color=auto"
 alias lss="ls -hf --color=auto"
