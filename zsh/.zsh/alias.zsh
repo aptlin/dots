@@ -12,6 +12,7 @@ alias bacu="bach && bace"
 alias bdot='mkdir -p /run/media/aleph/a/rec/dot$(date +%d%m%y) &&  rsync -aaxv --delete /home/aleph/.emacs.d /home/aleph/h /home/aleph/.[^.]* /etc /home/aleph/elisp /run/media/aleph/a/rec/dot$(date +%m%y)/'
 alias bu="cd /media/A"
 alias build_blog="gemset;cd ~/WERKE/sdll/sdll.github.io.raw; bundle exec jekyll build;cp -r ~/WERKE/sdll/sdll.github.io.raw/_site/* ~/WERKE/sdll/sdll.github.io;cd ~/WERKE/sdll/sdll.github.io;git add .;git commit -am 'latest build.';git push -u origin master"
+alias cv="cd ~/WERKE/ADV/CV/"
 alias ec="emacsclient -nw --alternate-editor="
 alias ecc="cd ~/.emacs.d && ec ~/.emacs.d/init.el"
 alias ema="cd ~/.emacs.d"
