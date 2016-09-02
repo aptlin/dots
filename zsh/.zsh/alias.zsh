@@ -1,13 +1,13 @@
-alias al="vim ~/.zsh/alias.zsh && source ~/.zsh/alias.zsh; git commit -m 'added aliases' ~/DOTS/zsh/.zsh/alias.zsh; pushd ~/DOTS; git push; popd"
-alias ae="vim ~/.zsh/environment.zsh && source ~/.zsh/environment.zsh; git commit -m 'added new env vars' ~/DOTS/zsh/.zsh/environment.zsh; pushd ~/DOTS; git push; popd"
-alias ale="ec ~/.zsh/alias.zsh && source ~/.zsh/alias.zsh; git commit -m 'added aliases' ~/DOTS/zsh/.zsh/alias.zsh; pushd ~/DOTS; git push; popd"
-alias aee="ec ~/.zsh/environment.zsh && source ~/.zsh/environment.zsh; git commit -m 'added new env vars' ~/DOTS/zsh/.zsh/environment.zsh; pushd ~/DOTS; git push; popd"
+falias al="vim ~/.zsh/alias.zsh && source ~/.zsh/alias.zsh; pushd ~/DOTS; git commit -m 'added aliases' ~/DOTS/zsh/.zsh/alias.zsh;  git push; popd"
+alias ae="vim ~/.zsh/environment.zsh && source ~/.zsh/environment.zsh; pushd ~/DOTS; git commit -m 'added new env vars' ~/DOTS/zsh/.zsh/environment.zsh;  git push; popd"
+alias ale="ec ~/.zsh/alias.zsh && source ~/.zsh/alias.zsh; pushd ~/DOTS; git commit -m 'added aliases' ~/DOTS/zsh/.zsh/alias.zsh;  git push; popd"
+alias aee="ec ~/.zsh/environment.zsh && source ~/.zsh/environment.zsh; pushd ~/DOTS; git commit -m 'added new env vars' ~/DOTS/zsh/.zsh/environment.zsh;  git push; popd"
 alias dot="cd ~/DOTS"
 alias ll="ls -lahf --color=auto"
 alias lss="ls -hf --color=auto"
 alias lsl="ls -lhf --color=auto"
-alias bach='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /home /media/A-2/REC/home$(date +%m%y)'
-alias bace='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /etc /media/A-2/REC/etc$(date +%m%y)'
+alias bach='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /home /media/A/REC/home$(date +%m%y)'
+alias bace='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /etc /media/A/REC/etc$(date +%m%y)'
 alias bacu="bach && bace"
 alias bdot='mkdir -p /run/media/aleph/a/rec/dot$(date +%d%m%y) &&  rsync -aaxv --delete /home/aleph/.emacs.d /home/aleph/h /home/aleph/.[^.]* /etc /home/aleph/elisp /run/media/aleph/a/rec/dot$(date +%m%y)/'
 alias bu="cd /media/A"
