@@ -10,7 +10,7 @@
 # Global Config
 [user]
     name = "sdll"
-    email = "sasha.delly@gmail.com"
+    email = "shura.sdll@gmail.com"
     #signingkey = **Your GPG ID**
 
 [branch "master"]
