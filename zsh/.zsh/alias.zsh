@@ -1,5 +1,7 @@
 alias al="vim ~/.zsh/alias.zsh && source ~/.zsh/alias.zsh"
 alias ae="vim ~/.zsh/environment.zsh && source ~/.zsh/environment.zsh"
+alias ale="ec ~/.zsh/alias.zsh && source ~/.zsh/alias.zsh"
+alias aee="ec ~/.zsh/environment.zsh && source ~/.zsh/environment.zsh"
 alias dot="cd ~/DOTS"
 alias ll="ls -lahf --color=auto"
 alias lss="ls -hf --color=auto"
@@ -47,6 +49,7 @@ alias psef="ps -ef"
 alias mkdir="mkdir -p"
 alias ng="workon nikola; cd $BLOG_DIR; nikola github_deploy"
 alias nb="workon nikola; cd $BLOG_DIR; nikola auto"
+alias nt="cd ~/PROG/PIT/nikola/lib/python3.4/site-packages/nikola/data/themes/sdll/templates/"
 alias cp="cp -r"
 alias scp="scp -r"
 alias mkdir="mkdir -p"
@@ -69,12 +72,12 @@ email() {
 #c() {
 #  for file in "$@"
 #  do
-#    pygmentize -o style=sourcerer -f console256 -g "$file" 
+#    pygmentize -o style=sourcerer -f console256 -g "$file"
 #  done
 #}
 ## colorized less
 #l() {
-#  pygmentize -o style=sourcerer -f console256 -g $1 | less -r 
+#  pygmentize -o style=sourcerer -f console256 -g $1 | less -r
 #}
 # nullpointer url shortener
 short() {
