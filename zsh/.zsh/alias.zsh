@@ -9,9 +9,7 @@ alias lsl="ls -lhf --color=auto"
 alias bach='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /home /media/A/REC/home$(date +%m%y)'
 alias bace='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /etc /media/A/REC/etc$(date +%m%y)'
 alias bacu="bach && bace"
-alias bdot='mkdir -p /run/media/aleph/a/rec/dot$(date +%d%m%y) &&  rsync -aaxv --delete /home/aleph/.emacs.d /home/aleph/h /home/aleph/.[^.]* /etc /home/aleph/elisp /run/media/aleph/a/rec/dot$(date +%m%y)/'
 alias bu="cd /media/A"
-alias build_blog="gemset;cd ~/WERKE/sdll/sdll.github.io.raw; bundle exec jekyll build;cp -r ~/WERKE/sdll/sdll.github.io.raw/_site/* ~/WERKE/sdll/sdll.github.io;cd ~/WERKE/sdll/sdll.github.io;git add .;git commit -am 'latest build.';git push -u origin master"
 alias cv="cd ~/WERKE/ADV/CV/"
 alias ec="emacsclient -nw --alternate-editor="
 alias ecc="cd ~/.emacs.d && ec ~/.emacs.d/init.el"
@@ -19,7 +17,6 @@ alias ema="cd ~/.emacs.d"
 #alias emacs="emacs -nw"
 alias eth='sudo netctl start ethernet-dhcp'
 alias gb='gemset && sd && rm -r _site && bundle exec jekyll serve'
-alias gemset='export path=$path:$home/.gem/ruby/2.3.0/bin'
 alias gt="git add .; read -p 'comment: ' comment; git commit -am '$comment'; git push -u origin master"
 alias gdot="pushd ~/.zsh/ && ./gdot && popd"
 alias hw="cd ~/hw/"
