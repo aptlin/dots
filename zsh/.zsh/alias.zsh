@@ -28,6 +28,7 @@ alias ra="ranger"
 alias rd="cd ~/lib/"
 alias ru='setxkbmap ru'
 alias s="cd ~/WERKE/sdll.github.io"
+alias sude="sudo -e"
 alias shtd='shutdown -h now'
 alias st="sudo ntpdate pool.ntp.org; sudo hwclock --systohc"
 alias tm="tmux -2 attach-session -d"
