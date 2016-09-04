@@ -16,6 +16,7 @@ alias disks='echo "╓───── m o u n t . p o i n t s"; echo "╙──�
 alias dot="cd ~/DOTS"
 alias ec="emacsclient -nw --alternate-editor="
 alias ecc="cd ~/.emacs.d && ec ~/.emacs.d/init.el"
+alias eco="ec ~/.emacs.d/lisp/init-org.el"
 alias ema="cd ~/.emacs.d"
 alias eth='sudo netctl start ethernet-dhcp'
 alias gb='gemset && sd && rm -r _site && bundle exec jekyll serve'
