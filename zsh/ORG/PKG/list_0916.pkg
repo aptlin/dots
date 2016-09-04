@@ -43,6 +43,8 @@ ca-certificates-java
 calligra-data
 calligra-libs
 caps
+cmus
+cmus-plugin-ffmpeg
 coinor-libcbc3
 coinor-libcgl1
 coinor-libclp1
@@ -132,6 +134,7 @@ fonts-lyx
 fonts-opensymbol
 fonts-sil-gentium
 fonts-sil-gentium-basic
+fonts-texgyre
 fonts-vlgothic
 ftp
 fuse
@@ -241,6 +244,7 @@ kmod
 krb5-locales
 krita
 krita-data
+ledger
 less
 liba52-0.7.4
 libaa1:amd64
@@ -254,6 +258,8 @@ libalgorithm-merge-perl
 libamd2.3.1:amd64
 libanyevent-i3-perl
 libanyevent-perl
+libao-common
+libao4
 libapt-inst1.5:amd64
 libapt-pkg4.12:amd64
 libarchive-extract-perl
@@ -301,7 +307,9 @@ libbluray1:amd64
 libbonobo2-0:amd64
 libbonobo2-common
 libboost-date-time1.55.0:amd64
+libboost-filesystem1.55.0:amd64
 libboost-iostreams1.55.0:amd64
+libboost-regex1.55.0:amd64
 libboost-system1.55.0:amd64
 libbsd0:amd64
 libbz2-1.0:amd64
@@ -321,6 +329,7 @@ libcap2:amd64
 libcap2-bin
 libccolamd2.8.0:amd64
 libcddb2
+libcdio-cdda1
 libcdio13
 libcdparanoia0:amd64
 libcdr-0.1-1
@@ -350,6 +359,7 @@ libcpan-meta-perl
 libcroco3:amd64
 libcryptsetup4:amd64
 libcrystalhd3:amd64
+libcue1
 libcups2:amd64
 libcupsfilters1:amd64
 libcupsimage2:amd64
@@ -372,6 +382,7 @@ libdevmapper-event1.02.1:amd64
 libdevmapper1.02.1:amd64
 libdirectfb-1.2-9:amd64
 libdlrestrictions1
+libdnet:amd64
 libdns-export100
 libdns100
 libdpkg-perl
@@ -839,6 +850,7 @@ libreoffice-writer
 libresid-builder0c2a
 librest-0.7-0:amd64
 librevenge-0.0-0
+libroar2
 librsvg2-2:amd64
 librsvg2-common:amd64
 librtmp1:amd64
@@ -869,6 +881,7 @@ libsidplay2
 libsigc++-2.0-0c2a:amd64
 libsigsegv2:amd64
 libslang2:amd64
+libslp1:amd64
 libsm-dev:amd64
 libsm6:amd64
 libsmartcols1:amd64
@@ -1233,6 +1246,7 @@ qtchooser
 qtcore4-l10n
 ranger
 readline-common
+remind
 rename
 reportbug
 rpcbind
@@ -1270,21 +1284,30 @@ tcl8.6
 tcpd
 telnet
 tex-common
+tex-gyre
 texinfo
+texlive
 texlive-base
 texlive-binaries
 texlive-extra-utils
 texlive-font-utils
+texlive-fonts-recommended
+texlive-fonts-recommended-doc
+texlive-generic-extra
 texlive-generic-recommended
 texlive-latex-base
 texlive-latex-base-doc
+texlive-latex-extra
+texlive-latex-extra-doc
 texlive-latex-recommended
 texlive-latex-recommended-doc
 texlive-pictures
 texlive-pictures-doc
 texlive-pstricks
 texlive-pstricks-doc
+texlive-xetex
 time
+tipa
 tk
 tk8.6
 tmux
