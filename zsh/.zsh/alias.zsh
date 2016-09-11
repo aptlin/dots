@@ -9,6 +9,7 @@ alias bace='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*"
 alias bach='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /home /media/A/REC/home$(date +%m%y)'
 alias bacu="bach && bace"
 alias bu="cd /media/A"
+alias bud="ec $LEDGER_FILE"
 alias clbin="curl -f 'clbin=<-' https://clbin.com"
 alias cp="cp -r"
 alias cv="cd ~/WERKE/ADV/CV/"
