@@ -1,22 +1,3 @@
-#                 ██      
-#                ░██      
-#  ██████  ██████░██      
-# ░░░░██  ██░░░░ ░██████  
-#    ██  ░░█████ ░██░░░██ 
-#   ██    ░░░░░██░██  ░██ 
-#  ██████ ██████ ░██  ░██ 
-# ░░░░░░ ░░░░░░  ░░   ░░  
-#
-#  ▓▓▓▓▓▓▓▓▓▓
-# ░▓ author ▓ xero <x@xero.nu>
-# ░▓ code   ▓ http://code.xero.nu/dotfiles
-# ░▓ mirror ▓ http://git.io/.files
-# ░▓▓▓▓▓▓▓▓▓▓
-# ░░░░░░░░░░
-#
-
-
-
 # required for gpg-agent
 export GPG_TTY=$(tty)
 #export TERM=tmux-256color
@@ -45,7 +26,9 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LESSCHARSET=utf-8
 export BLOG_DIR=~/WERKE/sdll.github.io
+# Ledger
 
+export LEDGER_FILE=~/ORG/budget.ledger
 # Midnight Commander
 
 MC_SKIN=$HOME/.mc/lib/mc-solarized/solarized.ini
