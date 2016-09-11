@@ -51,4 +51,4 @@ elif [ -f /usr/bin/virtualenvwrapper.sh ]; then
 fi
 
 # RVM
-source /home/aleph.rvm/scripts/rvm
+source /home/aleph/.rvm/scripts/rvm
