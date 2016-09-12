@@ -42,6 +42,7 @@ alias ra="ranger"
 alias rbt="sudo reboot"
 alias rd="cd ~/lib/"
 alias rmrf="rm -rf"
+alias road="ec ~/ORG/road.org"
 alias ru='setxkbmap ru'
 alias s="cd ~/WERKE/sdll.github.io"
 alias scp="scp -r"
