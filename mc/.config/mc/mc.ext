@@ -456,7 +456,7 @@ shell/i/.svg
 	Open=/usr/lib/mc/ext.d/image.sh open svg
 
 include/image
-    Open=(fbi %f)
+    Open=(feh %f)
 #	Open=/usr/lib/mc/ext.d/image.sh open ALL_FORMATS
 #	View=%view{ascii} /usr/lib/mc/ext.d/image.sh view ALL_FORMATS
 #	View=(fbi %f)
