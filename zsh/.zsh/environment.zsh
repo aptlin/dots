@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 #HIST_STAMPS=mm/dd/yyyy
 
 # paths
-export PATH=$HOME/bin:/usr/local/bin:$PATH:/home/aleph/.mutt/builds/mutt-notmuch-py
+export PATH=$PYENV_ROOT/bin:$HOME/bin:/usr/local/bin:$PATH:/home/aleph/.mutt/builds/mutt-notmuch-py
 #export MANPATH=/usr/local/man:$MANPATH
 
 # preferred editor for local and remote sessions
@@ -42,6 +42,7 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
 fi
 
 # Python
+export PYENV_ROOT="$HOME/PROG/pyenv/"
 
 export WORKON_HOME=${HOME}/PROG/PIT
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
