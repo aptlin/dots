@@ -47,6 +47,7 @@ alias ru='setxkbmap ru'
 alias s="cd ~/WERKE/sdll.github.io"
 alias scp="scp -r"
 alias shtd='shutdown -h now'
+alias spiv='evince ~/WERKE/LIB/Spivak_C.djvu'
 alias sprunge="curl -f 'sprunge=<-' http://sprunge.us"
 alias st="sudo ntpdate pool.ntp.org; sudo hwclock --systohc"
 alias sude="sudo -e"
