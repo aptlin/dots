@@ -1015,6 +1015,7 @@ libsecret-common
 libselinux1:amd64
 libsemanage-common
 libsemanage1:amd64
+libsensors4:amd64
 libsepol1:amd64
 libservlet2.5-java
 libsgutils2-2
@@ -1282,6 +1283,7 @@ live-manual-pdf
 live-manual-txt
 live-tools
 lksctp-tools
+lm-sensors
 lmodern
 locales
 lockfile-progs
