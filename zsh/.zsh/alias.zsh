@@ -69,6 +69,7 @@ alias v="jfbview"
 alias wsnet='pushd /home/aleph/h/conf && ./wsnet.sh && popd'
 alias x='startx'
 alias xsel="xsel -b"
+alias za="zathura"
 alias zz="quit"
 alias ан='setxkbmap us'
 email() {
