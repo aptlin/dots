@@ -36,6 +36,7 @@ alias mou="devmon -a"
 alias nb="workon nikola; cd $BLOG_DIR; nikola auto"
 alias ng="workon nikola; cd $BLOG_DIR; nikola github_deploy -m "Yet another weblog update.""
 alias nt="cd ~/PROG/PIT/nikola/lib/python3.4/site-packages/nikola/data/themes/sdll/templates/"
+alias nts="cd ~/ORG/NOTES/"
 alias org='cd ~/ORG'
 alias psef="ps -ef"
 alias ra="ranger"
