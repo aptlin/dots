@@ -37,10 +37,6 @@ alias nb="workon nikola; cd $BLOG_DIR; nikola auto"
 alias ng="workon nikola; cd $BLOG_DIR; nikola github_deploy -m 'Yet another weblog update.'"
 alias bd="cd ~/WERKE/sdll.github.io/"
 alias nt="cd ~/PROG/PIT/nikola/lib/python3.4/site-packages/nikola/data/themes/sdll/templates/"
-alias nts="cd ~/ORG/NOTES/"
-alias snts="pushd ~/DOTS/zsh/.scripts/;./notes;popd"
-alias tnts="cd $TMP_NTS"
-alias nte="ec ~/WERKE/sdll.github.io/stories/notes.org"
 alias org='cd ~/ORG'
 alias psef="ps -ef"
 alias ra="ranger"
@@ -109,3 +105,10 @@ gdir() {
     fi
   done
 }
+
+# Notes
+
+alias nts="cd ~/ORG/NOTES/"
+alias snts="pushd ~/DOTS/zsh/.scripts/;./notes;popd"
+alias tnts="cd $TMP_NTS"
+alias nte="ec ~/WERKE/sdll.github.io/stories/notes.org"
