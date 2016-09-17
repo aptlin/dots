@@ -62,6 +62,7 @@ alias tor='sudo chroot --unserspec=tor:tor /opt/torchroot /usr/bin/tor'
 alias torb='pushd /home/aleph/DLD/tor-browser_en-us && ./start-tor-browser.desktop && popd'
 alias trans='transmission-daemon && iceweasel http://localhost:9091/'
 alias transk='sudo killall transmission-daemon'
+alias tmp='cd ~/TMP'
 alias unm="devmon -u"
 alias up="cd ../"
 alias upd='sudo aptitude update && sudo aptitude full-upgrade'
