@@ -41,12 +41,12 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
   export SSH_AUTH_SOCK
 fi
 
-# Python
-export PYENV_ROOT="$HOME/PROG/pyenv/"
-
-export WORKON_HOME=${HOME}/PROG/PIT
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-    source /usr/local/bin/virtualenvwrapper.sh
-elif [ -f /usr/bin/virtualenvwrapper.sh ]; then
-   source /usr/bin/virtualenvwrapper.sh
-fi
+## Python
+#export PYENV_ROOT="$HOME/PROG/pyenv/"
+#
+#export WORKON_HOME=${HOME}/PROG/PIT
+#if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+#    source /usr/local/bin/virtualenvwrapper.sh
+#elif [ -f /usr/bin/virtualenvwrapper.sh ]; then
+#   source /usr/bin/virtualenvwrapper.sh
+#fi
