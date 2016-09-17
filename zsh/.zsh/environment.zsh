@@ -1,5 +1,6 @@
 # required for gpg-agent
 export GPG_TTY=$(tty)
+
 #export TERM=tmux-256color
 export ZSH=$HOME/.oh-my-zsh
 
@@ -25,6 +26,10 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LESSCHARSET=utf-8
+
+# Dotfiles
+
+export DOTS=~/DOTS
 
 # Blog
 export BLOG_DIR=~/WERKE/sdll.github.io
