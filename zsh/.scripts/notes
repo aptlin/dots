@@ -1,0 +1,54 @@
+#!/bin/zsh
+
+#+AUTHOR: sdll
+#+DATE: 17/09/2016
+#+COMMENT: Please feel free to use the code for good. Happy hacking!
+
+# ------------------------------------------------------------------------------
+# Remove the debris
+# ------------------------------------------------------------------------------
+
+rm -f $NTS_TMP_LOG;
+
+# ------------------------------------------------------------------------------
+# Launch!
+# ------------------------------------------------------------------------------
+
+cd $PMT_NTS;
+
+# d is a predefined class for the notes to be sorted into
+# f is the file of the note
+if [ -n "$(ls -A $TMP_NTS)" ]; then
+    for d in *; do
+        if [ -d "$d" ] && [ -n "$(ls -A $TMP_NTS)" ]; then
+            cd $TMP_NTS;
+            for f in *; do
+                if [ -f "$f" ]; then
+                    if [[ $(basename "$f") = *"${d}"* ]]
+                    then
+                        echo "Hurray, there is a note $f for $d!";
+                        echo \
+                            "Moving the note to the $d directory in $PMT_NTS..."
+
+                        new_place=$PMT_NTS/$d
+
+                        mv $f $new_place
+                        echo "Parsing the file name for publishing..."
+                        filename=$(basename "$f")
+                        new_f=$(echo ${filename%.*} | sed -r 's/[_]+/:/g' | \
+                                       sed -r 's/[\+]+/ /g' | \
+                                       sed -r 's/([0-9])([a-zA-Z])/\1 \2/g')
+                        echo "$new_f" >> $NTS_TMP_LOG
+
+                        echo "Done!"
+
+                    fi
+                fi
+            done
+
+    fi
+    cd $PMT_NTS
+    done
+else
+    echo "There are no new notes in $TMP_NTS."
+fi
