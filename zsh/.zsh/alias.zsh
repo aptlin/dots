@@ -47,6 +47,7 @@ alias road="ec ~/ORG/road.org"
 alias ru='setxkbmap ru'
 alias s="cd ~/WERKE/sdll.github.io"
 alias scp="scp -r"
+alias sch="ec ~/ORG/schedule.org"
 alias shtd='shutdown -h now'
 alias spiv='evince ~/WERKE/LIB/Spivak_C.djvu'
 alias sprunge="curl -f 'sprunge=<-' http://sprunge.us"
