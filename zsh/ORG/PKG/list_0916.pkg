@@ -115,6 +115,7 @@ dosfstools
 dpkg
 dpkg-dev
 dunst
+dvipng
 e2fslibs:amd64
 e2fsprogs
 efibootmgr
