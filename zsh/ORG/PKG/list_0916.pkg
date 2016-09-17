@@ -32,6 +32,7 @@ bash-completion
 bc
 bind9-host
 binutils
+blt
 bluetooth
 bluez
 bsd-mailx
@@ -1387,17 +1388,22 @@ procps
 prosper
 ps2eps
 psmisc
+pylint
 python
 python-apt
 python-apt-common
+python-astroid
 python-cairo
 python-chardet
 python-debian
 python-debianbts
 python-defusedxml
 python-docutils
+python-egenix-mxdatetime
+python-egenix-mxtools
 python-gobject-2
 python-gtk2
+python-logilab-common
 python-minimal
 python-numpy
 python-pil:amd64
@@ -1409,6 +1415,7 @@ python-six
 python-soappy
 python-support
 python-talloc
+python-tk
 python-wstools
 python2.7
 python2.7-dev
@@ -1499,6 +1506,7 @@ time
 tipa
 tk
 tk8.6
+tk8.6-blt2.5
 tmux
 traceroute
 transmission-cli
