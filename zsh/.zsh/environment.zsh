@@ -25,7 +25,13 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LESSCHARSET=utf-8
+
+# Blog
 export BLOG_DIR=~/WERKE/sdll.github.io
+export TMP_NTS=~/TMP/NOTES
+export PMT_NTS=~/ORG/NOTES
+export NTS_LOG=$BLOG_DIR/stories/notes.org
+
 # Ledger
 
 export LEDGER_FILE=~/ORG/budget.ledger
