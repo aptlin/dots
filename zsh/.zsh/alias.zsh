@@ -38,6 +38,7 @@ alias ng="workon nikola; cd $BLOG_DIR; nikola github_deploy -m 'Yet another webl
 alias bd="cd ~/WERKE/sdll.github.io/"
 alias nt="cd ~/PROG/PIT/nikola/lib/python3.4/site-packages/nikola/data/themes/sdll/templates/"
 alias nts="cd ~/ORG/NOTES/"
+alias tnts="cd $TMP_NTS"
 alias nte="ec ~/WERKE/sdll.github.io/stories/notes.org"
 alias org='cd ~/ORG'
 alias psef="ps -ef"
