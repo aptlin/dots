@@ -35,7 +35,7 @@ if [ -n "$(ls -A $TMP_NTS)" ]; then
                         mv $f $new_place
                         echo "Parsing the file name for publishing..."
                         filename=$(basename "$f")
-                        new_f=$(echo ${filename%.*} | sed -r 's/[_]+/:/g' | \
+                        new_f=$(echo ${filename%.*} | sed -r 's/[_]+/: /g' | \
                                        sed -r 's/[\+]+/ /g' | \
                                        sed -r 's/([0-9])([a-zA-Z])/\1 \2/g')
                         echo "$new_f" >> $NTS_TMP_LOG
