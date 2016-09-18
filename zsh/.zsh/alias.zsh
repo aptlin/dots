@@ -41,6 +41,7 @@ alias nt="cd ~/PROG/PIT/nikola/lib/python3.4/site-packages/nikola/data/themes/sd
 alias org='cd ~/ORG'
 alias orge='ec ~/.emacs.d/lisp/orgmode.org'
 alias psef="ps -ef"
+alias pref="ec ~/ORG/pref.org"
 alias ra="ranger"
 alias rbt="sudo reboot"
 alias rd="cd ~/lib/"
