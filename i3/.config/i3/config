@@ -41,6 +41,7 @@ bindsym $mod+Shift+e exit
 bindsym $mod+g exec gimp
 #start icecat 
 bindsym $mod+w exec iceweasel
+bindsym $mod+m exec iceweasel http://wqxr.radio.net/
 # kill focused window
 bindsym $mod+Shift+quotedbl kill
 
