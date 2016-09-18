@@ -22,6 +22,7 @@ alias ema="cd ~/.emacs.d"
 alias eth='sudo netctl start ethernet-dhcp'
 alias gb='gemset && sd && rm -r _site && bundle exec jekyll serve'
 alias gdot="pushd ~/.zsh/ && ./gdot && popd"
+alias gmor="python3 ~/TMP/PROG/M/goodmorning.py"
 alias genplaylist="cd ~/music;find . -name '*.mp3' -o -name '*.flac'|sed -e 's%^./%%g' > ~/.mpd/playlists/all.m3u"
 alias gt="git add .; read -p 'comment: ' comment; git commit -am '$comment'; git push -u origin master"
 alias hw="cd ~/hw/"
