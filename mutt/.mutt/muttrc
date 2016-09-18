@@ -55,8 +55,10 @@ hdr_order from: to: cc: date: subject:  # and in this order
 
 
 set from="sasha.delly@gmail.com"
-set sendmail = "msmtp -a sasha.delly"
-set sendmail_wait = 0
+set sendmail = "msmtp"
+set envelope_from=yes
+macro generic "<esc>1" ":set from=sasha.delly@gmail.com
+macro generic "<esc>2" ":set from=sasha.illarionov@mail.utoronto.ca"
 unset record
 
 

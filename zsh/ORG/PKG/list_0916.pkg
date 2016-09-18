@@ -134,6 +134,7 @@ exim4-base
 exim4-config
 exim4-daemon-light
 fakeroot
+feed2imap
 feh
 file
 findutils
@@ -1443,7 +1444,11 @@ rsync
 rsyslog
 ruby
 ruby-dev
+ruby-feedparser
+ruby-ffi
 ruby-full
+ruby-magic
+ruby-rubymail
 ruby2.1
 ruby2.1-dev:amd64
 ruby2.1-doc

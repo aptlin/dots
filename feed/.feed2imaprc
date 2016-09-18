@@ -1,0 +1,4 @@
+feeds:
+- name: UToronto Physics
+  url: https://www.physics.utoronto.ca/news-and-events/upcoming-events/RSS
+  target: maildir:///home/aleph/TMP/RSS
