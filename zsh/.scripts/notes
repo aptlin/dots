@@ -38,7 +38,7 @@ if [ -n "$(ls -A $TMP_NTS)" ]; then
                         new_f=$(echo ${filename%.*} | sed -r 's/[_]+/: /g' | \
                                        sed -r 's/[\+]+/ /g' | \
                                        sed -r 's/([0-9])([a-zA-Z])/\1 \2/g')
-                        echo "$new_f" >> $NTS_TMP_LOG
+                        echo "  - [[https://github.com/sdll/NOTES/blob/master/$d/$f][$new_f]]" >> $NTS_TMP_LOG
 
                         echo "Done!"
 
@@ -52,3 +52,8 @@ if [ -n "$(ls -A $TMP_NTS)" ]; then
 else
     echo "There are no new notes in $TMP_NTS."
 fi
+
+cd $PMT_NTS
+git add --all
+git commit -a -m "$(date +%y%m%d)"
+git push origin $(git_current_branch)
