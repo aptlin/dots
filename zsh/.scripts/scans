@@ -1,5 +1,5 @@
 #!/bin/zsh
 echo "How do you want to categorize the file?"
 read name
-convert  -density 300x300 -quality 7 -compress jpeg $name.pdf
+convert  -density 300x300 -quality 7 -compress jpeg *.jpg $name.pdf
 zathura $name.pdf && mv $name.pdf $TMP_NTS
