@@ -1,3 +1,4 @@
+;; Thank you, rrottier. http://registry.gimp.org/node/19822
 (define (batch-whiteboard-clean pattern)
 (let* ((filelist (cadr (file-glob pattern 1))))
 (while (not (null? filelist))
