@@ -69,7 +69,6 @@ crda
 cron
 cryptsetup
 cryptsetup-bin
-cups
 cups-browsed
 cups-bsd
 cups-client
@@ -170,6 +169,7 @@ gcc-4.9-base:amd64
 gconf-service
 gconf2
 gconf2-common
+gcr
 gdisk
 geoclue-2.0
 geoip-database
@@ -189,6 +189,7 @@ glib-networking-common
 glib-networking-services
 gnome-icon-theme
 gnome-icon-theme-symbolic
+gnome-keyring
 gnome-mime-data
 gnome-user-guide
 gnucash
@@ -234,7 +235,6 @@ hicolor-icon-theme
 hledger
 host
 hostname
-hplip
 hplip-data
 hunspell-en-us
 i3
@@ -248,6 +248,8 @@ iceweasel
 icnsutils
 ienglish-common
 ifupdown
+imagemagick
+imagemagick-6.q16
 imagemagick-common
 info
 init
@@ -551,8 +553,12 @@ libgc1c2:amd64
 libgcc-4.8-dev:amd64
 libgcc-4.9-dev:amd64
 libgcc1:amd64
+libgck-1-0:amd64
 libgconf-2-4:amd64
 libgconf2-4:amd64
+libgcr-3-common
+libgcr-base-3-1:amd64
+libgcr-ui-3-1:amd64
 libgcrypt20:amd64
 libgd3:amd64
 libgdbm3:amd64
@@ -784,6 +790,7 @@ libm17n-0
 libmad0:amd64
 libmagic1:amd64
 libmagickcore-6.q16-2:amd64
+libmagickcore-6.q16-2-extra:amd64
 libmagickwand-6.q16-2:amd64
 libmail-box-perl
 libmailtools-perl
@@ -833,6 +840,7 @@ libnet-smtp-ssl-perl
 libnet-ssleay-perl
 libnetfilter-acct1:amd64
 libnetfilter-conntrack3:amd64
+libnetpbm10
 libnettle4:amd64
 libnewt0.52:amd64
 libnfnetlink0:amd64
@@ -840,7 +848,10 @@ libnfsidmap2:amd64
 libnl-3-200:amd64
 libnl-genl-3-200:amd64
 libnl-route-3-200:amd64
+libnm-glib-vpn1:amd64
 libnm-glib4:amd64
+libnm-gtk-common
+libnm-gtk0:amd64
 libnm-util2:amd64
 libnotify4:amd64
 libnotmuch3
@@ -870,6 +881,7 @@ libosp5
 libotf0
 libp11-kit0:amd64
 libpackage-constants-perl
+libpam-gnome-keyring
 libpam-modules:amd64
 libpam-modules-bin
 libpam-runtime
@@ -998,6 +1010,7 @@ libreoffice-draw
 libreoffice-impress
 libreoffice-java-common
 libreoffice-math
+libreoffice-pdfimport
 libreoffice-report-builder-bin
 libreoffice-sdbc-firebird
 libreoffice-sdbc-hsqldb
@@ -1329,6 +1342,7 @@ menu
 mime-support
 minissdpd
 mlocate
+mobile-broadband-provider-info
 modemmanager
 mount
 msmtp
@@ -1346,7 +1360,9 @@ nepomuk-core-data
 net-tools
 netbase
 netcat-traditional
+netpbm
 network-manager
+network-manager-gnome
 nfacct
 nfs-common
 notmuch
@@ -1364,6 +1380,8 @@ openssh-sftp-server
 openssl
 os-prober
 oxygen-icon-theme
+p11-kit
+p11-kit-modules:amd64
 pandoc
 pandoc-data
 parallel
@@ -1399,9 +1417,7 @@ prerex
 preview-latex-style
 printer-driver-cups-pdf
 printer-driver-gutenprint
-printer-driver-hpcups
 printer-driver-hpijs
-printer-driver-postscript-hp
 procmail
 procps
 prosper
@@ -1495,6 +1511,7 @@ strace
 stterm
 suckless-tools
 sudo
+syncthing
 systemd
 systemd-sysv
 sysv-rc
