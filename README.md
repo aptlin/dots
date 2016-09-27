@@ -1,2 +1,0 @@
-# DOTS
-sdll`s dotfiles
