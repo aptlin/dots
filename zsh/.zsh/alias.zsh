@@ -116,6 +116,7 @@ gdir() {
 alias nts="cd ~/ORG/NOTES/"
 alias snts="pushd ~/DOTS/zsh/.scripts/;./notes;popd"
 alias pnts="pushd ~/DOTS/zsh/.scripts/;./scans;popd"
+alias spnts="snts && pnts"
 alias tnts="cd $TMP_NTS"
 alias nte="ec ~/WERKE/sdll.github.io/stories/notes.org"
 alias gnts="gdir ORG/NOTES"
