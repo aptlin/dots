@@ -26,7 +26,6 @@ alias gmor="pushd ~/TMP/PROG/M/; python3 ~/TMP/PROG/M/goodmorning.py; popd"
 alias genplaylist="cd ~/music;find . -name '*.mp3' -o -name '*.flac'|sed -e 's%^./%%g' > ~/.mpd/playlists/all.m3u"
 alias gt="git add .; read -p 'comment: ' comment; git commit -am '$comment'; git push -u origin master"
 alias hw="cd ~/WERKE/HW"
-alias le="cd $LETTERS; ec $LETTERS/$(date +%Y%m%d)_letter.org"
 alias lib="cd ~/WERKE/LIB/"
 alias ll="ls -lahf --color=auto"
 alias lsl="ls -lhf --color=auto"
@@ -133,3 +132,7 @@ alias bd="cd ~/WERKE/sdll.github.io/"
 alias nt="cd ~/PROG/PIT/nikola/lib/python3.4/site-packages/nikola/data/themes/sdll/templates/"
 alias nna="cd $BLOG_DIR; workon nikola; nikola new_post -e -f orgmode; deactivate"
 alias nnp="cd $BLOG_DIR; workon nikola; nikola new_post -e -p -f orgmode; deactivate"
+
+# Org
+
+alias le="pushd ~/DOTS/zsh/.scripts/;./letters;popd"
