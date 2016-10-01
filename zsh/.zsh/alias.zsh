@@ -69,6 +69,7 @@ alias updk='sudo mkinitcpio -p linux-libre'
 alias v="jfbview"
 alias wsnet='pushd /home/aleph/h/conf && ./wsnet.sh && popd'
 alias x='startx'
+alias xclip='xclip -selection c'
 alias xsel="xsel -b"
 alias za="zathura"
 alias zz="quit"
