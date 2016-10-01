@@ -27,9 +27,10 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LESSCHARSET=utf-8
 
-# Dotfiles
+# Dotfiles and Org
 
 export DOTS=~/DOTS
+export LETTERS=~/ARCHIVE/LETTERS
 
 # Blog
 export BLOG_DIR=~/WERKE/sdll.github.io
