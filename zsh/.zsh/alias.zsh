@@ -113,7 +113,7 @@ gdir() {
 }
 
 # Notes
-
+alias arb="ec $BLOG_DIR/stories/arbeit.org "
 alias nts="cd ~/ORG/NOTES/"
 alias snts="pushd ~/DOTS/zsh/.scripts/;./notes;popd"
 alias pnts="pushd ~/DOTS/zsh/.scripts/;./scans;popd"
