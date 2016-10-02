@@ -67,4 +67,4 @@ fi
 
 #UMu
 
-export UMU_DIR = "~/WERKE/umus.github.io/"
+export UMU_DIR=~/WERKE/umus.github.io/
