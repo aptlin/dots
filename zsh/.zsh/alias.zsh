@@ -136,7 +136,7 @@ alias s="cd ~/WERKE/sdll.github.io"
 # Org
 
 alias le="pushd ~/DOTS/zsh/.scripts/;./letters;popd"
-
+alias mysn="cd $HOME/.emacs.d/mysnippets/"
 # UMu
 
 alias u="cd $UMU_DIR"
