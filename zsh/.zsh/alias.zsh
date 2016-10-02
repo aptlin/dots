@@ -45,7 +45,6 @@ alias rd="cd ~/lib/"
 alias rmrf="rm -rf"
 alias road="ec ~/ORG/road.org"
 alias ru='setxkbmap ru'
-alias s="cd ~/WERKE/sdll.github.io"
 alias scp="scp -r"
 alias sch="ec ~/ORG/schedule.org"
 alias shtd='shutdown -h now'
@@ -132,7 +131,12 @@ alias bd="cd ~/WERKE/sdll.github.io/"
 alias nt="cd ~/PROG/PIT/nikola/lib/python3.4/site-packages/nikola/data/themes/sdll/templates/"
 alias nna="cd $BLOG_DIR; workon nikola; nikola new_post -e -f orgmode; deactivate"
 alias nnp="cd $BLOG_DIR; workon nikola; nikola new_post -e -p -f orgmode; deactivate"
+alias s="cd ~/WERKE/sdll.github.io"
 
 # Org
 
 alias le="pushd ~/DOTS/zsh/.scripts/;./letters;popd"
+
+# UMu
+
+alias u="cd $UMU_DIR"
