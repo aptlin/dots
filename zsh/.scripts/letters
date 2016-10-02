@@ -1,0 +1,14 @@
+#!/bin/zsh
+
+cd $LETTERS
+
+name=$(date +%Y%m%d)_letter
+if [[ -e $name.org ]] ; then
+    i=0
+    while [[ -e $name-$i.org ]] ; do
+        let i++
+    done
+    name=$name-$i
+fi
+
+emacsclient -nw --alternate-editor= $name.org
