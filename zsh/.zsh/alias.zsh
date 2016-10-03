@@ -127,13 +127,14 @@ alias se="pushd $DOTS/zsh/.scripts/"
 # Blog
 
 alias nb="workon nikola; nikola auto; deactivate"
+alias nbb="nikola build"
 alias ng="workon nikola; cd $BLOG_DIR; nikola github_deploy -m 'Yet another weblog update.'; deactivate"
 alias bd="cd ~/WERKE/sdll.github.io/"
 alias nt="cd ~/PROG/PIT/nikola/lib/python3.4/site-packages/nikola/data/themes/sdll/templates/"
 alias nna="cd $BLOG_DIR; workon nikola; nikola new_post -e -f orgmode; deactivate"
 alias nnp="cd $BLOG_DIR; workon nikola; nikola new_post -e -p -f orgmode; deactivate"
 alias s="cd ~/WERKE/sdll.github.io"
-
+alias nik="workon nikola"
 # Org
 
 alias le="pushd ~/DOTS/zsh/.scripts/;./letters;popd"
