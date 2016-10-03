@@ -126,7 +126,7 @@ alias se="pushd $DOTS/zsh/.scripts/"
 
 # Blog
 
-alias nb="workon nikola; cd $BLOG_DIR; nikola auto; deactivate"
+alias nb="workon nikola; nikola auto; deactivate"
 alias ng="workon nikola; cd $BLOG_DIR; nikola github_deploy -m 'Yet another weblog update.'; deactivate"
 alias bd="cd ~/WERKE/sdll.github.io/"
 alias nt="cd ~/PROG/PIT/nikola/lib/python3.4/site-packages/nikola/data/themes/sdll/templates/"
