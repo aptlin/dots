@@ -19,6 +19,7 @@ alias ec="emacsclient -nw --alternate-editor="
 alias ecc="cd ~/.emacs.d && ec ~/.emacs.d/init.el"
 alias eco="ec ~/.emacs.d/lisp/init-org.el"
 alias ema="cd ~/.emacs.d"
+alias emac="ec ~/.emacs.d/init.el"
 alias eth='sudo netctl start ethernet-dhcp'
 alias gb='gemset && sd && rm -r _site && bundle exec jekyll serve'
 alias gdot="pushd ~/.zsh/ && ./gdot && popd"
