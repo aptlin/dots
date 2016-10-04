@@ -49,7 +49,7 @@ alias ru='setxkbmap ru'
 alias scp="scp -r"
 alias sch="ec ~/ORG/schedule.org"
 alias shtd='shutdown -h now'
-alias spiv='evince ~/WERKE/LIB/Spivak_C.djvu'
+
 alias sprunge="curl -f 'sprunge=<-' http://sprunge.us"
 alias st="sudo ntpdate pool.ntp.org; sudo hwclock --systohc"
 alias sude="sudo -e"
@@ -144,6 +144,10 @@ alias le="pushd ~/DOTS/zsh/.scripts/;./letters;popd"
 alias mysn="cd $HOME/.emacs.d/mysnippets/"
 alias wer="cd ~/WERKE/"
 
+# Books
+
+alias spiv='evince ~/WERKE/LIB/MAT/Spivak_C.djvu'
+alias linal='evince ~/WERKE/LIB/MAT/Friedberg_LA.djvu '
 # UMu
 
 alias u="cd $UMU_DIR"
