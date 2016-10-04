@@ -139,6 +139,8 @@ alias nik="workon nikola"
 
 alias le="pushd ~/DOTS/zsh/.scripts/;./letters;popd"
 alias mysn="cd $HOME/.emacs.d/mysnippets/"
+alias wer="cd ~/WERKE/"
+
 # UMu
 
 alias u="cd $UMU_DIR"
