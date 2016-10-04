@@ -143,7 +143,7 @@ alias nik="workon nikola"
 alias le="pushd ~/DOTS/zsh/.scripts/;./letters;popd"
 alias mysn="cd $HOME/.emacs.d/mysnippets/"
 alias wer="cd ~/WERKE/"
-
+alias fls="cd ~/TMP/FLS"
 # Books
 
 alias spiv='evince ~/WERKE/LIB/MAT/Spivak_C.djvu'
