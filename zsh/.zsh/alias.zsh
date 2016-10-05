@@ -150,4 +150,4 @@ alias fls="cd ~/TMP/FLS"
 
 alias u="cd $UMU_DIR"
 alias uag="ec $UMU_DIR/stories/agenda.org"
-alias ut="cd $UMU_DIR/uoft.umu"
+alias ut="cd $UMU_DIR/../uoft.umu"
