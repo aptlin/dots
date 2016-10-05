@@ -309,6 +309,7 @@ krb5-locales
 krb5-multidev
 krita
 krita-data
+latexmk
 ledger
 less
 liba52-0.7.4
