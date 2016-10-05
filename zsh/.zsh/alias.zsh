@@ -148,6 +148,6 @@ alias fls="cd ~/TMP/FLS"
 alias lat="latexmk -pvc -pdf"
 # UMu
 
-alias u="cd $UMU_DIR"
+alias u="cd $UMU_DIR/stories"
 alias uag="ec $UMU_DIR/stories/agenda.org"
 alias ut="cd $UMU_DIR/../uoft.umu"
