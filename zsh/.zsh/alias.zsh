@@ -151,3 +151,4 @@ alias linal='evince ~/WERKE/LIB/MAT/Friedberg_LA.djvu '
 # UMu
 
 alias u="cd $UMU_DIR"
+alias uag="ec $UMU_DIR/stories/agenda.org"
