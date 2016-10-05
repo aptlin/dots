@@ -145,7 +145,7 @@ alias le="pushd ~/DOTS/zsh/.scripts/;./letters;popd"
 alias mysn="cd $HOME/.emacs.d/mysnippets/"
 alias wer="cd ~/WERKE/"
 alias fls="cd ~/TMP/FLS"
-
+alias lat="latexmk -pvc -pdf"
 # UMu
 
 alias u="cd $UMU_DIR"
