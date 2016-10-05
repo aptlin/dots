@@ -124,6 +124,8 @@ e2fslibs:amd64
 e2fsprogs
 efibootmgr
 eject
+elinks
+elinks-data
 emacs
 emacs24
 emacs24-bin-common
@@ -166,6 +168,7 @@ ftp
 fuse
 g++
 g++-4.9
+gawk
 gcc
 gcc-4.8
 gcc-4.8-base:amd64
@@ -269,6 +272,7 @@ init
 init-system-helpers
 initramfs-tools
 initscripts
+inkscape
 insserv
 install-info
 iproute2
@@ -562,6 +566,7 @@ libfreetype6:amd64
 libfreetype6-dev
 libfribidi0:amd64
 libfs6:amd64
+libfsplib0
 libfuse2:amd64
 libgail18:amd64
 libgbm1:amd64
@@ -642,6 +647,7 @@ libgs9-common
 libgsasl7
 libgsf-1-114
 libgsf-1-common
+libgsl0ldbl
 libgsm1:amd64
 libgssapi-krb5-2:amd64
 libgssrpc4:amd64
@@ -656,6 +662,7 @@ libgtk2.0-0:amd64
 libgtk2.0-bin
 libgtk2.0-common
 libgtkmm-2.4-1c2a:amd64
+libgtkspell0
 libguard-perl
 libgudev-1.0-0:amd64
 libgusb2:amd64
@@ -695,6 +702,8 @@ libiec61883-0:amd64
 libieee1284-3:amd64
 libijs-0.35:amd64
 libilmbase6:amd64
+libimage-magick-perl
+libimage-magick-q16-perl
 libimlib2
 libimobiledevice4:amd64
 libintl-perl
@@ -810,6 +819,7 @@ liblzo2-2:amd64
 libm17n-0
 libmad0:amd64
 libmagic1:amd64
+libmagick++-6.q16-5:amd64
 libmagickcore-6.q16-2:amd64
 libmagickcore-6.q16-2-extra:amd64
 libmagickwand-6.q16-2:amd64
@@ -939,6 +949,7 @@ libpixman-1-0:amd64
 libpixman-1-dev
 libplasma3
 libplist2:amd64
+libplot2c2
 libpng12-0:amd64
 libpng12-dev:amd64
 libpod-latex-perl
@@ -962,6 +973,7 @@ libprocps3:amd64
 libproxy-tools
 libproxy1:amd64
 libpsl0:amd64
+libpstoedit0c2a
 libptexenc1
 libpth20:amd64
 libpthread-stubs0-dev:amd64
@@ -1152,6 +1164,7 @@ libtirpc1:amd64
 libtk8.5:amd64
 libtk8.6:amd64
 libtokyocabinet9:amd64
+libtre5:amd64
 libtsan0:amd64
 libturbojpeg1:amd64
 libtwolame0
@@ -1191,6 +1204,8 @@ libvorbis0a:amd64
 libvorbisenc2:amd64
 libvorbisfile3:amd64
 libvpx1:amd64
+libwacom-common
+libwacom2:amd64
 libwavpack1:amd64
 libwayland-client0:amd64
 libwayland-cursor0:amd64
@@ -1223,6 +1238,7 @@ libwinpr-synch0.1:amd64
 libwinpr-sysinfo0.1:amd64
 libwinpr-thread0.1:amd64
 libwinpr-utils0.1:amd64
+libwmf-bin
 libwmf0.2-7:amd64
 libwpd-0.10-10
 libwpg-0.3-3
@@ -1422,6 +1438,7 @@ pdf2djvu
 perl
 perl-base
 perl-modules
+perlmagick
 phonon:amd64
 phonon-backend-vlc:amd64
 pinentry-gtk2
@@ -1452,6 +1469,7 @@ procps
 prosper
 ps2eps
 psmisc
+pstoedit
 pylint
 python
 python-apt
@@ -1472,6 +1490,7 @@ python-gobject-2
 python-gtk2
 python-imaging
 python-logilab-common
+python-lxml
 python-minimal
 python-numpy
 python-pexpect
@@ -1588,6 +1607,7 @@ tk8.6
 tk8.6-blt2.5
 tmux
 traceroute
+transfig
 transmission-cli
 transmission-common
 transmission-daemon
@@ -1676,6 +1696,7 @@ xserver-xorg
 xserver-xorg-core
 xserver-xorg-input-evdev
 xserver-xorg-input-mtrack
+xserver-xorg-input-wacom
 xserver-xorg-video-intel
 xterm
 xtrans-dev

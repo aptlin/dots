@@ -24,7 +24,27 @@ if [ -n "$(ls -A $TMP_NTS)" ]; then
             cd $TMP_NTS;
             for f in *; do
                 if [ -f "$f" ]; then
-                    if [[ $(basename "$f") = *"${d}"* ]]
+                    if [[ $(basename "$f") = *"ARBEIT"* ]]
+                    then
+                        echo "Hurray, there is a homework $f for $d!";
+                        echo \
+                            "Moving the file to the $d directory in $PMT_NTS..."
+
+                        new_place=$PMT_NTS/ARBEIT
+
+                        mv $f $new_place
+                        echo "Parsing the file name for publishing..."
+                        filename=$(basename "$f")
+                        new_f=$(echo ${filename%.*} | sed -r 's/[_]+/: /g' | \
+                                       sed -r 's/[\+]+/ /g' | \
+                                       sed -r 's/[ARBEIT]+//g' | \
+                                       sed -r 's/([0-9])([a-zA-Z])/\1 \2/g')
+                        echo "  - [[https://github.com/sdll/NOTES/blob/master/$d/$f][$new_f]]" >> $NTS_TMP_LOG
+
+                        echo "Done!"
+
+
+                    elif [[ $(basename "$f") = *"${d}"* ]]
                     then
                         echo "Hurray, there is a note $f for $d!";
                         echo \
