@@ -138,16 +138,14 @@ alias na="workon nikola; nikola new_post -e -f orgmode; deactivate"
 alias np="workon nikola; nikola new_post -e -p -f orgmode; deactivate"
 alias s="cd ~/WERKE/sdll.github.io"
 alias nik="workon nikola"
+alias nli="ec $BLOG_DIR/stories/links_math.org"
 # Org
 
 alias le="pushd ~/DOTS/zsh/.scripts/;./letters;popd"
 alias mysn="cd $HOME/.emacs.d/mysnippets/"
 alias wer="cd ~/WERKE/"
 alias fls="cd ~/TMP/FLS"
-# Books
 
-alias spiv='evince ~/WERKE/LIB/MAT/Spivak_C.djvu'
-alias linal='evince ~/WERKE/LIB/MAT/Friedberg_LA.djvu '
 # UMu
 
 alias u="cd $UMU_DIR"
