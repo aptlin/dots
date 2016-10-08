@@ -146,6 +146,7 @@ alias mysn="cd $HOME/.emacs.d/mysnippets/"
 alias wer="cd ~/WERKE/"
 alias fls="cd ~/TMP/FLS"
 alias lat="latexmk -pvc -pdf"
+alias tse="ec ~/TMP/PROG/M/"
 # UMu
 
 alias u="cd $UMU_DIR/stories"
