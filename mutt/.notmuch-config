@@ -33,6 +33,7 @@ path=/home/aleph/.mail/delly
 [user]
 name=Alexander Illarionov
 primary_email=sasha.delly@gmail.com
+other_email=sasha.illarionov@mail.utoronto.ca
 
 # Configuration for "notmuch new"
 #

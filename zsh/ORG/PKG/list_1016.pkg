@@ -34,6 +34,7 @@ bash-completion
 bc
 bind9-host
 binutils
+bkchem
 blt
 bluetooth
 bluez
@@ -364,6 +365,7 @@ libaudiofile1:amd64
 libaudit-common
 libaudit1:amd64
 libauthen-sasl-perl
+libav-tools
 libavahi-client3:amd64
 libavahi-common-data:amd64
 libavahi-common3:amd64
@@ -371,6 +373,8 @@ libavahi-core7:amd64
 libavahi-glib1:amd64
 libavc1394-0:amd64
 libavcodec56:amd64
+libavdevice55:amd64
+libavfilter5:amd64
 libavformat56:amd64
 libavogadro1
 libavresample2:amd64
@@ -396,6 +400,7 @@ libboost-iostreams1.55.0:amd64
 libboost-python1.55.0
 libboost-regex1.55.0:amd64
 libboost-system1.55.0:amd64
+libbs2b0
 libbsd0:amd64
 libbz2-1.0:amd64
 libc-bin
@@ -417,6 +422,7 @@ libcarp-clan-perl
 libccolamd2.8.0:amd64
 libcddb2
 libcdio-cdda1
+libcdio-paranoia1
 libcdio13
 libcdparanoia0:amd64
 libcdr-0.1-1
@@ -847,6 +853,7 @@ libmpcdec6:amd64
 libmpdec2:amd64
 libmpeg2-4:amd64
 libmpfr4:amd64
+libmpg123-0:amd64
 libmro-compat-perl
 libmspub-0.1-1
 libmtdev1:amd64
@@ -901,6 +908,8 @@ libofx6:amd64
 libogg0:amd64
 libopenbabel4
 libopencolorio1
+libopencv-core2.4:amd64
+libopencv-imgproc2.4:amd64
 libopenexr6:amd64
 libopenjp2-7:amd64
 libopenjpeg5:amd64
@@ -1032,6 +1041,8 @@ libqtdbus4:amd64
 libqtgui4:amd64
 libqtwebkit4:amd64
 libquadmath0:amd64
+libquvi-scripts
+libquvi7:amd64
 libraptor2-0:amd64
 librasqal3:amd64
 libraw10:amd64
@@ -1136,6 +1147,7 @@ libtag1-vanilla:amd64
 libtag1c2a:amd64
 libtalloc2:amd64
 libtasn1-6:amd64
+libtbb2
 libtcl8.5:amd64
 libtcl8.6:amd64
 libtcltk-ruby
@@ -1391,6 +1403,7 @@ mlocate
 mobile-broadband-provider-info
 modemmanager
 mount
+mplayer2
 msmtp
 mtp-tools
 multiarch-support
@@ -1497,6 +1510,7 @@ python-numpy
 python-pexpect
 python-pil:amd64
 python-pkg-resources
+python-pmw
 python-pygments
 python-qt4
 python-renderpm:amd64
@@ -1535,6 +1549,7 @@ ri
 rpcbind
 rsync
 rsyslog
+rtmpdump
 ruby
 ruby-dev
 ruby-feedparser
@@ -1704,6 +1719,7 @@ xtrans-dev
 xz-utils
 yelp
 yelp-xsl
+youtube-dl
 zathura
 zathura-djvu
 zathura-ps

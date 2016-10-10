@@ -17,7 +17,10 @@ set mail_check=0
 
 # Sidebar Patch --------------------------------------
 set status_chars  = " *%A"
-set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+set status_format="-%r-sasha.delly@gmail.com: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---""
+
+#set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+
 set date_format = "%m/%d"
 set index_format = "[%Z]  %D  %-20.20F  %s"
 set sort = threads                         # like gmail
@@ -73,11 +76,9 @@ mailboxes +delly/INBOX \
           +delly/uoft\
           +delly/Westminster\
           +delly/archive \
-          +delly/sent \
-          +delly/drafts \
           +delly/physicsworld\
           +temporary/search\
-          +delly/reminders
+          +delly/sent
 
 # Other special folders.
 set mbox      = "+delly/archive"
@@ -107,6 +108,7 @@ set hostname=delly                  # Name of our local host.
 set hidden_host                           # Hide host details.
 set reverse_name=yes                      # build From: in the reply based on the To: address (must have
 set alias_file=~/.mutt/aliases            # Keep aliases in this file.
+source $alias_file
 set postpone=ask-no                       # Ask about postponing.
 set print=ask-yes                         # Ask before printing.
 set delete=yes                             # Ask before doing a delete.
@@ -118,7 +120,8 @@ set meta_key=yes                          # allow to use alt or ESC
 set edit_headers                          # I want to edit the message headers.
 set fast_reply                            # skip initial prompts when replying
 set nohelp                                # don't show the help line at the top
-set editor="vim +13 -c 'set nobackup' -c 'set noswapfile' -c 'set nowritebackup' -c 'set tw=72 ft=mail noautoindent'"
+#set editor="vim +13 -c 'set nobackup' -c 'set noswapfile' -c 'set nowritebackup' -c 'set tw=72 ft=mail noautoindent'"
+set editor="emacsclient -t %s"
 set nomark_old                            # Don't mark unread new msgs as old.
 set beep_new                                # We don't need no beeping software.
 set nosmart_wrap                          # Don't want smart wrapping.
@@ -280,3 +283,9 @@ mono bold bold
 mono underline underline
 mono indicator reverse
 
+# multiple senders
+
+set use_from
+alternates "sasha.illarionov@mail\.utoronto\.ca | sasha.delly@gmail\.com"
+macro index \e1 ":set from=sasha.delly@gmail.com\n:set status_format=\"-%r-sasha.delly@gmail.com: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---\"\n" "Switch to sasha.delly@gmail.com"
+macro index \e2 ":set from=sasha.illarionov@mail.utoronto.ca\n:set status_format=\"-%r-sasha.illarionov@mail.utoronto.ca: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---\"\n" "Switch to sasha.illarionov@mail.utoronto.ca"

@@ -37,6 +37,7 @@ if [ -n "$(ls -A $TMP_SCANS)" ]; then
 
                             if [[ $(basename "$f") = *"${d}"* ]]
                             then
+                                cp $f /home/aleph/TMP/FLS/ACC
                                 mv $f $TMP_NTS/
                             else
                                 echo "No scans!"
@@ -49,6 +50,7 @@ if [ -n "$(ls -A $TMP_SCANS)" ]; then
 else
     echo "There are no new notes in $TMP_SCANS."
 fi
+cd ~/TMP/FLS/ACC/
 # cd $PMT_NTS
 # git add --all
 # git commit -a -m "$(date +%y%m%d)"
