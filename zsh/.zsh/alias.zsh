@@ -147,8 +147,10 @@ alias wer="cd ~/WERKE/"
 alias fls="cd ~/TMP/FLS"
 alias lat="latexmk -pvc -pdf"
 alias tse="ec ~/TMP/PROG/M/"
+
 # UMu
 
 alias u="cd $UMU_DIR/stories"
 alias uag="ec $UMU_DIR/stories/agenda.org"
 alias ut="ec $UMU_DIR/stories/utumu.org"
+alias uma="ec $DOTS/mutt/.mutt/aliases"
