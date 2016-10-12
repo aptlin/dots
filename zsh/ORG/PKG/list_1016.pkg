@@ -51,6 +51,7 @@ calligra-data
 calligra-libs
 caps
 chemical-mime-data
+chromium
 cmus
 cmus-plugin-ffmpeg
 coinor-libcbc3
@@ -74,6 +75,7 @@ crda
 cron
 cryptsetup
 cryptsetup-bin
+cups
 cups-browsed
 cups-bsd
 cups-client
@@ -165,6 +167,7 @@ fonts-sil-gentium
 fonts-sil-gentium-basic
 fonts-texgyre
 fonts-vlgothic
+freepats
 ftp
 fuse
 g++
@@ -232,6 +235,7 @@ grub2-common
 gsettings-desktop-schemas
 gsfonts
 gsfonts-x11
+gstreamer0.10-plugins-base:amd64
 gstreamer1.0-libav:amd64
 gstreamer1.0-plugins-base:amd64
 gstreamer1.0-plugins-good:amd64
@@ -251,6 +255,7 @@ hicolor-icon-theme
 hledger
 host
 hostname
+hplip
 hplip-data
 hunspell-en-us
 hwdata
@@ -420,6 +425,7 @@ libcap2:amd64
 libcap2-bin
 libcarp-clan-perl
 libccolamd2.8.0:amd64
+libcdaudio1
 libcddb2
 libcdio-cdda1
 libcdio-paranoia1
@@ -487,6 +493,7 @@ libdevel-globaldestruction-perl
 libdevmapper-event1.02.1:amd64
 libdevmapper1.02.1:amd64
 libdigest-hmac-perl
+libdirac-encoder0:amd64
 libdirectfb-1.2-9:amd64
 libdjvulibre-text
 libdjvulibre21:amd64
@@ -552,6 +559,7 @@ libfile-remove-perl
 libfile-which-perl
 libfinance-quote-perl
 libflac8:amd64
+libflite1:amd64
 libfont-afm-perl
 libfontconfig1:amd64
 libfontconfig1-dev:amd64
@@ -615,6 +623,7 @@ libglib2.0-dev
 libglibmm-2.4-1c2a:amd64
 libgltf-0.0-0
 libglu1-mesa:amd64
+libgme0
 libgmime-2.6-0:amd64
 libgmp-dev:amd64
 libgmp10:amd64
@@ -658,6 +667,7 @@ libgsl0ldbl
 libgsm1:amd64
 libgssapi-krb5-2:amd64
 libgssrpc4:amd64
+libgstreamer-plugins-bad0.10-0:amd64
 libgstreamer-plugins-base0.10-0:amd64
 libgstreamer-plugins-base1.0-0:amd64
 libgstreamer0.10-0:amd64
@@ -837,8 +847,10 @@ libmbim-glib4:amd64
 libmbim-proxy
 libmhash2:amd64
 libmime-types-perl
+libmimic0
 libminiupnpc10:amd64
 libmm-glib0:amd64
+libmms0:amd64
 libmng1:amd64
 libmnl0:amd64
 libmodplug1
@@ -904,10 +916,15 @@ libntrack0
 libnuma1:amd64
 libobject-realize-later-perl
 libodfgen-0.1-1
+libofa0
 libofx6:amd64
 libogg0:amd64
+libopenal-data
+libopenal1:amd64
 libopenbabel4
 libopencolorio1
+libopencore-amrnb0:amd64
+libopencore-amrwb0:amd64
 libopencv-core2.4:amd64
 libopencv-imgproc2.4:amd64
 libopenexr6:amd64
@@ -1101,11 +1118,13 @@ libservlet2.5-java
 libsgutils2-2
 libshine3:amd64
 libshout3:amd64
+libsidplay1
 libsidplay2
 libsigc++-2.0-0c2a:amd64
 libsigsegv2:amd64
 libslang2:amd64
 libslp1:amd64
+libslv2-9
 libsm-dev:amd64
 libsm6:amd64
 libsmartcols1:amd64
@@ -1116,9 +1135,12 @@ libsnmp30:amd64
 libsoftware-license-perl
 libsolid4
 libsoprano4
+libsoundtouch0:amd64
 libsoup-gnome2.4-1:amd64
 libsoup2.4-1:amd64
+libspandsp2:amd64
 libspectre1:amd64
+libspeechd2:amd64
 libspeex1:amd64
 libspeexdsp1:amd64
 libspnav0
@@ -1213,6 +1235,8 @@ libvisual-0.4-plugins:amd64
 libvlc5
 libvlccore8
 libvncclient0:amd64
+libvo-aacenc0:amd64
+libvo-amrwbenc0:amd64
 libvorbis0a:amd64
 libvorbisenc2:amd64
 libvorbisfile3:amd64
@@ -1232,6 +1256,8 @@ libwebkitgtk-3.0-common
 libwebp5:amd64
 libwebpdemux1:amd64
 libwebpmux1:amd64
+libwildmidi-config
+libwildmidi1:amd64
 libwinpr-crt0.1:amd64
 libwinpr-crypto0.1:amd64
 libwinpr-dsparse0.1:amd64
@@ -1351,6 +1377,7 @@ libyaml-cpp0.3:amd64
 libyaml-dev:amd64
 libyaml-tiny-perl
 libyelp0
+libzbar0
 libzip2
 libzvbi-common
 libzvbi0:amd64
@@ -1397,6 +1424,7 @@ mc
 mc-data
 memtest86+
 menu
+mesa-utils
 mime-support
 minissdpd
 mlocate
@@ -1477,7 +1505,9 @@ prerex
 preview-latex-style
 printer-driver-cups-pdf
 printer-driver-gutenprint
+printer-driver-hpcups
 printer-driver-hpijs
+printer-driver-postscript-hp
 procmail
 procps
 prosper
@@ -1500,12 +1530,15 @@ python-defusedxml
 python-docutils
 python-egenix-mxdatetime
 python-egenix-mxtools
+python-gi
+python-glade2
 python-gobject-2
 python-gtk2
 python-imaging
 python-logilab-common
 python-lxml
 python-minimal
+python-notify
 python-numpy
 python-pexpect
 python-pil:amd64
@@ -1546,7 +1579,6 @@ remind
 rename
 reportbug
 ri
-rpcbind
 rsync
 rsyslog
 rtmpdump

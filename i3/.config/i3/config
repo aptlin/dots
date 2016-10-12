@@ -40,8 +40,9 @@ bindsym $mod+Shift+e exit
 #start gimp
 bindsym $mod+g exec gimp
 #start icecat 
-bindsym $mod+w exec iceweasel
-bindsym $mod+m exec iceweasel http://wqxr.radio.net/
+bindsym $mod+w exec chromium
+bindsym $mod+c exec chromium http://wqxr.radio.net/
+bindsym $mod+f exec chromium http://retrosoul.radio.net/
 # kill focused window
 bindsym $mod+Shift+quotedbl kill
 
