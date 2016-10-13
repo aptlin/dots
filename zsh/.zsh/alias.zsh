@@ -123,7 +123,7 @@ alias nte="ec ~/WERKE/sdll.github.io/stories/notes.org"
 alias gnts="gdir ORG/NOTES"
 alias f="pushd ~/TMP/F"
 alias se="pushd $DOTS/zsh/.scripts/"
-alias sho="rename 's/^(.{25}).*(\..*)$/$1$2/' *"
+alias sho="cd /home/aleph/TMP/FLS/ACC; rename 's/^(.{25}).*(\..*)$/$1$2/' *"
 # Blog
 
 alias nb="workon nikola; nikola auto; deactivate"
