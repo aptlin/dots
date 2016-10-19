@@ -124,6 +124,7 @@ alias gnts="gdir ORG/NOTES"
 alias f="pushd ~/TMP/F"
 alias se="pushd $DOTS/zsh/.scripts/"
 alias sho="rename 's/^(.{25}).*(\..*)$/$1$2/' *"
+alias acc="cd $HOME/TMP/FLS/ACC"
 # Blog
 
 alias nb="workon nikola; nikola auto; deactivate"
