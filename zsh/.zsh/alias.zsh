@@ -149,6 +149,7 @@ alias fls="cd ~/TMP/FLS"
 alias lat="latexmk -pvc -pdf"
 alias tse="ec ~/TMP/PROG/M/"
 alias prog="cd $HOME/TMP/PROG/M/"
+alias i3c="ec ~/DOTS/i3/.config/i3/config"
 # umu
 
 alias u="cd $UMU_DIR/stories"
