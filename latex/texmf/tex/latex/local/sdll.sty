@@ -23,7 +23,7 @@
 \newif\ifsdlltitling\sdlltitlingtrue
 \newif\ifsdllauthor\sdllauthortrue
 \newif\ifsdllpsetauthor\sdllpsetauthorfalse
-\newif\ifsdllpset\sdllpsettrue
+\newif\ifsdllpset\sdllpsetfalse
 \newif\ifsdllanonpset\sdllanonpsetfalse
 \newif\ifsdllmdthm\sdllmdthmfalse
 \newif\ifsdlldiagrams\sdlldiagramsfalse
@@ -134,6 +134,7 @@
 \newcommand{\CC}{\mathbb C}
 \newcommand{\FF}{\mathbb F}
 \newcommand{\NN}{\mathbb N}
+\newcommand{\PP}{\mathbb P}
 \newcommand{\QQ}{\mathbb Q}
 \newcommand{\RR}{\mathbb R}
 \newcommand{\ZZ}{\mathbb Z}
@@ -155,7 +156,7 @@
 \def\die{Distinctness of an Additive Identity and Multiplicative Identity}
 \def\archi{Archimedean Property}
 \def\bc{\because}
-\def\v{\\ \vspace{0.1in}}
+\def\vs{\\ \vspace{0.1in}}
 \def\*{\cdot}
 \def\x{\overline{x}}
 \def\ss{\subset}
@@ -270,7 +271,7 @@
     \ifsdllauthor
     \AtBeginDocument{%
         \author{Alexander Illarionov}
-
+        \date{\today}        
     }
     \fi
     %%fakesection Hyperref
@@ -551,9 +552,13 @@
         \setlength{\headsep}{10pt}
 
         \ifsdllpset
-        \date{\today}        
+
           \ifsdllanonpset
-            \ihead{\footnotesize\textbf{\thepSet} (\thedate)}
+            \ifsdllauthor
+              \ihead{\footnotesize\textbf{\thepSet} (\thedate)}
+            \else
+              \ihead{\footnotesize\textbf{\thepSet} (\@date)}
+            \fi
           \else
             \ifsdllauthor
                \ihead{\footnotesize\textbf{\thepSet} (\thedate) \textbar\ \theauthor}
