@@ -1,0 +1,594 @@
+\ProvidesPackage{sdll}
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+
+%% fakesection Attributions
+% This style file was adapted from the work of Evan Chen.
+% Thank you, Evan.
+
+%%fakesection Argument processing
+% Default Arguments
+% "sdll" is included in all of these to make sure
+% that they don't collide with anything in external packages
+
+\newif\ifsdllfancy\sdllfancytrue
+\newif\ifsdllhdr\sdllhdrtrue
+\newif\ifsdllhref\sdllhreftrue
+\newif\ifsdllsetup\sdllsetuptrue
+\newif\ifsdllthm\sdllthmtrue
+\newif\ifsdllsecthm\sdllsecthmfalse
+\newif\ifsdllht\sdllhtfalse
+\newif\ifsdllpkg\sdllpkgtrue
+\newif\ifsdllpdf\sdllpdftrue
+\newif\ifsdlltitling\sdlltitlingtrue
+\newif\ifsdllauthor\sdllauthortrue
+\newif\ifsdllpsetauthor\sdllpsetauthorfalse
+\newif\ifsdllpset\sdllpsettrue
+\newif\ifsdllanonpset\sdllanonpsetfalse
+\newif\ifsdllmdthm\sdllmdthmfalse
+\newif\ifsdlldiagrams\sdlldiagramsfalse
+\newif\ifsdllhints\sdllhintsfalse
+\newif\ifsdllcolorsec\sdllcolorsecfalse
+
+%Receive Arguments
+% allow href to override this one
+
+\DeclareOption{beaue}{\sdllsecthmtrue\sdllmdthmtrue\sdllcolorsectrue} % long docs
+\DeclareOption{anon}{\sdllanonpsettrue}
+\DeclareOption{fancy}{\sdllfancytrue}
+\DeclareOption{nofancy}{\sdllfancyfalse}
+\DeclareOption{hdr}{\sdllhdrtrue}
+\DeclareOption{nohdr}{\sdllhdrfalse}
+\DeclareOption{href}{\sdllhreftrue}
+\DeclareOption{nohref}{\sdllhreffalse}
+
+\DeclareOption{nosetup}{\sdllsetupfalse}
+\DeclareOption{thm}{\sdllthmtrue}
+\DeclareOption{nothm}{\sdllthmfalse}
+\DeclareOption{secthm}{\sdllsecthmtrue}
+\DeclareOption{nosecthm}{\sdllsecthmfalse}
+
+\DeclareOption{ht}{\sdllhttrue}
+\DeclareOption{nopdf}{\sdllpdffalse}
+\DeclareOption{nopkg}{\sdllpkgfalse}
+\DeclareOption{oldtitle}{\sdlltitlingfalse}
+\DeclareOption{newtitle}{\sdlltitlingtrue}
+\DeclareOption{customauthor}{\sdllauthorfalse}
+\DeclareOption{pset}{\sdllpsettrue}
+\DeclareOption{mdthm}{\sdllmdthmtrue}
+\DeclareOption{nomdthm}{\sdllmdthmfalse}
+\DeclareOption{diagrams}{\sdlldiagramstrue}
+\DeclareOption{nodiagrams}{\sdlldiagramsfalse}
+\DeclareOption{colorsec}{\sdllcolorsectrue}
+\DeclareOption{nocolorsec}{\sdllcolorsecfalse}
+
+\DeclareOption{hints}{\sdllhintstrue}
+
+\ProcessOptions\relax
+
+% if packages not loaded, turn off mdthm
+\ifsdllpkg\else\sdllmdthmfalse\fi
+
+% If no setup, turn off theorems
+\ifsdllsetup\else\sdllthmfalse\fi
+
+%%fakesection Some macros
+
+% Small commands
+\newcommand{\cbrt}[1]{\sqrt[3]{#1}}
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceiling}[1]{\left\lceil #1 \right\rceil}
+\newcommand{\mailto}[1]{\href{mailto:#1}{\texttt{#1}}}
+\newcommand{\ol}{\overline}
+\newcommand{\ul}{\underline}
+\newcommand{\wt}{\widetilde}
+\newcommand{\wh}{\widehat}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\lra}{\Leftrightarrow}
+\newcommand{\ra}{\Rightarrow}
+\newcommand{\vocab}[1]{\textbf{\color{blue} #1}}
+\newcommand{\catname}{\mathsf}
+\newcommand{\hrulebar}{
+    \par\hspace{\fill}\rule{0.95\linewidth}{.7pt}\hspace{\fill}
+    \par\nointerlineskip \vspace{\baselineskip}
+}
+\newcommand{\half}{\frac{1}{2}}
+
+% typeset column vectors
+% Thank you, Wipet.
+% https://tex.stackexchange.com/questions/2705/typesetting-column-vector
+
+\def\cv#1{\left(\vcenter{\halign{\hfil$##$\hfil\cr \spvecA#1;;}}\right)}
+\def\spvecA#1;{\if;#1;\else #1\cr \expandafter \spvecA \fi}
+
+% environment to typeset matrices with row equivalences
+\newenvironment{matreq}[1]{\left[\array{@{}#1@{}}}{\endarray\right]}
+
+% Title for psets
+\newcommand{\hw}[3]{#1 Problem Set #2: Problem #3}
+% Title of a pset
+
+\def\pSet#1{\def\@pSet{#1}}
+\newcommand{\thepSet}{\@pSet}
+% For use in author command
+\newcommand{\plusemail}[1]{\\ \normalfont \texttt{\mailto{#1}}}
+
+%More commands and math operators
+\DeclareMathOperator{\cis}{cis}
+\DeclareMathOperator*{\lcm}{lcm}
+\DeclareMathOperator*{\argmin}{arg min}
+\DeclareMathOperator*{\argmax}{arg max}
+
+%Convenient Environments
+\newenvironment{soln}{\begin{proof}[Solution]}{\end{proof}}
+\newenvironment{parlist}{\begin{inparaenum}[(i)]}{\end{inparaenum}}
+\newenvironment{gobble}{\setbox\z@\vbox\bgroup}{\egroup}
+
+%Inequalities
+\newcommand{\cycsum}{\sum_{\mathrm{cyc}}}
+\newcommand{\symsum}{\sum_{\mathrm{sym}}}
+\newcommand{\cycprod}{\prod_{\mathrm{cyc}}}
+\newcommand{\symprod}{\prod_{\mathrm{sym}}}
+
+%From H113 "Introduction to Abstract Algebra" at UC Berkeley
+\newcommand{\CC}{\mathbb C}
+\newcommand{\FF}{\mathbb F}
+\newcommand{\NN}{\mathbb N}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\ZZ}{\mathbb Z}
+
+\def\defi{Definition of }
+\def\mclo{Multiplicative Closure of }
+\def\aclo{Additive Closure of }
+\def\dist{Distributive Law}
+\def\ainv{Existence of an Additive Inverse }
+\def\minv{Existence of a Multiplicative Inverse }
+\def\uainv{Uniqueness of an Additive Inverse }
+\def\uminv{Uniqueness of a Multiplicative Inverse }
+\def\comm{Commutative Law }
+\def\tric{Trichotomy Law }
+\def\assoc{Associative Law }
+\def\aid{Existence of an Additive Identity }
+\def\mid{Existence of a Multiplicative Identity }
+\def\canc{Cancellation Property }
+\def\die{Distinctness of an Additive Identity and Multiplicative Identity}
+\def\archi{Archimedean Property}
+\def\bc{\because}
+\def\v{\\ \vspace{0.1in}}
+\def\*{\cdot}
+\def\x{\overline{x}}
+\def\ss{\subset}
+\def\ssq{\subseteq}
+\def\ir{\Re\backslash\Q}
+\def\es{\emptyset}
+\def\xor{\ \veebar\ }
+\def\and{\wedge}
+\def\cor{\vee}
+\def\Wlog{Without loss of generality}
+\DeclareMathOperator{\spn}{span}
+
+\newcommand{\charin}{\text{ char }}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Inn}{Inn}
+\DeclareMathOperator{\Syl}{Syl}
+\DeclareMathOperator{\Gal}{Gal}
+\DeclareMathOperator{\GL}{GL} % General linear group
+\DeclareMathOperator{\SL}{SL} % Special linear group
+
+%From Kiran Kedlaya's "Geometry Unbound"
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\dang}{\measuredangle} %% Directed angle
+\newcommand{\ray}[1]{\overrightarrow{#1}}
+\newcommand{\seg}[1]{\overline{#1}}
+\newcommand{\arc}[1]{\wideparen{#1}}
+
+%From M275 "Topology" at SJSU
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\taking}[1]{\xrightarrow{#1}}
+\newcommand{\inv}{^{-1}}
+
+%From M170 "Introduction to Graph Theory" at SJSU
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\ord}{ord}
+\newcommand{\defeq}{\overset{\mathrm{def}}{=}}
+
+%From the USAMO .tex filse
+\newcommand{\st}{^{\text{st}}}
+\newcommand{\nd}{^{\text{nd}}}
+\newcommand{\dg}{^\circ}
+\newcommand{\ii}{\item}
+
+% From Math 55 and Math 145 at Harvard
+\newenvironment{subproof}[1][Proof]{%
+    \begin{proof}[#1] \renewcommand{\qedsymbol}{$\blacksquare$}}%
+    {\end{proof}}
+    
+    \newcommand{\liff}{\leftrightarrow}
+    \newcommand{\lthen}{\rightarrow}
+    \newcommand{\opname}{\operatorname}
+    \newcommand{\surjto}{\twoheadrightarrow}
+    \newcommand{\injto}{\hookrightarrow}
+    \newcommand{\On}{\mathrm{On}} % ordinals
+    \DeclareMathOperator{\img}{im} % Image
+    \DeclareMathOperator{\Img}{Im} % Image
+    \DeclareMathOperator{\coker}{coker} % Cokernel
+    \DeclareMathOperator{\Coker}{Coker} % Cokernel
+    \DeclareMathOperator{\Ker}{Ker} % Kernel
+    \DeclareMathOperator{\rank}{rank}
+    \DeclareMathOperator{\Spec}{Spec} % spectrum
+    \DeclareMathOperator{\Tr}{Tr} % trace
+    \DeclareMathOperator{\pr}{pr} % projection
+    \DeclareMathOperator{\ext}{ext} % extension
+    \DeclareMathOperator{\pred}{pred} % predecessor
+    \DeclareMathOperator{\dom}{dom} % domain
+    \DeclareMathOperator{\ran}{ran} % range
+    \DeclareMathOperator{\Hom}{Hom} % homomorphism
+    \DeclareMathOperator{\End}{End} % endomorphism
+    
+    % Things Lie
+    \newcommand{\kb}{\mathfrak b}
+    \newcommand{\kg}{\mathfrak g}
+    \newcommand{\kh}{\mathfrak h}
+    \newcommand{\kn}{\mathfrak n}
+    \newcommand{\ku}{\mathfrak u}
+    \newcommand{\kz}{\mathfrak z}
+    \DeclareMathOperator{\Ext}{Ext} % Ext functor
+    \DeclareMathOperator{\Tor}{Tor} % Tor functor
+    \newcommand{\gl}{\opname{\mathfrak{gl}}} % frak gl group
+    \renewcommand{\sl}{\opname{\mathfrak{sl}}} % frak gl group
+    
+    % More script letters etc.
+    \newcommand{\SA}{\mathscr A}
+    \newcommand{\SB}{\mathscr B}
+    \newcommand{\SC}{\mathscr C}
+    \newcommand{\SD}{\mathscr D}
+    \newcommand{\SE}{\mathscr E}
+    \newcommand{\SF}{\mathscr F}
+    \newcommand{\SG}{\mathscr G}
+    \newcommand{\SH}{\mathscr H}
+    \newcommand{\OO}{\mathcal O}
+    
+    %% Napkin commands
+    \newcommand{\prototype}[1]{
+        \emph{{\color{ForestGreen} Prototypical example for this section:} #1} \par\medskip
+    }
+    
+    
+    \ifsdllthm
+    \usepackage{amsthm}
+    \fi
+    
+    %%fakesection BEGIN MAIN SETUP
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \ifsdllsetup
+    %%fakesection Set up author and date
+    \ifsdllauthor
+    \AtBeginDocument{%
+        \author{Alexander Illarionov}
+
+    }
+    \fi
+    %%fakesection Hyperref
+    \ifsdllpkg
+    \PassOptionsToPackage{usenames,svgnames,dvipsnames}{xcolor}
+    \usepackage{xcolor}
+    % Custom Colours
+    \definecolor{PalyGreen}{RGB}{251,239,239}
+    \definecolor{PalyGrey}{gray}{0.90}
+    \ifsdllhref
+    \usepackage{hyperref}
+    \fi
+    \usepackage[nameinlink]{cleveref}
+    \usepackage{datetime}
+    \usepackage{graphicx}
+    \fi
+    
+    %% fakesection New Theorem Styles -- mdbluebox, mdrecbox
+    \ifsdllmdthm
+    \usepackage{thmtools}
+    \usepackage[framemethod=TikZ]{mdframed}
+    
+    \mdfdefinestyle{mdbluebox}{%
+        roundcorner = 2pt,
+        linewidth=0.5pt,
+        skipabove=12pt,
+        innerbottommargin=9pt,
+        skipbelow=2pt,
+        linecolor=black,
+        nobreak=true,
+        backgroundcolor=GhostWhite,
+    }
+    \declaretheoremstyle[
+        headfont=\sffamily\bfseries\color{ForestGreen},
+        mdframed={style=mdbluebox},
+        headpunct={\\[3pt]},
+        postheadspace={0pt}
+    ]{thmbluebox}
+    
+    \mdfdefinestyle{mdrecbox}{%
+        linewidth=0.5pt,
+        skipabove=12pt,
+        frametitleaboveskip=5pt,
+        frametitlebelowskip=0pt,
+        skipbelow=2pt,
+        frametitlefont=\bfseries,
+        innertopmargin=4pt,
+        innerbottommargin=8pt,
+        nobreak=true,
+        backgroundcolor=Salmon!5,
+    }
+    \declaretheoremstyle[
+        headfont=\bfseries\color{RawSienna},
+        mdframed={style=mdrecbox},
+        headpunct={\\[3pt]},
+        postheadspace={0pt},
+    ]{thmrecbox}
+    
+    \newcommand{\listhack}{$\empty$\vspace{-2em}}
+    \fi
+    
+    %%fakesection Theorem setup
+    \ifsdllthm
+    \theoremstyle{plain}
+    %Branching here: the option secthm changes theorems to be labelled by section
+    \ifsdllmdthm
+    \ifsdllsecthm
+    \declaretheorem[%
+    style=thmbluebox,name=Theorem,numberwithin=section]{theorem}
+    \else
+    \declaretheorem[%
+    style=thmbluebox,name=Theorem]{theorem}
+    \fi
+    \declaretheorem[style=thmbluebox,name=Lemma,sibling=theorem]{lemma}
+    \declaretheorem[style=thmbluebox,name=Proposition,sibling=theorem]{proposition}
+    \declaretheorem[style=thmbluebox,name=Corollary,sibling=theorem]{corollary}
+    \declaretheorem[style=thmbluebox,name=Theorem,numbered=no]{theorem*}
+    \declaretheorem[style=thmbluebox,name=Lemma,numbered=no]{lemma*}
+    \declaretheorem[style=thmbluebox,name=Proposition,numbered=no]{proposition*}
+    \declaretheorem[style=thmbluebox,name=Corollary,numbered=no]{corollary*}
+    \else
+    \ifsdllsecthm
+    \newtheorem{theorem}{Theorem}[section]
+    \else
+    \newtheorem{theorem}{Theorem}
+    \fi
+    \newtheorem{lemma}[theorem]{Lemma}
+    \newtheorem{proposition}[theorem]{Proposition}
+    \newtheorem{corollary}[theorem]{Corollary}
+    \newtheorem*{theorem*}{Theorem}
+    \newtheorem*{lemma*}{Lemma}
+    \newtheorem*{proposition*}{Proposition}
+    \newtheorem*{corollary*}{Corollary}
+    \fi
+    
+    %Def-style theorems
+    \theoremstyle{definition}
+    
+    % This ought to be a real theorem, but would be too much italics
+    \ifsdllmdthm
+    \declaretheorem[style=thmbluebox,name=Algorithm,sibling=theorem]{algorithm}
+    \else
+    \newtheorem{algorithm}[theorem]{Algorithm}
+    \newtheorem*{algorithm*}{Algorithm}
+    \fi
+    
+    \newtheorem{claim}[theorem]{Claim}
+    \newtheorem{conjecture}[theorem]{Conjecture}
+    \newtheorem{definition}[theorem]{Definition}
+    \newtheorem{fact}[theorem]{Fact}
+    
+    \newtheorem{answer}[theorem]{Answer}
+    \newtheorem{case}[theorem]{Case}
+    \newtheorem{ques}[theorem]{Question}
+    \newtheorem{exercise}[theorem]{Exercise}
+    \newtheorem{problem}[theorem]{Problem}
+    
+    \newtheorem*{answer*}{Answer}
+    \newtheorem*{case*}{Case}
+    \newtheorem*{claim*}{Claim}
+    \newtheorem*{conjecture*}{Conjecture}
+    \newtheorem*{definition*}{Definition}
+    \newtheorem*{fact*}{Fact}
+    \newtheorem*{joke*}{Joke}
+    \newtheorem*{ques*}{Question}
+    \newtheorem*{exercise*}{Exercise}
+    \newtheorem*{problem*}{Problem}
+    
+    
+    \ifsdllmdthm
+    \declaretheorem[style=thmrecbox,name=Example,sibling=theorem]{example}
+    \declaretheorem[style=thmrecbox,name=Example,numbered=no]{example*}
+    \else
+    \newtheorem{example}[theorem]{Example}
+    \newtheorem*{example*}{Example}
+    \fi
+    
+    % Remark-style theorems
+    %\theoremstyle{remark}
+    \newtheorem{note}[theorem]{Note}
+    \newtheorem{remark}[theorem]{Remark}
+    \newtheorem*{note*}{Note}
+    \newtheorem*{remark*}{Remark}
+    \newtheorem{abuse}[theorem]{Abuse of Notation}
+    \newtheorem*{abuse*}{Abuse of Notation}
+    \fi
+    
+    %%fakesection Fancy section and chapter heads
+    \ifsdllcolorsec
+    \@ifundefined{KOMAClassName}{}{
+        \@ifundefined{chapter}{}{
+            \addtokomafont{partprefix}{\rmfamily}
+            \renewcommand*{\partformat}{\color{purple}
+                \scalebox{2.5}{\thepart}\enlargethispage{2em}}
+            \addtokomafont{chapterprefix}{\raggedleft}
+            \RedeclareSectionCommand[beforeskip=0.5em]{chapter}
+            \renewcommand*{\chapterformat}{\mbox{%
+                \scalebox{1.5}{\chapappifchapterprefix{\nobreakspace}}%
+                \scalebox{2.718}{\color{purple}\thechapter}\enskip}}
+        }
+        % \renewcommand*{\sectionformat}%
+        %       {\color{purple}\S\thesection\enskip}
+        % \renewcommand*{\subsectionformat}%
+        %       {\color{purple}\S\thesubsection\enskip}
+        \KOMAoptions{numbers=noenddot}
+        \usepackage[tocindentauto]{tocstyle}
+        \usetocstyle{KOMAlike}
+    }
+    \fi
+    
+    
+    %%fakesection Loads a bunch of useful packages (but allow disabling)
+    \ifsdllpkg
+    \IfFileExists{von.sty}{\usepackage{von}}{}
+    \usepackage{listings}
+    \usepackage{mathrsfs}
+    \usepackage{textcomp}
+    \lstset{basicstyle=\footnotesize\ttfamily,
+        numbers=left,
+        numbersep=5pt,
+        numberstyle=\tiny,
+        keywordstyle=\bfseries,
+        % title=\lstname,
+        showstringspaces=false,
+        tabsize=4,
+        frame=single,
+        keywordstyle=\bfseries\color{blue},
+        commentstyle=\color{green!70!black},
+        identifierstyle=\color{green!20!black},
+        stringstyle=\color{orange},
+        breaklines=true,
+        breakatwhitespace=true,
+        frame=none
+    }
+    \usepackage[shortlabels]{enumitem}
+    \usepackage[obeyFinal,textsize=scriptsize,shadow]{todonotes}
+    % Tiny tiny optimizations:
+    \usepackage{mathtools}
+    \usepackage{microtype}
+    \fi
+    
+    %%fakesection \maketitle configuration
+    \ifsdlltitling
+    %If we have titling...
+    \usepackage{titling}
+    \@ifundefined{KOMAClassName}{}{
+        \newcommand{\thesubtitle}{}
+        \renewcommand{\subtitle}[1]{%
+            \renewcommand{\thesubtitle}{#1}
+            \posttitle{\\ {\normalsize \thesubtitle} \end{center}\vspace{\posttitledrop}}
+        }
+    }
+    \newlength{\posttitledrop}
+    \setlength{\posttitledrop}{-0.7em}
+    \newlength{\postauthordrop}
+    \setlength{\postauthordrop}{-1.2em}
+    \pretitle{\begin{center}\bfseries \sffamily \Large}
+    \posttitle{\end{center}\vspace{\posttitledrop}}
+    \preauthor{\begin{center} \scshape}
+    \postauthor{\end{center}\vspace{\postauthordrop}}
+    \predate{\begin{center}\small}
+    \postdate{\end{center}}
+    \fi
+    
+    %%fakesection Commutative diagrams support
+    \ifsdlldiagrams
+    \usepackage{diagrams}
+    \newarrow{Inj}C--->
+    \newarrow{Surj}----{>>}
+    \newarrow{Proj}----{>>}
+    \newarrow{Embed}>--->
+    \newarrow{Incl}C--->
+    \newarrow{Mapsto}|--->
+    \newarrow{Isom}<--->
+    \newarrow{Dotted}....>
+    \newarrow{Dashed}{}{dash}{}{dash}>
+    \newarrow{Line}-----
+    \usepackage{tikz-cd}
+    \usetikzlibrary{decorations.pathmorphing}
+    \tikzcdset{row sep/normal=3.14em,column sep/normal=3.14em}
+    \fi
+    
+    %%fakesection Page Setup
+    \ifsdllfancy
+    \@ifundefined{KOMAClassName}
+    {
+        \usepackage{fancyhdr}
+        \setlength{\headheight}{0.75in}
+        \setlength{\oddsidemargin}{0in}
+        \setlength{\evensidemargin}{0in}
+        \setlength{\voffset}{-1.0in}
+        \setlength{\headsep}{10pt}
+        \setlength{\textwidth}{6.5in}
+        \setlength{\headwidth}{6.5in}
+        \setlength{\textheight}{8.75in}
+        \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+        \setlength{\footskip}{0.3in}
+        \ifsdlltitling
+        \addtolength{\posttitledrop}{0.4em}
+        \addtolength{\postauthordrop}{0.2em}
+        \fi
+        \ifsdllhdr
+        \renewcommand{\headrulewidth}{0.5pt}
+        \renewcommand{\footrulewidth}{0.0pt}
+        \pagestyle{fancy}
+        \chead{}
+        \rhead{\nouppercase{\leftmark}}
+        \lfoot{}
+        \cfoot{\thepage}
+        \rfoot{}
+        \fi
+    }
+    {
+        \usepackage[headsepline]{scrlayer-scrpage}
+        \renewcommand{\headfont}{}
+        \addtolength{\textheight}{3.14cm}
+        \setlength{\footskip}{0.5in}
+        \setlength{\headsep}{10pt}
+
+        \ifsdllpset
+        \date{\today}        
+          \ifsdllanonpset
+            \ihead{\footnotesize\textbf{\thepSet} (\thedate)}
+          \else
+            \ifsdllauthor
+               \ihead{\footnotesize\textbf{\thepSet} (\thedate) \textbar\ \theauthor}
+            \else
+               \ihead{\footnotesize\textbf{\thepSet} (\@date) \textbar\ \@author}           
+            \fi
+          \fi
+        \fi
+
+        \ifsdllpset
+        \else
+          \ifsdlltitling
+            \ifsdllauthor
+              \ihead{\footnotesize\textbf{\theauthor} (\thedate)}
+            \else
+              \ihead{\footnotesize\textbf{\@author} (\@date)}
+            \fi
+        \fi
+          
+        \automark{section}
+        \chead{}
+        \ohead{\footnotesize\headmark}
+        \cfoot{\pagemark}
+    }
+    \fi
+    
+    %%fakesection Hints
+    \ifsdllhints
+    \usepackage{answers}
+    \Newassociation{hint}{hintitem}{hints}
+    \renewcommand{\solutionextension}{out}
+    \Opensolutionfile{hints}
+    \newcommand{\makehints}{\Closesolutionfile{hints}\input{hints.out}}
+    \fi
+    %%fakesection END MAIN SETUP
+    \fi
+    
+    \usepackage[utf8]{inputenc}
