@@ -152,6 +152,7 @@ alias prog="cd $HOME/TMP/PROG/M/"
 alias i3c="ec ~/DOTS/i3/.config/i3/config"
 alias latc="cd $HOME/texmf/tex/latex/local/"
 alias sty="ec $HOME/texmf/tex/latex/local/sdll.sty"
+alias chem="ec $HOME/WERKE/LIB/CHEM/"
 # umu
 
 alias u="cd $UMU_DIR/stories"
