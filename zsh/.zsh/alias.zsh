@@ -24,7 +24,6 @@ alias eth='sudo netctl start ethernet-dhcp'
 alias gb='gemset && sd && rm -r _site && bundle exec jekyll serve'
 alias gdot="pushd ~/.zsh/ && ./gdot && popd"
 alias gmor="pushd ~/TMP/PROG/M/; python3 ~/TMP/PROG/M/goodmorning.py; popd"
-alias genplaylist="cd ~/music;find . -name '*.mp3' -o -name '*.flac'|sed -e 's%^./%%g' > ~/.mpd/playlists/all.m3u"
 alias gt="git add .; read -p 'comment: ' comment; git commit -am '$comment'; git push -u origin master"
 alias hw="cd ~/WERKE/HW"
 alias lib="cd ~/WERKE/LIB/MAT"
@@ -35,7 +34,6 @@ alias mixer="alsamixer"
 alias mkdir="mkdir -p"
 alias mkdir="mkdir -p"
 alias mou="devmon -a"
-
 alias org='cd ~/ORG'
 alias orge='ec ~/.emacs.d/lisp/orgmode.org'
 alias psef="ps -ef"
@@ -49,7 +47,6 @@ alias ru='setxkbmap ru'
 alias scp="scp -r"
 alias sch="ec ~/ORG/schedule.org"
 alias shtd='shutdown -h now'
-
 alias sprunge="curl -f 'sprunge=<-' http://sprunge.us"
 alias st="sudo ntpdate pool.ntp.org; sudo hwclock --systohc"
 alias sude="sudo -e"
@@ -153,6 +150,7 @@ alias i3c="ec ~/DOTS/i3/.config/i3/config"
 alias latc="cd $HOME/texmf/tex/latex/local/"
 alias sty="ec $HOME/texmf/tex/latex/local/sdll.sty"
 alias chem="cd $HOME/WERKE/LIB/CHEM/"
+alias aug="ec $BLOG_DIR/stories/agenda.org"
 # umu
 
 alias u="cd $UMU_DIR/stories"
