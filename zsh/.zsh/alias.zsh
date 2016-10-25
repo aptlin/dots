@@ -151,6 +151,7 @@ alias latc="cd $HOME/texmf/tex/latex/local/"
 alias sty="ec $HOME/texmf/tex/latex/local/sdll.sty"
 alias chem="cd $HOME/WERKE/LIB/CHEM/"
 alias aug="ec $BLOG_DIR/stories/agenda.org"
+alias alg="cd $HOME/WERKE/LIB/MAT/ALGEBRA/"
 # umu
 
 alias u="cd $UMU_DIR/stories"
