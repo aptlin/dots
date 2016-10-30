@@ -109,9 +109,7 @@ gdir() {
   done
 }
 
-org2docx() { pandoc --bibliography=/home/aleph/WERKE/HW/BIO/bio.bib
-             --csl=/home/aleph/TMP/HW/council-of-science-editors.csl
-             -i $1 -o $1-pandoc.docx }
+org2docx() { pandoc --bibliography=/home/aleph/WERKE/HW/BIO/bio.bib --csl=/home/aleph/TMP/HW/council-of-science-editors.csl -i $1 -o $1-pandoc.docx }
 # Notes
 alias arb="ec $BLOG_DIR/stories/arbeit.org "
 alias nts="cd ~/ORG/NOTES/"
