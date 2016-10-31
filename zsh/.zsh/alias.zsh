@@ -24,7 +24,7 @@ alias eth='sudo netctl start ethernet-dhcp'
 alias gb='gemset && sd && rm -r _site && bundle exec jekyll serve'
 alias gdot="pushd ~/.zsh/ && ./gdot && popd"
 alias gmor="pushd ~/TMP/PROG/M/; python3 ~/TMP/PROG/M/goodmorning.py; popd"
-alias gt="git add .; read -p 'comment: ' comment; git commit -am '$comment'; git push -u origin master"
+alias gt="git add .; git commit -am '$(date +%y%m%d)'; git push -u origin master"
 alias hw="cd ~/WERKE/HW"
 alias lib="cd ~/WERKE/LIB/MAT"
 alias ll="ls -lahf --color=auto"
