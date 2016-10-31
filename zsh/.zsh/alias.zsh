@@ -158,6 +158,7 @@ alias alg="cd $HOME/WERKE/LIB/MAT/ALGEBRA/"
 # umu
 
 alias u="cd $UMU_DIR/stories"
+alias us= "cd $UMU_DIR/posts"
 alias uag="ec $UMU_DIR/stories/agenda.org"
 alias ut="ec $UMU_DIR/stories/utumu.org"
 alias utu="cd $UMU_DIR/../ut.umu"
