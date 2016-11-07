@@ -86,6 +86,7 @@
 \newcommand{\eps}{\varepsilon}
 \newcommand{\lra}{\Leftrightarrow}
 \newcommand{\ra}{\Rightarrow}
+\newcommand{\la}{\Leftarrow}
 \newcommand{\vocab}[1]{\textbf{\color{blue} #1}}
 \newcommand{\catname}{\mathsf}
 \newcommand{\hrulebar}{
@@ -156,10 +157,10 @@
 \def\die{Distinctness of an Additive Identity and Multiplicative Identity}
 \def\archi{Archimedean Property}
 \def\bc{\because}
-\def\vs{\\ \vspace{0.1in}}
+\def\vs{\vspace{0.1in}}
 \def\*{\cdot}
 \def\x{\overline{x}}
-\def\ss{\subset}
+\def\su{\subset}
 \def\ssq{\subseteq}
 \def\ir{\Re\backslash\Q}
 \def\es{\emptyset}
@@ -202,6 +203,14 @@
 \newcommand{\dg}{^\circ}
 \newcommand{\ii}{\item}
 
+% SI units
+\usepackage{siunitx}
+\newcommand{\dgc}[1]{\SI{#1}{\degreeCelsius}}
+
+% Sets
+
+\newcommand{\sminus}[2]{#1 \setminus #2}
+
 % From Math 55 and Math 145 at Harvard
 \newenvironment{subproof}[1][Proof]{%
     \begin{proof}[#1] \renewcommand{\qedsymbol}{$\blacksquare$}}%
@@ -218,7 +227,8 @@
     \DeclareMathOperator{\coker}{coker} % Cokernel
     \DeclareMathOperator{\Coker}{Coker} % Cokernel
     \DeclareMathOperator{\Ker}{Ker} % Kernel
-    \DeclareMathOperator{\rank}{rank}
+    \DeclareMathOperator{\rank}{rank} % rank
+    \DeclareMathOperator{\nll}{nullity} %nullity
     \DeclareMathOperator{\Spec}{Spec} % spectrum
     \DeclareMathOperator{\Tr}{Tr} % trace
     \DeclareMathOperator{\pr}{pr} % projection
@@ -250,8 +260,10 @@
     \newcommand{\SF}{\mathscr F}
     \newcommand{\SG}{\mathscr G}
     \newcommand{\SH}{\mathscr H}
+    \newcommand{\LL}{\mathscr L}
     \newcommand{\OO}{\mathcal O}
-    
+    \newcommand{\SP}{\mathscr P}    
+
     %% Napkin commands
     \newcommand{\prototype}[1]{
         \emph{{\color{ForestGreen} Prototypical example for this section:} #1} \par\medskip
@@ -555,15 +567,15 @@
 
           \ifsdllanonpset
             \ifsdllauthor
-              \ihead{\footnotesize\textbf{\thepSet} (\thedate)}
+              \ihead{\footnotesize\textbf{\thepSet} \textbar\ \thedate}
             \else
-              \ihead{\footnotesize\textbf{\thepSet} (\@date)}
+              \ihead{\footnotesize\textbf{\thepSet} \textbar\ \@date}
             \fi
           \else
             \ifsdllauthor
-               \ihead{\footnotesize\textbf{\thepSet} (\thedate) \textbar\ \theauthor}
+               \ihead{\footnotesize\textbf{\thepSet} \textbar\ \thedate\ \textbar\ \theauthor}
             \else
-               \ihead{\footnotesize\textbf{\thepSet} (\@date) \textbar\ \@author}           
+               \ihead{\footnotesize\textbf{\thepSet} \textbar\ \@date\ \textbar\ \@author}           
             \fi
           \fi
         \fi
@@ -572,9 +584,9 @@
         \else
           \ifsdlltitling
             \ifsdllauthor
-              \ihead{\footnotesize\textbf{\theauthor} (\thedate)}
+              \ihead{\footnotesize\textbf{\theauthor} \textbar\ \thedate}
             \else
-              \ihead{\footnotesize\textbf{\@author} (\@date)}
+              \ihead{\footnotesize\textbf{\@author} \textbar\ \@date}
             \fi
         \fi
           
