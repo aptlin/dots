@@ -6,7 +6,12 @@
 % This style file was adapted from the work of Evan Chen.
 % Thank you, Evan.
 
-%%fakesection Argument processing
+%% fakesection Argument processing
+
+% Variables
+
+\def\sdllname{Alexander Illarionov}
+
 % Default Arguments
 % "sdll" is included in all of these to make sure
 % that they don't collide with anything in external packages
@@ -282,7 +287,7 @@
     %%fakesection Set up author and date
     \ifsdllauthor
     \AtBeginDocument{%
-        \author{Alexander Illarionov}
+        \author{\sdllname}
         \date{\today}        
     }
     \fi
@@ -449,8 +454,8 @@
         % \renewcommand*{\subsectionformat}%
         %       {\color{purple}\S\thesubsection\enskip}
         \KOMAoptions{numbers=noenddot}
-        \usepackage[tocindentauto]{tocstyle}
-        \usetocstyle{KOMAlike}
+%        \usepackage[tocindentauto]{tocstyle}
+%        \usetocstyle{KOMAlike}
     }
     \fi
     
