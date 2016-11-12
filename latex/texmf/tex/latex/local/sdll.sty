@@ -1,7 +1,9 @@
 \ProvidesPackage{sdll}
-\usepackage{amsmath,amssymb}
+\usepackage{mathtools}
+\usepackage{amssymb, nccmath}
+\usepackage{xparse}
 \usepackage{bm}
-
+\usepackage{biblatex}
 %% fakesection Attributions
 % This style file was adapted from the work of Evan Chen.
 % Thank you, Evan.
@@ -125,6 +127,20 @@
 \DeclareMathOperator*{\argmin}{arg min}
 \DeclareMathOperator*{\argmax}{arg max}
 
+%%% Andrew Swann et al
+
+% https://tex.stackexchange.com/questions/309026/how-to-define-an-inner-product-argument-in-latex
+
+\DeclarePairedDelimiterX{\inp}[2]{\langle}{\rangle}{#1, #2}
+
+% https://tex.stackexchange.com/questions/209863/how-to-add-mathematical-notation-of-a-set
+
+\DeclarePairedDelimiterX{\set}[1]{\{}{\}}{\setargs{#1}}
+\NewDocumentCommand{\setargs}{>{\SplitArgument{1}{;}}m}
+{\setargsaux#1}
+\NewDocumentCommand{\setargsaux}{mm}
+{\IfNoValueTF{#2}{#1} {#1\,\delimsize|\,\mathopen{}#2}}%{#1\:;\:#2}
+
 %Convenient Environments
 \newenvironment{soln}{\begin{proof}[Solution]}{\end{proof}}
 \newenvironment{parlist}{\begin{inparaenum}[(i)]}{\end{inparaenum}}
@@ -211,7 +227,9 @@
 % SI units
 \usepackage{siunitx}
 \newcommand{\dgc}[1]{\SI{#1}{\degreeCelsius}}
-
+\newcommand{\gmol}[1]{\SI{#1}{\gram\per\mole}}
+\newcommand{\mol}[1]{\SI{#1}{\mole}}
+\newcommand{\gram}[1]{\SI{#1}{\gram}}
 % Sets
 
 \newcommand{\sminus}[2]{#1 \setminus #2}
@@ -486,7 +504,7 @@
     \usepackage[shortlabels]{enumitem}
     \usepackage[obeyFinal,textsize=scriptsize,shadow]{todonotes}
     % Tiny tiny optimizations:
-    \usepackage{mathtools}
+
     \usepackage{microtype}
     \fi
     

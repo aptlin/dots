@@ -166,3 +166,9 @@ bindsym $mod+p mode "resize"
 bar {
         status_command i3status
 }
+
+
+assign [class="Emacs"] 1
+assign [class="Zathura"] 2
+assign [class="chromium-browser"] 3
+assign [class="TelegramDesktop"] 9

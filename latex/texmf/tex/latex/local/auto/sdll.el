@@ -16,9 +16,12 @@
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "hints"
-    "amsmath"
+    "mathtools"
     "amssymb"
+    "nccmath"
+    "xparse"
     "bm"
+    "biblatex"
     "siunitx"
     "amsthm"
     "xcolor"
@@ -34,7 +37,6 @@
     "textcomp"
     "enumitem"
     "todonotes"
-    "mathtools"
     "microtype"
     "titling"
     "diagrams"
@@ -46,6 +48,9 @@
    (TeX-add-symbols
     '("prototype" 1)
     '("sminus" 2)
+    '("gram" 1)
+    '("mol" 1)
+    '("gmol" 1)
     '("dgc" 1)
     '("taking" 1)
     '("arc" 1)
