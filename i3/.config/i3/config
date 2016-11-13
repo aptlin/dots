@@ -33,6 +33,8 @@ floating_modifier $mod
 bindsym $mod+Return exec urxvt
 #start telegram
 bindsym $mod+x exec cd /home/aleph/DLD/Telegram/ && ./Telegram
+#start mutt
+bindsym $mod+c exec urxvt -e mutt
 #re/re/re
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+w reload
@@ -41,8 +43,9 @@ bindsym $mod+Shift+e exit
 bindsym $mod+g exec gimp
 #start icecat 
 bindsym $mod+w exec chromium
+bindsym $mod+m exec vlc
 bindsym $mod+r exec emacsclient -c --alternate-editor=
-bindsym $mod+c exec chromium http://classical102.radio.net/
+#bindsym $mod+c exec chromium http://classical102.radio.net/
 bindsym $mod+Shift+c exec chromium http://wqxr.radio.net/
 bindsym $mod+f exec chromium http://retrosoul.radio.net/
 # kill focused window
@@ -170,7 +173,10 @@ bar {
 
 
 assign [class="Emacs"] 1
-assign [class="Zathura"] 2
+#assign [class="Zathura"] 2
+#assign [class="URxvt" instance="mutt$"] 5
 assign [class="URxvt"] 3
 assign [class="chromium-browser"] 4
 assign [class="TelegramDesktop"] 9
+
+exec --no-startup-id i3-msg 'workspace 5; exec urxvt -e mutt; workspace 1'
