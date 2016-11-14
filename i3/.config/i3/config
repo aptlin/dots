@@ -44,7 +44,7 @@ bindsym $mod+g exec gimp
 #start icecat 
 bindsym $mod+w exec chromium
 bindsym $mod+m exec vlc
-bindsym $mod+r exec emacsclient -c --alternate-editor=
+bindsym $mod+r exec i3-msg "workspace 1" &&  exec emacsclient -c --alternate-editor= 
 #bindsym $mod+c exec chromium http://classical102.radio.net/
 bindsym $mod+Shift+c exec chromium http://wqxr.radio.net/
 bindsym $mod+f exec chromium http://retrosoul.radio.net/
