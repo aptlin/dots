@@ -173,7 +173,7 @@ bar {
 }
 
 
-assign [class="Emacs"] 1
+#assign [class="Emacs"] 1
 #assign [class="Zathura"] 2
 #assign [class="URxvt" instance="mutt$"] 5
 assign [class="URxvt"] 3
