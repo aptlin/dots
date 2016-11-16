@@ -157,7 +157,7 @@ alias chem="cd $HOME/WERKE/LIB/CHEM/"
 alias aug="ec $BLOG_DIR/stories/agenda.org"
 alias mik="ec $BLOG_DIR/stories/mikveh.org"
 alias alg="cd $HOME/WERKE/LIB/MAT/ALGEBRA/"
-
+alias hmu="pkill -2 -u $UID mu # send SIGINT"
 # umu
 
 alias u="cd $UMU_DIR/stories"
