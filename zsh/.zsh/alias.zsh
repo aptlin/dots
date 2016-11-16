@@ -167,3 +167,6 @@ alias ut="ec $UMU_DIR/stories/utumu.org"
 alias utu="cd $UMU_DIR/../ut.umu"
 alias uma="ec $DOTS/mutt/.mutt/aliases"
 alias ug="gcam "$(date +%y%m%d)" & gp"
+
+# lib
+alias LA="cd ~/WERKE/LIB/MAT/ALGEBRA/"
