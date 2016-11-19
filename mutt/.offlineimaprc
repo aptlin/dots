@@ -1,14 +1,13 @@
 [general]
 ui = TTY.TTYUI
-accounts = sasha.delly
+accounts = delly
 pythonfile=~/.mutt/offlineimap.py
 fsync = False
 
-[Account sasha.delly]
+[Account delly]
 localrepository = Delly-Local
 remoterepository = Delly-Remote
 status_backend = sqlite
-postsynchook = notmuch new
 
 [Repository Delly-Local]
 type = Maildir

@@ -180,4 +180,4 @@ assign [class="URxvt"] 3
 assign [class="chromium-browser"] 4
 assign [class="TelegramDesktop"] 9
 
-exec --no-startup-id i3-msg 'workspace 5; exec urxvt -e mutt; workspace 1'
+exec --no-startup-id i3-msg 'workspace 1; emacsclient -c --alternate-editor='
