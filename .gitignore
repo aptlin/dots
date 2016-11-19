@@ -9,3 +9,4 @@ gnupg/.gnupg/random_seed
 gnupg/.gnupg/secring.gpg
 gnupg/.gnupg/trustdb.gpg
 vimperator/.vimperator/info/
+mutt/.muttrc
