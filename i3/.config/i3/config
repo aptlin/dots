@@ -42,7 +42,7 @@ bindsym $mod+Shift+e exit
 #start gimp
 bindsym $mod+g exec gimp
 #start icecat 
-bindsym $mod+w exec chromium
+bindsym $mod+w exec iceweasel
 bindsym $mod+m exec vlc
 bindsym $mod+r exec i3-msg "workspace 1" &&  exec emacsclient -c --alternate-editor= 
 #bindsym $mod+c exec chromium http://classical102.radio.net/
@@ -177,7 +177,8 @@ bar {
 #assign [class="Zathura"] 2
 #assign [class="URxvt" instance="mutt$"] 5
 assign [class="URxvt"] 3
-assign [class="chromium-browser"] 4
+#assign [class="chromium-browser"] 4
+assign [class="Firefox"] 4
 assign [class="TelegramDesktop"] 9
 
 exec --no-startup-id i3-msg 'workspace 1; emacsclient -c --alternate-editor='
