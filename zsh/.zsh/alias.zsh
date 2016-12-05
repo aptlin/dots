@@ -172,3 +172,4 @@ alias ug="gcam "$(date +%y%m%d)" & gp"
 # lib
 alias LA="cd ~/WERKE/LIB/MAT/ALGEBRA/"
 alias agn="cd ~/ORG/AGENDA/"
+alias sa='sage --notebook="jupyter"'
