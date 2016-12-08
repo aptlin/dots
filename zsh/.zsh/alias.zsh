@@ -142,6 +142,7 @@ alias s="cd ~/WERKE/sdll.github.io"
 alias nik="workon nikola"
 alias nli="ec $BLOG_DIR/stories/links_math.org"
 # Org
+alias sc="scrot '%Y-%m-%d_$wx$h.png' -s -e 'mv $f ~/TMP/SCR/'"
 alias art="cd $HOME/WERKE/ART"
 alias le="pushd ~/DOTS/zsh/.scripts/;./letters;popd"
 alias mysn="cd $HOME/.emacs.d/mysnippets/"
