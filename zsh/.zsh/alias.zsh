@@ -115,6 +115,7 @@ org2docx() { pandoc --bibliography=/home/aleph/WERKE/HW/BIO/bio.bib\
              --csl=/home/aleph/TMP/HW/council-of-science-editors.csl\
              -i $1 -o $1-pandoc.docx }
 # Notes
+
 alias arb="ec $BLOG_DIR/stories/arbeit.org "
 alias nts="cd ~/ORG/NOTES/"
 alias snts="pushd ~/DOTS/zsh/.scripts/;./notes;popd"
@@ -127,6 +128,7 @@ alias f="pushd ~/TMP/F"
 alias se="pushd $DOTS/zsh/.scripts/"
 alias sho="rename 's/^(.{25}).*(\..*)$/$1$2/' *"
 alias acc="cd $HOME/TMP/FLS/ACC"
+
 # Blog
 
 alias nb="workon nikola; nikola auto; deactivate"
@@ -142,7 +144,9 @@ alias np="workon nikola; nikola new_post -e -p -f orgmode; deactivate"
 alias s="cd ~/WERKE/sdll.github.io"
 alias nik="workon nikola"
 alias nli="ec $BLOG_DIR/stories/links_math.org"
+
 # Org
+
 alias sc="scrot '%Y-%m-%d_$wx$h.png' -s -e 'mv $f ~/TMP/SCR/'"
 alias art="cd $HOME/WERKE/ART"
 alias le="~/DOTS/zsh/.scripts/letters"
@@ -161,6 +165,7 @@ alias aug="ec $BLOG_DIR/stories/agenda.org"
 alias mik="ec $BLOG_DIR/stories/mikveh.org"
 alias alg="cd $HOME/WERKE/LIB/MAT/ALGEBRA/"
 alias hmu="pkill -2 -u $UID mu # send SIGINT"
+alias we="curl wttr.in"
 # umu
 
 alias u="cd $UMU_DIR/stories"
