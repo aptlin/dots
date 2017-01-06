@@ -11,4 +11,4 @@ if [[ -e $name.org ]] ; then
     name=$name-$i
 fi
 
-emacsclient -nw --alternate-editor= $name.org
+emacsclient -c --alternate-editor= $name.org

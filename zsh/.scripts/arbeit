@@ -1,0 +1,2 @@
+#!/bin/bash
+for filename in *.pdf; do cp "$filename" "$(basename $(pwd))_$filename"; done;

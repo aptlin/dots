@@ -2,7 +2,7 @@
  "sdll"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("cleveref" "nameinlink") ("mdframed" "framemethod=TikZ") ("enumitem" "shortlabels") ("todonotes" "obeyFinal" "textsize=scriptsize" "shadow") ("scrlayer-scrpage" "headsepline") ("inputenc" "utf8")))
+                     '(("cleveref" "nameinlink") ("mdframed" "framemethod=TikZ") ("enumitem" "shortlabels") ("todonotes" "obeyFinal" "textsize=scriptsize" "shadow") ("scrlayer-scrpage" "headsepline")))
    (add-to-list 'LaTeX-verbatim-environments-local "lstlisting")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "lstinline")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
@@ -43,8 +43,7 @@
     "tikz-cd"
     "fancyhdr"
     "scrlayer-scrpage"
-    "answers"
-    "inputenc")
+    "answers")
    (TeX-add-symbols
     '("prototype" 1)
     '("sminus" 2)
@@ -59,6 +58,8 @@
     '("norm" 1)
     '("abs" 1)
     '("plusemail" 1)
+    '("nt" 3)
+    '("ex" 3)
     '("hw" 3)
     '("vocab" 1)
     '("mailto" 1)
@@ -119,8 +120,11 @@
     "SG"
     "SH"
     "LL"
+    "SM"
+    "SN"
     "OO"
     "SP"
+    "ze"
     "listhack"
     "thesubtitle"
     "makehints"
@@ -145,7 +149,7 @@
     "die"
     "archi"
     "bc"
-    "vs"
+    "vv"
     "x"
     "su"
     "ssq"

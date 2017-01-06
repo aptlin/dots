@@ -26,7 +26,6 @@ highlight Tag color: #005F87;
 highlight Title background-color: #D7005F; color: #D0CFD0; font-weight: bold;
 highlight URL text-decoration: none; color: #87FF00;
 highlight WarningMsg background: #121112; color: #D7005F;
-set toolbars=none
 map d :
 source! /home/aleph/.vimperatorrc.local
 

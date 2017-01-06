@@ -4,6 +4,7 @@
 \usepackage{xparse}
 \usepackage{bm}
 \usepackage{biblatex}
+
 %% fakesection Attributions
 % This style file was adapted from the work of Evan Chen.
 % Thank you, Evan.
@@ -114,6 +115,8 @@
 
 % Title for psets
 \newcommand{\hw}[3]{#1 Problem Set #2: Problem #3}
+\newcommand{\ex}[3]{#1: Chapter #2 | Section #3}
+\newcommand{\nt}[3]{#1: Lecture #2 | #3}
 % Title of a pset
 
 \def\pSet#1{\def\@pSet{#1}}
@@ -178,7 +181,7 @@
 \def\die{Distinctness of an Additive Identity and Multiplicative Identity}
 \def\archi{Archimedean Property}
 \def\bc{\because}
-\def\vs{\vspace{0.1in}}
+\def\vv{\vspace{0.1in}}
 \def\*{\cdot}
 \def\x{\overline{x}}
 \def\su{\subset}
@@ -273,20 +276,23 @@
     \DeclareMathOperator{\Tor}{Tor} % Tor functor
     \newcommand{\gl}{\opname{\mathfrak{gl}}} % frak gl group
     \renewcommand{\sl}{\opname{\mathfrak{sl}}} % frak gl group
+
     
     % More script letters etc.
-    \newcommand{\SA}{\mathscr A}
-    \newcommand{\SB}{\mathscr B}
-    \newcommand{\SC}{\mathscr C}
-    \newcommand{\SD}{\mathscr D}
-    \newcommand{\SE}{\mathscr E}
-    \newcommand{\SF}{\mathscr F}
-    \newcommand{\SG}{\mathscr G}
-    \newcommand{\SH}{\mathscr H}
-    \newcommand{\LL}{\mathscr L}
+    \newcommand{\SA}{\mathfrak A}
+    \newcommand{\SB}{\mathfrak B}
+    \newcommand{\SC}{\mathfrak C}
+    \newcommand{\SD}{\mathfrak D}
+    \newcommand{\SE}{\mathfrak E}
+    \newcommand{\SF}{\mathfrak F}
+    \newcommand{\SG}{\mathfrak G}
+    \newcommand{\SH}{\mathfrak H}
+    \newcommand{\LL}{\mathfrak L}
+    \newcommand{\SM}{\mathfrak M}
+    \newcommand{\SN}{\mathfrak N}
     \newcommand{\OO}{\mathcal O}
-    \newcommand{\SP}{\mathscr P}    
-
+    \newcommand{\SP}{\mathfrak P}
+    \newcommand{\ze}{\mathfrak 0}
     %% Napkin commands
     \newcommand{\prototype}[1]{
         \emph{{\color{ForestGreen} Prototypical example for this section:} #1} \par\medskip
@@ -551,6 +557,11 @@
     
     %%fakesection Page Setup
     \ifsdllfancy
+
+%    \setlength{\parskip}{1ex}
+    \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+    \setlength{\parindent}{0pt}
+    
     \@ifundefined{KOMAClassName}
     {
         \usepackage{fancyhdr}
@@ -562,8 +573,9 @@
         \setlength{\textwidth}{6.5in}
         \setlength{\headwidth}{6.5in}
         \setlength{\textheight}{8.75in}
-        \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+
         \setlength{\footskip}{0.3in}
+        
         \ifsdlltitling
         \addtolength{\posttitledrop}{0.4em}
         \addtolength{\postauthordrop}{0.2em}
@@ -631,4 +643,4 @@
     %%fakesection END MAIN SETUP
     \fi
     
-    \usepackage[utf8]{inputenc}
+%    \usepackage[utf8]{inputenc}

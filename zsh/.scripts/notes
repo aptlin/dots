@@ -37,7 +37,7 @@ if [ -n "$(ls -A $TMP_NTS)" ]; then
                         filename=$(basename "$f")
                         new_f=$(echo ${filename%.*} | sed -r 's/[_]+/: /g' | \
                                        sed -r 's/[\+]+/ /g' | \
-                                       sed -r 's/[ARBEIT]+//g' | \
+                                       sed -r 's/\bARBEIT//g' | \
                                        sed -r 's/([0-9])([a-zA-Z])/\1 \2/g')
                         echo "  - [[https://github.com/sdll/NOTES/blob/master/$d/$f][$new_f]]" >> $NTS_TMP_LOG
 
@@ -56,7 +56,7 @@ if [ -n "$(ls -A $TMP_NTS)" ]; then
                         filename=$(basename "$f")
                         new_f=$(echo ${filename%.*} | sed -r 's/[_]+/: /g' | \
                                        sed -r 's/[\+]+/ /g' | \
-                                       sed -r 's/[MIKVEH]+//g' | \
+                                       sed -r 's/\bMIKVEH//g' | \
                                        sed -r 's/([0-9])([a-zA-Z])/\1 \2/g')
                         echo "  - [[https://github.com/sdll/NOTES/blob/master/$d/$f][$new_f]]" >> $NTS_TMP_LOG
 

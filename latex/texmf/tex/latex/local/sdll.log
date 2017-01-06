@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.8.29)  11 NOV 2016 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.8.29)  6 JAN 2017 01:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -70,8 +70,8 @@ l.6 \usepackage{
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
-./sdll.sty:125: Undefined control sequence.
-l.125 \DeclareMathOperator
+./sdll.sty:127: Undefined control sequence.
+l.127 \DeclareMathOperator
                           {\cis}{cis}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -79,8 +79,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:125: Undefined control sequence.
-l.125 \DeclareMathOperator{\cis
+./sdll.sty:127: Undefined control sequence.
+l.127 \DeclareMathOperator{\cis
                                }{cis}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -89,13 +89,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./sdll.sty:125: LaTeX Error: Missing \begin{document}.
+./sdll.sty:127: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 \DeclareMathOperator{\cis}{c
+l.127 \DeclareMathOperator{\cis}{c
                                   is}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -103,8 +103,8 @@ If that doesn't work, type  X <return>  to quit.
 Missing character: There is no c in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
-./sdll.sty:126: Undefined control sequence.
-l.126 \DeclareMathOperator
+./sdll.sty:128: Undefined control sequence.
+l.128 \DeclareMathOperator
                           *{\lcm}{lcm}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -113,8 +113,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 Missing character: There is no * in font nullfont!
-./sdll.sty:126: Undefined control sequence.
-l.126 \DeclareMathOperator*{\lcm
+./sdll.sty:128: Undefined control sequence.
+l.128 \DeclareMathOperator*{\lcm
                                 }{lcm}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -125,8 +125,8 @@ and I'll forget about whatever was undefined.
 Missing character: There is no l in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no m in font nullfont!
-./sdll.sty:127: Undefined control sequence.
-l.127 \DeclareMathOperator
+./sdll.sty:129: Undefined control sequence.
+l.129 \DeclareMathOperator
                           *{\argmin}{arg min}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -135,8 +135,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 Missing character: There is no * in font nullfont!
-./sdll.sty:127: Undefined control sequence.
-l.127 \DeclareMathOperator*{\argmin
+./sdll.sty:129: Undefined control sequence.
+l.129 \DeclareMathOperator*{\argmin
                                    }{arg min}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -150,8 +150,8 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
-./sdll.sty:128: Undefined control sequence.
-l.128 \DeclareMathOperator
+./sdll.sty:130: Undefined control sequence.
+l.130 \DeclareMathOperator
                           *{\argmax}{arg max}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -160,8 +160,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 Missing character: There is no * in font nullfont!
-./sdll.sty:128: Undefined control sequence.
-l.128 \DeclareMathOperator*{\argmax
+./sdll.sty:130: Undefined control sequence.
+l.130 \DeclareMathOperator*{\argmax
                                    }{arg max}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -176,12 +176,12 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no x in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 125--129
+Overfull \hbox (20.0pt too wide) in paragraph at lines 127--131
 []
  []
 
-./sdll.sty:134: Undefined control sequence.
-l.134 \DeclarePairedDelimiterX
+./sdll.sty:136: Undefined control sequence.
+l.136 \DeclarePairedDelimiterX
                               {\inp}[2]{\langle}{\rangle}{#1, #2}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -189,8 +189,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:134: Undefined control sequence.
-l.134 \DeclarePairedDelimiterX{\inp
+./sdll.sty:136: Undefined control sequence.
+l.136 \DeclarePairedDelimiterX{\inp
                                    }[2]{\langle}{\rangle}{#1, #2}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -199,13 +199,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./sdll.sty:134: LaTeX Error: Missing \begin{document}.
+./sdll.sty:136: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.134 \DeclarePairedDelimiterX{\inp}[
+l.136 \DeclarePairedDelimiterX{\inp}[
                                      2]{\langle}{\rangle}{#1, #2}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -213,20 +213,20 @@ If that doesn't work, type  X <return>  to quit.
 Missing character: There is no [ in font nullfont!
 Missing character: There is no 2 in font nullfont!
 Missing character: There is no ] in font nullfont!
-./sdll.sty:134: Missing $ inserted.
+./sdll.sty:136: Missing $ inserted.
 <inserted text> 
                 $
-l.134 \DeclarePairedDelimiterX{\inp}[2]{\langle
+l.136 \DeclarePairedDelimiterX{\inp}[2]{\langle
                                                }{\rangle}{#1, #2}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 134.
+(Font)              <7> on input line 136.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 134.
-./sdll.sty:134: Extra }, or forgotten $.
-l.134 \DeclarePairedDelimiterX{\inp}[2]{\langle}
+(Font)              <5> on input line 136.
+./sdll.sty:136: Extra }, or forgotten $.
+l.136 \DeclarePairedDelimiterX{\inp}[2]{\langle}
                                                 {\rangle}{#1, #2}
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -234,37 +234,37 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./sdll.sty:134: You can't use `macro parameter character #' in math mode.
-l.134 ...edDelimiterX{\inp}[2]{\langle}{\rangle}{#
+./sdll.sty:136: You can't use `macro parameter character #' in math mode.
+l.136 ...edDelimiterX{\inp}[2]{\langle}{\rangle}{#
                                                   1, #2}
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-./sdll.sty:134: You can't use `macro parameter character #' in math mode.
-l.134 ...limiterX{\inp}[2]{\langle}{\rangle}{#1, #
+./sdll.sty:136: You can't use `macro parameter character #' in math mode.
+l.136 ...limiterX{\inp}[2]{\langle}{\rangle}{#1, #
                                                   2}
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-./sdll.sty:135: Missing $ inserted.
+./sdll.sty:137: Missing $ inserted.
 <inserted text> 
                 $
-l.135 
+l.137 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (42.22224pt too wide) in paragraph at lines 134--135
+Overfull \hbox (42.22224pt too wide) in paragraph at lines 136--137
 []$\OMS/cmsy/m/n/10 h[][]$ 
  []
 
-./sdll.sty:138: Undefined control sequence.
-l.138 \DeclarePairedDelimiterX
+./sdll.sty:140: Undefined control sequence.
+l.140 \DeclarePairedDelimiterX
                               {\set}[1]{\{}{\}}{\setargs{#1}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -272,8 +272,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:138: Undefined control sequence.
-l.138 \DeclarePairedDelimiterX{\set
+./sdll.sty:140: Undefined control sequence.
+l.140 \DeclarePairedDelimiterX{\set
                                    }[1]{\{}{\}}{\setargs{#1}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -282,13 +282,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./sdll.sty:138: LaTeX Error: Missing \begin{document}.
+./sdll.sty:140: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.138 \DeclarePairedDelimiterX{\set}[
+l.140 \DeclarePairedDelimiterX{\set}[
                                      1]{\{}{\}}{\setargs{#1}}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -296,16 +296,16 @@ If that doesn't work, type  X <return>  to quit.
 Missing character: There is no [ in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no ] in font nullfont!
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 138.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 140.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 138.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
 
-./sdll.sty:138: Undefined control sequence.
-l.138 ...airedDelimiterX{\set}[1]{\{}{\}}{\setargs
+./sdll.sty:140: Undefined control sequence.
+l.140 ...airedDelimiterX{\set}[1]{\{}{\}}{\setargs
                                                   {#1}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -313,8 +313,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:138: You can't use `macro parameter character #' in horizontal mode.
-l.138 ...redDelimiterX{\set}[1]{\{}{\}}{\setargs{#
+./sdll.sty:140: You can't use `macro parameter character #' in horizontal mode.
+l.140 ...redDelimiterX{\set}[1]{\{}{\}}{\setargs{#
                                                   1}}
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -322,8 +322,8 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no 1 in font nullfont!
-./sdll.sty:139: Undefined control sequence.
-l.139 \NewDocumentCommand
+./sdll.sty:141: Undefined control sequence.
+l.141 \NewDocumentCommand
                          {\setargs}{>{\SplitArgument{1}{;}}m}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -331,8 +331,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:139: Undefined control sequence.
-l.139 \NewDocumentCommand{\setargs
+./sdll.sty:141: Undefined control sequence.
+l.141 \NewDocumentCommand{\setargs
                                   }{>{\SplitArgument{1}{;}}m}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -341,8 +341,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 Missing character: There is no > in font nullfont!
-./sdll.sty:139: Undefined control sequence.
-l.139 ...ocumentCommand{\setargs}{>{\SplitArgument
+./sdll.sty:141: Undefined control sequence.
+l.141 ...ocumentCommand{\setargs}{>{\SplitArgument
                                                   {1}{;}}m}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -353,8 +353,8 @@ and I'll forget about whatever was undefined.
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no m in font nullfont!
-./sdll.sty:140: Undefined control sequence.
-l.140 {\setargsaux
+./sdll.sty:142: Undefined control sequence.
+l.142 {\setargsaux
                   #1}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -362,8 +362,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:140: You can't use `macro parameter character #' in horizontal mode.
-l.140 {\setargsaux#
+./sdll.sty:142: You can't use `macro parameter character #' in horizontal mode.
+l.142 {\setargsaux#
                    1}
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -371,8 +371,8 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no 1 in font nullfont!
-./sdll.sty:141: Undefined control sequence.
-l.141 \NewDocumentCommand
+./sdll.sty:143: Undefined control sequence.
+l.143 \NewDocumentCommand
                          {\setargsaux}{mm}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -380,8 +380,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:141: Undefined control sequence.
-l.141 \NewDocumentCommand{\setargsaux
+./sdll.sty:143: Undefined control sequence.
+l.143 \NewDocumentCommand{\setargsaux
                                      }{mm}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -391,8 +391,8 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no m in font nullfont!
 Missing character: There is no m in font nullfont!
-./sdll.sty:142: Undefined control sequence.
-l.142 {\IfNoValueTF
+./sdll.sty:144: Undefined control sequence.
+l.144 {\IfNoValueTF
                    {#2}{#1} {#1\,\delimsize|\,\mathopen{}#2}}%{#1\:;\:#2}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -400,8 +400,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:142: You can't use `macro parameter character #' in horizontal mode.
-l.142 {\IfNoValueTF{#
+./sdll.sty:144: You can't use `macro parameter character #' in horizontal mode.
+l.144 {\IfNoValueTF{#
                      2}{#1} {#1\,\delimsize|\,\mathopen{}#2}}%{#1\:;\:#2}
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -409,8 +409,8 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no 2 in font nullfont!
-./sdll.sty:142: You can't use `macro parameter character #' in horizontal mode.
-l.142 {\IfNoValueTF{#2}{#
+./sdll.sty:144: You can't use `macro parameter character #' in horizontal mode.
+l.144 {\IfNoValueTF{#2}{#
                          1} {#1\,\delimsize|\,\mathopen{}#2}}%{#1\:;\:#2}
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -418,8 +418,8 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no 1 in font nullfont!
-./sdll.sty:142: You can't use `macro parameter character #' in horizontal mode.
-l.142 {\IfNoValueTF{#2}{#1} {#
+./sdll.sty:144: You can't use `macro parameter character #' in horizontal mode.
+l.144 {\IfNoValueTF{#2}{#1} {#
                               1\,\delimsize|\,\mathopen{}#2}}%{#1\:;\:#2}
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -427,8 +427,8 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no 1 in font nullfont!
-./sdll.sty:142: Undefined control sequence.
-l.142 {\IfNoValueTF{#2}{#1} {#1\,\delimsize
+./sdll.sty:144: Undefined control sequence.
+l.144 {\IfNoValueTF{#2}{#1} {#1\,\delimsize
                                            |\,\mathopen{}#2}}%{#1\:;\:#2}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -437,24 +437,24 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 Missing character: There is no | in font nullfont!
-./sdll.sty:142: Missing $ inserted.
+./sdll.sty:144: Missing $ inserted.
 <inserted text> 
                 $
-l.142 ...lueTF{#2}{#1} {#1\,\delimsize|\,\mathopen
+l.144 ...lueTF{#2}{#1} {#1\,\delimsize|\,\mathopen
                                                   {}#2}}%{#1\:;\:#2}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./sdll.sty:142: You can't use `macro parameter character #' in math mode.
-l.142 ...TF{#2}{#1} {#1\,\delimsize|\,\mathopen{}#
+./sdll.sty:144: You can't use `macro parameter character #' in math mode.
+l.144 ...TF{#2}{#1} {#1\,\delimsize|\,\mathopen{}#
                                                   2}}%{#1\:;\:#2}
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-./sdll.sty:142: Extra }, or forgotten $.
-l.142 ...{#2}{#1} {#1\,\delimsize|\,\mathopen{}#2}
+./sdll.sty:144: Extra }, or forgotten $.
+l.144 ...{#2}{#1} {#1\,\delimsize|\,\mathopen{}#2}
                                                   }%{#1\:;\:#2}
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -462,8 +462,8 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./sdll.sty:142: Extra }, or forgotten $.
-l.142 ...#2}{#1} {#1\,\delimsize|\,\mathopen{}#2}}
+./sdll.sty:144: Extra }, or forgotten $.
+l.144 ...#2}{#1} {#1\,\delimsize|\,\mathopen{}#2}}
                                                   %{#1\:;\:#2}
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -471,26 +471,26 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./sdll.sty:143: Missing $ inserted.
+./sdll.sty:145: Missing $ inserted.
 <inserted text> 
                 $
-l.143 
+l.145 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (30.00003pt too wide) in paragraph at lines 138--143
+Overfull \hbox (30.00003pt too wide) in paragraph at lines 140--145
 []\OMS/cmsy/m/n/10 fg
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 138--143
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 140--145
 []\OT1/cmr/m/n/10 2$ 
  []
 
-./sdll.sty:192: Undefined control sequence.
-l.192 \DeclareMathOperator
+./sdll.sty:194: Undefined control sequence.
+l.194 \DeclareMathOperator
                           {\spn}{span}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -498,8 +498,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:192: Undefined control sequence.
-l.192 \DeclareMathOperator{\spn
+./sdll.sty:194: Undefined control sequence.
+l.194 \DeclareMathOperator{\spn
                                }{span}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -508,13 +508,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./sdll.sty:192: LaTeX Error: Missing \begin{document}.
+./sdll.sty:194: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.192 \DeclareMathOperator{\spn}{s
+l.194 \DeclareMathOperator{\spn}{s
                                   pan}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -524,12 +524,12 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 192--193
+Overfull \hbox (20.0pt too wide) in paragraph at lines 194--195
 [] 
  []
 
-./sdll.sty:195: Undefined control sequence.
-l.195 \DeclareMathOperator
+./sdll.sty:197: Undefined control sequence.
+l.197 \DeclareMathOperator
                           {\sign}{sign}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -537,8 +537,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:195: Undefined control sequence.
-l.195 \DeclareMathOperator{\sign
+./sdll.sty:197: Undefined control sequence.
+l.197 \DeclareMathOperator{\sign
                                 }{sign}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -547,13 +547,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./sdll.sty:195: LaTeX Error: Missing \begin{document}.
+./sdll.sty:197: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.195 \DeclareMathOperator{\sign}{s
+l.197 \DeclareMathOperator{\sign}{s
                                    ign}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -562,8 +562,8 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no n in font nullfont!
-./sdll.sty:196: Undefined control sequence.
-l.196 \DeclareMathOperator
+./sdll.sty:198: Undefined control sequence.
+l.198 \DeclareMathOperator
                           {\Aut}{Aut}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -571,8 +571,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:196: Undefined control sequence.
-l.196 \DeclareMathOperator{\Aut
+./sdll.sty:198: Undefined control sequence.
+l.198 \DeclareMathOperator{\Aut
                                }{Aut}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -583,8 +583,8 @@ and I'll forget about whatever was undefined.
 Missing character: There is no A in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no t in font nullfont!
-./sdll.sty:197: Undefined control sequence.
-l.197 \DeclareMathOperator
+./sdll.sty:199: Undefined control sequence.
+l.199 \DeclareMathOperator
                           {\Inn}{Inn}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -592,8 +592,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:197: Undefined control sequence.
-l.197 \DeclareMathOperator{\Inn
+./sdll.sty:199: Undefined control sequence.
+l.199 \DeclareMathOperator{\Inn
                                }{Inn}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -604,8 +604,8 @@ and I'll forget about whatever was undefined.
 Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no n in font nullfont!
-./sdll.sty:198: Undefined control sequence.
-l.198 \DeclareMathOperator
+./sdll.sty:200: Undefined control sequence.
+l.200 \DeclareMathOperator
                           {\Syl}{Syl}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -613,8 +613,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:198: Undefined control sequence.
-l.198 \DeclareMathOperator{\Syl
+./sdll.sty:200: Undefined control sequence.
+l.200 \DeclareMathOperator{\Syl
                                }{Syl}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -625,8 +625,8 @@ and I'll forget about whatever was undefined.
 Missing character: There is no S in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no l in font nullfont!
-./sdll.sty:199: Undefined control sequence.
-l.199 \DeclareMathOperator
+./sdll.sty:201: Undefined control sequence.
+l.201 \DeclareMathOperator
                           {\Gal}{Gal}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -634,8 +634,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:199: Undefined control sequence.
-l.199 \DeclareMathOperator{\Gal
+./sdll.sty:201: Undefined control sequence.
+l.201 \DeclareMathOperator{\Gal
                                }{Gal}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -646,8 +646,8 @@ and I'll forget about whatever was undefined.
 Missing character: There is no G in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
-./sdll.sty:200: Undefined control sequence.
-l.200 \DeclareMathOperator
+./sdll.sty:202: Undefined control sequence.
+l.202 \DeclareMathOperator
                           {\GL}{GL} % General linear group
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -655,8 +655,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:200: Undefined control sequence.
-l.200 \DeclareMathOperator{\GL
+./sdll.sty:202: Undefined control sequence.
+l.202 \DeclareMathOperator{\GL
                               }{GL} % General linear group
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -666,8 +666,8 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no G in font nullfont!
 Missing character: There is no L in font nullfont!
-./sdll.sty:201: Undefined control sequence.
-l.201 \DeclareMathOperator
+./sdll.sty:203: Undefined control sequence.
+l.203 \DeclareMathOperator
                           {\SL}{SL} % Special linear group
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -675,8 +675,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:201: Undefined control sequence.
-l.201 \DeclareMathOperator{\SL
+./sdll.sty:203: Undefined control sequence.
+l.203 \DeclareMathOperator{\SL
                               }{SL} % Special linear group
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -687,12 +687,12 @@ and I'll forget about whatever was undefined.
 Missing character: There is no S in font nullfont!
 Missing character: There is no L in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 195--202
+Overfull \hbox (20.0pt too wide) in paragraph at lines 197--204
 []
  []
 
-./sdll.sty:217: Undefined control sequence.
-l.217 \DeclareMathOperator
+./sdll.sty:219: Undefined control sequence.
+l.219 \DeclareMathOperator
                           {\diam}{diam}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -700,8 +700,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:217: Undefined control sequence.
-l.217 \DeclareMathOperator{\diam
+./sdll.sty:219: Undefined control sequence.
+l.219 \DeclareMathOperator{\diam
                                 }{diam}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -710,13 +710,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./sdll.sty:217: LaTeX Error: Missing \begin{document}.
+./sdll.sty:219: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.217 \DeclareMathOperator{\diam}{d
+l.219 \DeclareMathOperator{\diam}{d
                                    iam}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -725,8 +725,8 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no m in font nullfont!
-./sdll.sty:218: Undefined control sequence.
-l.218 \DeclareMathOperator
+./sdll.sty:220: Undefined control sequence.
+l.220 \DeclareMathOperator
                           {\ord}{ord}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -734,8 +734,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:218: Undefined control sequence.
-l.218 \DeclareMathOperator{\ord
+./sdll.sty:220: Undefined control sequence.
+l.220 \DeclareMathOperator{\ord
                                }{ord}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -747,24 +747,24 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no d in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 217--220
+Overfull \hbox (20.0pt too wide) in paragraph at lines 219--222
 []
  []
 
 
-./sdll.sty:228: LaTeX Error: \usepackage before \documentclass.
+./sdll.sty:230: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.228 \usepackage{
+l.230 \usepackage{
                   siunitx}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
-./sdll.sty:248: Undefined control sequence.
-l.248     \DeclareMathOperator
+./sdll.sty:250: Undefined control sequence.
+l.250     \DeclareMathOperator
                               {\img}{im} % Image
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -772,8 +772,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:248: Undefined control sequence.
-l.248     \DeclareMathOperator{\img
+./sdll.sty:250: Undefined control sequence.
+l.250     \DeclareMathOperator{\img
                                    }{im} % Image
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -782,21 +782,21 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./sdll.sty:248: LaTeX Error: Missing \begin{document}.
+./sdll.sty:250: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.248     \DeclareMathOperator{\img}{i
+l.250     \DeclareMathOperator{\img}{i
                                       m} % Image
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no i in font nullfont!
 Missing character: There is no m in font nullfont!
-./sdll.sty:249: Undefined control sequence.
-l.249     \DeclareMathOperator
+./sdll.sty:251: Undefined control sequence.
+l.251     \DeclareMathOperator
                               {\Img}{Im} % Image
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -804,8 +804,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:249: Undefined control sequence.
-l.249     \DeclareMathOperator{\Img
+./sdll.sty:251: Undefined control sequence.
+l.251     \DeclareMathOperator{\Img
                                    }{Im} % Image
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -815,8 +815,8 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no I in font nullfont!
 Missing character: There is no m in font nullfont!
-./sdll.sty:250: Undefined control sequence.
-l.250     \DeclareMathOperator
+./sdll.sty:252: Undefined control sequence.
+l.252     \DeclareMathOperator
                               {\coker}{coker} % Cokernel
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -824,8 +824,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:250: Undefined control sequence.
-l.250     \DeclareMathOperator{\coker
+./sdll.sty:252: Undefined control sequence.
+l.252     \DeclareMathOperator{\coker
                                      }{coker} % Cokernel
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -838,8 +838,8 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
-./sdll.sty:251: Undefined control sequence.
-l.251     \DeclareMathOperator
+./sdll.sty:253: Undefined control sequence.
+l.253     \DeclareMathOperator
                               {\Coker}{Coker} % Cokernel
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -847,8 +847,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:251: Undefined control sequence.
-l.251     \DeclareMathOperator{\Coker
+./sdll.sty:253: Undefined control sequence.
+l.253     \DeclareMathOperator{\Coker
                                      }{Coker} % Cokernel
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -861,8 +861,8 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
-./sdll.sty:252: Undefined control sequence.
-l.252     \DeclareMathOperator
+./sdll.sty:254: Undefined control sequence.
+l.254     \DeclareMathOperator
                               {\Ker}{Ker} % Kernel
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -870,8 +870,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:252: Undefined control sequence.
-l.252     \DeclareMathOperator{\Ker
+./sdll.sty:254: Undefined control sequence.
+l.254     \DeclareMathOperator{\Ker
                                    }{Ker} % Kernel
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -882,8 +882,8 @@ and I'll forget about whatever was undefined.
 Missing character: There is no K in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
-./sdll.sty:253: Undefined control sequence.
-l.253     \DeclareMathOperator
+./sdll.sty:255: Undefined control sequence.
+l.255     \DeclareMathOperator
                               {\rank}{rank} % rank
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -891,8 +891,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:253: Undefined control sequence.
-l.253     \DeclareMathOperator{\rank
+./sdll.sty:255: Undefined control sequence.
+l.255     \DeclareMathOperator{\rank
                                     }{rank} % rank
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -904,8 +904,8 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no k in font nullfont!
-./sdll.sty:254: Undefined control sequence.
-l.254     \DeclareMathOperator
+./sdll.sty:256: Undefined control sequence.
+l.256     \DeclareMathOperator
                               {\nll}{nullity} %nullity
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -913,8 +913,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:254: Undefined control sequence.
-l.254     \DeclareMathOperator{\nll
+./sdll.sty:256: Undefined control sequence.
+l.256     \DeclareMathOperator{\nll
                                    }{nullity} %nullity
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -929,8 +929,8 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no y in font nullfont!
-./sdll.sty:255: Undefined control sequence.
-l.255     \DeclareMathOperator
+./sdll.sty:257: Undefined control sequence.
+l.257     \DeclareMathOperator
                               {\Spec}{Spec} % spectrum
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -938,8 +938,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:255: Undefined control sequence.
-l.255     \DeclareMathOperator{\Spec
+./sdll.sty:257: Undefined control sequence.
+l.257     \DeclareMathOperator{\Spec
                                     }{Spec} % spectrum
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -951,28 +951,28 @@ Missing character: There is no S in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no c in font nullfont!
-./sdll.sty:256: Undefined control sequence.
-l.256     \DeclareMathOperator
-                              {\Tr}{Tr} % trace
+./sdll.sty:258: Undefined control sequence.
+l.258     \DeclareMathOperator
+                              {\Tr}{tr} % trace
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:256: Undefined control sequence.
-l.256     \DeclareMathOperator{\Tr
-                                  }{Tr} % trace
+./sdll.sty:258: Undefined control sequence.
+l.258     \DeclareMathOperator{\Tr
+                                  }{tr} % trace
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no T in font nullfont!
+Missing character: There is no t in font nullfont!
 Missing character: There is no r in font nullfont!
-./sdll.sty:257: Undefined control sequence.
-l.257     \DeclareMathOperator
+./sdll.sty:259: Undefined control sequence.
+l.259     \DeclareMathOperator
                               {\pr}{pr} % projection
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -980,8 +980,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:257: Undefined control sequence.
-l.257     \DeclareMathOperator{\pr
+./sdll.sty:259: Undefined control sequence.
+l.259     \DeclareMathOperator{\pr
                                   }{pr} % projection
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -991,8 +991,8 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no p in font nullfont!
 Missing character: There is no r in font nullfont!
-./sdll.sty:258: Undefined control sequence.
-l.258     \DeclareMathOperator
+./sdll.sty:260: Undefined control sequence.
+l.260     \DeclareMathOperator
                               {\ext}{ext} % extension
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1000,8 +1000,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:258: Undefined control sequence.
-l.258     \DeclareMathOperator{\ext
+./sdll.sty:260: Undefined control sequence.
+l.260     \DeclareMathOperator{\ext
                                    }{ext} % extension
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1012,8 +1012,8 @@ and I'll forget about whatever was undefined.
 Missing character: There is no e in font nullfont!
 Missing character: There is no x in font nullfont!
 Missing character: There is no t in font nullfont!
-./sdll.sty:259: Undefined control sequence.
-l.259     \DeclareMathOperator
+./sdll.sty:261: Undefined control sequence.
+l.261     \DeclareMathOperator
                               {\pred}{pred} % predecessor
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1021,8 +1021,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:259: Undefined control sequence.
-l.259     \DeclareMathOperator{\pred
+./sdll.sty:261: Undefined control sequence.
+l.261     \DeclareMathOperator{\pred
                                     }{pred} % predecessor
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1034,8 +1034,8 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
-./sdll.sty:260: Undefined control sequence.
-l.260     \DeclareMathOperator
+./sdll.sty:262: Undefined control sequence.
+l.262     \DeclareMathOperator
                               {\dom}{dom} % domain
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1043,8 +1043,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:260: Undefined control sequence.
-l.260     \DeclareMathOperator{\dom
+./sdll.sty:262: Undefined control sequence.
+l.262     \DeclareMathOperator{\dom
                                    }{dom} % domain
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1055,8 +1055,8 @@ and I'll forget about whatever was undefined.
 Missing character: There is no d in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no m in font nullfont!
-./sdll.sty:261: Undefined control sequence.
-l.261     \DeclareMathOperator
+./sdll.sty:263: Undefined control sequence.
+l.263     \DeclareMathOperator
                               {\ran}{ran} % range
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1064,8 +1064,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:261: Undefined control sequence.
-l.261     \DeclareMathOperator{\ran
+./sdll.sty:263: Undefined control sequence.
+l.263     \DeclareMathOperator{\ran
                                    }{ran} % range
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1076,8 +1076,8 @@ and I'll forget about whatever was undefined.
 Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
-./sdll.sty:262: Undefined control sequence.
-l.262     \DeclareMathOperator
+./sdll.sty:264: Undefined control sequence.
+l.264     \DeclareMathOperator
                               {\Hom}{Hom} % homomorphism
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1085,8 +1085,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:262: Undefined control sequence.
-l.262     \DeclareMathOperator{\Hom
+./sdll.sty:264: Undefined control sequence.
+l.264     \DeclareMathOperator{\Hom
                                    }{Hom} % homomorphism
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1097,8 +1097,8 @@ and I'll forget about whatever was undefined.
 Missing character: There is no H in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no m in font nullfont!
-./sdll.sty:263: Undefined control sequence.
-l.263     \DeclareMathOperator
+./sdll.sty:265: Undefined control sequence.
+l.265     \DeclareMathOperator
                               {\End}{End} % endomorphism
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1106,8 +1106,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:263: Undefined control sequence.
-l.263     \DeclareMathOperator{\End
+./sdll.sty:265: Undefined control sequence.
+l.265     \DeclareMathOperator{\End
                                    }{End} % endomorphism
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1119,12 +1119,12 @@ Missing character: There is no E in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 248--264
+Overfull \hbox (20.0pt too wide) in paragraph at lines 250--266
 []
  []
 
-./sdll.sty:272: Undefined control sequence.
-l.272     \DeclareMathOperator
+./sdll.sty:274: Undefined control sequence.
+l.274     \DeclareMathOperator
                               {\Ext}{Ext} % Ext functor
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1132,8 +1132,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:272: Undefined control sequence.
-l.272     \DeclareMathOperator{\Ext
+./sdll.sty:274: Undefined control sequence.
+l.274     \DeclareMathOperator{\Ext
                                    }{Ext} % Ext functor
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1142,13 +1142,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./sdll.sty:272: LaTeX Error: Missing \begin{document}.
+./sdll.sty:274: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.272     \DeclareMathOperator{\Ext}{E
+l.274     \DeclareMathOperator{\Ext}{E
                                       xt} % Ext functor
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1156,8 +1156,8 @@ If that doesn't work, type  X <return>  to quit.
 Missing character: There is no E in font nullfont!
 Missing character: There is no x in font nullfont!
 Missing character: There is no t in font nullfont!
-./sdll.sty:273: Undefined control sequence.
-l.273     \DeclareMathOperator
+./sdll.sty:275: Undefined control sequence.
+l.275     \DeclareMathOperator
                               {\Tor}{Tor} % Tor functor
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1165,8 +1165,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:273: Undefined control sequence.
-l.273     \DeclareMathOperator{\Tor
+./sdll.sty:275: Undefined control sequence.
+l.275     \DeclareMathOperator{\Tor
                                    }{Tor} % Tor functor
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1178,48 +1178,48 @@ Missing character: There is no T in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 
-./sdll.sty:275: LaTeX Error: \sl undefined.
+./sdll.sty:277: LaTeX Error: \sl undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.275     \renewcommand{\sl}
+l.277     \renewcommand{\sl}
                             {\opname{\mathfrak{sl}}} % frak gl group
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 272--276
+Overfull \hbox (20.0pt too wide) in paragraph at lines 274--278
 []
  []
 
 
-./sdll.sty:297: LaTeX Error: \usepackage before \documentclass.
+./sdll.sty:302: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.297     \usepackage{
+l.302     \usepackage{
                       amsthm}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 
-./sdll.sty:315: LaTeX Error: \usepackage before \documentclass.
+./sdll.sty:320: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.315     \usepackage{
+l.320     \usepackage{
                       xcolor}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
-./sdll.sty:317: Undefined control sequence.
-l.317     \definecolor
+./sdll.sty:322: Undefined control sequence.
+l.322     \definecolor
                       {PalyGreen}{RGB}{251,239,239}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1228,13 +1228,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./sdll.sty:317: LaTeX Error: Missing \begin{document}.
+./sdll.sty:322: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.317     \definecolor{P
+l.322     \definecolor{P
                         alyGreen}{RGB}{251,239,239}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1262,8 +1262,8 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no 2 in font nullfont!
 Missing character: There is no 3 in font nullfont!
 Missing character: There is no 9 in font nullfont!
-./sdll.sty:318: Undefined control sequence.
-l.318     \definecolor
+./sdll.sty:323: Undefined control sequence.
+l.323     \definecolor
                       {PalyGrey}{gray}{0.90}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1288,60 +1288,60 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no 9 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 
-./sdll.sty:320: LaTeX Error: \usepackage before \documentclass.
+./sdll.sty:325: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.320     \usepackage{
+l.325     \usepackage{
                       hyperref}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 
-./sdll.sty:322: LaTeX Error: \usepackage before \documentclass.
+./sdll.sty:327: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.322     \usepackage[nameinlink]{
+l.327     \usepackage[nameinlink]{
                                   cleveref}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 
-./sdll.sty:323: LaTeX Error: \usepackage before \documentclass.
+./sdll.sty:328: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.323     \usepackage{
+l.328     \usepackage{
                       datetime}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 
-./sdll.sty:324: LaTeX Error: \usepackage before \documentclass.
+./sdll.sty:329: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.324     \usepackage{
+l.329     \usepackage{
                       graphicx}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 317--326
+Overfull \hbox (20.0pt too wide) in paragraph at lines 322--331
 []
  []
 
-./sdll.sty:373: Undefined control sequence.
-l.373     \theoremstyle
+./sdll.sty:378: Undefined control sequence.
+l.378     \theoremstyle
                        {plain}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1350,13 +1350,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./sdll.sty:373: LaTeX Error: Missing \begin{document}.
+./sdll.sty:378: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.373     \theoremstyle{p
+l.378     \theoremstyle{p
                          lain}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1368,14 +1368,14 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 \c@theorem=\count79
 
-./sdll.sty:399: LaTeX Error: Command \* already defined.
+./sdll.sty:404: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.399     \newtheorem*{theorem*}{
+l.404     \newtheorem*{theorem*}{
                                  Theorem}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1389,14 +1389,14 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
 
-./sdll.sty:400: LaTeX Error: Command \* already defined.
+./sdll.sty:405: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.400     \newtheorem*{lemma*}{
+l.405     \newtheorem*{lemma*}{
                                Lemma}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1408,14 +1408,14 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
 
-./sdll.sty:401: LaTeX Error: Command \* already defined.
+./sdll.sty:406: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.401     \newtheorem*{proposition*}{
+l.406     \newtheorem*{proposition*}{
                                      Proposition}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1433,14 +1433,14 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 
-./sdll.sty:402: LaTeX Error: Command \* already defined.
+./sdll.sty:407: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.402     \newtheorem*{corollary*}{
+l.407     \newtheorem*{corollary*}{
                                    Corollary}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1456,12 +1456,12 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no y in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 373--404
+Overfull \hbox (20.0pt too wide) in paragraph at lines 378--409
 []
  []
 
-./sdll.sty:406: Undefined control sequence.
-l.406     \theoremstyle
+./sdll.sty:411: Undefined control sequence.
+l.411     \theoremstyle
                        {definition}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1470,13 +1470,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./sdll.sty:406: LaTeX Error: Missing \begin{document}.
+./sdll.sty:411: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.406     \theoremstyle{d
+l.411     \theoremstyle{d
                          efinition}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1492,32 +1492,32 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 406--407
+Overfull \hbox (20.0pt too wide) in paragraph at lines 411--412
 [] 
  []
 
 
-./sdll.sty:413: LaTeX Error: Command \* already defined.
+./sdll.sty:418: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.413     \newtheorem*{algorithm*}{
+l.418     \newtheorem*{algorithm*}{
                                    Algorithm}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./sdll.sty:413: LaTeX Error: Missing \begin{document}.
+./sdll.sty:418: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.413     \newtheorem*{algorithm*}{A
+l.418     \newtheorem*{algorithm*}{A
                                     lgorithm}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1532,32 +1532,32 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no m in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 413--415
+Overfull \hbox (20.0pt too wide) in paragraph at lines 418--420
 [] 
  []
 
 
-./sdll.sty:427: LaTeX Error: Command \* already defined.
+./sdll.sty:432: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.427     \newtheorem*{answer*}{
+l.432     \newtheorem*{answer*}{
                                 Answer}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./sdll.sty:427: LaTeX Error: Missing \begin{document}.
+./sdll.sty:432: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.427     \newtheorem*{answer*}{A
+l.432     \newtheorem*{answer*}{A
                                  nswer}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1569,14 +1569,14 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 
-./sdll.sty:428: LaTeX Error: Command \* already defined.
+./sdll.sty:433: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.428     \newtheorem*{case*}{
+l.433     \newtheorem*{case*}{
                               Case}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1587,14 +1587,14 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 
-./sdll.sty:429: LaTeX Error: Command \* already defined.
+./sdll.sty:434: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.429     \newtheorem*{claim*}{
+l.434     \newtheorem*{claim*}{
                                Claim}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1606,14 +1606,14 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no m in font nullfont!
 
-./sdll.sty:430: LaTeX Error: Command \* already defined.
+./sdll.sty:435: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.430     \newtheorem*{conjecture*}{
+l.435     \newtheorem*{conjecture*}{
                                     Conjecture}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1630,14 +1630,14 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 
-./sdll.sty:431: LaTeX Error: Command \* already defined.
+./sdll.sty:436: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.431     \newtheorem*{definition*}{
+l.436     \newtheorem*{definition*}{
                                     Definition}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1654,14 +1654,14 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 
-./sdll.sty:432: LaTeX Error: Command \* already defined.
+./sdll.sty:437: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.432     \newtheorem*{fact*}{
+l.437     \newtheorem*{fact*}{
                               Fact}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1672,14 +1672,14 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no t in font nullfont!
 
-./sdll.sty:433: LaTeX Error: Command \* already defined.
+./sdll.sty:438: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.433     \newtheorem*{joke*}{
+l.438     \newtheorem*{joke*}{
                               Joke}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1690,14 +1690,14 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no e in font nullfont!
 
-./sdll.sty:434: LaTeX Error: Command \* already defined.
+./sdll.sty:439: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.434     \newtheorem*{ques*}{
+l.439     \newtheorem*{ques*}{
                               Question}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1712,14 +1712,14 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 
-./sdll.sty:435: LaTeX Error: Command \* already defined.
+./sdll.sty:440: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.435     \newtheorem*{exercise*}{
+l.440     \newtheorem*{exercise*}{
                                   Exercise}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1734,14 +1734,14 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 
-./sdll.sty:436: LaTeX Error: Command \* already defined.
+./sdll.sty:441: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.436     \newtheorem*{problem*}{
+l.441     \newtheorem*{problem*}{
                                  Problem}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1755,32 +1755,32 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 427--437
+Overfull \hbox (20.0pt too wide) in paragraph at lines 432--442
 []
  []
 
 
-./sdll.sty:444: LaTeX Error: Command \* already defined.
+./sdll.sty:449: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.444     \newtheorem*{example*}{
+l.449     \newtheorem*{example*}{
                                  Example}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./sdll.sty:444: LaTeX Error: Missing \begin{document}.
+./sdll.sty:449: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.444     \newtheorem*{example*}{E
+l.449     \newtheorem*{example*}{E
                                   xample}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1793,32 +1793,32 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 444--446
+Overfull \hbox (20.0pt too wide) in paragraph at lines 449--451
 [] 
  []
 
 
-./sdll.sty:451: LaTeX Error: Command \* already defined.
+./sdll.sty:456: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.451     \newtheorem*{note*}{
+l.456     \newtheorem*{note*}{
                               Note}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./sdll.sty:451: LaTeX Error: Missing \begin{document}.
+./sdll.sty:456: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.451     \newtheorem*{note*}{N
+l.456     \newtheorem*{note*}{N
                                ote}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1828,14 +1828,14 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 
-./sdll.sty:452: LaTeX Error: Command \* already defined.
+./sdll.sty:457: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.452     \newtheorem*{remark*}{
+l.457     \newtheorem*{remark*}{
                                 Remark}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1848,14 +1848,14 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no k in font nullfont!
 
-./sdll.sty:454: LaTeX Error: Command \* already defined.
+./sdll.sty:459: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.454     \newtheorem*{abuse*}{
+l.459     \newtheorem*{abuse*}{
                                Abuse of Notation}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1877,48 +1877,48 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 451--456
+Overfull \hbox (20.0pt too wide) in paragraph at lines 456--461
 []
  []
 
 
-./sdll.sty:484: LaTeX Error: \usepackage before \documentclass.
+./sdll.sty:489: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.484     \usepackage{
+l.489     \usepackage{
                       listings}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 
-./sdll.sty:485: LaTeX Error: \usepackage before \documentclass.
+./sdll.sty:490: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.485     \usepackage{
+l.490     \usepackage{
                       mathrsfs}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 
-./sdll.sty:486: LaTeX Error: \usepackage before \documentclass.
+./sdll.sty:491: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.486     \usepackage{
+l.491     \usepackage{
                       textcomp}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
-./sdll.sty:487: Undefined control sequence.
-l.487     \lstset
+./sdll.sty:492: Undefined control sequence.
+l.492     \lstset
                  {basicstyle=\footnotesize\ttfamily,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1927,13 +1927,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./sdll.sty:487: LaTeX Error: Missing \begin{document}.
+./sdll.sty:492: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.487     \lstset{b
+l.492     \lstset{b
                    asicstyle=\footnotesize\ttfamily,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1949,8 +1949,8 @@ Missing character: There is no y in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
-./sdll.sty:487: Undefined control sequence.
-l.487     \lstset{basicstyle=\footnotesize
+./sdll.sty:492: Undefined control sequence.
+l.492     \lstset{basicstyle=\footnotesize
                                           \ttfamily,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1958,8 +1958,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:490: Undefined control sequence.
-l.490         numberstyle=\tiny
+./sdll.sty:495: Undefined control sequence.
+l.495         numberstyle=\tiny
                                ,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1968,9 +1968,9 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 491.
-./sdll.sty:496: Undefined control sequence.
-l.496         keywordstyle=\bfseries\color
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 496.
+./sdll.sty:501: Undefined control sequence.
+l.501         keywordstyle=\bfseries\color
                                           {blue},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1978,8 +1978,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:497: Undefined control sequence.
-l.497         commentstyle=\color
+./sdll.sty:502: Undefined control sequence.
+l.502         commentstyle=\color
                                  {green!70!black},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1987,8 +1987,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:498: Undefined control sequence.
-l.498         identifierstyle=\color
+./sdll.sty:503: Undefined control sequence.
+l.503         identifierstyle=\color
                                     {green!20!black},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1996,8 +1996,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:499: Undefined control sequence.
-l.499         stringstyle=\color
+./sdll.sty:504: Undefined control sequence.
+l.504         stringstyle=\color
                                 {orange},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2006,174 +2006,174 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./sdll.sty:504: LaTeX Error: \usepackage before \documentclass.
+./sdll.sty:509: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.504     \usepackage[shortlabels]{
+l.509     \usepackage[shortlabels]{
                                    enumitem}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 
-./sdll.sty:505: LaTeX Error: \usepackage before \documentclass.
+./sdll.sty:510: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.505 ...ge[obeyFinal,textsize=scriptsize,shadow]{
+l.510 ...ge[obeyFinal,textsize=scriptsize,shadow]{
                                                   todonotes}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 
-Overfull \hbox (25.24995pt too wide) in paragraph at lines 487--507
+Overfull \hbox (25.24995pt too wide) in paragraph at lines 492--512
 []\OT1/cmtt/m/n/10 ,
  []
 
 
-Overfull \hbox (68.2494pt too wide) in paragraph at lines 487--507
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 492--512
 \OT1/cmtt/m/n/10 numbers=left,
  []
 
 
-Overfull \hbox (73.49936pt too wide) in paragraph at lines 487--507
+Overfull \hbox (73.49936pt too wide) in paragraph at lines 492--512
 \OT1/cmtt/m/n/10 numbersep=5pt,
  []
 
 
-Overfull \hbox (68.2494pt too wide) in paragraph at lines 487--507
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 492--512
 \OT1/cmtt/m/n/10 numberstyle=,
  []
 
 
-Overfull \hbox (73.49936pt too wide) in paragraph at lines 487--507
+Overfull \hbox (73.49936pt too wide) in paragraph at lines 492--512
 \OT1/cmtt/m/n/10 keywordstyle=,
  []
 
 
-Overfull \hbox (120.74895pt too wide) in paragraph at lines 487--507
+Overfull \hbox (120.74895pt too wide) in paragraph at lines 492--512
 \OT1/cmtt/m/n/10 showstringspaces=false,
  []
 
 
-Overfull \hbox (52.49954pt too wide) in paragraph at lines 487--507
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 492--512
 \OT1/cmtt/m/n/10 tabsize=4,
  []
 
 
-Overfull \hbox (68.2494pt too wide) in paragraph at lines 487--507
+Overfull \hbox (68.2494pt too wide) in paragraph at lines 492--512
 \OT1/cmtt/m/n/10 frame=single,
  []
 
 
-Overfull \hbox (94.49918pt too wide) in paragraph at lines 487--507
+Overfull \hbox (94.49918pt too wide) in paragraph at lines 492--512
 \OT1/cmtt/m/n/10 keywordstyle=blue,
  []
 
 
-Overfull \hbox (146.99872pt too wide) in paragraph at lines 487--507
+Overfull \hbox (146.99872pt too wide) in paragraph at lines 492--512
 \OT1/cmtt/m/n/10 commentstyle=green!70!black,
  []
 
 
-Overfull \hbox (162.74858pt too wide) in paragraph at lines 487--507
+Overfull \hbox (162.74858pt too wide) in paragraph at lines 492--512
 \OT1/cmtt/m/n/10 identifierstyle=green!20!black,
  []
 
 
-Overfull \hbox (99.74913pt too wide) in paragraph at lines 487--507
+Overfull \hbox (99.74913pt too wide) in paragraph at lines 492--512
 \OT1/cmtt/m/n/10 stringstyle=orange,
  []
 
 
-Overfull \hbox (83.99927pt too wide) in paragraph at lines 487--507
+Overfull \hbox (83.99927pt too wide) in paragraph at lines 492--512
 \OT1/cmtt/m/n/10 breaklines=true,
  []
 
 
-Overfull \hbox (120.74895pt too wide) in paragraph at lines 487--507
+Overfull \hbox (120.74895pt too wide) in paragraph at lines 492--512
 \OT1/cmtt/m/n/10 breakatwhitespace=true,
  []
 
 
-Overfull \hbox (52.49954pt too wide) in paragraph at lines 487--507
+Overfull \hbox (52.49954pt too wide) in paragraph at lines 492--512
 \OT1/cmtt/m/n/10 frame=none
  []
 
 
-./sdll.sty:508: LaTeX Error: \usepackage before \documentclass.
+./sdll.sty:513: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.508     \usepackage{
+l.513     \usepackage{
                       microtype}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 
-./sdll.sty:514: LaTeX Error: \usepackage before \documentclass.
+./sdll.sty:519: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.514     \usepackage{
+l.519     \usepackage{
                       titling}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
-./sdll.sty:515: You can't use `\spacefactor' in vertical mode.
+./sdll.sty:520: You can't use `\spacefactor' in vertical mode.
 \@->\spacefactor 
                  \@m 
-l.515     \@
+l.520     \@
             ifundefined{KOMAClassName}{}{
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-./sdll.sty:515: Missing $ inserted.
+./sdll.sty:520: Missing $ inserted.
 <inserted text> 
                 $
-l.515     \@
+l.520     \@
             ifundefined{KOMAClassName}{}{
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./sdll.sty:515: LaTeX Error: Missing \begin{document}.
+./sdll.sty:520: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.515     \@
+l.520     \@
             ifundefined{KOMAClassName}{}{
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./sdll.sty:517: LaTeX Error: \subtitle undefined.
+./sdll.sty:522: LaTeX Error: \subtitle undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.517         \renewcommand{\subtitle}
+l.522         \renewcommand{\subtitle}
                                       [1]{%
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 \posttitledrop=\skip41
 \postauthordrop=\skip42
-./sdll.sty:526: Undefined control sequence.
-l.526     \pretitle
+./sdll.sty:531: Undefined control sequence.
+l.531     \pretitle
                    {\begin{center}\bfseries \sffamily \Large}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2181,18 +2181,18 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:526: Missing $ inserted.
+./sdll.sty:531: Missing $ inserted.
 <inserted text> 
                 $
-l.526     \pretitle{\begin{center}
+l.531     \pretitle{\begin{center}
                                   \bfseries \sffamily \Large}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./sdll.sty:526: Missing \endgroup inserted.
+./sdll.sty:531: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.526     \pretitle{\begin{center}
+l.531     \pretitle{\begin{center}
                                   \bfseries \sffamily \Large}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2200,10 +2200,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./sdll.sty:526: Missing } inserted.
+./sdll.sty:531: Missing } inserted.
 <inserted text> 
                 }
-l.526     \pretitle{\begin{center}
+l.531     \pretitle{\begin{center}
                                   \bfseries \sffamily \Large}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2213,12 +2213,12 @@ my insertion and my current dilemma will both disappear.
 
 Missing character: There is no è in font cmex10!
 
-Overfull \hbox (165.24307pt too wide) in paragraph at lines 515--526
+Overfull \hbox (165.24307pt too wide) in paragraph at lines 520--531
 []$\OML/cmm/m/it/10 ifundefined[][][][]$ 
  []
 
-./sdll.sty:526: Undefined control sequence.
-l.526 ...{\begin{center}\bfseries \sffamily \Large
+./sdll.sty:531: Undefined control sequence.
+l.531 ...{\begin{center}\bfseries \sffamily \Large
                                                   }
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2226,8 +2226,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:527: Undefined control sequence.
-l.527     \posttitle
+./sdll.sty:532: Undefined control sequence.
+l.532     \posttitle
                     {\end{center}\vspace{\posttitledrop}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2236,51 +2236,51 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./sdll.sty:527: LaTeX Error: Missing \begin{document}.
+./sdll.sty:532: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.527     \posttitle{\end{center}
+l.532     \posttitle{\end{center}
                                  \vspace{\posttitledrop}}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./sdll.sty:527: LaTeX Error: Something's wrong--perhaps a missing \item.
+./sdll.sty:532: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.527     \posttitle{\end{center}
+l.532     \posttitle{\end{center}
                                  \vspace{\posttitledrop}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 527--527
+Overfull \hbox (20.0pt too wide) in paragraph at lines 532--532
 [] 
  []
 
 
-./sdll.sty:527: LaTeX Error: \begin{document} ended by \end{center}.
+./sdll.sty:532: LaTeX Error: \begin{document} ended by \end{center}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.527     \posttitle{\end{center}
+l.532     \posttitle{\end{center}
                                  \vspace{\posttitledrop}}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./sdll.sty:527: Missing } inserted.
+./sdll.sty:532: Missing } inserted.
 <inserted text> 
                 }
-l.527     \posttitle{\end{center}
+l.532     \posttitle{\end{center}
                                  \vspace{\posttitledrop}}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2288,10 +2288,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./sdll.sty:527: Missing } inserted.
+./sdll.sty:532: Missing } inserted.
 <inserted text> 
                 }
-l.527     \posttitle{\end{center}
+l.532     \posttitle{\end{center}
                                  \vspace{\posttitledrop}}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2299,10 +2299,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./sdll.sty:527: Missing } inserted.
+./sdll.sty:532: Missing } inserted.
 <inserted text> 
                 }
-l.527     \posttitle{\end{center}
+l.532     \posttitle{\end{center}
                                  \vspace{\posttitledrop}}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2310,21 +2310,21 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./sdll.sty:527: Extra \endgroup.
+./sdll.sty:532: Extra \endgroup.
 <recently read> \endgroup 
                           
-l.527     \posttitle{\end{center}
+l.532     \posttitle{\end{center}
                                  \vspace{\posttitledrop}}
 Things are pretty mixed up, but I think the worst is over.
 
-./sdll.sty:527: Too many }'s.
-l.527 ...itle{\end{center}\vspace{\posttitledrop}}
+./sdll.sty:532: Too many }'s.
+l.532 ...itle{\end{center}\vspace{\posttitledrop}}
                                                   
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-./sdll.sty:528: Undefined control sequence.
-l.528     \preauthor
+./sdll.sty:533: Undefined control sequence.
+l.533     \preauthor
                     {\begin{center} \scshape}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2332,8 +2332,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:528: Extra }, or forgotten \endgroup.
-l.528     \preauthor{\begin{center} \scshape}
+./sdll.sty:533: Extra }, or forgotten \endgroup.
+l.533     \preauthor{\begin{center} \scshape}
                                              
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2341,8 +2341,8 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./sdll.sty:529: Undefined control sequence.
-l.529     \postauthor
+./sdll.sty:534: Undefined control sequence.
+l.534     \postauthor
                      {\end{center}\vspace{\postauthordrop}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2350,10 +2350,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:529: Missing } inserted.
+./sdll.sty:534: Missing } inserted.
 <inserted text> 
                 }
-l.529     \postauthor{\end{center}
+l.534     \postauthor{\end{center}
                                   \vspace{\postauthordrop}}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2361,8 +2361,8 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./sdll.sty:530: Undefined control sequence.
-l.530     \predate
+./sdll.sty:535: Undefined control sequence.
+l.535     \predate
                   {\begin{center}\small}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2370,8 +2370,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:530: Undefined control sequence.
-l.530     \predate{\begin{center}\small
+./sdll.sty:535: Undefined control sequence.
+l.535     \predate{\begin{center}\small
                                        }
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2379,8 +2379,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:530: Extra }, or forgotten \endgroup.
-l.530     \predate{\begin{center}\small}
+./sdll.sty:535: Extra }, or forgotten \endgroup.
+l.535     \predate{\begin{center}\small}
                                         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2388,8 +2388,8 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./sdll.sty:531: Undefined control sequence.
-l.531     \postdate
+./sdll.sty:536: Undefined control sequence.
+l.536     \postdate
                    {\end{center}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2397,10 +2397,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:531: Missing } inserted.
+./sdll.sty:536: Missing } inserted.
 <inserted text> 
                 }
-l.531     \postdate{\end{center}
+l.536     \postdate{\end{center}
                                 }
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2408,40 +2408,40 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./sdll.sty:554: You can't use `\spacefactor' in vertical mode.
+./sdll.sty:563: You can't use `\spacefactor' in vertical mode.
 \@->\spacefactor 
                  \@m 
-l.554     \@
+l.563     \@
             ifundefined{KOMAClassName}
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-./sdll.sty:554: Missing $ inserted.
+./sdll.sty:563: Missing $ inserted.
 <inserted text> 
                 $
-l.554     \@
+l.563     \@
             ifundefined{KOMAClassName}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./sdll.sty:556: LaTeX Error: \usepackage before \documentclass.
+./sdll.sty:565: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.556         \usepackage{
+l.565         \usepackage{
                           fancyhdr}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
-./sdll.sty:563: Undefined control sequence.
+./sdll.sty:572: Undefined control sequence.
 <argument> \headwidth 
                       
-l.563         \setlength{\headwidth}{6.5in}
+l.572         \setlength{\headwidth}{6.5in}
                                            
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2449,140 +2449,18 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-./sdll.sty:572: LaTeX Error: \headrulewidth undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.572         \renewcommand{\headrulewidth}
-                                           {0.5pt}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./sdll.sty:573: LaTeX Error: \footrulewidth undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.573         \renewcommand{\footrulewidth}
-                                           {0.0pt}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./sdll.sty:574: Undefined control sequence.
-<argument> \undefinedpagestyle 
-                               
-l.574         \pagestyle{fancy}
-                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./sdll.sty:575: Undefined control sequence.
-l.575         \chead
-                    {}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./sdll.sty:576: Undefined control sequence.
-l.576         \rhead
-                    {\nouppercase{\leftmark}}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./sdll.sty:576: Undefined control sequence.
-l.576         \rhead{\nouppercase
-                                 {\leftmark}}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./sdll.sty:577: Undefined control sequence.
-l.577         \lfoot
-                    {}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./sdll.sty:578: Undefined control sequence.
-l.578         \cfoot
-                    {\thepage}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./sdll.sty:578: Undefined control sequence.
-l.578         \cfoot{\thepage
-                             }
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./sdll.sty:579: Undefined control sequence.
-l.579         \rfoot
-                    {}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-./sdll.sty:583: LaTeX Error: \usepackage before \documentclass.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.583         \usepackage[headsepline]{
-                                       scrlayer-scrpage}
-\usepackage may only appear in the document preamble, i.e.,
-between \documentclass and \begin{document}.
-
-
-./sdll.sty:584: LaTeX Error: \headfont undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.584         \renewcommand{\headfont}
-                                      {}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./sdll.sty:588: Missing $ inserted.
+./sdll.sty:576: Missing $ inserted.
 <inserted text> 
                 $
-l.588 
+l.576 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./sdll.sty:588: Missing } inserted.
+./sdll.sty:576: Missing } inserted.
 <inserted text> 
                 }
-l.588 
+l.576 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2592,12 +2470,140 @@ my insertion and my current dilemma will both disappear.
 
 Missing character: There is no è in font cmex10!
 
-Overfull \hbox (187.46837pt too wide) in paragraph at lines 554--588
-[]$\OML/cmm/m/it/10 ifundefined[][][]$ 
+Overfull \hbox (167.46837pt too wide) in paragraph at lines 563--576
+[]$\OML/cmm/m/it/10 ifundefined[][]$ 
  []
 
-./sdll.sty:610: Undefined control sequence.
-l.610               \ihead
+
+./sdll.sty:582: LaTeX Error: \headrulewidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.582         \renewcommand{\headrulewidth}
+                                           {0.5pt}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./sdll.sty:583: LaTeX Error: \footrulewidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.583         \renewcommand{\footrulewidth}
+                                           {0.0pt}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./sdll.sty:584: Undefined control sequence.
+<argument> \undefinedpagestyle 
+                               
+l.584         \pagestyle{fancy}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./sdll.sty:585: Undefined control sequence.
+l.585         \chead
+                    {}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./sdll.sty:586: Undefined control sequence.
+l.586         \rhead
+                    {\nouppercase{\leftmark}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./sdll.sty:586: Undefined control sequence.
+l.586         \rhead{\nouppercase
+                                 {\leftmark}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./sdll.sty:587: Undefined control sequence.
+l.587         \lfoot
+                    {}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./sdll.sty:588: Undefined control sequence.
+l.588         \cfoot
+                    {\thepage}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./sdll.sty:588: Undefined control sequence.
+l.588         \cfoot{\thepage
+                             }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./sdll.sty:589: Undefined control sequence.
+l.589         \rfoot
+                    {}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./sdll.sty:591: Too many }'s.
+l.591     }
+           
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+./sdll.sty:593: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.593         \usepackage[headsepline]{
+                                       scrlayer-scrpage}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./sdll.sty:594: LaTeX Error: \headfont undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.594         \renewcommand{\headfont}
+                                      {}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./sdll.sty:620: Undefined control sequence.
+l.620               \ihead
                           {\footnotesize\textbf{\theauthor} \textbar\ \thedate}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2605,8 +2611,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:610: Undefined control sequence.
-l.610               \ihead{\footnotesize
+./sdll.sty:620: Undefined control sequence.
+l.620               \ihead{\footnotesize
                                         \textbf{\theauthor} \textbar\ \thedate}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2614,10 +2620,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:610: Undefined control sequence.
+./sdll.sty:620: Undefined control sequence.
 <recently read> \theauthor 
                            
-l.610 ...  \ihead{\footnotesize\textbf{\theauthor}
+l.620 ...  \ihead{\footnotesize\textbf{\theauthor}
                                                    \textbar\ \thedate}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2625,8 +2631,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:610: Undefined control sequence.
-l.610 ...ize\textbf{\theauthor} \textbar\ \thedate
+./sdll.sty:620: Undefined control sequence.
+l.620 ...ize\textbf{\theauthor} \textbar\ \thedate
                                                   }
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2635,17 +2641,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 610--615
-[]
- []
-
-
-Overfull \hbox (2.77779pt too wide) in paragraph at lines 610--615
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 620--625
 \OMS/cmsy/m/n/10 j
  []
 
-./sdll.sty:616: Undefined control sequence.
-l.616         \automark
+./sdll.sty:626: Undefined control sequence.
+l.626         \automark
                        {section}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2660,8 +2661,8 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-./sdll.sty:617: Undefined control sequence.
-l.617         \chead
+./sdll.sty:627: Undefined control sequence.
+l.627         \chead
                     {}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2669,8 +2670,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:618: Undefined control sequence.
-l.618         \ohead
+./sdll.sty:628: Undefined control sequence.
+l.628         \ohead
                     {\footnotesize\headmark}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2678,8 +2679,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:618: Undefined control sequence.
-l.618         \ohead{\footnotesize
+./sdll.sty:628: Undefined control sequence.
+l.628         \ohead{\footnotesize
                                   \headmark}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2687,8 +2688,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:618: Undefined control sequence.
-l.618         \ohead{\footnotesize\headmark
+./sdll.sty:628: Undefined control sequence.
+l.628         \ohead{\footnotesize\headmark
                                            }
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2696,8 +2697,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:619: Undefined control sequence.
-l.619         \cfoot
+./sdll.sty:629: Undefined control sequence.
+l.629         \cfoot
                     {\pagemark}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2705,8 +2706,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:619: Undefined control sequence.
-l.619         \cfoot{\pagemark
+./sdll.sty:629: Undefined control sequence.
+l.629         \cfoot{\pagemark
                               }
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2714,25 +2715,14 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./sdll.sty:620: Too many }'s.
-l.620     }
-           
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
 
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 616--622
-[]
- []
-
-
-./sdll.sty:634: LaTeX Error: \usepackage before \documentclass.
+./sdll.sty:644: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.634     \usepackage[utf8]{
+l.644     \usepackage[utf8]{
                             inputenc}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -2745,11 +2735,11 @@ between \documentclass and \begin{document}.
 
  
 Here is how much of TeX's memory you used:
- 330 strings out of 495020
- 2812 string characters out of 6181324
- 48716 words of memory out of 5000000
- 3636 multiletter control sequences out of 15000+600000
+ 334 strings out of 495020
+ 2815 string characters out of 6181324
+ 48778 words of memory out of 5000000
+ 3640 multiletter control sequences out of 15000+600000
  4711 words of font info for 18 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 19i,4n,15p,146b,279s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 19i,2n,15p,146b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

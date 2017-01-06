@@ -8,7 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 #HIST_STAMPS=mm/dd/yyyy
 
 # paths
-export PATH=$PYENV_ROOT/bin:$HOME/bin:/usr/local/bin:$PATH:/home/aleph/.mutt/builds/mutt-notmuch-py
+export PATH=$PYENV_ROOT/bin:$HOME/bin:/usr/local/bin:$PATH:/home/aleph/.mutt/builds/mutt-notmuch-py/:/$HOME/PROG/SageMath
 #export MANPATH=/usr/local/man:$MANPATH
 
 # preferred editor for local and remote sessions
