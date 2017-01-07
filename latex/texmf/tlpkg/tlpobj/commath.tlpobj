@@ -1,0 +1,19 @@
+name commath
+category Package
+revision 15878
+shortdesc Mathematics typesetting support
+longdesc Provides a range of differential, partial differential and
+longdesc delimiter commands, together with a \fullfunction (function,
+longdesc with both domain and range, and function operation) and various
+longdesc reference commands.
+containersize 2464
+containerchecksum 9b1ffcf58cec42e70fef3c3592ba32fcd8fd050fed78330207a0bc7e2c540ceb9ee3d7b5ff8a3cbc5229d9ffe6f38ed851cee16566f8052f33438a548aeb677c
+doccontainersize 101096
+doccontainerchecksum adc4d2f6e7549e394b256b28b669b942c5ba242be3dfc938e66071a02fe1ef66b669cec58b709623d140bd5e11cd0e0041a6d378da0e675bcd9cc85b576758b1
+runfiles size=3
+ tex/latex/commath/commath.sty
+catalogue-ctan /macros/latex/contrib/commath
+catalogue-date 2015-08-03 05:43:12 +0200
+catalogue-license lppl
+catalogue-topics maths
+catalogue-version 0.3

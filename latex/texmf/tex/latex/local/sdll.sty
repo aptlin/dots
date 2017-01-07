@@ -1,6 +1,7 @@
 \ProvidesPackage{sdll}
 \usepackage{mathtools}
 \usepackage{amssymb, nccmath}
+\usepackage{commath}
 \usepackage{xparse}
 \usepackage{bm}
 \usepackage{biblatex}
@@ -138,7 +139,8 @@
 
 % https://tex.stackexchange.com/questions/209863/how-to-add-mathematical-notation-of-a-set
 
-\DeclarePairedDelimiterX{\set}[1]{\{}{\}}{\setargs{#1}}
+\DeclarePairedDelimiterX{\Set}[1]{\{}{\}}{\setargs{#1}}
+\renewcommand{\set}{\Set}
 \NewDocumentCommand{\setargs}{>{\SplitArgument{1}{;}}m}
 {\setargsaux#1}
 \NewDocumentCommand{\setargsaux}{mm}
@@ -204,8 +206,8 @@
 \DeclareMathOperator{\SL}{SL} % Special linear group
 
 %From Kiran Kedlaya's "Geometry Unbound"
-\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
-\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+%\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+%\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
 \newcommand{\dang}{\measuredangle} %% Directed angle
 \newcommand{\ray}[1]{\overrightarrow{#1}}
 \newcommand{\seg}[1]{\overline{#1}}
@@ -267,7 +269,7 @@
     
     % Things Lie
     \newcommand{\kb}{\mathfrak b}
-    \newcommand{\kg}{\mathfrak g}
+    \newcommand{\kg}{\mathfrak g} 
     \newcommand{\kh}{\mathfrak h}
     \newcommand{\kn}{\mathfrak n}
     \newcommand{\ku}{\mathfrak u}

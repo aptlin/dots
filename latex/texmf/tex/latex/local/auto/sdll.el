@@ -12,13 +12,13 @@
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "lstinline")
-   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "hints"
     "mathtools"
     "amssymb"
     "nccmath"
+    "commath"
     "xparse"
     "bm"
     "biblatex"
@@ -55,8 +55,6 @@
     '("arc" 1)
     '("seg" 1)
     '("ray" 1)
-    '("norm" 1)
-    '("abs" 1)
     '("plusemail" 1)
     '("nt" 3)
     '("ex" 3)
@@ -78,6 +76,12 @@
     "hrulebar"
     "half"
     "thepSet"
+    "cis"
+    "lcm"
+    "argmin"
+    "argmax"
+    "setargs"
+    "setargsaux"
     "cycsum"
     "symsum"
     "cycprod"
@@ -89,10 +93,20 @@
     "QQ"
     "RR"
     "ZZ"
+    "spn"
     "charin"
+    "sign"
+    "Aut"
+    "Inn"
+    "Syl"
+    "Gal"
+    "GL"
+    "SL"
     "dang"
     "id"
     "inv"
+    "diam"
+    "ord"
     "defeq"
     "st"
     "nd"
@@ -104,12 +118,30 @@
     "surjto"
     "injto"
     "On"
+    "img"
+    "Img"
+    "coker"
+    "Coker"
+    "Ker"
+    "rank"
+    "nll"
+    "Spec"
+    "Tr"
+    "pr"
+    "ext"
+    "pred"
+    "dom"
+    "ran"
+    "Hom"
+    "End"
     "kb"
     "kg"
     "kh"
     "kn"
     "ku"
     "kz"
+    "Ext"
+    "Tor"
     "gl"
     "SA"
     "SB"
@@ -164,7 +196,14 @@
     '("matreq" 1)
     "soln"
     "parlist"
-    "gobble"
+    "gobble")
+   (LaTeX-add-lengths
+    "posttitledrop"
+    "postauthordrop")
+   (LaTeX-add-mathtools-DeclarePairedDelimiters
+    '("inp" "2")
+    '("Set" "1"))
+   (LaTeX-add-amsthm-newtheorems
     "theorem"
     "lemma"
     "proposition"
@@ -183,8 +222,15 @@
     "note"
     "remark"
     "abuse")
-   (LaTeX-add-lengths
-    "posttitledrop"
-    "postauthordrop"))
+   (LaTeX-add-xcolor-definecolors
+    "blue"
+    "ForestGreen"
+    "PalyGreen"
+    "PalyGrey"
+    "RawSienna"
+    "purple"
+    "green!70!black"
+    "green!20!black"
+    "orange"))
  :latex)
 
