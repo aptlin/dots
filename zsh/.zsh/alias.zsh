@@ -7,7 +7,7 @@ alias al="vim ~/.zsh/alias.zsh && source ~/.zsh/alias.zsh; pushd ~/DOTS; git com
 alias ale="ec ~/.zsh/alias.zsh && source ~/.zsh/alias.zsh; pushd ~/DOTS; git commit -m 'added aliases' ~/DOTS/zsh/.zsh/alias.zsh;  git push; popd"
 alias bace='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /etc /media/A/REC/etc$(date +%m%y)'
 alias bach='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /home /media/A/REC/home$(date +%m%y)'
-alias bacu="bach;bace"
+alias bacu="bach; bace"
 alias bu="cd /media/A"
 alias bud="ec $LEDGER_FILE"
 alias clbin="curl -f 'clbin=<-' https://clbin.com"
@@ -120,7 +120,7 @@ alias arb="ec $BLOG_DIR/stories/arbeit.org "
 alias nts="cd ~/ORG/NOTES/"
 alias snts="pushd ~/DOTS/zsh/.scripts/;./notes;popd"
 alias pnts="pushd ~/DOTS/zsh/.scripts/;./scans;popd"
-alias spnts="snts && pnts"
+alias spnts="snts; pnts"
 alias tnts="cd $TMP_NTS"
 alias nte="ec ~/WERKE/sdll.github.io/stories/notes.org"
 alias gnts="gdir ORG/NOTES"
