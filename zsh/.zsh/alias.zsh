@@ -166,6 +166,10 @@ alias mik="ec $BLOG_DIR/stories/mikveh.org"
 alias alg="cd $HOME/WERKE/LIB/MAT/ALGEBRA/"
 alias hmu="pkill -2 -u $UID mu # send SIGINT"
 alias we="curl wttr.in"
+
+# Config
+
+alias zac="ec ~/.config/zathura/zathurarc"
 # umu
 
 alias u="cd $UMU_DIR/stories"
