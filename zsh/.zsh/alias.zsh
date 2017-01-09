@@ -29,6 +29,7 @@ alias gt="git add .; git commit -am '$(date +%y%m%d)'; git push -u origin master
 alias hw="cd ~/WERKE/HW"
 alias lib="cd ~/ORG/AGENDA/"
 alias liba="cd ~/WERKE/LIB/"
+alias mat="cd ~/WERKE/LIB/MAT/"
 alias ll="ls -lahf --color=auto"
 alias lsl="ls -lhf --color=auto"
 alias lss="ls -hf --color=auto"
