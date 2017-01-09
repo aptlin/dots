@@ -171,6 +171,7 @@ alias we="curl wttr.in"
 # Config
 
 alias zac="ec ~/.config/zathura/zathurarc"
+
 # umu
 
 alias u="cd $UMU_DIR/stories"
@@ -187,3 +188,5 @@ alias no="mc ~/WERKE/LIB/MAT/NOTES"
 alias agn="cd ~/ORG/AGENDA/"
 alias saw='sage --notebook="jupyter"'
 alias sa='ec ~/TMP/SAGE/workbook.org'
+alias co='cd ~/WERKE/LIB/MAT/CO'
+alias bio='cd ~/WERKE/LIB/BIO/'
