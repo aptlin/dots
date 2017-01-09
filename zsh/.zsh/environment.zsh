@@ -46,14 +46,7 @@ export LEDGER_FILE=~/ORG/budget.ledger
 # Midnight Commander
 
 MC_SKIN=$HOME/.mc/lib/mc-solarized/solarized.ini
-# GPG agent
 
-eval $(gpg-agent --daemon)
-if [ -f "${HOME}/.gpg-agent-info" ]; then
-  . "${HOME}/.gpg-agent-info"
-  export GPG_AGENT_INFO
-  export SSH_AUTH_SOCK
-fi
 
 ## Python
 #export PYENV_ROOT="$HOME/PROG/pyenv/"
