@@ -30,24 +30,25 @@ font pango:terminus 12
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec $HOME/node_modules/i3-run-or-raise/bin/i3-run-or-raise --class "URxvt" urxvt
+bindsym $mod+Shift+Return exec urxvt
 #start telegram
-bindsym $mod+x exec cd /home/aleph/DLD/Telegram/ && ./Telegram
+bindsym $mod+x exec $HOME/node_modules/i3-run-or-raise/bin/i3-run-or-raise --class "TelegramDesktop" $HOME/DLD/Telegram/Telegram
 #start mutt
-bindsym $mod+c exec urxvt -e mutt
+#bindsym $mod+c exec urxvt -e mutt
 #re/re/re
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+w reload
 bindsym $mod+Shift+e exit
 #start gimp
-bindsym $mod+g exec gimp
+#bindsym $mod+g exec gimp
 
 #start icecat 
-bindsym $mod+w exec iceweasel
-bindsym $mod+m exec vlc
+bindsym $mod+w exec $HOME/node_modules/i3-run-or-raise/bin/i3-run-or-raise --class "Firefox" iceweasel
+#bindsym $mod+m exec vlc
 bindsym $mod+r exec emacsclient -c --alternate-editor= 
 #bindsym $mod+c exec chromium http://classical102.radio.net/
-bindsym $mod+Shift+c exec chromium http://wqxr.radio.net/
+bindsym $mod+c exec $HOME/node_modules/i3-run-or-raise/bin/i3-run-or-raise --class  "Chromium" chromium 
 bindsym $mod+f exec chromium http://retrosoul.radio.net/
 # kill focused window
 bindsym $mod+Shift+quotedbl kill
@@ -180,8 +181,10 @@ bar {
 #assign [class="Zathura"] 2
 #assign [class="URxvt" instance="mutt$"] 5
 assign [class="URxvt"] 3
-#assign [class="chromium-browser"] 4
+assign [class="chromium-browser"] 4
 assign [class="Firefox"] 4
 assign [class="TelegramDesktop"] 9
+
+#exec gnome-settings-daemon &
 
 exec --no-startup-id i3-msg 'workspace 1; emacsclient -c --alternate-editor='
