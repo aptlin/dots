@@ -31,15 +31,20 @@ if [ -n "$(ls -A $TMP_NTS)" ]; then
                             "Moving the file to the $d directory in $PMT_NTS..."
 
                         new_place=$PMT_NTS/ARBEIT
-
-                        mv $f $new_place
+                        if [[ ( $f == *.pdf ) || ( $f == *.tex ) ]]
+                           then
+                               mv $f $new_place
+                        fi
                         echo "Parsing the file name for publishing..."
                         filename=$(basename "$f")
                         new_f=$(echo ${filename%.*} | sed -r 's/[_]+/: /g' | \
                                        sed -r 's/[\+]+/ /g' | \
                                        sed -r 's/\bARBEIT//g' | \
                                        sed -r 's/([0-9])([a-zA-Z])/\1 \2/g')
-                        echo "  - [[https://github.com/sdll/NOTES/blob/master/$d/$f][$new_f]]" >> $NTS_TMP_LOG
+                        if [[ $f == *.pdf ]]
+                           then
+                               echo "  - [[https://github.com/sdll/NOTES/blob/master/$d/$f][$new_f]]" >> $NTS_TMP_LOG
+                        fi
 
                         echo "Done!"
 
@@ -50,16 +55,20 @@ if [ -n "$(ls -A $TMP_NTS)" ]; then
                             "Moving the file to the $d directory in $PMT_NTS..."
 
                         new_place=$PMT_NTS/MIKVEH
-
-                        mv $f $new_place
+                        if [[ ( $f == *.pdf ) || ( $f == *.tex ) ]]
+                           then
+                               mv $f $new_place
+                        fi
                         echo "Parsing the file name for publishing..."
                         filename=$(basename "$f")
                         new_f=$(echo ${filename%.*} | sed -r 's/[_]+/: /g' | \
                                        sed -r 's/[\+]+/ /g' | \
                                        sed -r 's/\bMIKVEH//g' | \
                                        sed -r 's/([0-9])([a-zA-Z])/\1 \2/g')
-                        echo "  - [[https://github.com/sdll/NOTES/blob/master/$d/$f][$new_f]]" >> $NTS_TMP_LOG
-
+                        if [[ $f == *.pdf ]]
+                           then
+                               echo "  - [[https://github.com/sdll/NOTES/blob/master/$d/$f][$new_f]]" >> $NTS_TMP_LOG
+                        fi
                         echo "Done!"
 
                     elif [[ $(basename "$f") = *"${d}"* ]]
@@ -69,15 +78,19 @@ if [ -n "$(ls -A $TMP_NTS)" ]; then
                             "Moving the note to the $d directory in $PMT_NTS..."
 
                         new_place=$PMT_NTS/$d
-
-                        mv $f $new_place
+                        if [[ ( $f == *.pdf ) || ( $f == *.tex ) ]]
+                           then
+                               mv $f $new_place
+                        fi
                         echo "Parsing the file name for publishing..."
                         filename=$(basename "$f")
                         new_f=$(echo ${filename%.*} | sed -r 's/[_]+/: /g' | \
                                        sed -r 's/[\+]+/ /g' | \
                                        sed -r 's/([0-9])([a-zA-Z])/\1 \2/g')
-                        echo "  - [[https://github.com/sdll/NOTES/blob/master/$d/$f][$new_f]]" >> $NTS_TMP_LOG
-
+                        if [[ $f == *.pdf ]]
+                        then
+                            echo "  - [[https://github.com/sdll/NOTES/blob/master/$d/$f][$new_f]]" >> $NTS_TMP_LOG
+                        fi
                         echo "Done!"
 
                     fi
