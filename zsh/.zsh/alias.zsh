@@ -66,7 +66,6 @@ alias unm="devmon -u"
 alias up="cd ../"
 alias upd='sudo aptitude update && sudo aptitude full-upgrade'
 alias updk='sudo mkinitcpio -p linux-libre'
-alias v="jfbview"
 alias wsnet='pushd /home/aleph/h/conf && ./wsnet.sh && popd'
 alias x='startx'
 alias xclip='xclip -selection c'
