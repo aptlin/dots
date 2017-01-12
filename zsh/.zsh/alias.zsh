@@ -195,3 +195,7 @@ alias ph='cd ~/ORG/AGENDA/PH'
 # define da and immediately call it to initialize the environment.
 function da () { eval `dirabbrev -e -a \$*`; }
 da -d
+alias S='da -s'
+alias G='da -g'
+alias L='da -l'
+alias R='da -r'
