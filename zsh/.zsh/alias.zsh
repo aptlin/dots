@@ -31,7 +31,6 @@ alias mou="devmon -a"
 alias orge='ec ~/.emacs.d/lisp/orgmode.org'
 alias psef="ps -ef"
 alias pref="ec ~/ORG/pref.org"
-alias ra="ranger"
 alias rbt="sudo reboot"
 alias rmrf="rm -rf"
 alias road="ec ~/ORG/road.org"
