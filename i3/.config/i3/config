@@ -49,8 +49,8 @@ bindsym $mod+w exec $HOME/node_modules/i3-run-or-raise/bin/i3-run-or-raise --cla
 #bindsym $mod+m exec vlc
 bindsym $mod+r exec emacsclient -c --alternate-editor= 
 #bindsym $mod+c exec chromium http://classical102.radio.net/
-bindsym $mod+c exec $HOME/node_modules/i3-run-or-raise/bin/i3-run-or-raise --class  "Chromium" chromium 
-bindsym $mod+f exec chromium http://retrosoul.radio.net/
+bindsym $mod+c exec $HOME/node_modules/i3-run-or-raise/bin/i3-run-or-raise --class  "Chromium" chromium
+bindsym $mod+z exec cd ~/WERKE/LIB/ && zathura
 # kill focused window
 bindsym $mod+Shift+quotedbl kill
 # take a screenshot
