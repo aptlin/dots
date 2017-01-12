@@ -12,6 +12,7 @@ alias clbin="curl -f 'clbin=<-' https://clbin.com"
 alias cp="cp -r"
 alias disks='echo "╓───── m o u n t . p o i n t s"; echo "╙────────────────────────────────────── ─ ─ "; lsblk -a; echo ""; echo "╓───── d i s k . u s a g e"; echo "╙────────────────────────────────────── ─ ─ "; df -h;'
 alias ec="emacsclient -c --alternate-editor="
+alias sec="emacsclient -c --alternate-editor="
 alias ce="emacsclient -nw --alternate-editor="
 alias ecc="cd ~/.emacs.d && ec ~/.emacs.d/init.el"
 alias eco="ec ~/.emacs.d/lisp/init-org.el"
