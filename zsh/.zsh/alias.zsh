@@ -110,8 +110,6 @@ alias pnts="pushd ~/DOTS/zsh/.scripts/;./scans;popd"
 alias spnts="snts; pnts"
 alias nte="ec ~/WERKE/sdll.github.io/stories/notes.org"
 alias gnts="gdir ORG/NOTES"
-alias f="pushd ~/TMP/F"
-alias se="pushd $DOTS/zsh/.scripts/"
 alias sho="rename 's/^(.{25}).*(\..*)$/$1$2/' *"
 
 # Blog
