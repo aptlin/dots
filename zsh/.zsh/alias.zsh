@@ -125,7 +125,7 @@ alias nik="workon nikola"
 alias nli="ec $BLOG_DIR/stories/links_math.org"
 
 # Org
-
+alias dira="ec ~/.dirabbrev"
 alias sc="scrot '%Y-%m-%d_$wx$h.png' -s -e 'mv $f ~/TMP/SCR/'"
 alias le="~/DOTS/zsh/.scripts/letters"
 alias lat="latexmk -pvc -pdf"
