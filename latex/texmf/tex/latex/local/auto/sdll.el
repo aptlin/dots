@@ -19,9 +19,12 @@
     "amssymb"
     "nccmath"
     "commath"
+    "lplfitch"
     "xparse"
     "bm"
     "biblatex"
+    "tabulary"
+    "booktabs"
     "siunitx"
     "amsthm"
     "xcolor"
@@ -76,6 +79,19 @@
     "hrulebar"
     "half"
     "thepSet"
+    "rm"
+    "sf"
+    "tt"
+    "bf"
+    "it"
+    "sl"
+    "sc"
+    "THEN"
+    "OR"
+    "XOR"
+    "AND"
+    "NOT"
+    "IFF"
     "setargs"
     "setargsaux"
     "cycsum"
@@ -98,8 +114,6 @@
     "nd"
     "dg"
     "ii"
-    "liff"
-    "lthen"
     "opname"
     "surjto"
     "injto"
@@ -160,7 +174,6 @@
     "cor"
     "Wlog")
    (LaTeX-add-environments
-    '("subproof" LaTeX-env-args ["argument"] 0)
     '("matreq" 1)
     "soln"
     "parlist"
@@ -199,6 +212,9 @@
     "purple"
     "green!70!black"
     "green!20!black"
-    "orange"))
+    "orange")
+   (LaTeX-add-mdframed-mdfdefinestyles
+    "mdbluebox"
+    "mdrecbox"))
  :latex)
 

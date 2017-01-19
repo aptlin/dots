@@ -2,10 +2,12 @@
 \usepackage{mathtools}
 \usepackage{amssymb, nccmath}
 \usepackage{commath}
+\usepackage{lplfitch}
 \usepackage{xparse}
 \usepackage{bm}
 \usepackage{biblatex}
-
+\usepackage{tabulary}
+\usepackage{booktabs}
 %% fakesection Attributions
 % This style file was adapted from the work of Evan Chen.
 % Thank you, Evan.
@@ -124,12 +126,24 @@
 \newcommand{\thepSet}{\@pSet}
 % For use in author command
 \newcommand{\plusemail}[1]{\\ \normalfont \texttt{\mailto{#1}}}
+% Greater Font Support
+
+\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
+\DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
+\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+\DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
+\DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
+\DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
 
 %More commands and math operators
 \DeclareMathOperator{\cis}{cis}
-\DeclareMathOperator{\imp}{\ \,IMPLIES\ \,}
-\DeclareMathOperator{\Iff}{\ \,IFF\ \,}
-\DeclareMathOperator{\Not}{\ \ NOT\ \ }
+\newcommand{\THEN}{\mbox{ IMPLIES }}
+\newcommand{\OR}{\mbox{ OR }}
+\newcommand{\XOR}{\mbox{ XOR }}
+\newcommand{\AND}{\mbox{ AND }}
+\newcommand{\NOT}{\mbox{ NOT }}
+\newcommand{\IFF}{\mbox{ IFF }}
 \DeclareMathOperator*{\lcm}{lcm}
 \DeclareMathOperator*{\argmin}{arg min}
 \DeclareMathOperator*{\argmax}{arg max}
@@ -244,12 +258,12 @@
 \newcommand{\sminus}[2]{#1 \setminus #2}
 
 % From Math 55 and Math 145 at Harvard
-\newenvironment{subproof}[1][Proof]{%
-    \begin{proof}[#1] \renewcommand{\qedsymbol}{$\blacksquare$}}%
-    {\end{proof}}
+% \newenvironment{subproof}[1][Proof]{%
+%     \begin{proof}[#1] \renewcommand{\qedsymbol}{$\blacksquare$}}%
+%     {\end{proof}}
     
-    \newcommand{\liff}{\leftrightarrow}
-    \newcommand{\lthen}{\rightarrow}
+    % \newcommand{\liff}{\leftrightarrow}
+    % \newcommand{\lthen}{\rightarrow}
     \newcommand{\opname}{\operatorname}
     \newcommand{\surjto}{\twoheadrightarrow}
     \newcommand{\injto}{\hookrightarrow}
@@ -267,7 +281,7 @@
     \DeclareMathOperator{\ext}{ext} % extension
     \DeclareMathOperator{\pred}{pred} % predecessor
     \DeclareMathOperator{\dom}{dom} % domain
-    \DeclareMathOperator{\ran}{ran} % range
+    \DeclareMathOperator{\ran}{range} % range
     \DeclareMathOperator{\Hom}{Hom} % homomorphism
     \DeclareMathOperator{\End}{End} % endomorphism
     
@@ -290,7 +304,7 @@
     \newcommand{\SC}{\mathfrak C}
     \newcommand{\SD}{\mathfrak D}
     \newcommand{\SE}{\mathfrak E}
-    \newcommand{\SF}{\mathfrak F}
+    \newcommand{\SF}{\mathcal F}
     \newcommand{\SG}{\mathfrak G}
     \newcommand{\SH}{\mathfrak H}
     \newcommand{\LL}{\mathfrak L}

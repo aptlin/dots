@@ -117,6 +117,8 @@ color_terminals=
 
 rxvt-unicode=
 
+eterm-color=
+
 [Panels]
 show_mini_info=true
 kilobyte_si=false
