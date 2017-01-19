@@ -1,5 +1,5 @@
-# required for gpg-agent
-export GPG_TTY=$(tty)
+# required for gpg-agent in the console
+# export GPG_TTY=$(tty)
 
 #export TERM=tmux-256color
 export ZSH=$HOME/.oh-my-zsh
