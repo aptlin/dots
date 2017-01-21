@@ -100,6 +100,7 @@
     "symprod"
     "CC"
     "FF"
+    "HH"
     "NN"
     "PP"
     "QQ"
@@ -135,6 +136,7 @@
     "SH"
     "LL"
     "SM"
+    "MM"
     "SN"
     "OO"
     "SP"
@@ -182,7 +184,7 @@
     "posttitledrop"
     "postauthordrop")
    (LaTeX-add-mathtools-DeclarePairedDelimiters
-    '("inp" "2")
+    '("ipr" "2")
     '("Set" "1"))
    (LaTeX-add-amsthm-newtheorems
     "theorem"

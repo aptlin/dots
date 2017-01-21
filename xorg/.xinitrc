@@ -8,14 +8,15 @@ xrandr --dpi 227
 export GDK_SCALE=0.5
 #export GDK_DPI_SCALE=0.5
 xbindkeys
-# GPG agent
-eval $(gpg-agent --daemon)
 
- if [ -f "${HOME}/.gpg-agent-info" ]; then
-     . "${HOME}/.gpg-agent-info"
-     export GPG_AGENT_INFO
-     export SSH_AUTH_SOCK
- fi
+# GPG agent
+#eval $(gpg-agent --daemon)
+
+# if [ -f "${HOME}/.gpg-agent-info" ]; then
+#     . "${HOME}/.gpg-agent-info"
+#     export GPG_AGENT_INFO
+#     export SSH_AUTH_SOCK
+# fi
 exec i3
 
 

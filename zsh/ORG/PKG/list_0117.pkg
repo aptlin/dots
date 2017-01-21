@@ -372,7 +372,6 @@ java-common
 javascript-common
 jmtpfs
 kbd
-kde-baseapps-bin
 kde-runtime
 kde-runtime-data
 kdelibs5-data
@@ -1081,8 +1080,6 @@ libkf5windowsystem5:amd64
 libkfilemetadata4
 libklibc
 libkmod2:amd64
-libkonq5abi1
-libkonqsidebarplugin4a
 libkpathsea6:amd64
 libkrb5-3:amd64
 libkrb5support0:amd64
@@ -1147,10 +1144,10 @@ libmad0:amd64
 libmagic-mgc
 libmagic1:amd64
 libmagick++-6.q16-5:amd64
-libmagick++-6.q16-6v6:amd64
-libmagickcore-6.q16-2:amd64
-libmagickcore-6.q16-2-extra:amd64
-libmagickwand-6.q16-2:amd64
+libmagick++-6.q16-7:amd64
+libmagickcore-6.q16-3:amd64
+libmagickcore-6.q16-3-extra:amd64
+libmagickwand-6.q16-3:amd64
 libmail-box-perl
 libmail-java
 libmail-sendmail-perl
@@ -2014,6 +2011,7 @@ openssh-server
 openssh-sftp-server
 openssl
 optipng
+org-mode
 os-prober
 oxygen-icon-theme
 p11-kit
@@ -2032,9 +2030,11 @@ perl-base
 perl-doc
 perl-modules
 perl-modules-5.24
+perl-openssl-defaults:amd64
 phonon:amd64
 phonon4qt5:amd64
 phonon4qt5-backend-vlc:amd64
+pinentry-curses
 pinentry-gnome3
 pinentry-gtk2
 pkg-config
@@ -2121,6 +2121,7 @@ python-reportlab-accel:amd64
 python-repoze.lru
 python-routes
 python-sagetex
+python-scour
 python-setuptools
 python-sip
 python-six
@@ -2214,7 +2215,6 @@ r-cran-survival
 r-doc-html
 r-recommended
 rake
-ranger
 readline-common
 realpath
 recode
@@ -2348,6 +2348,7 @@ urlview
 usb-modeswitch
 usb-modeswitch-data
 usbmuxd
+usbutils
 user-setup
 util-linux
 util-linux-locales
@@ -2456,5 +2457,6 @@ zenity-common
 zip
 zlib1g:amd64
 zlib1g-dev:amd64
+zotero-standalone
 zsh
 zsh-common

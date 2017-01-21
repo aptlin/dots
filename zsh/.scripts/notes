@@ -43,7 +43,7 @@ if [ -n "$(ls -A $TMP_NTS)" ]; then
                                        sed -r 's/([0-9])([a-zA-Z])/\1 \2/g')
                         if [[ $f == *.pdf ]]
                            then
-                               echo "  - [[https://github.com/sdll/NOTES/blob/master/$d/$f][$new_f]]" >> $NTS_TMP_LOG
+                               echo "  - [[https://github.com/sdll/NOTES/blob/master/ARBEIT/$f][$new_f]]" >> $NTS_TMP_LOG
                         fi
 
                         echo "Done!"
@@ -67,7 +67,7 @@ if [ -n "$(ls -A $TMP_NTS)" ]; then
                                        sed -r 's/([0-9])([a-zA-Z])/\1 \2/g')
                         if [[ $f == *.pdf ]]
                            then
-                               echo "  - [[https://github.com/sdll/NOTES/blob/master/$d/$f][$new_f]]" >> $NTS_TMP_LOG
+                               echo "  - [[https://github.com/sdll/NOTES/blob/master/MIKVEH/$f][$new_f]]" >> $NTS_TMP_LOG
                         fi
                         echo "Done!"
 

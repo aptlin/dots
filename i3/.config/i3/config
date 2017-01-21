@@ -186,4 +186,5 @@ assign [class="chromium-browser"] 4
 assign [class="Firefox"] 4
 assign [class="TelegramDesktop"] 9
 exec xsettingsd
-exec --no-startup-id i3-msg 'workspace 1; emacsclient -c --alternate-editor='
+exec emacsclient -c --alternate-editor=
+exec $HOME/node_modules/i3-run-or-raise/bin/i3-run-or-raise --class "Firefox" iceweasel
