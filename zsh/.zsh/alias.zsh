@@ -153,7 +153,7 @@ alias ug="gcam "$(date +%y%m%d)" & gp"
 alias saw='sage --notebook="jupyter"'
 alias sa='ec ~/TMP/SAGE/workbook.org'
 
-function fk {readlink -f $1 | xclip}
+function fk () {readlink -f $1 | xclip}
 
 # define da and immediately call it to initialize the environment.
 function da () { eval `dirabbrev -e -a \$*`; }
