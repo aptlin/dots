@@ -306,6 +306,7 @@ gtk-theme-config
 gtk-update-icon-cache
 gtk-vector-screenshot
 gtk2-engines:amd64
+gtklp
 guile-2.0
 guile-2.0-libs:amd64
 gvfs:amd64
@@ -868,6 +869,7 @@ libgomp1:amd64
 libgpg-error0:amd64
 libgpgme++2
 libgpgme11:amd64
+libgpgmepp6:amd64
 libgphoto2-6:amd64
 libgphoto2-l10n
 libgphoto2-port10:amd64
@@ -1044,7 +1046,6 @@ libkf5crash5:amd64
 libkf5dbusaddons-bin
 libkf5dbusaddons-data
 libkf5dbusaddons5:amd64
-libkf5gpgmepp5:amd64
 libkf5guiaddons5:amd64
 libkf5i18n-data
 libkf5i18n5:amd64
@@ -1178,7 +1179,6 @@ libmodule-load-conditional-perl
 libmodule-runtime-perl
 libmoo-perl
 libmoox-handlesvia-perl
-libmotif-common
 libmount1:amd64
 libmp3lame0:amd64
 libmpc3:amd64
@@ -1337,8 +1337,9 @@ libpixman-1-dev
 libplist2:amd64
 libplist3:amd64
 libplot2c2:amd64
+libpng-dev:amd64
+libpng-tools
 libpng12-0:amd64
-libpng12-dev:amd64
 libpng16-16:amd64
 libpod-latex-perl
 libpod-markdown-perl
@@ -1788,7 +1789,6 @@ libxinerama1:amd64
 libxkbcommon-x11-0:amd64
 libxkbcommon0:amd64
 libxkbfile1:amd64
-libxm4:amd64
 libxml-commons-external-java
 libxml-commons-resolver1.1-java
 libxml-java
@@ -2429,7 +2429,6 @@ xmonad
 xorg
 xorg-docs-core
 xorg-sgml-doctools
-xpdf
 xserver-common
 xserver-xorg
 xserver-xorg-core
