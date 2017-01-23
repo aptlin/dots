@@ -111,7 +111,7 @@ alias spnts="snts; pnts"
 alias nte="ec ~/WERKE/sdll.github.io/stories/notes.org"
 alias gnts="gdir ORG/NOTES"
 alias sho="rename 's/^(.{25}).*(\..*)$/$1$2/' *"
-
+alias lk="ec /home/aleph/WERKE/sdll.github.io/stories/trove.org"
 # Blog
 
 alias nb="workon nikola; nikola auto; deactivate"
