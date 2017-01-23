@@ -150,7 +150,7 @@ alias uma="ec $DOTS/mutt/.mutt/aliases"
 alias ug="gcam "$(date +%y%m%d)" & gp"
 
 # lib
-alias saw='sage --notebook="jupyter"'
+alias saw='cd ~/TMP/PROG/SAGE; sage --notebook="jupyter"'
 alias sa='ec ~/TMP/SAGE/workbook.org'
 
 function fk () {readlink -f $1 | xclip}
