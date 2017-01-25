@@ -9,7 +9,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # paths
 export PATH=$PYENV_ROOT/bin:$HOME/bin:/usr/local/bin:$PATH:/home/aleph/.mutt/builds/mutt-notmuch-py/:/$HOME/PROG/SageMath/:/$HOME/node_modules/i3-run-or-raise/bin/
-CDPATH=.:~=:~/WERKE:~/ORG
+CDPATH=.:~=:~/WERKE:~/ORG:~/
 for folder in ~/WERKE
 do
     CDPATH="$CDPATH":"$folder"
