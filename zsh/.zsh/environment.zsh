@@ -9,6 +9,16 @@ export ZSH=$HOME/.oh-my-zsh
 
 # paths
 export PATH=$PYENV_ROOT/bin:$HOME/bin:/usr/local/bin:$PATH:/home/aleph/.mutt/builds/mutt-notmuch-py/:/$HOME/PROG/SageMath/:/$HOME/node_modules/i3-run-or-raise/bin/
+CDPATH=.:~=:~/WERKE:~/ORG
+for folder in ~/WERKE
+do
+    CDPATH="$CDPATH":"$folder"
+done
+for folder in ~/ORG
+do
+    CDPATH="$CDPATH":"$folder"
+done
+export CDPATH
 #export MANPATH=/usr/local/man:$MANPATH
 
 # preferred editor for local and remote sessions
@@ -55,7 +65,7 @@ export WORKON_HOME=${HOME}/PROG/PIT
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     source /usr/local/bin/virtualenvwrapper.sh
 elif [ -f /usr/bin/virtualenvwrapper.sh ]; then
-   source /usr/bin/virtualenvwrapper.sh
+    source /usr/bin/virtualenvwrapper.sh
 fi
 
 #UMu
