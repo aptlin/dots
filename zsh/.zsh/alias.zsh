@@ -1,3 +1,4 @@
+#!/bin/zsh	
 #alias emacs="emacs -nw"
 alias "cd.."="cd ../"
 alias :q="sudo systemctl poweroff"
@@ -38,7 +39,7 @@ alias road="ec ~/ORG/road.org"
 alias ru='setxkbmap ru'
 alias scp="scp -r"
 alias sch="ec ~/ORG/schedule.org"
-alias shtd='shutdown -h now'
+alias shtd='sudo shutdown -h now'
 alias sprunge="curl -f 'sprunge=<-' http://sprunge.us"
 alias st="sudo ntpdate pool.ntp.org; sudo hwclock --systohc"
 alias sude="sudo -e"
