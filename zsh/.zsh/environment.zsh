@@ -71,3 +71,7 @@ fi
 #UMu
 
 export UMU_DIR=~/WERKE/umus.github.io
+
+#LaTeX
+
+export BIBINPUTS=~/ORG/references.bib
