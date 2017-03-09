@@ -29,9 +29,11 @@ function assort() {
 }
 
 # ------------------------------------------------------------------------------
-# Remove the debris
+# Remove the debris, saving a back-up
 # ------------------------------------------------------------------------------
 cd $TMP_NTS
+git add --all
+git commit -a -m "$(date +%y%m%d)"
 find . -type f ! \( -name '*.tex' -o -name '*.pdf' \) -delete
 # ------------------------------------------------------------------------------
 # Launch!
@@ -130,7 +132,7 @@ else
     echo "There are no new notes in $TMP_NTS."
 fi
 
-# cd $PMT_NTS
-# git add --all
-# git commit -a -m "$(date +%y%m%d)"
-# git push origin $(git_current_branch)
+cd $PMT_NTS
+git add --all
+git commit -a -m "$(date +%y%m%d)"
+git push origin $(git_current_branch)
