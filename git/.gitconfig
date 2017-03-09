@@ -146,3 +146,5 @@
 [url "git@github.com:"]
     insteadof = github:
 
+[credential]
+	helper = cache --timeout=86400

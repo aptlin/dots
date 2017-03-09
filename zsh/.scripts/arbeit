@@ -1,2 +1,4 @@
 #!/bin/bash
-for filename in *.pdf; do cp "$filename" "$(basename $(pwd))_$filename"; done;
+shopt -s nullglob
+for filename in *.{pdf,tex}; do cp "$filename" "$(basename $(pwd))_$filename"; done;
+shopt -u nullglob
