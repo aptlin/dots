@@ -4,8 +4,12 @@
 #+DATE: 17/09/2016
 #+COMMENT: Please feel free to use the code for good. Happy hacking!
 # ------------------------------------------------------------------------------
+
 function assort() {
-    # input: type file destination
+    # input:
+    #       $1: type
+    #       $2: file
+    #       $3: destination
     new_place=$PMT_NTS/$3
     if [[ ( $2 == *.pdf ) || ( $2 == *.tex ) ]]
     then
@@ -28,100 +32,36 @@ function assort() {
     echo "Done!"
 }
 
-# ------------------------------------------------------------------------------
+# -------------------------------------------------------
 # Remove the debris, saving a back-up
-# ------------------------------------------------------------------------------
+# -------------------------------------------------------
 cd $TMP_NTS
 git add --all
 git commit -a -m "$(date +%y%m%d)"
-find . -type f ! \( -name '*.tex' -o -name '*.pdf' \) -delete
-# ------------------------------------------------------------------------------
+find . -type f ! \( -name '*.tex' -o -name '*.pdf' -o -name '*.org' -o -name '*.txt' \) -delete
+
+# -------------------------------------------------------
 # Launch!
-# ------------------------------------------------------------------------------
+# -------------------------------------------------------
 
 cd $PMT_NTS;
 
+#########################################################
 # d is a predefined class for the notes to be sorted into
+# -------------------------------------------------------
 # f is the file of the note
+#########################################################
+
 if [ -n "$(ls -A $TMP_NTS)" ]; then
     for d in *; do
         if [ -d "$d" ] && [ -n "$(ls -A $TMP_NTS)" ]; then
 	    cd $TMP_NTS;
 	    for f in *; do
                 if [ -f "$f" ]; then
-		    # if [[ $(basename "$f") = *"ARBEIT"* ]]
-		    # then
-		    # 	assort ARBEIT $f $d
-                    # echo "Hurray, there is a homework $f for $d!";
-                    # echo \
-			#     "Moving the file to the $d directory in $PMT_NTS..."
-
-                    # new_place=$PMT_NTS/ARBEIT
-                    # if [[ ( $f == *.pdf ) || ( $f == *.tex ) ]]
-                    # then
-		    #     mv $f $new_place
-                    # fi
-                    # echo "Parsing the file name for publishing..."
-                    # filename=$(basename "$f")
-                    # new_f=$(echo ${filename%.*} | sed -r 's/[_]+/: /g' | \
-			# 	    sed -r 's/[\+]+/ /g' | \
-			# 	    sed -r 's/\bARBEIT//g' | \
-			# 	    sed -r 's/([0-9])([a-zA-Z])/\1 \2/g')
-                    # if [[ $f == *.pdf ]]
-                    # then
-		    #     echo "  - [[https://github.com/sdll/NOTES/blob/master/ARBEIT/$f][$new_f]]" >> $NTS_TMP_LOG
-                    # fi
-
-                    # echo "Done!"
-
-		    # elif [[ $(basename "$f") = *"MIKVEH"* ]]
-		    # then
-		    #     assort MIKVEH $f $d
-                    # echo "Hurray, there are seminar notes $f for $d!";
-                    # echo \
-			#     "Moving the file to the $d directory in $PMT_NTS..."
-
-                    # new_place=$PMT_NTS/MIKVEH
-                    # if [[ ( $f == *.pdf ) || ( $f == *.tex ) ]]
-                    # then
-		    #     mv $f $new_place
-                    # fi
-                    # echo "Parsing the file name for publishing..."
-                    # filename=$(basename "$f")
-                    # new_f=$(echo ${filename%.*} | sed -r 's/[_]+/: /g' | \
-			# 	    sed -r 's/[\+]+/ /g' | \
-			# 	    sed -r 's/\bMIKVEH//g' | \
-			# 	    sed -r 's/([0-9])([a-zA-Z])/\1 \2/g')
-                    # if [[ $f == *.pdf ]]
-                    # then
-		    #     echo "  - [[https://github.com/sdll/NOTES/blob/master/MIKVEH/$f][$new_f]]" >> $NTS_TMP_LOG
-                    # fi
-                    # echo "Done!"
-
-		if [[ $(basename "$f") = *"${d}"* ]]
-		then
-		    assort ${d} $f $d
-                    # echo "Hurray, there is a note $f for $d!";
-                    # echo \
-			#     "Moving the note to the $d directory in $PMT_NTS..."
-
-                    # new_place=$PMT_NTS/$d
-                    # if [[ ( $f == *.pdf ) || ( $f == *.tex ) ]]
-                    # then
-		    #     mv $f $new_place
-                    # fi
-                    # echo "Parsing the file name for publishing..."
-                    # filename=$(basename "$f")
-                    # new_f=$(echo ${filename%.*} | sed -r 's/[_]+/: /g' | \
-			# 	    sed -r 's/[\+]+/ /g' | \
-			# 	    sed -r 's/([0-9])([a-zA-Z])/\1 \2/g')
-                    # if [[ $f == *.pdf ]]
-                    # then
-		    #     echo "  - [[https://github.com/sdll/NOTES/blob/master/$d/$f][$new_f]]" >> $NTS_TMP_LOG
-                    # fi
-                    # echo "Done!"
-
-		fi
+		    if [[ $(basename "$f") = *"${d}"* ]]
+		    then
+			assort ${d} $f $d
+		    fi
 		fi
 	    done
 
