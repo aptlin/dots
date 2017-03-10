@@ -17,7 +17,7 @@ xbindkeys
 #     export GPG_AGENT_INFO
 #     export SSH_AUTH_SOCK
 # fi
-exec i3
+exec xmonad
 
 
 #xmonad

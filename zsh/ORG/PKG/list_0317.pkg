@@ -2000,10 +2000,7 @@ libzvbi-common
 libzvbi0:amd64
 libzzip-0-13:amd64
 linux-base
-linux-compiler-gcc-5-x86
 linux-compiler-gcc-6-x86
-linux-headers-4.8.0-2-amd64
-linux-headers-4.8.0-2-common
 linux-headers-4.9.0-1-amd64
 linux-headers-4.9.0-1-common
 linux-headers-4.9.0-2-amd64
@@ -2016,7 +2013,6 @@ linux-image-4.8.0-2-amd64
 linux-image-4.9.0-1-amd64
 linux-image-4.9.0-2-amd64
 linux-image-amd64
-linux-kbuild-4.8
 linux-kbuild-4.9
 linux-libc-dev:amd64
 live-manual

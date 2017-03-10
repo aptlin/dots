@@ -3,7 +3,7 @@
 function dnote() {
     echo "Dirname: "
     read d
-    mkdir $d
+    mkdir -p $d
 
     START=1
     echo "No. of Units: "
@@ -15,6 +15,6 @@ function dnote() {
     cd $d
     for (( c=$START; c < $START+$END; c++ ))
     do
-	touch $d_$c.$e
+	touch $d\_$c.$e
     done
 }
