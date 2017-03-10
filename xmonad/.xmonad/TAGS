@@ -1,0 +1,27 @@
+
+./xmonad.hs,800
+myTerminal myTerminal29,30
+myLauncher myLauncher33,34
+myWorkspaces myWorkspaces40,41
+myBrowser myBrowser45,46
+myAlternativeBrowser myAlternativeBrowser46,47
+myMessenger myMessenger47,48
+myManageHook myManageHook62,63
+myLayout myLayout83,84
+myNormalBorderColor myNormalBorderColor97,98
+myFocusedBorderColor myFocusedBorderColor98,99
+tabConfig tabConfig101,102
+xmobarTitleColor xmobarTitleColor111,112
+xmobarCurrentWorkspaceColor xmobarCurrentWorkspaceColor114,115
+myBorderWidth myBorderWidth117,118
+myModMask myModMask128,129
+myKeys myKeys130,131
+myFocusFollowsMouse myFocusFollowsMouse294,295
+myFocusFollowsMouse myFocusFollowsMouse295,296
+myMouseBindings myMouseBindings297,298
+myStartupHook myStartupHook333,334
+main main339,340
+defaults defaults361,362
+
+./xmobar.hs,21
+Config Config27,28
