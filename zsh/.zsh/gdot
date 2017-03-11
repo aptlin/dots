@@ -4,4 +4,4 @@
 dpkg-query -f '${binary:Package}\n' -W > ~/DOTS/zsh/ORG/PKG/list_$(date +%m%y).pkg
 
 source ~/.zsh/alias.zsh
-gdir .emacs.d DOTS
+gdir .emacs.d DOTS ORG/MATEX

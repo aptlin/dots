@@ -7,7 +7,9 @@ import           Graphics.X11.ExtraTypes.XF86
 import           System.Exit
 import           System.IO
 import           XMonad
+import           XMonad.Actions.GridSelect
 import           XMonad.Actions.WindowBringer
+import           XMonad.Actions.WindowGo
 import           XMonad.Hooks.DynamicLog
 import           XMonad.Hooks.ManageDocks
 import           XMonad.Hooks.ManageHelpers
@@ -17,11 +19,11 @@ import           XMonad.Layout.NoBorders
 import           XMonad.Layout.Spiral
 import           XMonad.Layout.Tabbed
 import           XMonad.Layout.ThreeColumns
+import           XMonad.Prompt
+import           XMonad.Prompt.AppendFile
 import qualified XMonad.StackSet              as W
 import           XMonad.Util.EZConfig         (additionalKeys)
 import           XMonad.Util.Run              (spawnPipe)
-
-
 ------------------------------------------------------------------------
 -- Terminal
 -- The preferred terminal program, which is used in a binding below and by
@@ -45,7 +47,8 @@ myWorkspaces = ["1:arbeit","2:mikveh","3:haku","4:docs","5:media"] ++ map show [
 
 myBrowser = "iceweasel"
 myAlternativeBrowser = "chromium"
-myMessenger = "$HOME/DLD/Telegram/Telegram"
+myMessenger = "telegram"
+myViewer = "zathura"
 ------------------------------------------------------------------------
 -- Window rules
 -- Execute arbitrary actions and WindowSet manipulations when managing
@@ -61,8 +64,8 @@ myMessenger = "$HOME/DLD/Telegram/Telegram"
 -- 'className' and 'resource' are used below.
 --
 myManageHook = composeAll
-    [ className =? "Chromium"       --> doShift "2:web"
-    , className =? "Google-chrome"  --> doShift "2:web"
+    [ className =? "Chromium"       --> doShift "3:haku"
+    , className =? "TelegramDesktop"  --> doShift "9"
     , resource  =? "desktop_window" --> doIgnore
     , className =? "Galculator"     --> doFloat
     , className =? "Gimp"           --> doFloat
@@ -117,6 +120,21 @@ xmobarCurrentWorkspaceColor = "#CEFFAC"
 -- Width of the window border in pixels.
 myBorderWidth = 1
 
+-- Prompt Config {{{
+colorDarkGray = "#171717"
+colorGreen       = "#00aa4a"
+barFont       = "-*-terminus-*-*-*-*-20-*-*-*-*-*-*-*"
+
+mXPConfig :: XPConfig
+mXPConfig =
+    defaultXPConfig { font                  = barFont
+                    , bgColor               = colorDarkGray
+                    , fgColor               = xmobarCurrentWorkspaceColor
+                    , promptBorderWidth     = 0
+                    , height                = 20
+                    , position              = Top
+                    , historyFilter         = deleteConsecutive
+                    }
 
 ------------------------------------------------------------------------
 -- Key bindings
@@ -142,18 +160,22 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask, xK_e),
      spawn myLauncher)
 
+  -- Append a note
+   , ((modMask, xK_p), appendFilePrompt mXPConfig "/home/aleph/ORG/todo.org")
   -- Start emacs
   , ((modMask, xK_r),
      spawn "emacsclient -c --alternate-editor= ")
-
   -- Start Browser
     , ((modMask, xK_w),
-     spawn myBrowser)
+       runOrRaise myBrowser (className =? "Firefox-esr"))
     , ((modMask, xK_c),
-     spawn myAlternativeBrowser)
+       runOrRaise myAlternativeBrowser (className =? "Chromium"))
   -- Start Messenger
   , ((modMask, xK_z),
-     spawn myMessenger)
+     runOrRaise myMessenger (className =? "TelegramDesktop"))
+  -- Start Viewer
+  , ((modMask, xK_o),
+     spawn myViewer)
   -- Mute volume.
   , ((0, xF86XK_AudioMute),
      spawn "amixer -q set Master toggle")
@@ -192,7 +214,8 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 
   -- Launch WindowBringer
 
-  , ((modMask, xK_g), gotoMenu)
+  , ((modMask, xK_g), goToSelected defaultGSConfig)
+---  , ((modMask, xK_g), gotoMenu)
   , ((modMask, xK_b), bringMenu)
 
   --------------------------------------------------------------------
@@ -342,7 +365,7 @@ main = do
   xmonad $ defaults {
       logHook = dynamicLogWithPP $ xmobarPP {
             ppOutput = hPutStrLn xmproc
-          , ppTitle = xmobarColor xmobarTitleColor "" . shorten 100
+          , ppTitle = xmobarColor xmobarTitleColor "" . shorten 140
           , ppCurrent = xmobarColor xmobarCurrentWorkspaceColor ""
           , ppSep = "   "
       }

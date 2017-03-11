@@ -1,27 +1,33 @@
 
-./xmonad.hs,800
-myTerminal myTerminal29,30
-myLauncher myLauncher33,34
-myWorkspaces myWorkspaces40,41
-myBrowser myBrowser45,46
-myAlternativeBrowser myAlternativeBrowser46,47
-myMessenger myMessenger47,48
-myManageHook myManageHook62,63
-myLayout myLayout83,84
-myNormalBorderColor myNormalBorderColor97,98
-myFocusedBorderColor myFocusedBorderColor98,99
-tabConfig tabConfig101,102
-xmobarTitleColor xmobarTitleColor111,112
-xmobarCurrentWorkspaceColor xmobarCurrentWorkspaceColor114,115
-myBorderWidth myBorderWidth117,118
-myModMask myModMask128,129
-myKeys myKeys130,131
-myFocusFollowsMouse myFocusFollowsMouse294,295
-myFocusFollowsMouse myFocusFollowsMouse295,296
-myMouseBindings myMouseBindings297,298
-myStartupHook myStartupHook333,334
-main main339,340
-defaults defaults361,362
+./xmonad.hs,980
+myTerminal myTerminal31,32
+myLauncher myLauncher35,36
+myWorkspaces myWorkspaces42,43
+myBrowser myBrowser47,48
+myAlternativeBrowser myAlternativeBrowser48,49
+myMessenger myMessenger49,50
+myViewer myViewer50,51
+myManageHook myManageHook65,66
+myLayout myLayout86,87
+myNormalBorderColor myNormalBorderColor100,101
+myFocusedBorderColor myFocusedBorderColor101,102
+tabConfig tabConfig104,105
+xmobarTitleColor xmobarTitleColor114,115
+xmobarCurrentWorkspaceColor xmobarCurrentWorkspaceColor117,118
+myBorderWidth myBorderWidth120,121
+colorDarkGray colorDarkGray123,124
+colorGreen colorGreen124,125
+barFont barFont125,126
+mXPConfig mXPConfig127,128
+mXPConfig mXPConfig128,129
+myModMask myModMask146,147
+myKeys myKeys148,149
+myFocusFollowsMouse myFocusFollowsMouse317,318
+myFocusFollowsMouse myFocusFollowsMouse318,319
+myMouseBindings myMouseBindings320,321
+myStartupHook myStartupHook356,357
+main main362,363
+defaults defaults384,385
 
-./xmobar.hs,21
-Config Config27,28
+./xmobar.hs,19
+Config Config0,1
