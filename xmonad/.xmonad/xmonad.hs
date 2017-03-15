@@ -1,3 +1,7 @@
+{-# LANGUAGE AllowAmbiguousTypes   #-}
+{-# LANGUAGE DeriveDataTypeable    #-}
+{-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE TypeSynonymInstances  #-}
 -- Modules                                                              {{{
 ---------------------------------------------------------------------------
 --import Control.Monad (liftM2)             -- myManageHookShift
