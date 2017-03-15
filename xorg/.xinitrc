@@ -1,6 +1,7 @@
 # urxvt colours
 #xrdb -I$HOME -merge ~/.Xdefaults
-xrdb -I$HOME -merge  ~/.Xresources
+# xrdb -I$HOME -merge  ~/.Xresources
+xrdb -SOLARIZED_DARK -merge ~/.Xresources
 setxkbmap -option ctrl:nocaps
 xrandr --dpi 227
 xmodmap ~/.xmodmaprc
@@ -8,7 +9,8 @@ xmodmap ~/.xmodmaprc
 export GDK_SCALE=0.5
 #export GDK_DPI_SCALE=0.5
 xbindkeys
-
+compton -b --xrender-sync-fence
+unclutter --timeout 2 --fork
 # GPG agent
 #eval $(gpg-agent --daemon)
 

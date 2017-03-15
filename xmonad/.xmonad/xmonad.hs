@@ -1,3 +1,4 @@
+--- Thank you, Ethan.  https://github.com/altercation/dotfiles-tilingwm/tree/master/.xmonad
 {-# LANGUAGE AllowAmbiguousTypes   #-}
 {-# LANGUAGE DeriveDataTypeable    #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
@@ -332,7 +333,7 @@ cyan                  = "#2aa198"
 green                 = "#859900"
 
 -- sizes
-gap                   = 2
+gap                   = 0
 topbar                = 10
 border                = 0
 prompt                = 32
