@@ -1,33 +1,242 @@
 
-./xmonad.hs,980
-myTerminal myTerminal31,32
-myLauncher myLauncher35,36
-myWorkspaces myWorkspaces42,43
-myBrowser myBrowser47,48
-myAlternativeBrowser myAlternativeBrowser48,49
-myMessenger myMessenger49,50
-myViewer myViewer50,51
-myManageHook myManageHook65,66
-myLayout myLayout86,87
-myNormalBorderColor myNormalBorderColor100,101
-myFocusedBorderColor myFocusedBorderColor101,102
-tabConfig tabConfig104,105
-xmobarTitleColor xmobarTitleColor114,115
-xmobarCurrentWorkspaceColor xmobarCurrentWorkspaceColor117,118
-myBorderWidth myBorderWidth120,121
-colorDarkGray colorDarkGray123,124
-colorGreen colorGreen124,125
-barFont barFont125,126
-mXPConfig mXPConfig127,128
-mXPConfig mXPConfig128,129
-myModMask myModMask146,147
-myKeys myKeys148,149
-myFocusFollowsMouse myFocusFollowsMouse317,318
-myFocusFollowsMouse myFocusFollowsMouse318,319
-myMouseBindings myMouseBindings320,321
-myStartupHook myStartupHook356,357
-main main362,363
-defaults defaults384,385
+./xmonad.hs,3570
+main main273,274
+myConfig myConfig291,292
+wsAV wsAV313,314
+wsBSA wsBSA314,315
+wsCOM wsCOM315,316
+wsDOM wsDOM316,317
+wsDMO wsDMO317,318
+wsFLOAT wsFLOAT318,319
+wsGEN wsGEN319,320
+wsGCC wsGCC320,321
+wsMON wsMON321,322
+wsOSS wsOSS322,323
+wsRAD wsRAD323,324
+wsRW wsRW324,325
+wsSYS wsSYS325,326
+wsTMP wsTMP326,327
+wsVIX wsVIX327,328
+wsWRK wsWRK328,329
+wsWRK2 wsWRK2329,330
+wsGGC wsGGC330,331
+myWorkspaces myWorkspaces333,334
+projects projects335,336
+projects projects336,337
+--myTerminal --myTerminal394,395
+--myTerminalClass --myTerminalClass395,396
+myTerminal myTerminal396,397
+myBrowser myBrowser397,398
+myBrowserClass myBrowserClass398,399
+myAlternativeBrowser myAlternativeBrowser399,400
+myAlternativeBrowserClass myAlternativeBrowserClass400,401
+myMessenger myMessenger401,402
+myMessengerClass myMessengerClass402,403
+myStatusBar myStatusBar403,404
+--myLauncher --myLauncher404,405
+myLauncher myLauncher406,407
+isConsole isConsole429,430
+myConsole myConsole431,432
+scratchpads scratchpads433,434
+myFocusFollowsMouse myFocusFollowsMouse441,442
+myClickJustFocuses myClickJustFocuses442,443
+base03 base03444,445
+base02 base02445,446
+base01 base01446,447
+base00 base00447,448
+base0 base0448,449
+base1 base1449,450
+base2 base2450,451
+base3 base3451,452
+yellow yellow452,453
+orange orange453,454
+red red454,455
+magenta magenta455,456
+violet violet456,457
+blue blue457,458
+cyan cyan458,459
+green green459,460
+gap gap462,463
+topbar topbar463,464
+border border464,465
+prompt prompt465,466
+status status466,467
+myNormalBorderColor myNormalBorderColor468,469
+myFocusedBorderColor myFocusedBorderColor469,470
+active active471,472
+activeWarn activeWarn472,473
+inactive inactive473,474
+focusColor focusColor474,475
+unfocusColor unfocusColor475,476
+myFont myFont477,478
+myBigFont myBigFont478,479
+myWideFont myWideFont479,480
+topBarTheme topBarTheme484,485
+myTabTheme myTabTheme497,498
+myPromptTheme myPromptTheme507,508
+warmPromptTheme warmPromptTheme519,520
+hotPromptTheme hotPromptTheme525,526
+myNav2DConf myNav2DConf539,540
+data FULLBAR FULLBAR554,555
+data FULLBAR = FULLBAR FULLBAR554,555
+instance instance555,556
+barFull barFull559,560
+myLayoutHook myLayoutHook563,564
+myModMask myModMask1065,1066
+showKeybindings showKeybindings1070,1071
+showKeybindings showKeybindings1071,1072
+wsKeys wsKeys1091,1092
+notSP notSP1094,1095
+shiftAndView shiftAndView1095,1096
+shiftAndView' shiftAndView'1099,1100
+nextNonEmptyWS nextNonEmptyWS1101,1102
+prevNonEmptyWS prevNonEmptyWS1103,1104
+getSortByIndexNoSP getSortByIndexNoSP1105,1106
+myToggle myToggle1109,1110
+myKeys myKeys1112,1113
+myMouseBindings myMouseBindings1424,1425
+myStartupHook myStartupHook1458,1459
+quitXmonad quitXmonad1472,1473
+quitXmonad quitXmonad1473,1474
+rebuildXmonad rebuildXmonad1475,1476
+rebuildXmonad rebuildXmonad1476,1477
+restartXmonad restartXmonad1479,1480
+restartXmonad restartXmonad1480,1481
+myLogHook myLogHook1487,1488
+myFadeHook myFadeHook1517,1518
+data LibNotifyUrgencyHook LibNotifyUrgencyHook1537,1538
+data LibNotifyUrgencyHook = LibNotifyUrgencyHook LibNotifyUrgencyHook1537,1538
+myManageHook myManageHook1555,1556
+myManageHook myManageHook1556,1557
+myHandleEventHook myHandleEventHook1604,1605
+forceCenterFloat forceCenterFloat1619,1620
+forceCenterFloat forceCenterFloat1620,1621
+--addTagAndContinue --addTagAndContinue1637,1638
+--addTagAndContinue --addTagAndContinue1638,1639
 
-./xmobar.hs,19
-Config Config0,1
+./xmobar.hs,18
+ConfigConfig5,6
+
+./lib/XMonad/Hooks/DynamicProperty.hs,240
+module XMonad.Hooks.DynamicProperty XMonad.Hooks.DynamicProperty25,26
+dynamicPropertyChange dynamicPropertyChange54,55
+dynamicPropertyChange dynamicPropertyChange55,56
+dynamicTitle dynamicTitle64,65
+dynamicTitle dynamicTitle70,71
+
+./lib/XMonad/Actions/Volume.hs,3864
+module XMonad.Actions.Volume XMonad.Actions.Volume14,15
+(<*)<*65,66
+pa pa66,67
+toggleMute toggleMute85,86
+raiseVolume raiseVolume87,88
+lowerVolume lowerVolume89,90
+getVolume getVolume91,92
+getMute getMute93,94
+getVolumeMute getVolumeMute95,96
+setVolume setVolume97,98
+setMute setMute99,100
+setVolumeMute setVolumeMute101,102
+modifyVolume modifyVolume103,104
+modifyMute modifyMute105,106
+modifyVolumeMute modifyVolumeMute107,108
+toggleMute toggleMute109,110
+raiseVolume raiseVolume110,111
+lowerVolume lowerVolume111,112
+getVolume getVolume112,113
+getMute getMute113,114
+getVolumeMute getVolumeMute114,115
+setVolume setVolume115,116
+setMute setMute116,117
+setVolumeMute setVolumeMute117,118
+modifyVolume modifyVolume118,119
+modifyMute modifyMute119,120
+modifyVolumeMute modifyVolumeMute120,121
+defaultChannels defaultChannels123,124
+defaultChannels defaultChannels124,125
+toggleMuteChannels toggleMuteChannels126,127
+raiseVolumeChannels raiseVolumeChannels127,128
+lowerVolumeChannels lowerVolumeChannels128,129
+getVolumeChannels getVolumeChannels129,130
+getMuteChannels getMuteChannels130,131
+getVolumeMuteChannels getVolumeMuteChannels131,132
+setVolumeChannels setVolumeChannels132,133
+setMuteChannels setMuteChannels133,134
+setVolumeMuteChannels setVolumeMuteChannels134,135
+modifyVolumeChannels modifyVolumeChannels135,136
+modifyMuteChannels modifyMuteChannels136,137
+modifyVolumeMuteChannels modifyVolumeMuteChannels137,138
+toggleMuteChannels toggleMuteChannels139,140
+raiseVolumeChannels raiseVolumeChannels140,141
+lowerVolumeChannels lowerVolumeChannels141,142
+getVolumeChannels getVolumeChannels143,144
+getMuteChannels getMuteChannels144,145
+getVolumeMuteChannels getVolumeMuteChannels145,146
+setVolumeChannels setVolumeChannels147,148
+setMuteChannels setMuteChannels148,149
+setVolumeMuteChannels setVolumeMuteChannels149,150
+modifyVolumeChannels modifyVolumeChannels151,152
+modifyMuteChannels modifyMuteChannels152,153
+modifyVolumeMuteChannels modifyVolumeMuteChannels153,154
+geomMean geomMean156,157
+geomMean geomMean157,158
+clip clip159,160
+clip clip160,161
+modify modify162,163
+modify modify163,164
+outputOf outputOf168,169
+outputOf outputOf169,170
+amixerSetAll amixerSetAll175,176
+amixerSet amixerSet176,177
+amixerGetAll amixerGetAll177,178
+amixerGet amixerGet178,179
+amixerSetAll amixerSetAll179,180
+amixerSet amixerSet180,181
+amixerGetAll amixerGetAll181,182
+amixerGet amixerGet182,183
+amixerSetVolumeOnlyAll amixerSetVolumeOnlyAll184,185
+amixerSetVolumeOnly amixerSetVolumeOnly185,186
+amixerSetVolumeOnlyAll amixerSetVolumeOnlyAll186,187
+amixerSetVolumeOnly amixerSetVolumeOnly187,188
+amixerSetMuteOnlyAll amixerSetMuteOnlyAll189,190
+amixerSetMuteOnly amixerSetMuteOnly190,191
+amixerSetMuteOnlyAll amixerSetMuteOnlyAll191,192
+amixerSetMuteOnly amixerSetMuteOnly192,193
+parseAmixerGetAll parseAmixerGetAll194,195
+parseAmixerGetAll parseAmixerGetAll195,196
+amixerGetParser amixerGetParser199,200
+amixerGetParser amixerGetParser200,201
+headerLine headerLine202,203
+playbackChannels playbackChannels203,204
+volumes volumes204,205
+headerLine headerLine205,206
+playbackChannels playbackChannels206,207
+volumes volumes209,210
+upTo upTo213,214
+keyValueLine keyValueLine214,215
+upTo upTo215,216
+keyValueLine keyValueLine216,217
+parseChannel parseChannel222,223
+channelParser channelParser223,224
+parseChannel parseChannel224,225
+channelParser channelParser225,226
+playbackOrCapture playbackOrCapture227,228
+playbackOrCapture playbackOrCapture228,229
+extras extras240,241
+extras extras241,242
+sepBy' sepBy'243,244
+sepBy' sepBy'244,245
+osdCat osdCat250,251
+osdCat osdCat251,252
+defaultOSDOpts defaultOSDOpts256,257
+defaultOSDOpts defaultOSDOpts257,258
+
+./lib/XMonad/Actions/ConditionalKeys.hs,264
+module XMonad.Actions.ConditionalKeys XMonad.Actions.ConditionalKeys20,21
+data XCond XCond59,60
+data XCond = WS WS59,60
+data XCond = WS | LDLD59,60
+chooseAction chooseAction63,64
+chooseAction chooseAction64,65
+bindOn bindOn71,72
+bindOn bindOn72,73

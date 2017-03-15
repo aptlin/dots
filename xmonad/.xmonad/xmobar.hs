@@ -1,79 +1,94 @@
-Config { 
-   font =         "-*-terminus-*-*-*-*-26-*-*-*-*-*-*-*"
-   -- font = "xft:Linux Libertine-10"
-   , bgColor =      "black"
-   , fgColor =      "#646464"
-   , position =     Top
-   , border =       BottomB
-   , borderColor =  "#646464"
-   , sepChar =  "%"   
-   , alignSep = "}{"  
-   , template = "%battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% }{ %StdinReader% || %date% "
-   , lowerOnStart =     True    -- send to bottom of window stack on start
-   , hideOnStart =      False   -- start with window unmapped (hidden)
-   , allDesktops =      True    -- show on all desktops
-   , overrideRedirect = False    -- set the Override Redirect flag (Xlib)
-   , pickBroadest =     False   -- choose widest display (multi-monitor)
-   , persistent =       False    -- enable/disable hiding (True = disabled)
-   , commands = 
-       [ 
-         -- network monitor 
+-- weather:
+-- https://www.faa.gov/air_traffic/weather/asos
+-- http://forecast.weather.gov/MapClick.php?textField1=47.66&textField2=-122.35#.WIjEN0fytec
+--, additionalFonts    = ["xft:Raleway:size=12:antialias=true:hinting=true", "xft:Inconsolata for Powerline:size=12:antialias=true:hinting=true"]
+
+Config
+    { font              = "xft:xos4 Terminus:pixelsize=25:antialias=true:hinting=true"
+    , additionalFonts   = [ "xft:FontAwesome:pixelsize=14:antialias=true:hinting=true" ]
+    , allDesktops       = True
+    , bgColor           = "#000000"
+    , fgColor           = "#586e75"
+    , alpha             = 100
+    , overrideRedirect  = True
+    , commands           = [
         Run DynNetwork     [ "--template" , "<dev>: <tx>kB/s|<rx>kB/s"
-                           , "--Low"      , "1000"       -- units: kB/s
-                           , "--High"     , "5000"       -- units: kB/s
+                           , "--Low"      , "1000"       -- units: B/s
+                           , "--High"     , "5000"       -- units: B/s
                            , "--low"      , "darkgreen"
-                           , "--normal"   , "darkorange"
-                           , "--high"     , "darkred"
+                           , "--normal"   , "darkgreen"
+                           , "--high"     , "darkgreen"
                            ] 10
+       -- , Run MultiCpu       [ "--template" , "CPU: <total0>%|<total1>%|<total2>%|<total3>%"
+       --                       , "--Low"      , "50"         -- units: %
+       --                       , "--High"     , "85"         -- units: %
+       --                       , "--low"      , "darkgreen"
+       --                       , "--normal"   , "darkorange"
+       --                       , "--high"     , "darkred"
+       --                       ] 10
+        ,Run MultiCpu
+            [ "-t","<fn=1>\xf085</fn> C/M <vbar>"
+            -- , "-p", "2"
+            , "-L", "40"
+            , "-H", "60"
+            , "-l", "#586e75"
+            , "-h", "#dc322f" -- red
+            ] 10
+--        , Run Weather "KBFI"
+--            [ "-t", "<fc=#93a1a1><fn=1>\xf2cb</fn> SEA:<tempF>°</fc>"
+--            , "-L", "50"
+--            , "-H", "80"
+--            , "--low", "#93a1a1"
+--            , "--normal", "#93a1a1"
+--            , "--high", "#93a1a1"
+--            ] 36000
+        , Run Memory
+            [ "-t", "<usedvbar>"
+            , "-p", "2"
+            , "-l", "#586e75"
+            , "-h", "#268bd2" -- blue, just to differentiate from cpu bar
+            ] 10
+--        , Run Volume "default" "Master"
+--            [ "-t", "<status>", "--"
+--            , "--on", "<fc=#859900><fn=1>\xf028</fn> <volume>%</fc>"
+--            , "--onc", "#859900"
+--            , "--off", "<fc=#dc322f><fn=1>\xf026</fn> MUTE</fc>"
+--            , "--offc", "#dc322f"
+--            ] 1
+        , Run Battery
+            [ "-t", "<fc=#b58900><acstatus></fc>"
+            , "-L", "20"
+            , "-H", "85"
+            , "-l", "#dc322f"
+            , "-n", "#b58900"
+            , "-h", "#b58900"
+            , "--" -- battery specific options
+            -- discharging status
+            , "-o"  , "<fn=1>\xf242</fn> <left>% (<timeleft>) <watts>"
+            -- AC "on" status
+            , "-O"  , "<fn=1>\xf1e6</fn> <left>%"
+            -- charged status
+            , "-i"  , "<fn=1>\xf1e6</fn> <left>%"
+            , "--off-icon-pattern", "<fn=1>\xf1e6</fn>"
+            , "--on-icon-pattern", "<fn=1>\xf1e6</fn>"
+            ] 10
+        , Run Date "<fc=#268bd2><fn=1>\xf073</fn> %a %_d %b %Y | d.%j w.%W</fc>   <fc=#2AA198><fn=1></fn> %H:%M:%S</fc>" "date" 10
+--        , Run Network "enp0s31f6"
+--            [ "-t", " <fc=#6c71c4><fn=1>\xf065</fn> ETH<rxipat></fc>"
+--            ] 10 
+--        , Run DynNetwork
+--            [ "-t", "<fc=#6c71c4>| <dev></fc>"
+--            ] 10 
 
-        -- cpu activity monitor
-       , Run MultiCpu       [ "--template" , "CPU: <total0>%|<total1>%|<total2>%|<total3>%"
-                             , "--Low"      , "50"         -- units: %
-                             , "--High"     , "85"         -- units: %
-                             , "--low"      , "darkgreen"
-                             , "--normal"   , "darkorange"
-                             , "--high"     , "darkred"
-                             ] 10
+        , Run StdinReader
+        ]
+        , sepChar            = "%"
+        , alignSep           = "}{"
+        --, template           = " %StdinReader% }{ %nowplaying% %screencast% %cpu%%memory%   %net%   %default:Master%   %battery%   %date%   %KBFI%   %kb%  "
+        , template           = " %StdinReader% }{ %dynnetwork% %multicpu% %memory%  %battery%   %date%"
+        --, template           = "%StdinReader% }{ %cpu%%memory%   %statusnet% %wlp4s0wi%%enp0s31f6%   %default:Master%   %battery%   %date%   %KBFI%            "
+        --, template           = "%StdinReader% }{ %wlp4s0wi% %default:Master% %multicpu% %cpufreq% %memory% %battery% %date% %KBFI%            "
+    }
 
-        -- cpu core temperature monitor
-       , Run CoreTemp       [ "--template" , "Temp: <core0>°C|<core1>°C|<core2>°C"
-                             , "--Low"      , "70"        -- units: °C
-                             , "--High"     , "80"        -- units: °C
-                             , "--low"      , "darkgreen"
-                             , "--normal"   , "darkorange"
-                             , "--high"     , "darkred"
-                             ] 50
-                          
-        -- memory usage monitor
-       , Run Memory         [ "--template" ,"Mem: <usedratio>%"
-                             , "--Low"      , "25"        -- units: %
-                             , "--High"     , "80"        -- units: %
-                             , "--low"      , "darkgreen"
-                             , "--normal"   , "darkorange"
-                             , "--high"     , "darkred"
-                             ] 10
-
-        -- battery monitor
-       , Run Battery        [ "--template" , "<acstatus>"
-                             , "--Low"      , "15"        -- units: %
-                             , "--High"     , "80"        -- units: %
-                             , "--low"      , "darkred"
-                             , "--normal"   , "darkorange"
-                             , "--high"     , "darkgreen"
-
-                             , "--" -- battery specific options
-                                       -- discharging status
-                                       , "-o"	, "<left>% (<timeleft>)"
-                                       -- AC "on" status
-                                       , "-O"	, "<fc=#dAA520>Charging</fc> <left>%"
-                                       -- charged status
-                                       , "-i"	, "<fc=#006000>Charged</fc>"
-                             ] 50
-
-        -- stdin reader
-       , Run StdinReader
-
-        -- datetime indicator 
-       , Run Date           "<fc=#ABABAB>%F (%a) %T</fc>" "date" 10
-       ]
-   }
+-- not really haskell, but close enough
+-- vim: ft=haskell:foldmethod=marker:expandtab:ts=4:shiftwidth=4
