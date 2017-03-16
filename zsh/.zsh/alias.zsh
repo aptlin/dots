@@ -59,7 +59,7 @@ alias wsnet='pushd /home/aleph/h/conf && ./wsnet.sh && popd'
 alias x='startx'
 alias xclip='xclip -selection c'
 alias xsel="xsel -b"
-alias za="zathura"
+alias za="zathura --fork"
 alias zz="quit"
 alias ан='setxkbmap us'
 email() {
