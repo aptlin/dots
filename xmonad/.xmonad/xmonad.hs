@@ -1084,8 +1084,8 @@ myKeys conf = let
 
     , ("M-'"                    , addName "Navigate tabs D"                 $ bindOn LD [("Tabs", windows W.focusDown), ("", onGroup W.focusDown')])
     , ("M-S-'"                    , addName "Navigate tabs U"                 $ bindOn LD [("Tabs", windows W.focusUp), ("", onGroup W.focusUp')])
-    , ("C-'"                    , addName "Swap tab D"                      $ windows W.swapDown)
-    , ("C-;"                    , addName "Swap tab U"                      $ windows W.swapUp)
+    , ("M-C-'"                    , addName "Swap tab D"                      $ windows W.swapDown)
+    , ("M-C-S-'"                    , addName "Swap tab U"                      $ windows W.swapUp)
 
     -- ComboP specific (can remove after demo)
     , ("M-C-S-m"                , addName "Combo swap"                      $ sendMessage $ SwapWindow)
