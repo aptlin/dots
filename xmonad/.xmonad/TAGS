@@ -96,25 +96,25 @@ prevNonEmptyWS prevNonEmptyWS976,977
 getSortByIndexNoSP getSortByIndexNoSP978,979
 myToggle myToggle982,983
 myKeys myKeys985,986
-myMouseBindings myMouseBindings1283,1284
-myStartupHook myStartupHook1317,1318
-quitXmonad quitXmonad1331,1332
+myMouseBindings myMouseBindings1284,1285
+myStartupHook myStartupHook1318,1319
 quitXmonad quitXmonad1332,1333
-rebuildXmonad rebuildXmonad1334,1335
+quitXmonad quitXmonad1333,1334
 rebuildXmonad rebuildXmonad1335,1336
-restartXmonad restartXmonad1338,1339
+rebuildXmonad rebuildXmonad1336,1337
 restartXmonad restartXmonad1339,1340
-myLogHook myLogHook1346,1347
-myFadeHook myFadeHook1376,1377
-data LibNotifyUrgencyHook LibNotifyUrgencyHook1396,1397
-data LibNotifyUrgencyHook = LibNotifyUrgencyHook LibNotifyUrgencyHook1396,1397
-myManageHook myManageHook1413,1414
+restartXmonad restartXmonad1340,1341
+myLogHook myLogHook1347,1348
+myFadeHook myFadeHook1377,1378
+data LibNotifyUrgencyHook LibNotifyUrgencyHook1397,1398
+data LibNotifyUrgencyHook = LibNotifyUrgencyHook LibNotifyUrgencyHook1397,1398
 myManageHook myManageHook1414,1415
-myHandleEventHook myHandleEventHook1462,1463
-forceCenterFloat forceCenterFloat1477,1478
+myManageHook myManageHook1415,1416
+myHandleEventHook myHandleEventHook1463,1464
 forceCenterFloat forceCenterFloat1478,1479
---addTagAndContinue --addTagAndContinue1495,1496
+forceCenterFloat forceCenterFloat1479,1480
 --addTagAndContinue --addTagAndContinue1496,1497
+--addTagAndContinue --addTagAndContinue1497,1498
 
 ./xmobar.hs,18
 ConfigConfig5,6

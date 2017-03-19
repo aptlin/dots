@@ -1,6 +1,7 @@
-#!/bin/zsh	
+#!/bin/zsh
 #alias emacs="emacs -nw"
 alias "cd.."="cd ../"
+alias ag="ag"
 alias :q="sudo systemctl poweroff"
 alias ae="vim ~/.zsh/environment.zsh && source ~/.zsh/environment.zsh; pushd ~/DOTS; git commit -m 'added new env vars' ~/DOTS/zsh/.zsh/environment.zsh;  git push; popd"
 alias aee="ec ~/.zsh/environment.zsh && source ~/.zsh/environment.zsh; pushd ~/DOTS; git commit -m 'added new env vars' ~/DOTS/zsh/.zsh/environment.zsh;  git push; popd"

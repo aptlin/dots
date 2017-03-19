@@ -1050,6 +1050,7 @@ myKeys conf = let
              , ("M-r"        , addName "Editor"        $ spawn myEditor)
              , ("M-\\"       , addName "Browser"       $ runOrRaise myBrowser (className =? myBrowserClass))
              , ("M-c"        , addName "Browser"       $ runOrRaise myAlternativeBrowser (className =? myAlternativeBrowserClass))
+             , ("M-i"        , addName "Screenshot"       $ spawn "gnome-screenshot --interactive")
              , ("M-o"        , addName "Reader"        $ spawn myReader)
              , ("M-z"        , addName "Messenger"     $ runOrRaise myMessenger (className =? "TelegramDesktop"))
              , ("M-s s"      , addName "Cancel submap" $ return ())
@@ -1082,7 +1083,7 @@ myKeys conf = let
     --, ("M-S-<Tab>"              , addName "Focus up"                        $ windows W.focusUp)
 
     , ("M-'"                    , addName "Navigate tabs D"                 $ bindOn LD [("Tabs", windows W.focusDown), ("", onGroup W.focusDown')])
-    , ("M-;"                    , addName "Navigate tabs U"                 $ bindOn LD [("Tabs", windows W.focusUp), ("", onGroup W.focusUp')])
+    , ("M-S-'"                    , addName "Navigate tabs U"                 $ bindOn LD [("Tabs", windows W.focusUp), ("", onGroup W.focusUp')])
     , ("C-'"                    , addName "Swap tab D"                      $ windows W.swapDown)
     , ("C-;"                    , addName "Swap tab U"                      $ windows W.swapUp)
 

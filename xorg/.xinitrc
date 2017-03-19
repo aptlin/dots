@@ -1,7 +1,7 @@
 # urxvt colours
 #xrdb -I$HOME -merge ~/.Xdefaults
 # xrdb -I$HOME -merge  ~/.Xresources
-xrdb -SOLARIZED_DARK -merge ~/.Xresources
+xrdb -DSOLARIZED_DARK -merge ~/.Xresources
 setxkbmap -option ctrl:nocaps
 xrandr --dpi 227
 xmodmap ~/.xmodmaprc
