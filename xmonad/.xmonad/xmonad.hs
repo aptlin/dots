@@ -202,7 +202,7 @@ myWorkspaces = [wsGEN, wsWRK, wsWRK2, wsSYS, wsRW, wsTMP, wsFLOAT, wsMON]
 
 projects :: [Project]
 projects =
-_{}
+
     [ Project   { projectName       = wsGEN
                 , projectDirectory  = "~/"
                 , projectStartHook  = Nothing
