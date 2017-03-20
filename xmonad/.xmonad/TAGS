@@ -1,5 +1,5 @@
 
-./xmonad.hs,3600
+./xmonad.hs,3616
 main main140,141
 myConfig myConfig158,159
 wsAV wsAV180,181
@@ -23,6 +23,7 @@ wsGGC wsGGC197,198
 myWorkspaces myWorkspaces200,201
 projects projects202,203
 projects projects203,204
+_{}_{}204,205
 --myTerminal --myTerminal265,266
 --myTerminalClass --myTerminalClass266,267
 myTerminal myTerminal267,268
