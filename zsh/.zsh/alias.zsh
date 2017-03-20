@@ -47,7 +47,8 @@ alias sude="sudo -e"
 alias systemctl="sudo systemctl"
 alias tempwatch="while :; do sensors; sleep 1 && clear; done;"
 alias term="urxvtc -hold -e " #used for run menu
-alias tm="tmux -2 attach-session -d"
+#alias tm="tmux -2 attach-session -d"
+alias tm="tmux new-session -A -s main"
 alias tor='sudo chroot --unserspec=tor:tor /opt/torchroot /usr/bin/tor'
 alias torb='cd /home/aleph/DLD/tor-browser_en-US/; /home/aleph/DLD/tor-browser_en-US/start-tor-browser.desktop'
 alias trans='transmission-daemon && iceweasel http://localhost:9091/'

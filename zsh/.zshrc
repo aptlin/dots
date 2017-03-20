@@ -7,6 +7,4 @@
 # ░░░░░░░░░░
 #
 #█▓▒░ load configs
-for config (~/.zsh/*.zsh)
-    source $config
-tm
+for config (~/.zsh/*.zsh) source $config
