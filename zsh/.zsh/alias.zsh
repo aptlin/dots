@@ -42,7 +42,7 @@ alias scp="scp -r"
 alias sch="ec ~/ORG/schedule.org"
 alias shtd='sudo shutdown -h now'
 alias sprunge="curl -f 'sprunge=<-' http://sprunge.us"
-alias st="sudo ntpdate pool.ntp.org; sudo hwclock --systohc"
+alias fixtime="sudo ntpdate pool.ntp.org; sudo hwclock --systohc"
 alias sude="sudo -e"
 alias systemctl="sudo systemctl"
 alias tempwatch="while :; do sensors; sleep 1 && clear; done;"
