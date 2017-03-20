@@ -106,15 +106,15 @@ restartXmonad restartXmonad1339,1340
 restartXmonad restartXmonad1340,1341
 myLogHook myLogHook1347,1348
 myFadeHook myFadeHook1377,1378
-data LibNotifyUrgencyHook LibNotifyUrgencyHook1397,1398
-data LibNotifyUrgencyHook = LibNotifyUrgencyHook LibNotifyUrgencyHook1397,1398
-myManageHook myManageHook1414,1415
+data LibNotifyUrgencyHook LibNotifyUrgencyHook1398,1399
+data LibNotifyUrgencyHook = LibNotifyUrgencyHook LibNotifyUrgencyHook1398,1399
 myManageHook myManageHook1415,1416
-myHandleEventHook myHandleEventHook1463,1464
-forceCenterFloat forceCenterFloat1478,1479
+myManageHook myManageHook1416,1417
+myHandleEventHook myHandleEventHook1464,1465
 forceCenterFloat forceCenterFloat1479,1480
---addTagAndContinue --addTagAndContinue1496,1497
+forceCenterFloat forceCenterFloat1480,1481
 --addTagAndContinue --addTagAndContinue1497,1498
+--addTagAndContinue --addTagAndContinue1498,1499
 
 ./xmobar.hs,18
 ConfigConfig5,6

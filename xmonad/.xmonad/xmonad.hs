@@ -265,7 +265,7 @@ projects =
 
 --myTerminal          = "terminator"
 --myTerminalClass     = "Terminator"
-myTerminal                = "urxvt"
+myTerminal                = "st"
 myBrowser                 = "iceweasel" -- chrome with WS profile dirs
 myBrowserClass            = "Firefox-esr"
 myEditor                  = "emacsclient -c --alternate-editor= "
@@ -1380,6 +1380,7 @@ myFadeHook = composeAll
     , isUnfocused --> opacity 0.85
     , (className =? "Terminator") <&&> (isUnfocused) --> opacity 0.9
     , (className =? "URxvt") <&&> (isUnfocused) --> opacity 0.9
+    , (className =? "st-256color") <&&> (isUnfocused) --> opacity 0.9
     , fmap ("Google" `isPrefixOf`) className --> opaque
     , isDialog --> opaque
     --, isUnfocused --> opacity 0.55

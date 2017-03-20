@@ -172,7 +172,7 @@ endif
 
 syntax on
 set background=dark
-colorscheme solarized
+"colorscheme solarized
 " Highlight VCS conflict markers
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
