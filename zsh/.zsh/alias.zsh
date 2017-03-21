@@ -127,7 +127,7 @@ alias na="workon nikola; nikola new_post -e -f orgmode; deactivate"
 alias np="workon nikola; nikola new_post -e -p -f orgmode; deactivate"
 alias nik="workon nikola"
 alias nli="ec $BLOG_DIR/stories/links_math.org"
-alias sw="stack build; stack exec site rebuild; stack exec site watch"
+alias sw="stack build; stack exec site watch"
 
 # Haskell
 
