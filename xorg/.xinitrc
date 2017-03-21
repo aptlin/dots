@@ -1,10 +1,17 @@
 # urxvt colours
 #xrdb -I$HOME -merge ~/.Xdefaults
 # xrdb -I$HOME -merge  ~/.Xresources
-xrdb -DSOLARIZED_DARK -merge ~/.Xresources
+
+if [ -s ~/.Xmodmap ]; then
+    xmodmap ~/.Xmodmap
+fi
+
+if [ -s ~/.Xresources]; then    
+    xrdb -DSOLARIZED_DARK -merge ~/.Xresources
+fi
+
 setxkbmap -option ctrl:nocaps
 #xrandr --dpi 227
-xmodmap ~/.xmodmaprc
 #export QT_AUTO_SCREEN_SCALE_FACTOR=0.3
 #export GDK_SCALE=0.5
 #export GDK_DPI_SCALE=0.5
