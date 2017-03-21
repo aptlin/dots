@@ -128,6 +128,11 @@ alias np="workon nikola; nikola new_post -e -p -f orgmode; deactivate"
 alias nik="workon nikola"
 alias nli="ec $BLOG_DIR/stories/links_math.org"
 alias sw="stack build; stack exec site rebuild; stack exec site watch"
+
+# Haskell
+
+alias sb="stack build;"
+
 # Org
 alias dira="ec ~/.dirabbrev; pushd ~/DOTS; git commit -m 'added directory abbreviations' ~/DOTS/docs/.dirabbrev;  git push; popd"
 alias sc="scrot '%Y-%m-%d_$wx$h.png' -s -e 'mv $f ~/TMP/SCR/'"
