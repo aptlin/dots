@@ -47,8 +47,8 @@ export BLOG_DIR=~/WERKE/sdll.github.io
 export TMP_NTS=~/TMP/NOTES
 export TMP_SCANS=~/TMP/F
 export PMT_NTS=~/ORG/NOTES
-export NTS_LOG=$BLOG_DIR/stories/notes.org
-export NTS_TMP_LOG=$BLOG_DIR/stories/notes.tmp
+export NTS_LOG=$BLOG_DIR/pages/notes.org
+export NTS_TMP_LOG=$BLOG_DIR/pages/notes.tmp
 
 # Ledger
 
