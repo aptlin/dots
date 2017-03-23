@@ -149,13 +149,11 @@ document.getElementById("main").onclick = function() {
 - [[https://portal.utoronto.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_12_1][Portal]]
 
 * Administrativia
-  
-  - [[file:~/TMP/NOTES][unsorted notes]]
-  - [[file:~/WERKE/sdll.github.io/stories/notes.tmp][list of new notes]]
-  - [[file:~/WERKE/sdll.github.io/stories/mikveh.org][mikveh]]
-  - [[file:~/WERKE/sdll.github.io/stories/notes.org][notes]]
-  - [[file:~/WERKE/umus.github.io/stories/utumu.org][ut.umu]]  
-
+** [[file:~/TMP/NOTES][unsorted notes]]
+** [[file:~/WERKE/sdll.github.io/stories/notes.tmp][list of new notes]]
+** [[file:~/WERKE/sdll.github.io/stories/mikveh.org][mikveh]]
+** [[file:~/WERKE/sdll.github.io/stories/notes.org][notes]]
+** [[file:~/WERKE/umus.github.io/stories/utumu.org][ut.umu]]
 * Notes
 
   - Algebra

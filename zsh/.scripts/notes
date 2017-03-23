@@ -26,9 +26,12 @@ function assort() {
 		sed -r 's/([0-9])([a-zA-Z])/\1 \2/g')
     if [[ $f == *.pdf ]]
     then
-	echo "  - [[https://github.com/sdll/NOTES/blob/master/$1/$f][$new_f]]" >> $NTS_TMP_LOG
+	if [ -f $NTS_TMP_LOG ]; then
+	    echo "  - [[https://github.com/sdll/NOTES/blob/master/$1/$f][$new_f]]" >> $NTS_TMP_LOG
+	else
+	    echo "  - [[https://github.com/sdll/NOTES/blob/master/$1/$f][$new_f]]" > $NTS_TMP_LOG
+	fi
     fi
-
     echo "Done!"
 }
 
