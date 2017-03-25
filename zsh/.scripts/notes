@@ -41,7 +41,7 @@ function assort() {
 cd $TMP_NTS
 git add --all
 git commit -a -m "$(date +%y%m%d)"
-find . -type d \( -path .git\) -prune -o -type f ! \( -name '*.tex' -o -name '*.pdf' -o -name '*.org' -o -name '*.txt' -o -name '.git*'\) -delete
+find . -type f ! \( -path "*/.git/*" -o -name '*.tex' -o -name '*.pdf' -o -name '*.org' -o -name '*.txt' \) -delete
 
 # -------------------------------------------------------
 # Launch!
@@ -78,4 +78,4 @@ fi
 cd $PMT_NTS
 git add --all
 git commit -a -m "$(date +%y%m%d)"
-git push origin $(git_current_branch)
+git push origin master

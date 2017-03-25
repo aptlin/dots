@@ -1089,6 +1089,31 @@ catalogue-license lppl1.3
 catalogue-topics maths
 catalogue-version 0.9
 
+name tikz-cd
+category Package
+revision 35485
+shortdesc Create commutative diagrams with TikZ
+longdesc The general-purpose drawing package TiKZ can be used to typeset
+longdesc commutative diagrams and other kinds of mathematical pictures,
+longdesc generating high-quality results. The purpose of this package is
+longdesc to make the process of creation of such diagrams easier by
+longdesc providing a convenient set of macros and reasonable default
+longdesc settings. This package also includes an arrow tip library that
+longdesc match closely the arrows present in the Computer Modern
+longdesc typeface.
+containersize 6404
+containerchecksum 026f5467ff133e95cfa98033183c512cef9d72034a28b2ecc7ef5e3480c8ac89dad60d78abd51209107dada831a9785acc5026ffa313ca0576db399337d691fd
+doccontainersize 353228
+doccontainerchecksum a6bde62bc8c195ebc036153911b4460c0283b124b6e237674163b5d191216bc9e39bb8a6003a78daa3dd4cc3816d71b0f031f050d61ad352da2f34ffff69d64d
+runfiles size=7
+ tex/generic/tikz-cd/tikzlibrarycd.code.tex
+ tex/latex/tikz-cd/tikz-cd.sty
+catalogue-ctan /graphics/pgf/contrib/tikz-cd
+catalogue-date 2015-08-03 05:43:12 +0200
+catalogue-license gpl3
+catalogue-topics diagram-comm graphics-in-tex pgf-tikz
+catalogue-version 0.9e
+
 name units
 category Package
 revision 42428
