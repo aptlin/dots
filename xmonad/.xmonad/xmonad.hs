@@ -13,6 +13,7 @@ import           Data.Monoid
 import           System.Exit
 import           System.IO
 import           System.Posix.Process                (executeFile)
+import           XMonad.Actions.GroupNavigation
 import           XMonad.Prompt
 import           XMonad.Prompt.RunOrRaise
 
@@ -165,7 +166,7 @@ myConfig p = def
         , manageHook         = myManageHook
         , handleEventHook    = myHandleEventHook
         , layoutHook         = myLayoutHook
-        , logHook            = myLogHook p
+        , logHook            = myLogHook p <+> historyHook
         , modMask            = myModMask
         , mouseBindings      = myMouseBindings
         , startupHook        = myStartupHook
@@ -239,7 +240,6 @@ projects =
     , Project   { projectName       = wsWRK
                 , projectDirectory  = "~/WERKE/"
                 , projectStartHook  = Just $ do spawnOn wsWRK myTerminal
-                                                spawnOn wsWRK myBrowser
                 }
     , Project   { projectName       = wsWRK2
                 , projectDirectory  = "~/WERKE/"
@@ -1039,6 +1039,7 @@ myKeys conf = let
     subKeys "Actions"
     [ ("M-a"                    , addName "Notify w current X selection"    $ unsafeWithSelection "notify-send")
   --, ("M-7"                    , addName "TESTING"                         $ runInTerm "-name glances" "glances" )
+    , ("M-S-b"              , addName "Go to the previous window"       $ nextMatch History (return True))
     ] ^++^
 
     -----------------------------------------------------------------------
@@ -1346,6 +1347,8 @@ restartXmonad = do
 ---------------------------------------------------------------------------
 
 myLogHook h = do
+    -- saving history
+
 
     -- following block for copy windows marking
     copies <- wsContainingCopies

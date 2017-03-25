@@ -41,7 +41,7 @@ function assort() {
 cd $TMP_NTS
 git add --all
 git commit -a -m "$(date +%y%m%d)"
-find . -type f ! \( -name '*.tex' -o -name '*.pdf' -o -name '*.org' -o -name '*.txt' \) -delete
+find . -type d \( -path .git\) -prune -o -type f ! \( -name '*.tex' -o -name '*.pdf' -o -name '*.org' -o -name '*.txt' -o -name '.git*'\) -delete
 
 # -------------------------------------------------------
 # Launch!
