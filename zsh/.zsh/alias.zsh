@@ -116,7 +116,7 @@ alias gnts="gdir ORG/NOTES"
 alias sho="rename 's/^(.{25}).*(\..*)$/$1$2/' *"
 alias lk="ec /home/aleph/WERKE/sdll.github.io/pages/trove.org"
 # Blog
-
+alias dn="deploy 'added notes'"
 alias nb="workon nikola; nikola auto; deactivate"
 alias nbb="nikola build"
 alias ng="workon nikola; cd $BLOG_DIR; nikola github_deploy -m 'Yet another weblog update.'; deactivate"
