@@ -135,6 +135,7 @@ alias sw="stack build; stack exec site rebuild; stack exec site watch"
 alias sb="stack build;"
 
 # Org
+alias tupd="~/DOTS/zsh/.scripts/telegram"
 alias dira="ec ~/.dirabbrev; pushd ~/DOTS; git commit -m 'added directory abbreviations' ~/DOTS/docs/.dirabbrev;  git push; popd"
 alias sc="scrot '%Y-%m-%d_$wx$h.png' -s -e 'mv $f ~/TMP/SCR/'"
 alias le="~/DOTS/zsh/.scripts/letters"
