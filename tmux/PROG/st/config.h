@@ -1,12 +1,12 @@
-/* See LICENSE file for copyright and license details. */
+q/* See LICENSE file for copyright and license details. */
 
 /*
  * appearance
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-char font[] = "Terminus:pixelsize=32:antialias=true:autohint=false";
-int borderpx = 2;
+char font[] = 
+  int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:

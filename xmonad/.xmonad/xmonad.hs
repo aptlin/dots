@@ -266,8 +266,8 @@ projects =
 --myTerminal          = "terminator"
 --myTerminalClass     = "Terminator"
 myTerminal                = "st -e tmux new"
-myBrowser                 = "iceweasel" -- chrome with WS profile dirs
-myBrowserClass            = "Firefox-esr"
+myBrowser                 = "firefox" -- chrome with WS profile dirs
+myBrowserClass            = "Firefox"
 myEditor                  = "emacsclient -c --alternate-editor= "
 myAlternativeBrowser      = "chromium"
 myAlternativeBrowserClass = "Chromium"
