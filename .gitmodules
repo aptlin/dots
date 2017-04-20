@@ -1,0 +1,3 @@
+[submodule "latex/texmf/MATEX"]
+	path = latex/texmf/MATEX
+	url = https://github.com/sdll/MATEX
