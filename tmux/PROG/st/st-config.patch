@@ -1,8 +1,6 @@
 Changes:
-- Enable 8 bit input (st-meta-256color)
-- Enable powerline font Source Code Pro
-- Add more word delimiting characters
-- Adjust colors to my taste :-)
+- Change Font
+- Add a Shortcut
 
 Index: st-patches/st/config.def.h
 ===================================================================
