@@ -78,7 +78,26 @@
 	consolePackages = [ pkgs.terminus_font ];
   	consoleKeyMap = "dvorak";
   };
-  environment.systemPackages = with pkgs; [
+
+   fonts = {
+       # enableFontDir = true;
+           # enableGhostscriptFonts = true;
+	       fonts = with pkgs; [
+	       	              	cm_unicode
+				xits-math
+				dejavu_fonts
+				source-code-pro
+				noto-fonts
+				noto-fonts-cjk
+				emojione
+				];
+	fontconfig = { 
+			dpi = 227;
+			defaultFonts.monospace = [ "Source Code Pro" ];
+			};
+				};
+      
+      environment.systemPackages = with pkgs; [
 
 	sudo
 	htop
@@ -228,8 +247,8 @@
     };
     xserverArgs = [ "-dpi 227" ];
   };
-  fonts.fontconfig.dpi=227;
-  services.xserver.libinput.enable = true;
+     
+     services.xserver.libinput.enable = true;
   services.xserver.libinput.naturalScrolling = false;
   services.xserver.libinput.middleEmulation = true;
   services.xserver.libinput.tapping = true;

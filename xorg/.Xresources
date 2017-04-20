@@ -162,11 +162,12 @@ Xcursor.size:                16
 
 !! URxvt.font: -*-inputmonocompressed-*-*-*-*-*-*-*-*-m-*-*-*
 !!URxvt.font: xft:Noto:size=12
-URxvt.font: xft:Oxygen Mono:size=10
+!!URxvt.font: xft:Oxygen Mono:size=10
+! URxvt*font:			xft:Bitstream Vera Sans Mono-8
 !!URxvt.font: xft:Input Mono Compressed:size=18,xft:Source Code Pro:size=12,xft:FreeMono:size=12
 !!URxvt.font: xft:Source Code Pro:size=12,xft:FreeMono:size=12
 ! URxvt.font: xft:Consolas:size=12
-!!URxvt.font: xft:Source Code Pro:size=12
+URxvt.font: xft:Source Code Pro:size=12
 !! "Input" below is actually a custom download of Input Mono Compressed. Includes powerline symbols.
 ! URxvt.font: xft:Input:size=12:autohint=true
 !!URxvt.font: xft:Input:size=12:autohint=true
