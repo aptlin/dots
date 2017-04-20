@@ -118,7 +118,7 @@ alias sho="rename 's/^(.{25}).*(\..*)$/$1$2/' *"
 alias lk="ec /home/aleph/WERKE/sdll.github.io/pages/trove.org"
 # Blog
 alias dn="deploy 'added notes'"
-alias nb="workon nikola; nikola auto; deactivate"
+alias nbw="workon nikola; nikola auto; deactivate"
 alias nbb="nikola build"
 alias ng="workon nikola; cd $BLOG_DIR; nikola github_deploy -m 'Yet another weblog update.'; deactivate"
 alias nd="workon nikola; nikola github_deploy -m 'umu update'; deactivate"
@@ -150,6 +150,7 @@ alias hmu="pkill -2 -u $UID mu # send SIGINT"
 alias we="curl wttr.in"
 function ns() { nix-env -qa \* -P | fgrep -i "$1"; }
 alias ni="ec /etc/nixos/configuration.nix; sudo nixos-rebuild switch"
+alias nb="sudo nixos-rebuild switch"
 # Config
 
 alias zac="ec ~/.config/zathura/zathurarc"
