@@ -1,0 +1,7 @@
+#!/bin/bash
+mkdir -p ~/DLD
+cd ~/DLD
+rm -rf Telegram ||:
+rm telegram.tar.xz ||:
+wget -O telegram.tar.xz https://telegram.org/dl/desktop/linux
+tar -xvJf telegram.tar.xz

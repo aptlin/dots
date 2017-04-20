@@ -273,7 +273,7 @@ myAlternativeBrowser      = "chromium"
 myAlternativeBrowserClass = "Chromium"
 myMessenger               = "telegram"
 myMessengerClass          = "TelegramDesktop"
-myReader                  = "zathura"
+myReader                  = "emacsclient -c --alternate-editor= ~/WERKE/LIB"
 myStatusBar               = "xmobar -x0 /home/aleph/.xmonad/xmobar.hs"
 --myLauncher              = "dmenu_run"
 --myLauncher              = "rofi -matching fuzzy -show run"
@@ -627,7 +627,7 @@ myLayoutHook =
               where
                   wideLayouts = myGaps $ mySpacing
                       $ (suffixed "Wide 3Col" $ ThreeColMid 1 (1/20) (1/2))
-                    ||| (trimSuffixed 1 "Wide BSP" $ hiddenWindows emptyBSP)
+                    -- ||| (trimSuffixed 1 "Wide BSP" $ hiddenWindows emptyBSP)
                   --  ||| fullTabs
                   standardLayouts = myGaps $ mySpacing
                       $ (suffixed "Std 2/3" $ ResizableTall 1 (1/20) (2/3) [])

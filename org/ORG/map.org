@@ -6,7 +6,7 @@
   :PROPERTIES:
   :VISIBILITY: folded
   :END:
-
+  
 #+BEGIN_EXPORT html
 <html>
 <head>
@@ -144,9 +144,7 @@ document.getElementById("main").onclick = function() {
 </html>
 #+END_EXPORT
 
-* Links
-
-- [[https://portal.utoronto.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_12_1][Portal]]
+- [[httCps://portal.utoronto.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_12_1][Portal]]
 
 * Administrativia
 ** [[file:~/TMP/NOTES][unsorted notes]]
@@ -159,4 +157,8 @@ document.getElementById("main").onclick = function() {
   - Algebra
   - Topology
   - [[file:~/yWERKE/NOTES/RA/master.tex][Real Analysis]]
+
+Tue 11 2-4 PM MP606
+MP257
+
 
