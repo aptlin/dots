@@ -8,7 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 #HIST_STAMPS=mm/dd/yyyy
 
 # paths
-export PATH=$PYENV_ROOT:$/run/current-system/sw/:$HOME/.local/bin:/bin:$HOME/bin:/usr/local/bin:$PATH:/$HOME/.scripts/:/$HOME/PROG/SageMath/
+export PATH=$PYENV_ROOT:/run/current-system/sw/:$HOME/.local/bin:/bin:$HOME/bin:/usr/local/bin:$PATH:/$HOME/.scripts/:/$HOME/PROG/SageMath/
 CDPATH=.:~=:~/WERKE:~/ORG:~/
 for folder in ~/WERKE
 do
