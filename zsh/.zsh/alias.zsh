@@ -149,6 +149,7 @@ alias mik="ec $BLOG_DIR/stories/mikveh.org"
 alias hmu="pkill -2 -u $UID mu # send SIGINT"
 alias we="curl wttr.in"
 function ns() { nix-env -qa \* -P | fgrep -i "$1"; }
+alias ni="sudo -e /etc/nixos/configuration.nix"
 # Config
 
 alias zac="ec ~/.config/zathura/zathurarc"
