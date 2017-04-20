@@ -148,7 +148,7 @@ alias aug="ec $BLOG_DIR/stories/agenda.org"
 alias mik="ec $BLOG_DIR/stories/mikveh.org"
 alias hmu="pkill -2 -u $UID mu # send SIGINT"
 alias we="curl wttr.in"
-function nix?() { nix-env -qa \* -P | fgrep -i "$1"; }
+function ns() { nix-env -qa \* -P | fgrep -i "$1"; }
 # Config
 
 alias zac="ec ~/.config/zathura/zathurarc"
