@@ -148,7 +148,7 @@ alias aug="ec $BLOG_DIR/stories/agenda.org"
 alias mik="ec $BLOG_DIR/stories/mikveh.org"
 alias hmu="pkill -2 -u $UID mu # send SIGINT"
 alias we="curl wttr.in"
-
+function nix?() { nix-env -qa \* -P | fgrep -i "$1"; }
 # Config
 
 alias zac="ec ~/.config/zathura/zathurarc"
@@ -167,8 +167,8 @@ alias sa='ec ~/TMP/SAGE/workbook.org'
 function fk () {readlink -f $1 | xclip}
 
 # define da and immediately call it to initialize the environment.
-function da () { eval `dirabbrev -e -a \$*`; }
-da -d
+# function da () { eval `dirabbrev -e -a \$*`; }
+# da -d
 alias S='da -s'
 alias G='da -g'
 alias L='da -l'
