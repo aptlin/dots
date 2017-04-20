@@ -8,8 +8,11 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-    ];
+      ];
 
+  hardware = {
+    pulseaudio.enable = true;          
+    };
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -22,7 +25,12 @@
    }
   ];
   boot.loader.grub.device = "/dev/sda";
-
+  boot.cleanTmpDir = true;
+  boot.blacklistedKernelModules = [ "snd_pcsp" ];
+  boot.extraModprobeConfig = ''
+    options snd slots=snd-hda-intel
+  '';
+  
   networking.hostName = "zeta"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -100,31 +108,47 @@
       environment.systemPackages = with pkgs; [
 
 	sudo
-	htop
 
+	#monitors	
+	htop
+	
+        #zsh
 	zsh
 	oh-my-zsh
 	nix-zsh-completions
 
+	#fonts
 	terminus_font
 
+	#sysutils
 	wget
+	silver-searcher
+	manpages
 
+	#networking
+	iptables
+	nmap
+	tcpdump
+	dhcp
+
+	#audio
+	alsaUtils
+	alsa-firmware
+	
+	
+	#editors
 	vim
 	emacs
 	
-	silver-searcher
+        #terminals
 	st
-	hyper
 	rxvt_unicode-with-plugins
 	tmux
 
+	#git
 	gitAndTools.gitFull
 
-	manpages
-
-	iptables nmap tcpdump
-	
+	#devutils
 	psmisc
 	gcc
 	gnumake
@@ -132,11 +156,24 @@
 	autoconf
 	libtool
 	zlib
+	binutils
+	nix
+	lsof
 
+	#files
+	zip
+	unzip
+	rsync
+	
+	#xorg
 	xlibs.xmessage
 	xlibs.xev
-	xlibs.xmodmap	
+	xlibs.xmodmap
+	xorg.xbacklight
+	xbindkeys
+	unclutter
 
+	#xmonad
 	dmenu
 	compton
 	rofi
@@ -145,31 +182,25 @@
 	haskellPackages.xmonad
 	haskellPackages.xmobar
 	
-	dhcp
-
-	binutils
-	nix
-
+        #gnupg
 	gnupg1
 
-	stow 
-  
+	#config management
+	stow
+	udevil
+
+	#www
 	w3m
 	chromium
 	firefox
 
+	#docs
 	libreoffice
 	gimp
 	inkscape
 	zathura
 
-	mu
-	notmuch
-	msmtp
-	offlineimap
-
-	tdesktop
-
+	#latex
 	auctex
         (texlive.combine {
           inherit (texlive)
@@ -195,7 +226,16 @@
             collection-science
             collection-xetex;
 	})
-  ];
+
+	#mail
+	mu
+	notmuch
+	msmtp
+	offlineimap
+
+	#chat
+	tdesktop
+];
   nixpkgs.overlays = [ (self: super: {
   st = super.st.override {
     patches = builtins.map super.fetchurl [
@@ -234,8 +274,8 @@
   };
 
   services.xserver.enable = true;
-  services.xserver.layout = "dvorak";
-  services.xserver.xkbOptions = "ctrl:nocaps";
+  services.xserver.layout = "dvorak,ru";
+  services.xserver.xkbOptions = "ctrl:nocaps,grp:alt_space_toggle";
   services.xserver.windowManager.xmonad.enable = true;
   services.xserver.windowManager.default = "xmonad";
   services.xserver.desktopManager.default = "none";
@@ -248,7 +288,7 @@
     xserverArgs = [ "-dpi 227" ];
   };
      
-     services.xserver.libinput.enable = true;
+  services.xserver.libinput.enable = true;
   services.xserver.libinput.naturalScrolling = false;
   services.xserver.libinput.middleEmulation = true;
   services.xserver.libinput.tapping = true;

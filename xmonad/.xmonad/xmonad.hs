@@ -6,6 +6,7 @@
 -- Modules                                                              {{{
 ---------------------------------------------------------------------------
 --import Control.Monad (liftM2)             -- myManageHookShift
+import XMonad.Hooks.SetWMName
 import           Control.Monad                       (join, liftM, liftM2)
 import           Data.List
 import qualified Data.Map                            as M
@@ -269,6 +270,8 @@ myTerminal                = "urxvt"
 myBrowser                 = "firefox" -- chrome with WS profile dirs
 myBrowserClass            = "Firefox"
 myEditor                  = "emacsclient -c --alternate-editor= "
+myOSConfig                = myEditor ++ "/etc/nixos/configuration.nix"
+myOSConfigName            = "configuration.nix"
 myAlternativeBrowser      = "chromium"
 myAlternativeBrowserClass = "Chromium"
 myMessenger               = "telegram-desktop"
@@ -1050,7 +1053,8 @@ myKeys conf = let
              , ("M-<Return>" , addName "Terminal"      $ spawn myTerminal)
              , ("M-r"        , addName "Editor"        $ spawn myEditor)
              , ("M-\\"       , addName "Browser"       $ runOrRaise myBrowser (className =? myBrowserClass))
-             , ("M-c"        , addName "Browser"       $ runOrRaise myAlternativeBrowser (className =? myAlternativeBrowserClass))
+             , ("M-c"        , addName "Browser"       $ runOrRaise myAlternativeBrowser (className =?myAlternativeBrowserClass))
+             , ("M-w"        , addName "Nix Config"       $ spawn myOSConfig)
              , ("M-i"        , addName "Screenshot"       $ spawn "gnome-screenshot --interactive")
              , ("M-o"        , addName "Reader"        $ spawn myReader)
              , ("M-z"        , addName "Messenger"     $ runOrRaise myMessenger (className =? "TelegramDesktop"))
@@ -1109,9 +1113,10 @@ myKeys conf = let
 
     subKeys "Workspaces & Projects"
     (
-    [ ("M-w"                    , addName "Switch to Project"           $ switchProjectPrompt warmPromptTheme)
-    , ("M-S-w"                  , addName "Shift to Project"            $ shiftToProjectPrompt warmPromptTheme)
-    , ("M-<Escape>"             , addName "Next non-empty workspace"    $ nextNonEmptyWS)
+    [
+    --   ("M-w"                    , addName "Switch to Project"           $ switchProjectPrompt warmPromptTheme)
+    -- , ("M-S-w"                  , addName "Shift to Project"            $ shiftToProjectPrompt warmPromptTheme)
+    ("-<Escape>"             , addName "Next non-empty workspace"    $ nextNonEmptyWS)
     , ("M-S-<Escape>"           , addName "Prev non-empty workspace"    $ prevNonEmptyWS)
     , ("M-`"                    , addName "Next non-empty workspace"    $ nextNonEmptyWS)
     , ("M-S-`"                  , addName "Prev non-empty workspace"    $ prevNonEmptyWS)

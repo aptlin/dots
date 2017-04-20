@@ -8,17 +8,18 @@ export ZSH=$HOME/.oh-my-zsh
 #HIST_STAMPS=mm/dd/yyyy
 
 # paths
-export PATH=$PYENV_ROOT:/run/current-system/sw/bin:$HOME/.local/bin:/bin:$HOME/bin:/usr/local/bin:$PATH:/$HOME/.scripts/:/$HOME/PROG/SageMath/
-CDPATH=.:~=:~/WERKE:~/ORG:~/
-for folder in ~/WERKE
-do
-    CDPATH="$CDPATH":"$folder"
-done
-for folder in ~/ORG
-do
-    CDPATH="$CDPATH":"$folder"
-done
-export CDPATH
+# export
+#PATH=$PYENV_ROOT:/run/current-system/sw/bin:$HOME/.local/bin:/bin:$HOME/bin:/usr/local/bin:$PATH:/$HOME/.scripts/:/$HOME/PROG/SageMath/
+#CDPATH=.:~=:~/WERKE:~/ORG:~/
+# for folder in ~/WERKE
+# do
+#     CDPATH="$CDPATH":"$folder"
+# done
+# for folder in ~/ORG
+# do
+#     CDPATH="$CDPATH":"$folder"
+# done
+# export CDPATH
 #export MANPATH=/usr/local/man:$MANPATH
 
 # preferred editor for local and remote sessions
