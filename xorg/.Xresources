@@ -133,7 +133,7 @@ Xcursor.size:                16
 
 
 !! URxvt.font: -*-terminus-*-*-*-*-28-*-*-*-*-*-*-*
-!! URxvt.font: -*-source code pro medium-*-*-*-*-17-*-*-*-*-*-*-*
+! URxvt.font: -*-source code pro medium-*-*-*-*-17-*-*-*-*-*-*-*
 !! URxvt.font: xft:Source Code Pro Regular:size=11
 !!URxvt.keysym.C-3: command:\033]710;xft: Source Code Pro:size=6\007
 !!URxvt.keysym.C-4: command:\033]710;xft: Source Code Pro:size=7\007
@@ -161,23 +161,24 @@ Xcursor.size:                16
 !!URxvt.letterSpace: -1
 
 !! URxvt.font: -*-inputmonocompressed-*-*-*-*-*-*-*-*-m-*-*-*
-!! URxvt.font: xft:Noto:size=12
+!!URxvt.font: xft:Noto:size=12
+URxvt.font: xft:Oxygen Mono:size=10
 !!URxvt.font: xft:Input Mono Compressed:size=18,xft:Source Code Pro:size=12,xft:FreeMono:size=12
 !!URxvt.font: xft:Source Code Pro:size=12,xft:FreeMono:size=12
-!!URxvt.font: xft:Consolas:size=12
+! URxvt.font: xft:Consolas:size=12
 !!URxvt.font: xft:Source Code Pro:size=12
 !! "Input" below is actually a custom download of Input Mono Compressed. Includes powerline symbols.
-!!URxvt.font: xft:Input:size=12:autohint=true
+! URxvt.font: xft:Input:size=12:autohint=true
 !!URxvt.font: xft:Input:size=12:autohint=true
 URxvt*depth: 32
 URxvt*background: rgba:0000/2b00/3600/EE00
 !!URxvt*background: [50]#002b36
 !!#define S_rebase03      #002b36
-URxvt.font:                  xft:terminus:pixelsize=32
-URxvt.imFont:                xft:terminus:pixelsize=32
-URxvt.boldFont:              xft:terminus:pixelsize=32
-URxvt.italicFont:            xft:terminus:pixelsize=32
-URxvt.boldItalicFont:        xft:terminus:pixelsize=32
+! URxvt.font:                  xft:terminus:pixelsize=16
+! URxvt.imFont:                xft:terminus:pixelsize=16
+! URxvt.boldFont:              xft:terminus:pixelsize=16
+! URxvt.italicFont:            xft:terminus:pixelsize=16
+! URxvt.boldItalicFont:        xft:terminus:pixelsize=16
 !!URxvt.transparent: true
 !!URxvt.shading: 20
 ! URLs
