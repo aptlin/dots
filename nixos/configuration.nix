@@ -124,6 +124,8 @@
 	wget
 	silver-searcher
 	manpages
+	autojump
+	fzf
 
 	#networking
 	iptables
@@ -173,12 +175,14 @@
 	xbindkeys
 	unclutter
 
+	#haskell
+	haskellPackages.ghc
+	stack
+
 	#xmonad
 	dmenu
 	compton
 	rofi
-	haskellPackages.ghc
-	stack
 	haskellPackages.xmonad
 	haskellPackages.xmobar
 	
@@ -193,11 +197,13 @@
 	w3m
 	chromium
 	firefox
+	qutebrowser
 
 	#docs
 	libreoffice
 	gimp
 	inkscape
+	krita
 	zathura
 
 	#latex
@@ -252,6 +258,13 @@
       	];
       };
   }) ];
+
+  # journald
+  services.journald.extraConfig = "SystemMaxUse=50M";
+
+  # mlocate
+  services.locate.enable = true;
+  
   users.extraUsers = {
 	aleph = {
 		description = "Alexander Illarionov";

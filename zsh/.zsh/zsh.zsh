@@ -15,5 +15,6 @@ plugins=(git nix)
 
 ## SOURCE CONFIG
 # source $ZSH/oh-my-zsh.sh
+source $(autojump-share)/autojump.zsh
 # /usr/share/autojump/autojump.sh
 #alias | awk '{print "alias "$0}' | sed -E "s/^alias ([^=]+)='(.*)'$/alias \1 \2 \$*/g; s/'\\\''/'/g;" > ~/.emacs.d/eshell/alias
