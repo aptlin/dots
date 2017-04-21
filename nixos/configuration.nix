@@ -29,6 +29,8 @@
   boot.blacklistedKernelModules = [ "snd_pcsp" ];
   boot.extraModprobeConfig = ''
     options snd slots=snd-hda-intel
+    
+    options hid_apple fnmode=2
   '';
   
   networking.hostName = "zeta"; # Define your hostname.
@@ -93,6 +95,7 @@
 	       fonts = with pkgs; [
 	       	              	cm_unicode
 				xits-math
+				hack-font
 				dejavu_fonts
 				source-code-pro
 				noto-fonts
@@ -101,7 +104,7 @@
 				];
 	fontconfig = { 
 			dpi = 227;
-			defaultFonts.monospace = [ "Source Code Pro" ];
+			defaultFonts.monospace = [ "Hack Regular" ];
 			};
 				};
       
@@ -173,10 +176,14 @@
 	xlibs.xmodmap
 	xorg.xbacklight
 	xbindkeys
+	xfontsel
 	unclutter
 
 	#haskell
 	haskellPackages.ghc
+	haskellPackages.hlint
+	haskellPackages.stylish-haskell
+	haskellPackages.hindent
 	stack
 
 	#xmonad

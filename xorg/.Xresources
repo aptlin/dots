@@ -167,7 +167,7 @@ Xcursor.size:                16
 !!URxvt.font: xft:Input Mono Compressed:size=18,xft:Source Code Pro:size=12,xft:FreeMono:size=12
 !!URxvt.font: xft:Source Code Pro:size=12,xft:FreeMono:size=12
 ! URxvt.font: xft:Consolas:size=12
-URxvt.font: xft:Source Code Pro:size=12
+! URxvt.font: xft:Source Code Pro:size=12
 !! "Input" below is actually a custom download of Input Mono Compressed. Includes powerline symbols.
 ! URxvt.font: xft:Input:size=12:autohint=true
 !!URxvt.font: xft:Input:size=12:autohint=true
@@ -189,8 +189,10 @@ URxvt.url-select.launcher:   /usr/bin/xdg-open
 URxvt.url-select.underline:  true
 
 !! source code has default wide letter spacing (may be correct, though need to test with line drawing characters)
-!!URxvt.letterSpace: -1
-!!URxvt.font: xft:Source Code Pro Medium:size=11
+URxvt.letterSpace: -1
+URxvt.font:         xft:Hack-Regular:pixelsize=28
+URxvt.boldFont:     xft:Hack-Bold:pixelsize=28:weight=bold
+URxvt.italicFont:   xft:Hack-RegularOblique:pixelsize=28:slant=italic
 
 URxvt.perl-ext-common: resize-font
 URxvt.resize-font.smaller: C-M-Down

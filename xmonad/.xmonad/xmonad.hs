@@ -6,7 +6,6 @@
 -- Modules                                                              {{{
 ---------------------------------------------------------------------------
 --import Control.Monad (liftM2)             -- myManageHookShift
-import XMonad.Hooks.SetWMName
 import           Control.Monad                       (join, liftM, liftM2)
 import           Data.List
 import qualified Data.Map                            as M
@@ -15,6 +14,7 @@ import           System.Exit
 import           System.IO
 import           System.Posix.Process                (executeFile)
 import           XMonad.Actions.GroupNavigation
+import           XMonad.Hooks.SetWMName
 import           XMonad.Prompt
 import           XMonad.Prompt.RunOrRaise
 
@@ -204,59 +204,62 @@ myWorkspaces = [wsGEN, wsWRK, wsWRK2, wsSYS, wsRW, wsTMP, wsFLOAT, wsMON]
 
 projects :: [Project]
 projects =
-
-    [ Project   { projectName       = wsGEN
-                , projectDirectory  = "~/"
-                , projectStartHook  = Nothing
-                }
-
-    , Project   { projectName       = wsSYS
-                , projectDirectory  = "~/"
-                , projectStartHook  = Just $ do spawnOn wsSYS myTerminal
-                                                spawnOn wsSYS myTerminal
-                                                spawnOn wsSYS myTerminal
-                }
-
-    , Project   { projectName       = wsDMO
-                , projectDirectory  = "~/"
+  [ Project
+    {projectName = wsGEN, projectDirectory = "~/", projectStartHook = Nothing}
+  , Project
+    { projectName = wsSYS
+    , projectDirectory = "~/"
+    , projectStartHook =
+        Just $ do
+          spawnOn wsSYS myTerminal
+          spawnOn wsSYS myTerminal
+          spawnOn wsSYS myTerminal
+    }
+  , Project
+    { projectName = wsDMO
+    , projectDirectory = "~/"
                 -- , projectStartHook  = Just $ do spawn "/usr/lib/xscreensaver/binaryring"
-                , projectStartHook  = Just $ do
-                                                runInTerm "-name top" "top"
-                                                runInTerm "-name top" "htop"
-                                                runInTerm "-name glances" "glances"
-                }
-
-    , Project   { projectName       = wsVIX
-                , projectDirectory  = "~/.xmonad"
-                , projectStartHook  = Just $ do runInTerm "-name vix" "ec ~/.xmonad/xmonad.hs"
-                                                spawnOn wsVIX myTerminal
-                                                spawnOn wsVIX myTerminal
-                }
-
-    , Project   { projectName       = wsMON
-                , projectDirectory  = "~/"
-                , projectStartHook  = Just $ do runInTerm "-name glances" "glances"
-                }
-
-    , Project   { projectName       = wsWRK
-                , projectDirectory  = "~/WERKE/"
-                , projectStartHook  = Just $ do spawnOn wsWRK myTerminal
-                }
-    , Project   { projectName       = wsWRK2
-                , projectDirectory  = "~/WERKE/"
-                , projectStartHook  = Just $ do spawnOn wsWRK2 myEditor
-                }
-
-    , Project   { projectName       = wsRAD
-                , projectDirectory  = "~/"
-                , projectStartHook  = Just $ do spawn myBrowser
-                }
-
-    , Project   { projectName       = wsTMP
-                , projectDirectory  = "~/"
-                , projectStartHook  = Just $ do return ()
-                }
-    ]
+    , projectStartHook =
+        Just $ do
+          runInTerm "-name top" "top"
+          runInTerm "-name top" "htop"
+          runInTerm "-name glances" "glances"
+    }
+  , Project
+    { projectName = wsVIX
+    , projectDirectory = "~/.xmonad"
+    , projectStartHook =
+        Just $ do
+          runInTerm "-name vix" "ec ~/.xmonad/xmonad.hs"
+          spawnOn wsVIX myTerminal
+          spawnOn wsVIX myTerminal
+    }
+  , Project
+    { projectName = wsMON
+    , projectDirectory = "~/"
+    , projectStartHook = Just $ do runInTerm "-name glances" "glances"
+    }
+  , Project
+    { projectName = wsWRK
+    , projectDirectory = "~/WERKE/"
+    , projectStartHook = Just $ do spawnOn wsWRK myTerminal
+    }
+  , Project
+    { projectName = wsWRK2
+    , projectDirectory = "~/WERKE/"
+    , projectStartHook = Just $ do spawnOn wsWRK2 myEditor
+    }
+  , Project
+    { projectName = wsRAD
+    , projectDirectory = "~/"
+    , projectStartHook = Just $ do spawn myBrowser
+    }
+  , Project
+    { projectName = wsTMP
+    , projectDirectory = "~/"
+    , projectStartHook = Just $ do return ()
+    }
+  ]
 
 ------------------------------------------------------------------------}}}
 -- Applications                                                         {{{
@@ -299,17 +302,9 @@ myLauncher                = "rofi -matching fuzzy -modi combi -show combi -combi
 --
 -- This system utilizes:
 -- * my workspace aware browser script
--- * X.U.NamedScratchPads
 -- * bindOn via X.A.PerWorkspaceKeys (NO... now using ConditionalKeys custom module)
 -- * bindOn via X.A.ConditionalKeys
 
-isConsole           = (className =? "Terminator")
-                    <&&> (stringProperty "WM_WINDOW_ROLE" =? "Scratchpad")
-myConsole           = "terminator -T console -p console --role=Scratchpad"
-
-scratchpads =
-    [   (NS "console"  myConsole isConsole nonFloating)
-    ]
 
 ------------------------------------------------------------------------}}}
 -- Theme                                                                {{{
@@ -1426,7 +1421,6 @@ myManageHook =
         manageSpecific
     <+> manageShifts
     <+> manageDocks
-    <+> namedScratchpadManageHook scratchpads
     <+> fullscreenManageHook
     <+> manageSpawn
     where
