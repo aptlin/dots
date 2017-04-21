@@ -32,6 +32,10 @@
     options snd slots=snd-hda-intel
     options hid_apple fnmode=2
   '';
+  boot.kernelParams = [
+  "hid_apple.fnmode=2"
+  ];
+
 
   services.mbpfan.enable = true;
   
