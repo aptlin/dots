@@ -172,6 +172,7 @@
 	zlib
 	binutils
 	nix
+	nox
 	lsof
 
 	#files
@@ -186,6 +187,7 @@
 	xorg.xbacklight
 	xbindkeys
 	xfontsel
+	xclip
 	unclutter
 
 	#haskell
@@ -194,6 +196,14 @@
 	haskellPackages.stylish-haskell
 	haskellPackages.hindent
 	stack
+
+	#python
+
+	pythonFull
+	python3Full
+	python35Packages.setuptools
+	python35Packages.ipython
+	python35Packages.jupyter
 
 	#xmonad
 	dmenu
