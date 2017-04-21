@@ -25,12 +25,13 @@
    }
   ];
   boot.loader.grub.device = "/dev/sda";
+  boot.kernelParams = [         
+    "hid_apple.fnmode=1"           
+    ];
   boot.cleanTmpDir = true;
   boot.blacklistedKernelModules = [ "snd_pcsp" ];
   boot.extraModprobeConfig = ''
     options snd slots=snd-hda-intel
-    
-    options hid_apple fnmode=2
   '';
   
   networking.hostName = "zeta"; # Define your hostname.
@@ -140,6 +141,9 @@
 	alsaUtils
 	alsa-firmware
 	
+	#video
+	ffmpeg
+	vlc
 	
 	#editors
 	vim
@@ -301,11 +305,22 @@
   services.xserver.desktopManager.default = "none";
   services.xserver.windowManager.xmonad.enableContribAndExtras = true;
   services.xserver.displayManager = {
-    auto = {
+    slim= {
 	enable = true;
-  	user = "aleph";
+	autoLogin = false;
+  	defaultUser = "aleph";
     };
     xserverArgs = [ "-dpi 227" ];
+    lightdm = {enable = false;};
+    sessionCommands = with pkgs; lib.mkAfter ''
+      xbindkeys &
+      gpg-connect-agent /bye
+      GPG_TTY=$(tty)
+      export GPG_TTY
+      unset SSH_AGENT_PID
+      export SSH_AUTH_SOCK="${config.users.extraUsers.aleph.home}/.gnupg/S.gpg-agent.ssh"
+      exec ${haskellPackages.xmonad}/bin/xmonad
+      '';
   };
      
   services.xserver.libinput.enable = true;
