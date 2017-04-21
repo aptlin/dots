@@ -25,14 +25,15 @@
    }
   ];
   boot.loader.grub.device = "/dev/sda";
-  boot.kernelParams = [         
-    "hid_apple.fnmode=1"           
-    ];
+  boot.kernelModules = [ "coretemp" "applesmc" "hid_apple" "kvm-intel" ];
   boot.cleanTmpDir = true;
   boot.blacklistedKernelModules = [ "snd_pcsp" ];
   boot.extraModprobeConfig = ''
     options snd slots=snd-hda-intel
+    options hid_apple fnmode=2
   '';
+
+  services.mbpfan.enable = true;
   
   networking.hostName = "zeta"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -305,21 +306,13 @@
   services.xserver.desktopManager.default = "none";
   services.xserver.windowManager.xmonad.enableContribAndExtras = true;
   services.xserver.displayManager = {
-    slim= {
+    auto = {
 	enable = true;
-	autoLogin = false;
-  	defaultUser = "aleph";
+  	user = "aleph";
     };
     xserverArgs = [ "-dpi 227" ];
-    lightdm = {enable = false;};
     sessionCommands = with pkgs; lib.mkAfter ''
       xbindkeys &
-      gpg-connect-agent /bye
-      GPG_TTY=$(tty)
-      export GPG_TTY
-      unset SSH_AGENT_PID
-      export SSH_AUTH_SOCK="${config.users.extraUsers.aleph.home}/.gnupg/S.gpg-agent.ssh"
-      exec ${haskellPackages.xmonad}/bin/xmonad
       '';
   };
      
