@@ -149,7 +149,7 @@ alias mik="ec $BLOG_DIR/stories/mikveh.org"
 alias hmu="pkill -2 -u $UID mu # send SIGINT"
 alias we="curl wttr.in"
 function ns() { nix-env -qa \* -P | fgrep -i "$1"; }
-alias ni="ec /etc/nixos/configuration.nix; sudo nixos-rebuild switch"
+alias ni="ec ~/DOTS/nixos/configuration.nix; sudo nixos-rebuild switch"
 alias nb="sudo nixos-rebuild switch"
 # Config
 
