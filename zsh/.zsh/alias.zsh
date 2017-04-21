@@ -22,7 +22,7 @@ alias emac="ec ~/.emacs.d/init.el"
 alias eth='sudo netctl start ethernet-dhcp'
 alias gb='gemset && sd && rm -r _site && bundle exec jekyll serve'
 alias gdot="pushd ~/.zsh/ && ./gdot && popd"
-alias gmor="pushd ~/TMP/PROG/M/; python3 ~/TMP/PROG/M/goodmorning.py; popd"
+alias gmor="nix-shell -p python35Packages.pyperclip --run 'pushd ~/TMP/PROG/M/; ~/TMP/PROG/M/goodmorning.py; popd'"
 alias gt="git add .; git commit -am '$(date +%y%m%d)'; git push -u origin master"
 alias ll="ls -lahf --color=auto"
 alias lsl="ls -lhf --color=auto"
