@@ -1,3 +1,6 @@
 [submodule "latex/texmf/MATEX"]
 	path = latex/texmf/MATEX
 	url = https://github.com/sdll/MATEX
+[submodule "utils/brightnessctl"]
+	path = utils/brightnessctl
+	url = https://github.com/Hummer12007/brightnessctl

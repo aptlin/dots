@@ -90,10 +90,11 @@
   # The NixOS release to be compatible with for stateful data such as databases.
   system.stateVersion = "17.03";
   i18n = {
-	consoleFont = "ter-v20n";
+        consoleFont = "ter-132n";
 	consolePackages = [ pkgs.terminus_font ];
-  	consoleKeyMap = "dvorak";
+	consoleKeyMap = /home/aleph/DOTS/keymap/dvorak+.map.gz;
   };
+
 
    fonts = {
        # enableFontDir = true;
@@ -189,6 +190,15 @@
 	xfontsel
 	xclip
 	unclutter
+	slock
+	xautolock
+
+	#wayland
+
+	wayland
+	xwayland
+	libinput
+	weston
 
 	#haskell
 	haskellPackages.ghc
@@ -197,13 +207,17 @@
 	haskellPackages.hindent
 	stack
 
+	#rust
+
+	rustc
+
 	#python
 
 	pythonFull
 	python3Full
 	python35Packages.setuptools
 	python35Packages.ipython
-	python35Packages.jupyter
+	python35Packages.jupyter 
 
 	#xmonad
 	dmenu
@@ -211,8 +225,10 @@
 	rofi
 	haskellPackages.xmonad
 	haskellPackages.xmobar
-	
-        #gnupg
+
+	#sway
+	sway
+	#gnupg
 	gnupg1
 
 	#config management
@@ -285,6 +301,17 @@
       };
   }) ];
 
+  
+
+  security.wrappers.slock.source = "${pkgs.slock}/bin/slock";
+  #udev
+  services.udev.extraRules =
+  ''
+  ACTION=="add", SUBSYSTEM=="backlight", RUN+="/run/current-system/sw/bin/chgrp video /sys/class/backlight/%k/brightness"
+  ACTION=="add", SUBSYSTEM=="backlight", RUN+="/run/current-system/sw/bin/chmod g+w /sys/class/backlight/%k/brightness"
+  ACTION=="add", SUBSYSTEM=="leds", RUN+="/run/current-system/sw/bin/chgrp input /sys/class/leds/%k/brightness"
+  ACTION=="add", SUBSYSTEM=="leds", RUN+="/run/current-system/sw/bin/chmod g+w /sys/class/leds/%k/brightness"
+  '';
   # journald
   services.journald.extraConfig = "SystemMaxUse=50M";
 
@@ -300,6 +327,7 @@
 		"git"
 		"networkmanager"
 		"video"
+		"input"
 		"wheel"
 		];
 		isNormalUser = true;

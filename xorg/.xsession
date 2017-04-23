@@ -19,6 +19,7 @@ xbindkeys &
 compton -b &
 #--xrender-sync-fence
 unclutter -idle 2
+xautolock -time 10 -locker slock
 # GPG agent
 #eval $(gpg-agent --daemon)
 

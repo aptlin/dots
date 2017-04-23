@@ -166,8 +166,6 @@ alias ug="gcam "$(date +%y%m%d)" & gp"
 alias saw='cd ~/TMP/PROG/SAGE; sage --notebook="jupyter"'
 alias sa='ec ~/TMP/SAGE/workbook.org'
 #sway
-alias sway='~/.scripts/xkb-config;sway'
-
 function fk () {readlink -f $1 | xclip}
 
 # define da and immediately call it to initialize the environment.
