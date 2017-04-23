@@ -83,7 +83,7 @@ gaps inner 1
     #chat
     bindsym $mod+z exec $chat
     #edit
-    bindsym $mod+r exec $chat
+    bindsym $mod+r exec $editor
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.

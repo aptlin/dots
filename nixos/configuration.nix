@@ -341,15 +341,18 @@
   };
 
   services.xserver.enable = true;
+  # services.xserver.enable = false;
   services.xserver.layout = "dvorak,ru";
   services.xserver.xkbOptions = "ctrl:nocaps,grp:alt_space_toggle";
+  #services.xserver.windowManager.xmonad.enable = false;
   services.xserver.windowManager.xmonad.enable = true;
   services.xserver.windowManager.default = "xmonad";
-  services.xserver.desktopManager.default = "none";
+  #services.xserver.desktopManager.default = "none";
   services.xserver.windowManager.xmonad.enableContribAndExtras = true;
+  # services.xserver.windowManager.xmonad.enableContribAndExtras = false;
   services.xserver.displayManager = {
     auto = {
-	enable = true;
+        enable = true;
   	user = "aleph";
     };
     xserverArgs = [ "-dpi 227" ];
