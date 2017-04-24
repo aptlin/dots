@@ -136,6 +136,10 @@
 	manpages
 	autojump
 	fzf
+	shared_mime_info
+
+	#sync
+	syncthing
 
 	#networking
 	iptables
@@ -247,6 +251,7 @@
 	inkscape
 	krita
 	zathura
+	evince
 
 	#latex
 	auctex
@@ -347,7 +352,7 @@
   #services.xserver.windowManager.xmonad.enable = false;
   services.xserver.windowManager.xmonad.enable = true;
   services.xserver.windowManager.default = "xmonad";
-  #services.xserver.desktopManager.default = "none";
+  services.xserver.desktopManager.default = "none";
   services.xserver.windowManager.xmonad.enableContribAndExtras = true;
   # services.xserver.windowManager.xmonad.enableContribAndExtras = false;
   services.xserver.displayManager = {

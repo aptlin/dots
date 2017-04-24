@@ -273,7 +273,7 @@ myTerminal                = "urxvt"
 myBrowser                 = "firefox" -- chrome with WS profile dirs
 myBrowserClass            = "Firefox"
 myEditor                  = "emacsclient -c --alternate-editor= "
-myOSConfig                = myEditor ++ "/etc/nixos/configuration.nix"
+myOSConfig                = myEditor ++ "~/DOTS/nixos/configuration.nix"
 myOSConfigName            = "configuration.nix"
 myAlternativeBrowser      = "chromium"
 myAlternativeBrowserClass = "Chromium-browser"
