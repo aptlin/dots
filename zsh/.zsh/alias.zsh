@@ -178,4 +178,4 @@ alias R='da -r'
 
 #git
 
-alias gcam = "git commit -a -m"
+alias gcam="git commit -a -m"
