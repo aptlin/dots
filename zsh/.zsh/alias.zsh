@@ -175,3 +175,7 @@ alias S='da -s'
 alias G='da -g'
 alias L='da -l'
 alias R='da -r'
+
+#git
+
+gcam = "git commit -a -m"
