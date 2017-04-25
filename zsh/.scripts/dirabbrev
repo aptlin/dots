@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/run/current-system/sw/bin/perl
 #
 # dirabbrev -- dynamic abbreviations for directories (paths)
 # Copyright (C) 2004 Carsten Dominik
@@ -53,84 +53,84 @@ getopts('sglLrRaeduvq') or &usage,exit(1);
 
 if ($opt_s) { # )))
 
-  # Store a directory abbreviation
-  ($name,$path) = (lc($ARGV[0]),($ARGV[1] or `pwd`));
-  chomp $path;
-  die "usage: $me -s name [directory]" unless $name;
-  # Ask the shell to exand initial . and ..
-  if ($path =~ /^[.~]/) {$path = `cd $path;pwd`; chomp $path}
-  $dir{lc($name)} = $path;
-  print STDERR "Storing $name -> $path\n" unless $opt_q;
-  &shell(&setenv($name)) if $opt_e;
-  &shell(&alias($name))  if $opt_a;
-  &writelist;
+    # Store a directory abbreviation
+    ($name,$path) = (lc($ARGV[0]),($ARGV[1] or `pwd`));
+    chomp $path;
+    die "usage: $me -s name [directory]" unless $name;
+    # Ask the shell to exand initial . and ..
+    if ($path =~ /^[.~]/) {$path = `cd $path;pwd`; chomp $path}
+    $dir{lc($name)} = $path;
+    print STDERR "Storing $name -> $path\n" unless $opt_q;
+    &shell(&setenv($name)) if $opt_e;
+    &shell(&alias($name))  if $opt_a;
+    &writelist;
 
 } elsif ($opt_g) {
 
-  # Go to an abbreviated directory
-  $name = lc($ARGV[0]);
-  die "usage: $me -g name" unless $name;
-  # If name is not an abbrev yet, check if it is a unique abbrev of an abbrev.
-  unless (defined $dir{$name}) {
-    my @names = grep /^$name/, keys %dir;
-    if (@names == 1) {
-      printf STDERR "$me: $name -> %s\n",$names[0];
-      $name = $names[0];
+    # Go to an abbreviated directory
+    $name = lc($ARGV[0]);
+    die "usage: $me -g name" unless $name;
+    # If name is not an abbrev yet, check if it is a unique abbrev of an abbrev.
+    unless (defined $dir{$name}) {
+	my @names = grep /^$name/, keys %dir;
+	if (@names == 1) {
+	    printf STDERR "$me: $name -> %s\n",$names[0];
+	    $name = $names[0];
+	}
     }
-  }
-  die "$me: No unique abbreviation name $name\n" unless defined $dir{$name};
-  $path = $dir{$name};
-  print STDERR "Changing to $name -> $path\n" if $opt_v;
-  &shell("cd '$path'");
+    die "$me: No unique abbreviation name $name\n" unless defined $dir{$name};
+    $path = $dir{$name};
+    print STDERR "Changing to $name -> $path\n" if $opt_v;
+    &shell("cd '$path'");
 
 } elsif ($opt_l or $opt_L) {
 
-  # List directory abbreviations
-  $l = &maxleng();
-  $f = sprintf("%%-%ds  %%-s\n",$l);
-  @names = sort keys %dir if $opt_l;
-  @names = sort {$dir{$a} cmp $dir{$b}} keys %dir if $opt_L;
-  foreach (@names) {printf STDERR $f,$_,home2tilde($dir{$_})}
+    # List directory abbreviations
+    $l = &maxleng();
+    $f = sprintf("%%-%ds  %%-s\n",$l);
+    @names = sort keys %dir if $opt_l;
+    @names = sort {$dir{$a} cmp $dir{$b}} keys %dir if $opt_L;
+    foreach (@names) {printf STDERR $f,$_,home2tilde($dir{$_})}
 
 } elsif ($opt_r) {
 
-  # Remove one or more directory abbreviations
-  unless (@ARGV) {
-    $path = `pwd`; chomp $path;      # current working directory as default
-    @ARGV = grep {$dir{$_} eq $path} keys %dir;
-  }
-  $re = join("|",map {"^".$_."\$"} @ARGV);
-  $re =~ s/\*/.*/g; $re =~ s/\?/./g;     # wildcard -> regexp.
-  foreach $name (grep {/^($re)$/io} keys %dir) {
-    print STDERR "Removing $name -> $dir{$name}\n" unless $opt_q;
-    undef $dir{$name};
-    &shell(&unsetenv($name)) if $opt_e;
-    &shell(&unalias($name))  if $opt_a;
-  }
-  &writelist;
+    # Remove one or more directory abbreviations
+    unless (@ARGV) {
+	$path = `pwd`; chomp $path;      # current working directory as default
+	@ARGV = grep {$dir{$_} eq $path} keys %dir;
+    }
+    $re = join("|",map {"^".$_."\$"} @ARGV);
+    $re =~ s/\*/.*/g; $re =~ s/\?/./g;     # wildcard -> regexp.
+    foreach $name (grep {/^($re)$/io} keys %dir) {
+	print STDERR "Removing $name -> $dir{$name}\n" unless $opt_q;
+	undef $dir{$name};
+	&shell(&unsetenv($name)) if $opt_e;
+	&shell(&unalias($name))  if $opt_a;
+    }
+    &writelist;
 
 } elsif ($opt_R) {
 
-  # Interactively remove abbreviations
-  $l = &maxleng();
-  $f = sprintf("remove %%-%ds -> %%s (y/n/a/q)? ",$l);
-  $re = join("|",map {"^".$_."\$"} @ARGV);
-  $re =~ s/\*/.*/g; $re =~ s/\?/./g;     # wildcard -> regexp.
-  foreach $name (sort keys %dir) {
-    next if $re && $name !~ /^($re)$/io;
-    unless ($all) {
-      printf STDERR $f,$name,home2tilde($dir{$name});
-      $rpl = <STDIN>;
-      last if $rpl =~ /^q/i;
-      $all = ($rpl =~ /^a/i);
+    # Interactively remove abbreviations
+    $l = &maxleng();
+    $f = sprintf("remove %%-%ds -> %%s (y/n/a/q)? ",$l);
+    $re = join("|",map {"^".$_."\$"} @ARGV);
+    $re =~ s/\*/.*/g; $re =~ s/\?/./g;     # wildcard -> regexp.
+    foreach $name (sort keys %dir) {
+	next if $re && $name !~ /^($re)$/io;
+	unless ($all) {
+	    printf STDERR $f,$name,home2tilde($dir{$name});
+	    $rpl = <STDIN>;
+	    last if $rpl =~ /^q/i;
+	    $all = ($rpl =~ /^a/i);
+	}
+	if ($all || $rpl =~ /^y/i) {
+	    undef $dir{$name};
+	    &shell(&unsetenv($name)) if $opt_e;
+	    &shell(&unalias($name))  if $opt_a;
+	}
     }
-    if ($all || $rpl =~ /^y/i) {
-      undef $dir{$name};
-      &shell(&unsetenv($name)) if $opt_e;
-      &shell(&unalias($name))  if $opt_a;
-    }
-  }
-  &writelist;
+    &writelist;
 
 }
 

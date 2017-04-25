@@ -27,7 +27,7 @@
   boot.loader.grub.device = "/dev/sda";
   boot.kernelModules = [ "coretemp" "applesmc" "hid_apple" "kvm-intel" ];
   boot.cleanTmpDir = true;
-  boot.blacklistedKernelModules = [ "snd_pcsp" ];
+  boot.blacklistedKernelModules = [ "snd_pcsp" "hp_wmi"];
   boot.extraModprobeConfig = ''
     options snd slots=snd-hda-intel
     options hid_apple fnmode=2
@@ -39,7 +39,14 @@
 
   services.mbpfan.enable = true;
   
-  networking.hostName = "zeta"; # Define your hostname.
+   networking = {
+     hostName = "zeta";     
+     wireless.enable = true; 
+     networkmanager.enable = false;
+     wicd.enable = false;
+     connman.enable = true;
+  };
+
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Select internationalisation properties.
@@ -137,6 +144,7 @@
 	autojump
 	fzf
 	shared_mime_info
+	mc
 
 	#sync
 	syncthing
@@ -146,7 +154,7 @@
 	nmap
 	tcpdump
 	dhcp
-
+	cmst        
 	#audio
 	alsaUtils
 	alsa-firmware
@@ -289,6 +297,27 @@
 	#chat
 	tdesktop
 ];
+
+  # environment.etc.wicd = rec {
+  #   target = "encryption/templates/eduroam";
+  #   text = ''
+  #       name = PEAP with MSCHAPv2
+  # 	author = .
+  # 	version = 1
+  # 	require identity *Identity password *Password
+  # 	-----
+  # 	ctrl_interface=/var/run/wpa_supplicant
+  # 	network={
+  # 			ssid="$_ESSID"
+  # 		        scan_ssid=$_SCAN
+  # 			key_mgmt=WPA-EAP
+  # 			eap=PEAP
+  # 			phase2="auth=MSCHAPV2"
+  # 			identity="$_IDENTITY"
+  # 			password="$_PASSWORD"
+  # 			}
+  # 			'';
+  #   };
   nixpkgs.overlays = [ (self: super: {
   st = super.st.override {
     patches = builtins.map super.fetchurl [
@@ -370,6 +399,9 @@
   services.xserver.libinput.naturalScrolling = false;
   services.xserver.libinput.middleEmulation = true;
   services.xserver.libinput.tapping = true;
+
+  #required for some gtk apps
+  #services.gnome3.at-spi2-core.enable = true;
 
   programs.zsh.enable = true;
   programs.zsh.enableCompletion = true;
