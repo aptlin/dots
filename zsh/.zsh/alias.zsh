@@ -169,7 +169,7 @@ alias sa='ec ~/TMP/SAGE/workbook.org'
 function fk () {readlink -f $1 | xclip}
 
 # define da and immediately call it to initialize the environment.
-function da () { eval `dirabbrev -e -a \$*`; }
+function da () { eval `~/.scripts/dirabbrev -e -a \$*`; }
 da -d
 alias S='da -s'
 alias G='da -g'
