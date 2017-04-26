@@ -134,6 +134,9 @@
 	oh-my-zsh
 	nix-zsh-completions
 
+	#fish
+	fish
+
 	#fonts
 	terminus_font
 
@@ -155,6 +158,7 @@
 	tcpdump
 	dhcp
 	cmst        
+
 	#audio
 	alsaUtils
 	alsa-firmware
