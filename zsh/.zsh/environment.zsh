@@ -24,6 +24,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # preferred editor for local and remote sessions
 export EDITOR='emacsclient -t --alternate-editor='
+export PAGER='/home/aleph/PROG/eless/eless man grep'
 export VISUAL=vim
 
 # language
