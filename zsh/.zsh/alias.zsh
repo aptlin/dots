@@ -179,3 +179,6 @@ alias R='da -r'
 #git
 
 alias gcam="git commit -a -m"
+
+#eless
+alias eless="/home/aleph/PROG/eless/eless"
