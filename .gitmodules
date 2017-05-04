@@ -4,3 +4,6 @@
 [submodule "utils/brightnessctl"]
 	path = utils/brightnessctl
 	url = https://github.com/Hummer12007/brightnessctl
+[submodule "SNIX"]
+	path = SNIX
+	url = https://github.com/sdll/SNIX
