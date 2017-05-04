@@ -54,7 +54,7 @@ export NTS_TMP_LOG=$BLOG_DIR/pages/notes.tmp
 
 # Ledger
 
-export LEDGER_FILE=~/ORG/budget.ledger
+export LEDGER_FILE=~/ORG/FINANCE/budget.ledger
 # Midnight Commander
 
 MC_SKIN=$HOME/.mc/lib/mc-solarized/solarized.ini
