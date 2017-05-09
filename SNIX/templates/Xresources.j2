@@ -18,7 +18,7 @@ Xcursor.theme:  Adwaita
 !-------------------------------------------------------------------------------
 
 URxvt.transparent: false
-! URxvt.tintColor: #002B36
+! URxvt.tintColor: {{ colorscheme["background"] }}
 ! 0 to 99 darkens, 101 to 200 lightens
 ! URxvt*.shading: 100
 URxvt.loginShell: true
@@ -28,8 +28,9 @@ URxvt.lineSpace: 0
 
 ! Fonts
 URxvt.allow_bold: true
-URxvt*font: xft:Hack:pixelsize=28
-URxvt*boldFont: xft:Hack:pixelsize=28
+URxvt.font:         xft:Hack-Regular:pixelsize=28
+URxvt.boldFont:     xft:Hack-Bold:pixelsize=28:weight=bold
+URxvt.italicFont:   xft:Hack-RegularOblique:pixelsize=28:slant=italic
 ! Fix font space
 URxvt*letterSpace: -1
 
@@ -50,45 +51,45 @@ URxvt.cursorUnderline: false
 ! urxvt colorscheme
 !-------------------------------------------------------------------------------
 
-*foreground: #EEE8D5
-*background: #002B36
-*cursorColor: #268BD2
-*pointerColorForeground: #268BD2
+*foreground: {{ colorscheme["text"] }}
+*background: {{ colorscheme["background"] }}
+*cursorColor: {{ colorscheme["selected"] }}
+*pointerColorForeground: {{ colorscheme["selected"] }}
 
 !-------------------------------------------------------------------------------
 ! Terminal colors (urxvt and maybe others?)
 !-------------------------------------------------------------------------------
 ! black dark/light
-*color0: #EEE8D5
-*color8: #CB4B16
+*color0: {{ colorscheme["text"] }}
+*color8: {{ colorscheme["light black"] }}
 
 ! red dark/light
-*color1: #DC322F
-*color9: #002B36
+*color1: {{ colorscheme["red"] }}
+*color9: {{ colorscheme["light red"] }}
 
 ! green dark/light
-*color2: #859900
-*color10: #586E75
+*color2: {{ colorscheme["green"] }}
+*color10: {{ colorscheme["light green"] }}
 
 ! yellow dark/light
-*color3: #B58900
-*color11: #657B83
+*color3: {{ colorscheme["yellow"] }}
+*color11: {{ colorscheme["light yellow"] }}
 
 ! blue dark/light
-*color4: #268BD2
-*color12: #839496
+*color4: {{ colorscheme["selected"] }}
+*color12: {{ colorscheme["light blue"] }}
 
 ! magenta dark/light
-*color5: #D33682
-*color13: #6C71C4
+*color5: {{ colorscheme["magenta"] }}
+*color13: {{ colorscheme["light magenta"] }}
 
 ! cyan dark/light
-*color6: #2AA198
-*color14: #93A1A1
+*color6: {{ colorscheme["cyan"] }}
+*color14: {{ colorscheme["light cyan"] }}
 
 ! white dark/light
-*color7: #EEE8D5
-*color15: #FDF6E3
+*color7: {{ colorscheme["gray"] }}
+*color15: {{ colorscheme["light gray"] }}
 
 !-------------------------------------------------------------------------------
 ! Rofi (application launcher)
@@ -122,12 +123,12 @@ rofi.color-enabled:                  true
 ! Separator style (none, dash, solid)
 rofi.separator-style:                solid
 
-rofi.color-normal:                   #002B36,#EEE8D5,#002B36,#268BD2,#002B36
+rofi.color-normal:                   {{ colorscheme["background"] }},{{ colorscheme["text"] }},{{ colorscheme["background-alt"] }},{{ colorscheme["selected"] }},{{ colorscheme["background"] }}
 ! Color scheme for urgent row
-rofi.color-urgent:                   #002B36,#DC322F,#002B36,#268BD2,#DC322F
+rofi.color-urgent:                   {{ colorscheme["background"] }},{{ colorscheme["red"] }},{{ colorscheme["background-alt"] }},{{ colorscheme["selected"] }},{{ colorscheme["red"] }}
 ! Color scheme for active row
-rofi.color-active:                   #002B36,#FDF6E3,#002B36,#268BD2,#FDF6E3
+rofi.color-active:                   {{ colorscheme["background"] }},{{ colorscheme["light gray"] }},{{ colorscheme["background-alt"] }},{{ colorscheme["selected"] }},{{ colorscheme["light gray"] }}
 ! Color scheme window
 ! background border color separator color/
-rofi.color-window:                   #002B36,#002B36
+rofi.color-window:                   {{ colorscheme["background-alt"] }},{{ colorscheme["background-alt"] }}
 

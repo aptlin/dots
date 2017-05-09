@@ -77,3 +77,6 @@ export UMU_DIR=~/WERKE/umus.github.io
 #LaTeX
 
 export BIBINPUTS=~/ORG/references.bib
+
+#NixOS
+export XDG_DATA_DIRS=${XDG_DATA_DIRS}:/home/aleph/.nix-profile/share
