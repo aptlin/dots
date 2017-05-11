@@ -5,11 +5,12 @@
       ./audio.nix
       ./haskell-packages.nix
       ./python-packages.nix
+      ./image-editing-packages.nix
       ./hardware-configuration.nix
       ./mail.nix
       ./networking.nix
+      ./security.nix
       ./system-packages.nix
-      ./security.nix       
       ./users.nix
       ./x.nix
       ./sh.nix

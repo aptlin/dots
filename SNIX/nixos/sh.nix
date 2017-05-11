@@ -131,6 +131,7 @@
     };
 
     variables = {
+      LEDGER_FILE="$HOME/ORG/FINANCE/accounting.journal";
       XDG_CONFIG_HOME = "$HOME/.config";
       PATH = "$PATH:$HOME/.scripts";
       EDITOR = "emacs";

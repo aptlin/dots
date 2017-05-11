@@ -35,25 +35,25 @@
     gitAndTools.gitFull        
 
     #devutils
+    busybox
     psmisc
     gcc
     gnumake
     automake
-    autoconf
-    libtool
-    zlib
-    binutils
     nix
     nox
-    lsof
-
+    
     #files
     zip
     unzip
     rsync
     file
+    pandoc
+    libreoffice
     
     firefox
+    w3m-nox
+    html2text
     gcc #
     ghc #
     git
@@ -68,5 +68,8 @@
 
     texlive.combined.scheme-full # lualatex, etc.
     zathura
+
+    #screenshot
+    gnome3.gnome-screenshot
   ];
 }
