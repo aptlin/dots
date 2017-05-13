@@ -4,7 +4,7 @@
 --, additionalFonts    = ["xft:Raleway:size=12:antialias=true:hinting=true", "xft:Inconsolata for Powerline:size=12:antialias=true:hinting=true"]
 
 Config
-    { font              = "xft:xos4 Terminus:pixelsize=25:antialias=true:hinting=true"
+    { font              = "xft:xos4 Terminus:pixelsize=32:antialias=true:hinting=true"
     , additionalFonts   = [ "xft:FontAwesome:pixelsize=14:antialias=true:hinting=true" ]
     , allDesktops       = True
     , bgColor           = "#000000"

@@ -157,4 +157,6 @@ document.getElementById("main").onclick = function() {
   - Algebra
   - Topology
   - [[file:~/yWERKE/NOTES/RA/master.tex][Real Analysis]]
-s
+
+r
+ne
