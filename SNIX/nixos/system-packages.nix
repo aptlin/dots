@@ -51,8 +51,9 @@
     file
     pandoc
     libreoffice
-    
 
+    pass
+    
     html2text
     gcc #
     ghc #
