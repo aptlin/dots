@@ -1430,8 +1430,6 @@ myManageHook =
             , className =? "TelegramDesktop" --> doShift "RW"]
         manageSpecific = composeOne
             [ resource =? "desktop_window" -?> doIgnore
-            , resource =? "stalonetray"    -?> doIgnore
-            , resource =? "vlc"    -?> doFloat
             , transience
             , isBrowserDialog -?> forceCenterFloat
             --, isConsole -?> forceCenterFloat
