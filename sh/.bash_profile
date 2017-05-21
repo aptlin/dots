@@ -1,6 +1,11 @@
 if [ -f "$HOME/.bashrc" ]; then
     . "$HOME/.bashrc"
 fi
+if [ -f "$XDG_CONFIG_HOME/sensible.bash" ]; then
+    . "$XDG_CONFIG_HOME/sensible.bash"
+fi
+if [ -f "$XDG_CONFIG_HOME/bash-powerline.sh" ]; then
+    . "$XDG_CONFIG_HOME/bash-powerline.sh"
+fi
 
-source $XDG_CONFIG_HOME/git-prompt.sh
-PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
+
