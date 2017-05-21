@@ -7,5 +7,3 @@ fi
 if [ -f "$XDG_CONFIG_HOME/bash-powerline.sh" ]; then
     . "$XDG_CONFIG_HOME/bash-powerline.sh"
 fi
-
-
