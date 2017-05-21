@@ -6,6 +6,7 @@
 -- Modules                                                              {{{
 ---------------------------------------------------------------------------
 --import Control.Monad (liftM2)             -- myManageHookShift
+
 import           Control.Monad                       (join, liftM, liftM2)
 import           Data.List
 import qualified Data.Map                            as M
@@ -108,6 +109,7 @@ import           XMonad.Layout.NoBorders
 import           XMonad.Layout.ResizableTile
 import           XMonad.Layout.SimplestFloat
 import           XMonad.Layout.Tabbed
+
 
 -- taffybar specific
 -- import System.Taffybar.Hooks.PagerHints (pagerHints)
@@ -269,7 +271,7 @@ projects =
 
 --myTerminal          = "terminator"
 --myTerminalClass     = "Terminator"
-myTerminal                = "xterm"
+myTerminal                = "urxvt"
 myBrowser                 = "firefox" -- chrome with WS profile dirs
 myBrowserClass            = "Firefox"
 myEditor                  = "emacsclient -c --alternate-editor= "
