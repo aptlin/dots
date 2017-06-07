@@ -1,3 +1,9 @@
+# autojump config
+source $(autojump-share)/autojump.bash
+
+# set emacs keys
+set -o emacs
+
 if [ -f "$HOME/.bashrc" ]; then
     . "$HOME/.bashrc"
 fi

@@ -1,9 +1,3 @@
-# autojump config
-source $(autojump-share)/autojump.bash
-
-# set emacs keys
-set -o emacs
-
 #aliases
 alias ..='cd ..'
 alias bace='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /etc /run/media/aleph/A/REC/etc$(date +%m%y)'
