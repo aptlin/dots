@@ -1,3 +1,16 @@
+# autojump config
+source $(autojump-share)/autojump.bash
+
+# set emacs keys
+set -o emacs
+
+if [ -f "$XDG_CONFIG_HOME/sensible.bash" ]; then
+    . "$XDG_CONFIG_HOME/sensible.bash"
+fi
+if [ -f "$XDG_CONFIG_HOME/bash-powerline.sh" ]; then
+    . "$XDG_CONFIG_HOME/bash-powerline.sh"
+fi
+
 #aliases
 alias ..='cd ..'
 alias bace='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /etc /run/media/aleph/A/REC/etc$(date +%m%y)'

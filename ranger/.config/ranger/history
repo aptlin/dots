@@ -1,0 +1,12 @@
+open_with libreoffice
+open_with q
+copy ~/ucas2015.pdf
+q
+w
+search wer
+WE
+search WE
+search we
+search DOTS
+shell
+search DOT
