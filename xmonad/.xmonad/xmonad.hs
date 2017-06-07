@@ -27,7 +27,6 @@ import           XMonad.Actions.ConditionalKeys
 import qualified XMonad.Actions.ConstrainedResize    as Sqr
 import           XMonad.Actions.CopyWindow
 import           XMonad.Actions.CycleWS
-import           XMonad.Actions.DynamicProjects
 import           XMonad.Actions.DynamicWorkspaces
 import           XMonad.Actions.FloatSnap
 import           XMonad.Actions.MessageFeedback
@@ -152,7 +151,6 @@ main = do
     -- for taffybar, add pagerHints below
 
     xmonad
-        $ dynamicProjects projects
         $ withNavigation2DConfig myNav2DConf
         -- $ withUrgencyHook NoUrgencyHook
         $ withUrgencyHook LibNotifyUrgencyHook
@@ -202,66 +200,8 @@ wsWRK2  = "WRK:2"
 wsGGC   = "GGC"
 
 -- myWorkspaces = map show [1..9]
-myWorkspaces = [wsGEN, wsWRK, wsWRK2, wsSYS, wsRW, wsTMP, wsFLOAT, wsMON]
 
-projects :: [Project]
-projects =
-  [ Project
-    {projectName = wsGEN, projectDirectory = "~/", projectStartHook = Nothing}
-  , Project
-    { projectName = wsSYS
-    , projectDirectory = "~/"
-    , projectStartHook =
-        Just $ do
-          spawnOn wsSYS myTerminal
-          spawnOn wsSYS myTerminal
-          spawnOn wsSYS myTerminal
-    }
-  , Project
-    { projectName = wsDMO
-    , projectDirectory = "~/"
-                -- , projectStartHook  = Just $ do spawn "/usr/lib/xscreensaver/binaryring"
-    , projectStartHook =
-        Just $ do
-          runInTerm "-name top" "top"
-          runInTerm "-name top" "htop"
-          runInTerm "-name glances" "glances"
-    }
-  , Project
-    { projectName = wsVIX
-    , projectDirectory = "~/.xmonad"
-    , projectStartHook =
-        Just $ do
-          runInTerm "-name vix" "ec ~/.xmonad/xmonad.hs"
-          spawnOn wsVIX myTerminal
-          spawnOn wsVIX myTerminal
-    }
-  , Project
-    { projectName = wsMON
-    , projectDirectory = "~/"
-    , projectStartHook = Just $ do runInTerm "-name glances" "glances"
-    }
-  , Project
-    { projectName = wsWRK
-    , projectDirectory = "~/WERKE/"
-    , projectStartHook = Just $ do spawnOn wsWRK myTerminal
-    }
-  , Project
-    { projectName = wsWRK2
-    , projectDirectory = "~/WERKE/"
-    , projectStartHook = Just $ do spawnOn wsWRK2 myEditor
-    }
-  , Project
-    { projectName = wsRAD
-    , projectDirectory = "~/"
-    , projectStartHook = Just $ do spawn myBrowser
-    }
-  , Project
-    { projectName = wsTMP
-    , projectDirectory = "~/"
-    , projectStartHook = Just $ do return ()
-    }
-  ]
+myWorkspaces = [wsGEN, wsWRK, wsWRK2, wsSYS, wsRW, wsTMP] ++ map show [7..9]
 
 ------------------------------------------------------------------------}}}
 -- Applications                                                         {{{
@@ -271,7 +211,7 @@ projects =
 
 --myTerminal          = "terminator"
 --myTerminalClass     = "Terminator"
-myTerminal                = "urxvt"
+myTerminal                = "sakura"
 myBrowser                 = "firefox" -- chrome with WS profile dirs
 myBrowserClass            = "Firefox"
 myEditor                  = "emacsclient -c --alternate-editor= "
