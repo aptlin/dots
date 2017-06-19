@@ -10,3 +10,6 @@
 [submodule "scripts/dirabbrev"]
 	path = scripts/dirabbrev
 	url = https://github.com/sdll/dirabbrev
+[submodule "snix"]
+	path = snix
+	url = https://github.com/sdll/SNIX
