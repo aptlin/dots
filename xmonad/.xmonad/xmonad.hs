@@ -212,6 +212,7 @@ myWorkspaces = [wsGEN, wsWRK, wsWRK2, wsSYS, wsRW, wsTMP] ++ map show [7..9]
 --myTerminal          = "terminator"
 --myTerminalClass     = "Terminator"
 myTerminal                = "sakura"
+myFileManager             = myTerminal ++ " -x ranger"
 myBrowser                 = "firefox" -- chrome with WS profile dirs
 myBrowserClass            = "Firefox"
 myEditor                  = "emacsclient -c --alternate-editor= "
@@ -990,7 +991,7 @@ myKeys conf = let
              , ("M-<Return>" , addName "Terminal"      $ spawn myTerminal)
              , ("M-r"        , addName "Editor"        $ spawn myEditor)
              , ("M-\\"       , addName "Browser"       $ runOrRaise myBrowser (className =? myBrowserClass))
-             , ("M-c"        , addName "Browser"       $ runOrRaise myAlternativeBrowser (className =?myAlternativeBrowserClass))
+             , ("M-c"        , addName "FileManager"   $ spawn myFileManager)
              , ("M-w"        , addName "Nix Config"       $ spawn myOSConfig)
              , ("M-i"        , addName "Screenshot"       $ spawn "gnome-screenshot --interactive")
              , ("M-o"        , addName "Reader"        $ spawn myReader)

@@ -10,3 +10,10 @@ search we
 search DOTS
 shell
 search DOT
+execute_command ec analysis.org
+search dot
+shell nb
+search tmp
+searc
+search irony
+delete

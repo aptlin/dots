@@ -143,8 +143,11 @@ document.getElementById("main").onclick = function() {
 </body>
 </html>
 #+END_EXPORT
+** General: https://ba.hse.ru/method2017
+** M: http://olymp.hse.ru/mmo/tasks-math
+** P: http://olymp.hse.ru/mmo/tasks-physics
+** CS: http://olymp.hse.ru/mmo/tasks-it
 
-- [[httCps://portal.utoronto.ca/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_12_1][Portal]]
 
 * Administrativia
 
@@ -159,5 +162,3 @@ document.getElementById("main").onclick = function() {
   - Algebra
   - Topology
   - [[file:~/yWERKE/NOTES/RA/master.tex][Real Analysis]]
-
-

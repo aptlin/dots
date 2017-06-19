@@ -20,7 +20,7 @@ nametrans = lambda folder: {'drafts':  '[Gmail]/Drafts',
                             }.get(folder, folder)
 
 [Repository Delly-Remote]
-maxconnections = 1
+maxconnections = 4
 type = Gmail
 remoteuser = sasha.delly@gmail.com
 remotepasseval = get_pass()
