@@ -992,12 +992,11 @@ myKeys conf = let
              , ("M-r"        , addName "Editor"        $ spawn myEditor)
              , ("M-\\"       , addName "Browser"       $ runOrRaise myBrowser (className =? myBrowserClass))
              , ("M-c"        , addName "FileManager"   $ spawn myFileManager)
-             , ("M-w"        , addName "Nix Config"       $ spawn myOSConfig)
-             , ("M-i"        , addName "Screenshot"       $ spawn "gnome-screenshot --interactive")
+             , ("M-w"        , addName "Nix Config"    $ spawn myOSConfig)
+             , ("M-i"        , addName "Screenshot"    $ spawn "gnome-screenshot --interactive")
              , ("M-o"        , addName "Reader"        $ spawn myReader)
              , ("M-z"        , addName "Messenger"     $ runOrRaise myMessenger (className =? "TelegramDesktop"))
-             , ("M-s s"      , addName "Cancel submap" $ return ())
-             , ("M-s M-s"    , addName "Cancel submap" $ return ())
+             , ("M-s"        , addName "Screenlock"    $ spawn "slock")
     ] ^++^
 
     -----------------------------------------------------------------------
