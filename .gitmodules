@@ -10,3 +10,6 @@
 [submodule "snix"]
 	path = snix
 	url = https://github.com/sdll/snix
+[submodule "sh/bin/eless"]
+	path = sh/bin/eless
+	url = https://github.com/kaushalmodi/eless/
