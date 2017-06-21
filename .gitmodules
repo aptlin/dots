@@ -1,15 +1,12 @@
-[submodule "latex/texmf/MATEX"]
-	path = latex/texmf/MATEX
-	url = https://github.com/sdll/MATEX
+[submodule "latex/texmf/stex"]
+	path = latex/texmf/stex
+	url = https://github.com/sdll/stex
 [submodule "utils/brightnessctl"]
 	path = utils/brightnessctl
 	url = https://github.com/Hummer12007/brightnessctl
-[submodule "SNIX"]
-	path = SNIX
-	url = https://github.com/sdll/SNIX
 [submodule "scripts/dirabbrev"]
 	path = scripts/dirabbrev
 	url = https://github.com/sdll/dirabbrev
 [submodule "snix"]
 	path = snix
-	url = https://github.com/sdll/SNIX
+	url = https://github.com/sdll/snix

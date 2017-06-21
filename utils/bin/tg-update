@@ -1,0 +1,59 @@
+#!/bin/bash
+
+echo "============================================="
+echo "==     Telegram Script Installer v 0.1     =="
+echo "==                                         =="
+echo "==            by Jalcaldea                 =="
+echo "============================================="
+
+echo "Downloading necesary files..."
+
+cd /tmp
+wget -O - https://tdesktop.com/linux > tsetup.tar.gz
+wget -O - https://raw.githubusercontent.com/telegramdesktop/tdesktop/master/Telegram/Telegram/Images.xcassets/Icon.iconset/icon_256x256@2x.png > icon.png
+
+echo "Making destination folder..."
+
+mkdir -p ~/.local/share/telegram
+chmod +x ~/.local/share/telegram
+
+echo "Extracting files..."
+
+tar -xvJf tsetup.tar.gz
+cd ./Telegram
+
+echo "Copying new files..."
+cp ./Updater ~/.local/share/telegram/Updater
+cp ./Telegram ~/.local/share/telegram/Telegram
+user=$(whoami)
+chown -R $user:$user ~/.local/share/telegram/.
+
+echo "Making desktop files..."
+
+cd /tmp
+
+echo "[Desktop Entry]" > telegram.desktop
+echo "Name=Telegram" >> telegram.desktop
+echo "GenericName=Chat" >> telegram.desktop
+echo "Comment=Chat with yours friends" >> telegram.desktop
+echo "Exec=~/.local/share/telegram/Telegram" >> telegram.desktop
+echo "Terminal=false" >> telegram.desktop
+echo "Type=Application" >> telegram.desktop
+echo "Icon=~/.local/share/telegram/icon.png" >> telegram.desktop
+echo "Categories=Network;Chat;" >> telegram.desktop
+echo "StartupNotify=false" >> telegram.desktop
+
+cp icon.png ~/.local/share/telegram/icon.png
+cp telegram.desktop ~/.local/share/applications/telegram.desktop
+
+echo "Removing old files..."
+
+rm /tmp/tsetup.tar.gz
+rm /tmp/icon.png
+rm /tmp/telegram.desktop
+rm -R /tmp/Telegram
+
+
+echo "Installation Complete! Launching Telegram..."
+
+~/.local/share/telegram/Updater &

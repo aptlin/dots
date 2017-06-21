@@ -1,5 +1,8 @@
+export PATH=~/bin:$PATH
 # autojump config
-source $(autojump-share)/autojump.bash
+if hash autojump-share 2>/dev/null; then
+    . $(autojump-share)/autojump.bash
+fi
 
 # set emacs keys
 set -o emacs

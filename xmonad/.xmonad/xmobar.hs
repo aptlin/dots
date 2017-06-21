@@ -5,7 +5,7 @@
 
 Config
     { font              = "xft:xos4 Terminus:pixelsize=32:antialias=true:hinting=true"
-    , additionalFonts   = [ "xft:FontAwesome:pixelsize=14:antialias=true:hinting=true" ]
+    , additionalFonts   = [ "xft:Hack:pixelsize=14:antialias=true:hinting=true" ]
     , allDesktops       = True
     , bgColor           = "#000000"
     , fgColor           = "#586e75"
@@ -26,8 +26,8 @@ Config
        --                       , "--normal"   , "darkorange"
        --                       , "--high"     , "darkred"
        --                       ] 10
-        ,Run MultiCpu
-            [ "-t","<fn=1>\xf085</fn> C/M <vbar>"
+        , Run MultiCpu
+          [ "-t","<fn=1>\xf085</fn> C/M <vbar>"
             -- , "-p", "2"
             , "-L", "40"
             , "-H", "60"
