@@ -6,7 +6,6 @@ alias gmor="nix-shell -p python35Packages.pyperclip --run 'pushd ~/TMP/PROG/M/; 
 alias cw="sudo systemctl restart wpa_supplicant.service;sudo systemctl restart connman.service";
 alias sys="sudo systemctl";
 alias sysu="systemctl --user";
-alias test-ssh="ssh -T git@github.com";
 alias ls1="ls -1";
 alias reload="source /etc/zshrc";
 alias ga="git add";
@@ -57,7 +56,6 @@ alias xsel="xsel -b";
 alias za="zathura --fork";
 alias zz="quit";
 alias sa="nix-shell -p python35Packages.notebook --run \"jupyter notebook\"";
-alias # Notes
 alias arb="ec $BLOG_DIR/stories/arbeit.org ";
 alias snts="pushd ~/DOTS/zsh/.scripts/;./notes;popd";
 alias pnts="pushd ~/DOTS/zsh/.scripts/;./scans;popd";
@@ -65,7 +63,6 @@ alias spnts="snts; pnts";
 alias nte="ec ~/WERKE/sdll.github.io/stories/notes.org";
 alias gnts="gdir ORG/NOTES";
 alias lk="ec /home/aleph/WERKE/sdll.github.io/pages/trove.org";
-alias # Blog;
 alias nbw="workon nikola; nikola auto; deactivate";
 alias nbb="nikola build";
 alias nna="cd $BLOG_DIR; workon nikola; nikola new_post -e -f orgmode; deactivate";
@@ -75,11 +72,7 @@ alias np="workon nikola; nikola new_post -e -p -f orgmode; deactivate";
 alias nik="workon nikola";
 alias nli="ec $BLOG_DIR/stories/links_math.org";
 alias sw="stack build; stack exec site rebuild; stack exec site watch";
-alias
-alias # Haskell
 alias sb="stack build;";
-alias
-alias # Org
 alias tupd="~/DOTS/zsh/.scripts/telegram";
 alias le="~/DOTS/zsh/.scripts/letters";
 alias lat="latexmk -pvc -pdf";
