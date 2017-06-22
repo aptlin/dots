@@ -214,7 +214,7 @@ myWorkspaces = [wsGEN, wsWRK, wsWRK2, wsSYS, wsRW, wsTMP] ++ map show [7..9]
 myTerminal                = "sakura"
 myFileManager             = myTerminal ++ " -x ranger"
 --myBrowser                 = "firefox"
-myBrowser                 = "iridium"
+myBrowser                 = "iridium-browser"
 --myBrowserClass            = "Firefox-esr"
 myBrowserClass            = "Iridium-browser"
 myEditor                  = "emacsclient -c --alternate-editor= "
