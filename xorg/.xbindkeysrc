@@ -1,10 +1,10 @@
-"amixer set Master playback 5%+"
+"amixer set -c 1 Master playback 5%+"
     XF86AudioRaiseVolume
 
-"amixer set Master playback 5%-"
+"amixer set -c 1 Master playback 5%-"
     XF86AudioLowerVolume
 
-"amixer set Master toggle"
+"amixer set -c 1 Master toggle"
     XF86AudioMute
 
 "xbacklight -dec 10"
