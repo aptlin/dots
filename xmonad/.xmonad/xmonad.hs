@@ -213,8 +213,10 @@ myWorkspaces = [wsGEN, wsWRK, wsWRK2, wsSYS, wsRW, wsTMP] ++ map show [7..9]
 --myTerminalClass     = "Terminator"
 myTerminal                = "sakura"
 myFileManager             = myTerminal ++ " -x ranger"
-myBrowser                 = "firefox" -- chrome with WS profile dirs
-myBrowserClass            = "Firefox-esr"
+--myBrowser                 = "firefox"
+myBrowser                 = "iridium"
+--myBrowserClass            = "Firefox-esr"
+myBrowserClass            = "Iridium-browser"
 myEditor                  = "emacsclient -c --alternate-editor= "
 myOSConfig                = myEditor ++ "~/dev/crochet/laptop.yml"
 myOSConfigName            = "configuration.nix"
