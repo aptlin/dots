@@ -216,7 +216,7 @@ myFileManager             = myTerminal ++ " -x ranger"
 myBrowser                 = "firefox" -- chrome with WS profile dirs
 myBrowserClass            = "Firefox-esr"
 myEditor                  = "emacsclient -c --alternate-editor= "
-myOSConfig                = myEditor ++ "~/dots/snix/nixos/configuration.nix"
+myOSConfig                = myEditor ++ "~/dev/crochet/laptop.yml"
 myOSConfigName            = "configuration.nix"
 myAlternativeBrowser      = "chromium"
 myAlternativeBrowserClass = "Chromium-browser"

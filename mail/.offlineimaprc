@@ -1,17 +1,17 @@
 [general]
 ui = TTY.TTYUI
-accounts = delly
+accounts = sdll
 pythonfile=~/.config/offlineimap.py
 fsync = False
 
-[Account delly]
-localrepository = Delly-Local
-remoterepository = Delly-Remote
+[Account sdll]
+localrepository = Sdll-Local
+remoterepository = Sdll-Remote
 status_backend = sqlite
 
-[Repository Delly-Local]
+[Repository Sdll-Local]
 type = Maildir
-localfolders = ~/.mail/delly
+localfolders = ~/.mail/sdll
 nametrans = lambda folder: {'drafts':  '[Gmail]/Drafts',
                             'sent':    '[Gmail]/Sent Mail',
                             'flagged': '[Gmail]/Starred',
@@ -19,7 +19,7 @@ nametrans = lambda folder: {'drafts':  '[Gmail]/Drafts',
                             'archive': '[Gmail]/All Mail',
                             }.get(folder, folder)
 
-[Repository Delly-Remote]
+[Repository Sdll-Remote]
 maxconnections = 4
 type = Gmail
 remoteuser = sasha.delly@gmail.com

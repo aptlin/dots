@@ -32,7 +32,7 @@ alias ecc="cd ~/.emacs.d;ec ~/.emacs.d/init.el";
 alias eco="ec ~/.emacs.d/lisp/init-org.el";
 alias emac="ec ~/.emacs.d/init.el";
 alias gdot="pushd ~/.zsh/;./gdot;popd";
-alias ll="ls -lahf --color=auto";
+alias l="ls -la --color=auto";
 alias lsl="ls -lhf --color=auto";
 alias lss="ls -hf --color=auto";
 alias mixer="alsamixer";
