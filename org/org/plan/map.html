@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-06-14 Wed 12:40 -->
+<!-- 2017-07-02 Sun 19:27 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title></title>
@@ -238,30 +238,20 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org61f77c9"></a>
+<li><a href="#orga226322"></a>
 <ul>
-<li><a href="#org96411d8">General: </a></li>
-<li><a href="#org8fc6c40">M: </a></li>
-<li><a href="#orge6837dd">P: </a></li>
-<li><a href="#org3aba2cb">CS: </a></li>
+<li><a href="#org3a6d369">General: </a></li>
+<li><a href="#org7af159f">M: </a></li>
+<li><a href="#org26400a1">P: </a></li>
+<li><a href="#org6fbeb1f">CS: </a></li>
 </ul>
 </li>
-<li><a href="#orgb2c97e2">Administrativia</a>
-<ul>
-<li><a href="#orge8e8b30">unsorted notes</a></li>
-<li><a href="#orga4d34fa">list of new notes</a></li>
-<li><a href="#org705c139">mikveh</a></li>
-<li><a href="#orgd50ccd8">notes</a></li>
-<li><a href="#orgd10e593">ut.umu</a></li>
-</ul>
-</li>
-<li><a href="#orge183cab">Notes</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org61f77c9" class="outline-2">
-<h2 id="org61f77c9"></h2>
-<div class="outline-text-2" id="text-org61f77c9">
+<div id="outline-container-orga226322" class="outline-2">
+<h2 id="orga226322"></h2>
+<div class="outline-text-2" id="text-orga226322">
 <html>
 <head>
 <title>Haku</title>
@@ -301,22 +291,23 @@ display: block;
 </style>
 <script type="text/javascript" src="styles/lib/js/progressbar.min.js"></script>
 <script type="text/javascript">
+
 function isLeapYear(year) {
-var d = new Date(year, 1, 28);
-d.setDate(d.getDate() + 1);
-return d.getMonth() == 1;
+    var d = new Date(year, 1, 28);
+    d.setDate(d.getDate() + 1);
+    return d.getMonth() == 1;
 }
 function getAge(date) {
-var d = new Date(date);
-var now = new Date();
-var years = now.getFullYear() - d.getFullYear();
-d.setFullYear(d.getFullYear() + years);
-if (d > now) {
-   years--;
-   d.setFullYear(d.getFullYear() - 1);
-}
-var days = (now.getTime() - d.getTime()) / (3600 * 24 * 1000);
-return years + days / (isLeapYear(now.getFullYear()) ? 366 : 365);
+    var d = new Date(date);
+    var now = new Date();
+    var years = now.getFullYear() - d.getFullYear();
+    d.setFullYear(d.getFullYear() + years);
+    if (d > now) {
+        years--;
+        d.setFullYear(d.getFullYear() - 1);
+    }
+    var days = (now.getTime() - d.getTime()) / (3600 * 24 * 1000);
+    return years + days / (isLeapYear(now.getFullYear()) ? 366 : 365);
 }
 function update(t, id) {
    var dom = document.getElementById(id);
@@ -397,49 +388,17 @@ document.getElementById("main").onclick = function() {
 </body>
 </html>
 </div>
-<div id="outline-container-org96411d8" class="outline-3">
-<h3 id="org96411d8">General: <a href="https://ba.hse.ru/method2017">https://ba.hse.ru/method2017</a></h3>
+<div id="outline-container-org3a6d369" class="outline-3">
+<h3 id="org3a6d369">General: <a href="https://ba.hse.ru/method2017">https://ba.hse.ru/method2017</a></h3>
 </div>
-<div id="outline-container-org8fc6c40" class="outline-3">
-<h3 id="org8fc6c40">M: <a href="http://olymp.hse.ru/mmo/tasks-math">http://olymp.hse.ru/mmo/tasks-math</a></h3>
+<div id="outline-container-org7af159f" class="outline-3">
+<h3 id="org7af159f">M: <a href="http://olymp.hse.ru/mmo/tasks-math">http://olymp.hse.ru/mmo/tasks-math</a></h3>
 </div>
-<div id="outline-container-orge6837dd" class="outline-3">
-<h3 id="orge6837dd">P: <a href="http://olymp.hse.ru/mmo/tasks-physics">http://olymp.hse.ru/mmo/tasks-physics</a></h3>
+<div id="outline-container-org26400a1" class="outline-3">
+<h3 id="org26400a1">P: <a href="http://olymp.hse.ru/mmo/tasks-physics">http://olymp.hse.ru/mmo/tasks-physics</a></h3>
 </div>
-<div id="outline-container-org3aba2cb" class="outline-3">
-<h3 id="org3aba2cb">CS: <a href="http://olymp.hse.ru/mmo/tasks-it">http://olymp.hse.ru/mmo/tasks-it</a></h3>
-</div>
-</div>
-
-
-<div id="outline-container-orgb2c97e2" class="outline-2">
-<h2 id="orgb2c97e2">Administrativia</h2>
-<div class="outline-text-2" id="text-orgb2c97e2">
-</div><div id="outline-container-orge8e8b30" class="outline-3">
-<h3 id="orge8e8b30"><a href="file:///home/aleph/TMP/NOTES">unsorted notes</a></h3>
-</div>
-<div id="outline-container-orga4d34fa" class="outline-3">
-<h3 id="orga4d34fa"><a href="file:///home/aleph/WERKE/sdll.github.io/stories/notes.tmp">list of new notes</a></h3>
-</div>
-<div id="outline-container-org705c139" class="outline-3">
-<h3 id="org705c139"><a href="file:///home/aleph/WERKE/sdll.github.io/stories/mikveh.html">mikveh</a></h3>
-</div>
-<div id="outline-container-orgd50ccd8" class="outline-3">
-<h3 id="orgd50ccd8"><a href="file:///home/aleph/WERKE/sdll.github.io/stories/notes.html">notes</a></h3>
-</div>
-<div id="outline-container-orgd10e593" class="outline-3">
-<h3 id="orgd10e593"><a href="file:///home/aleph/WERKE/umus.github.io/stories/utumu.html">ut.umu</a></h3>
-</div>
-</div>
-
-<div id="outline-container-orge183cab" class="outline-2">
-<h2 id="orge183cab">Notes</h2>
-<div class="outline-text-2" id="text-orge183cab">
-<ul class="org-ul">
-<li>Algebra</li>
-<li>Topology</li>
-<li><a href="file:///home/aleph/yWERKE/NOTES/RA/master.tex">Real Analysis</a></li>
-</ul>
+<div id="outline-container-org6fbeb1f" class="outline-3">
+<h3 id="org6fbeb1f">CS: <a href="http://olymp.hse.ru/mmo/tasks-it">http://olymp.hse.ru/mmo/tasks-it</a></h3>
 </div>
 </div>
 </div>

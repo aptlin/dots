@@ -47,22 +47,23 @@ display: block;
 </style>
 <script type="text/javascript" src="styles/lib/js/progressbar.min.js"></script>
 <script type="text/javascript">
+
 function isLeapYear(year) {
-var d = new Date(year, 1, 28);
-d.setDate(d.getDate() + 1);
-return d.getMonth() == 1;
+    var d = new Date(year, 1, 28);
+    d.setDate(d.getDate() + 1);
+    return d.getMonth() == 1;
 }
 function getAge(date) {
-var d = new Date(date);
-var now = new Date();
-var years = now.getFullYear() - d.getFullYear();
-d.setFullYear(d.getFullYear() + years);
-if (d > now) {
-   years--;
-   d.setFullYear(d.getFullYear() - 1);
-}
-var days = (now.getTime() - d.getTime()) / (3600 * 24 * 1000);
-return years + days / (isLeapYear(now.getFullYear()) ? 366 : 365);
+    var d = new Date(date);
+    var now = new Date();
+    var years = now.getFullYear() - d.getFullYear();
+    d.setFullYear(d.getFullYear() + years);
+    if (d > now) {
+        years--;
+        d.setFullYear(d.getFullYear() - 1);
+    }
+    var days = (now.getTime() - d.getTime()) / (3600 * 24 * 1000);
+    return years + days / (isLeapYear(now.getFullYear()) ? 366 : 365);
 }
 function update(t, id) {
    var dom = document.getElementById(id);
@@ -147,18 +148,3 @@ document.getElementById("main").onclick = function() {
 ** M: http://olymp.hse.ru/mmo/tasks-math
 ** P: http://olymp.hse.ru/mmo/tasks-physics
 ** CS: http://olymp.hse.ru/mmo/tasks-it
-
-
-* Administrativia
-
-** [[file:~/TMP/NOTES][unsorted notes]]
-** [[file:~/WERKE/sdll.github.io/stories/notes.tmp][list of new notes]]
-** [[file:~/WERKE/sdll.github.io/stories/mikveh.org][mikveh]]
-** [[file:~/WERKE/sdll.github.io/stories/notes.org][notes]]
-** [[file:~/WERKE/umus.github.io/stories/utumu.org][ut.umu]]
-
-* Notes
-
-  - Algebra
-  - Topology
-  - [[file:~/yWERKE/NOTES/RA/master.tex][Real Analysis]]

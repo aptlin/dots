@@ -1,6 +1,6 @@
 alias ..='cd ..'
-alias bace='rsync -aaxv --exclude={/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /etc /run/media/aleph/A/REC/etc$(date +%m%y)'
-alias bach='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /home /run/media/aleph/A/REC/home$(date +%m%y)'
+alias bace='rsync -aaxv --exclude={/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /etc /media/A/REC/etc$(date +%m%y)'
+alias bach='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /home /media/A/REC/home$(date +%m%y)'
 alias bacu="bach; bace"
 alias gmor="nix-shell -p python35Packages.pyperclip --run 'pushd ~/TMP/PROG/M/; ~/TMP/PROG/M/goodmorning.py; popd'";
 alias cw="sudo systemctl restart wpa_supplicant.service;sudo systemctl restart connman.service";
@@ -48,8 +48,10 @@ alias fixtime="sudo ntpdate pool.ntp.org; sudo hwclock --systohc";
 alias sude="sudo -e";
 alias term="urxvtc -hold -e "; #used for run menu;
 alias unm="devmon -u";
-alias up="cd ../";
-alias upd="sudo nixos-rebuild switch --upgrade";
+alias up="sudo wg-quick up wg0-client";
+alias down="sudo wg-quick down wg0-client";
+#alias upd="sudo nixos-rebuild switch --upgrade";
+alias upd="sudo apt-get upgrade; sudo apt-get upgrade";
 alias updk="sudo mkinitcpio -p linux-libre";
 alias xclip="xclip -selection c";
 alias xsel="xsel -b";
