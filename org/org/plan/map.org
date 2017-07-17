@@ -1,4 +1,4 @@
-#+STARTUP: showall
+ji#+STARTUP: showall
 #+OPTIONS: html-postamble:nil
 #+OPTIONS: num:nil
 #+SETUPFILE: ./setup/theme-readtheorg-local.setup
@@ -148,3 +148,5 @@ document.getElementById("main").onclick = function() {
 ** M: http://olymp.hse.ru/mmo/tasks-math
 ** P: http://olymp.hse.ru/mmo/tasks-physics
 ** CS: http://olymp.hse.ru/mmo/tasks-it
+* Map
+** [[file:boosting.org][Boosting]]
