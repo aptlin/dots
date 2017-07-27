@@ -1,6 +1,3 @@
-[submodule "latex/texmf/stex"]
-	path = latex/texmf/stex
-	url = https://github.com/sdll/stex
 [submodule "utils/brightnessctl"]
 	path = utils/brightnessctl
 	url = https://github.com/Hummer12007/brightnessctl
@@ -13,6 +10,3 @@
 [submodule "sh/bin/eless"]
 	path = sh/bin/eless
 	url = https://github.com/kaushalmodi/eless/
-[submodule "stex"]
-	path = latex/texmf/tex/latex/stex
-	url = ./latex/texmf/tex/latex/stex/
