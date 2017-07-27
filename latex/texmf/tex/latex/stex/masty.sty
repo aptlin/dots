@@ -1,0 +1,406 @@
+\ProvidesPackage{masty}
+\usepackage{matex}
+%% fakesection Attributions
+% This style file was adapted from the work of Evan Chen.
+% Thank you, Evan.
+
+%% fakesection Argument processing
+
+% Variables
+
+\def\mastyname{Alexander Illarionov}
+
+% Default Arguments
+% "masty" is included in all of these to make sure
+% that they don't collide with anything in external packages
+
+\newif\ifmastyfancy\mastyfancytrue
+\newif\ifmastyhdr\mastyhdrtrue
+\newif\ifmastysetup\mastysetuptrue
+\newif\ifmastythm\mastythmtrue
+\newif\ifmastysecthm\mastysecthmfalse
+\newif\ifmastyht\mastyhtfalse
+\newif\ifmastypkg\mastypkgtrue
+\newif\ifmastypdf\mastypdftrue
+\newif\ifmastytitling\mastytitlingtrue
+\newif\ifmastyauthor\mastyauthortrue
+\newif\ifmastypsetauthor\mastypsetauthorfalse
+\newif\ifmastypset\mastypsetfalse
+\newif\ifmastyanonpset\mastyanonpsetfalse
+\newif\ifmastymdthm\mastymdthmfalse
+\newif\ifmastydiagrams\mastydiagramsfalse
+\newif\ifmastyhints\mastyhintsfalse
+\newif\ifmastycolorsec\mastycolorsecfalse
+
+%Receive Arguments
+\DeclareOption{beaue}{\mastysecthmtrue\mastymdthmtrue\mastycolorsectrue} % long docs
+\DeclareOption{anon}{\mastyanonpsettrue}
+\DeclareOption{fancy}{\mastyfancytrue}
+\DeclareOption{nofancy}{\mastyfancyfalse}
+\DeclareOption{hdr}{\mastyhdrtrue}
+\DeclareOption{nohdr}{\mastyhdrfalse}
+
+\DeclareOption{nosetup}{\mastysetupfalse}
+\DeclareOption{thm}{\mastythmtrue}
+\DeclareOption{nothm}{\mastythmfalse}
+\DeclareOption{secthm}{\mastysecthmtrue}
+\DeclareOption{nosecthm}{\mastysecthmfalse}
+
+\DeclareOption{ht}{\mastyhttrue}
+\DeclareOption{nopdf}{\mastypdffalse}
+\DeclareOption{nopkg}{\mastypkgfalse}
+\DeclareOption{oldtitle}{\mastytitlingfalse}
+\DeclareOption{newtitle}{\mastytitlingtrue}
+\DeclareOption{customauthor}{\mastyauthorfalse}
+\DeclareOption{pset}{\mastypsettrue}
+\DeclareOption{mdthm}{\mastymdthmtrue}
+\DeclareOption{nomdthm}{\mastymdthmfalse}
+\DeclareOption{diagrams}{\mastydiagramstrue}
+\DeclareOption{nodiagrams}{\mastydiagramsfalse}
+\DeclareOption{colorsec}{\mastycolorsectrue}
+\DeclareOption{nocolorsec}{\mastycolorsecfalse}
+
+\DeclareOption{hints}{\mastyhintstrue}
+
+\ProcessOptions\relax
+
+% if packages not loaded, turn off mdthm
+\ifmastypkg\else\mastymdthmfalse\fi
+
+% If no setup, turn off theorems
+\ifmastysetup\else\mastythmfalse\fi
+
+%%fakesection Some macros
+
+% Title of a pset
+\def\pSet#1{\def\@pSet{#1}}
+\newcommand{\thepSet}{\@pSet}
+
+    \ifmastythm
+    \usepackage{amsthm}
+    \fi
+    
+    %%fakesection BEGIN MAIN SETUP
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \ifmastysetup
+    %%fakesection Set up author and date
+    \ifmastyauthor
+    \AtBeginDocument{%
+        \author{\mastyname}
+        \date{\today}        
+    }
+    \fi
+    %% fakesection New Theorem Styles -- mdbluebox, mdrecbox
+    \ifmastymdthm
+    \usepackage{thmtools}
+    \usepackage[framemethod=TikZ]{mdframed}
+    
+    \mdfdefinestyle{mdbluebox}{%
+        roundcorner = 2pt,
+        linewidth=0.5pt,
+        skipabove=12pt,
+        innerbottommargin=9pt,
+        skipbelow=2pt,
+        linecolor=black,
+        nobreak=true,
+        backgroundcolor=GhostWhite,
+    }
+    \declaretheoremstyle[
+        headfont=\sffamily\bfseries\color{ForestGreen},
+        mdframed={style=mdbluebox},
+        headpunct={\\[3pt]},
+        postheadspace={0pt}
+    ]{thmbluebox}
+    
+    \mdfdefinestyle{mdrecbox}{%
+        linewidth=0.5pt,
+        skipabove=12pt,
+        frametitleaboveskip=5pt,
+        frametitlebelowskip=0pt,
+        skipbelow=2pt,
+        frametitlefont=\bfseries,
+        innertopmargin=4pt,
+        innerbottommargin=8pt,
+        nobreak=true,
+        backgroundcolor=Salmon!5,
+    }
+    \declaretheoremstyle[
+        headfont=\bfseries\color{RawSienna},
+        mdframed={style=mdrecbox},
+        headpunct={\\[3pt]},
+        postheadspace={0pt},
+    ]{thmrecbox}
+    
+    \newcommand{\listhack}{$\empty$\vspace{-2em}}
+    \fi
+    
+    %%fakesection Theorem setup
+    \ifmastythm
+    \theoremstyle{plain}
+    %Branching here: the option secthm changes theorems to be labelled by section
+    \ifmastymdthm
+    \ifmastysecthm
+    \declaretheorem[%
+    style=thmbluebox,name=Theorem,numberwithin=section]{theorem}
+    \else
+    \declaretheorem[%
+    style=thmbluebox,name=Theorem]{theorem}
+    \fi
+    \declaretheorem[style=thmbluebox,name=Lemma,sibling=theorem]{lemma}
+    \declaretheorem[style=thmbluebox,name=Proposition,sibling=theorem]{proposition}
+    \declaretheorem[style=thmbluebox,name=Corollary,sibling=theorem]{corollary}
+    \declaretheorem[style=thmbluebox,name=Theorem,numbered=no]{theorem*}
+    \declaretheorem[style=thmbluebox,name=Lemma,numbered=no]{lemma*}
+    \declaretheorem[style=thmbluebox,name=Proposition,numbered=no]{proposition*}
+    \declaretheorem[style=thmbluebox,name=Corollary,numbered=no]{corollary*}
+    \else
+    \ifmastysecthm
+    \newtheorem{theorem}{Theorem}[section]
+    \else
+    \newtheorem{theorem}{Theorem}
+    \fi
+    \newtheorem{lemma}[theorem]{Lemma}
+    \newtheorem{proposition}[theorem]{Proposition}
+    \newtheorem{corollary}[theorem]{Corollary}
+    \newtheorem*{theorem*}{Theorem}
+    \newtheorem*{lemma*}{Lemma}
+    \newtheorem*{proposition*}{Proposition}
+    \newtheorem*{corollary*}{Corollary}
+    \fi
+    
+    %Def-style theorems
+    \theoremstyle{definition}
+    
+    % This ought to be a real theorem, but would be too much italics
+    \ifmastymdthm
+    \declaretheorem[style=thmbluebox,name=Algorithm,sibling=theorem]{algorithm}
+    \else
+    \newtheorem{algorithm}[theorem]{Algorithm}
+    \newtheorem*{algorithm*}{Algorithm}
+    \fi
+    
+    \newtheorem{claim}[theorem]{Claim}
+    \newtheorem{conjecture}[theorem]{Conjecture}
+    \newtheorem{definition}[theorem]{Definition}
+    \newtheorem{fact}[theorem]{Fact}
+    
+    \newtheorem{answer}[theorem]{Answer}
+    \newtheorem{case}[theorem]{Case}
+    \newtheorem{ques}[theorem]{Question}
+    \newtheorem{exercise}[theorem]{Exercise}
+    \newtheorem{problem}[theorem]{Problem}
+    
+    \newtheorem*{answer*}{Answer}
+    \newtheorem*{case*}{Case}
+    \newtheorem*{claim*}{Claim}
+    \newtheorem*{conjecture*}{Conjecture}
+    \newtheorem*{definition*}{Definition}
+    \newtheorem*{fact*}{Fact}
+    \newtheorem*{joke*}{Joke}
+    \newtheorem*{ques*}{Question}
+    \newtheorem*{exercise*}{Exercise}
+    \newtheorem*{problem*}{Problem}
+    
+    
+    \ifmastymdthm
+    \declaretheorem[style=thmrecbox,name=Example,sibling=theorem]{example}
+    \declaretheorem[style=thmrecbox,name=Example,numbered=no]{example*}
+    \else
+    \newtheorem{example}[theorem]{Example}
+    \newtheorem*{example*}{Example}
+    \fi
+    
+    % Remark-style theorems
+    %\theoremstyle{remark}
+    \newtheorem{note}[theorem]{Note}
+    \newtheorem{remark}[theorem]{Remark}
+    \newtheorem*{note*}{Note}
+    \newtheorem*{remark*}{Remark}
+    \newtheorem{abuse}[theorem]{Abuse of Notation}
+    \newtheorem*{abuse*}{Abuse of Notation}
+    \fi
+    
+    %%fakesection Fancy section and chapter heads
+    \ifmastycolorsec
+    \@ifundefined{KOMAClassName}{}{
+        \@ifundefined{chapter}{}{
+            \addtokomafont{partprefix}{\rmfamily}
+            \renewcommand*{\partformat}{\color{purple}
+                \scalebox{2.5}{\thepart}\enlargethispage{2em}}
+            \addtokomafont{chapterprefix}{\raggedleft}
+            \RedeclareSectionCommand[beforeskip=0.5em]{chapter}
+            \renewcommand*{\chapterformat}{\mbox{%
+                \scalebox{1.5}{\chapappifchapterprefix{\nobreakspace}}%
+                \scalebox{2.718}{\color{purple}\thechapter}\enskip}}
+        }
+        % \renewcommand*{\sectionformat}%
+        %       {\color{purple}\S\thesection\enskip}
+        % \renewcommand*{\subsectionformat}%
+        %       {\color{purple}\S\thesubsection\enskip}
+        \KOMAoptions{numbers=noenddot}
+%        \usepackage[tocindentauto]{tocstyle}
+%        \usetocstyle{KOMAlike}
+    }
+    \fi
+    
+    
+    %%fakesection Loads a bunch of useful packages (but allow disabling)
+    \ifmastypkg
+    \IfFileExists{von.sty}{\usepackage{von}}{}
+    \usepackage{listings}
+    \usepackage{mathrsfs}
+    \usepackage{textcomp}
+    \lstset{basicstyle=\footnotesize\ttfamily,
+        numbers=left,
+        numbersep=5pt,
+        numberstyle=\tiny,
+        keywordstyle=\bfseries,
+        % title=\lstname,
+        showstringspaces=false,
+        tabsize=4,
+        frame=single,
+        keywordstyle=\bfseries\color{blue},
+        commentstyle=\color{green!70!black},
+        identifierstyle=\color{green!20!black},
+        stringstyle=\color{orange},
+        breaklines=true,
+        breakatwhitespace=true,
+        frame=none
+    }
+    \usepackage[shortlabels]{enumitem}
+    \usepackage[obeyFinal,textsize=scriptsize,shadow]{todonotes}
+    % Tiny tiny optimizations:
+
+    \usepackage{microtype}
+    \fi
+    
+    %%fakesection \maketitle configuration
+    \ifmastytitling
+    %If we have titling...
+    \usepackage{titling}
+    \@ifundefined{KOMAClassName}{}{
+        \newcommand{\thesubtitle}{}
+        \renewcommand{\subtitle}[1]{%
+            \renewcommand{\thesubtitle}{#1}
+            \posttitle{\\ {\normalsize \thesubtitle} \end{center}\vspace{\posttitledrop}}
+        }
+    }
+    \newlength{\posttitledrop}
+    \setlength{\posttitledrop}{-0.7em}
+    \newlength{\postauthordrop}
+    \setlength{\postauthordrop}{-1.2em}
+    \pretitle{\begin{center}\bfseries \sffamily \Large}
+    \posttitle{\end{center}\vspace{\posttitledrop}}
+    \preauthor{\begin{center} \scshape}
+    \postauthor{\end{center}\vspace{\postauthordrop}}
+    \predate{\begin{center}\small}
+    \postdate{\end{center}}
+    \fi
+    
+    %%fakesection Commutative diagrams support
+    \ifmastydiagrams
+    \usepackage{diagrams}
+    \newarrow{Inj}C--->
+    \newarrow{Surj}----{>>}
+    \newarrow{Proj}----{>>}
+    \newarrow{Embed}>--->
+    \newarrow{Incl}C--->
+    \newarrow{Mapsto}|--->
+    \newarrow{Isom}<--->
+    \newarrow{Dotted}....>
+    \newarrow{Dashed}{}{dash}{}{dash}>
+    \newarrow{Line}-----
+    \usepackage{tikz-cd}
+    \usetikzlibrary{decorations.pathmorphing}
+    \tikzcdset{row sep/normal=3.14em,column sep/normal=3.14em}
+    \fi
+    
+    %%fakesection Page Setup
+    \ifmastyfancy
+
+%    \setlength{\parskip}{1ex}
+    \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+    \setlength{\parindent}{0pt}
+    
+    \@ifundefined{KOMAClassName}
+    {
+        \usepackage{fancyhdr}
+        \setlength{\headheight}{0.75in}
+        \setlength{\oddsidemargin}{0in}
+        \setlength{\evensidemargin}{0in}
+        \setlength{\voffset}{-1.0in}
+        \setlength{\headsep}{10pt}
+        \setlength{\textwidth}{6.5in}
+        \setlength{\headwidth}{6.5in}
+        \setlength{\textheight}{8.75in}
+
+        \setlength{\footskip}{0.3in}
+        
+        \ifmastytitling
+        \addtolength{\posttitledrop}{0.4em}
+        \addtolength{\postauthordrop}{0.2em}
+        \fi
+        \ifmastyhdr
+        \renewcommand{\headrulewidth}{0.5pt}
+        \renewcommand{\footrulewidth}{0.0pt}
+        \pagestyle{fancy}
+        \chead{}
+        \rhead{\nouppercase{\leftmark}}
+        \lfoot{}
+        \cfoot{\thepage}
+        \rfoot{}
+        \fi
+    }
+    {
+        \usepackage[headsepline]{scrlayer-scrpage}
+        \renewcommand{\headfont}{}
+        \addtolength{\textheight}{3.14cm}
+        \setlength{\footskip}{0.5in}
+        \setlength{\headsep}{10pt}
+
+        \ifmastypset
+
+          \ifmastyanonpset
+            \ifmastyauthor
+              \ihead{\footnotesize\textbf{\thepSet} \textbar\ \thedate}
+            \else
+              \ihead{\footnotesize\textbf{\thepSet} \textbar\ \@date}
+            \fi
+          \else
+            \ifmastyauthor
+               \ihead{\footnotesize\textbf{\thepSet} \textbar\ \thedate\ \textbar\ \theauthor}
+            \else
+               \ihead{\footnotesize\textbf{\thepSet} \textbar\ \@date\ \textbar\ \@author}           
+            \fi
+          \fi
+        \fi
+
+        \ifmastypset
+        \else
+          \ifmastytitling
+            \ifmastyauthor
+              \ihead{\footnotesize\textbf{\theauthor} \textbar\ \thedate}
+            \else
+              \ihead{\footnotesize\textbf{\@author} \textbar\ \@date}
+            \fi
+        \fi
+          
+        \automark{section}
+        \chead{}
+        \ohead{\footnotesize\headmark}
+        \cfoot{\pagemark}
+    }
+    \fi
+    
+    %%fakesection Hints
+    \ifmastyhints
+    \usepackage{answers}
+    \Newassociation{hint}{hintitem}{hints}
+    \renewcommand{\solutionextension}{out}
+    \Opensolutionfile{hints}
+    \newcommand{\makehints}{\Closesolutionfile{hints}\input{hints.out}}
+    \fi
+    %%fakesection END MAIN SETUP
+    \fi

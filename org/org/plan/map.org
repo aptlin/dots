@@ -1,4 +1,4 @@
-ji#+STARTUP: showall
+#+STARTUP: showall
 #+OPTIONS: html-postamble:nil
 #+OPTIONS: num:nil
 #+SETUPFILE: ./setup/theme-readtheorg-local.setup
@@ -126,7 +126,7 @@ var ms_per_year = 365.242 * 24 * 3600 * 1000;
 window.setInterval(function() {
    current_age += inc_time;
    update(current_age, "main");
-   circle.set(current_age / 45);
+   circle.set(1 - (23 - current_age) / 4);
 }, inc_time * ms_per_year);
 
 
@@ -150,3 +150,4 @@ document.getElementById("main").onclick = function() {
 ** CS: http://olymp.hse.ru/mmo/tasks-it
 * Map
 ** [[file:boosting.org][Boosting]]
+S

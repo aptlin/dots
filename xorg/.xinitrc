@@ -4,7 +4,7 @@ unclutter -idle 2 &
 stalonetray &
 xautolock -time 10 -locker slock &
 emacs --daemon &
-witk-gtk &
 syncthing &
+wicd-gtk &
 exec xmonad
 

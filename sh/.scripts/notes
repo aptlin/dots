@@ -23,14 +23,15 @@ function assort() {
     new_f=$(echo ${filename%.*} | sed -r 's/[_]+/: /g' | \
 		sed -r 's/[\+]+/ /g' | \
 		sed -r "s/\b$1//g" | \
-		sed -r 's/([0-9])([a-zA-Z])/\1 \2/g')
+		sed -r 's/([0-9]-[0-9]-[0-9])-([a-zA-Z])/\1 \2/g') | \
+        sed -r 's/[-]+/ /g'
     if [[ $f == *.pdf ]]
     then
-	if [ -f $NTS_TMP_LOG ]; then
-	    echo "  - [[https://github.com/sdll/NOTES/blob/master/$1/$f][$new_f]]" >> $NTS_TMP_LOG
-	else
-	    echo "  - [[https://github.com/sdll/NOTES/blob/master/$1/$f][$new_f]]" > $NTS_TMP_LOG
-	fi
+	    if [ -f $NTS_TMP_LOG ]; then
+	        echo "  - [[https://github.com/sdll/NOTES/blob/master/$1/$f][$new_f]] [[https://github.com/sdll/NOTES/blob/master/$1/$filename.tex][(src)]]" >> $NTS_TMP_LOG
+	    else
+	        echo "  - [[https://github.com/sdll/NOTES/blob/master/$1/$f][$new_f]] [[https://github.com/sdll/NOTES/blob/master/$1/$filename.tex][(src)]]" > $NTS_TMP_LOG
+	    fi
     fi
     echo "Done!"
 }
@@ -40,7 +41,7 @@ function assort() {
 # -------------------------------------------------------
 cd $TMP_NTS
 git add --all
-git commit -a -m "$(date +%y%m%d)"
+git commit -a -m "$(date +%y%m%d): new notes"
 find . -type f ! \( -path "*/.git/*" -o -name '*.tex' -o -name '*.pdf' -o -name '*.org' -o -name '*.txt' \) -delete
 
 # -------------------------------------------------------

@@ -13,3 +13,6 @@
 [submodule "sh/bin/eless"]
 	path = sh/bin/eless
 	url = https://github.com/kaushalmodi/eless/
+[submodule "stex"]
+	path = latex/texmf/tex/latex/stex
+	url = ./latex/texmf/tex/latex/stex/
