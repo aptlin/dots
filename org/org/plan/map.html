@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-07-02 Sun 19:27 -->
+<!-- 2017-08-02 Wed 11:30 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title></title>
@@ -238,20 +238,26 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orga226322"></a>
+<li><a href="#org454a6ef"></a></li>
+<li><a href="#org9793ab9">Map</a>
 <ul>
-<li><a href="#org3a6d369">General: </a></li>
-<li><a href="#org7af159f">M: </a></li>
-<li><a href="#org26400a1">P: </a></li>
-<li><a href="#org6fbeb1f">CS: </a></li>
+<li><a href="#orge907862">Agenda</a>
+<ul>
+<li><a href="#org607f7af">Networks</a></li>
+<li><a href="#org669767e">Optimisation</a></li>
+<li><a href="#orgb33a355">ML</a></li>
+<li><a href="#orgfe55322">Graph Optimization</a></li>
+<li><a href="#orgd96079a">Bioinf</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orga226322" class="outline-2">
-<h2 id="orga226322"></h2>
-<div class="outline-text-2" id="text-orga226322">
+<div id="outline-container-org454a6ef" class="outline-2">
+<h2 id="org454a6ef"></h2>
+<div class="outline-text-2" id="text-org454a6ef">
 <html>
 <head>
 <title>Haku</title>
@@ -370,7 +376,7 @@ var ms_per_year = 365.242 * 24 * 3600 * 1000;
 window.setInterval(function() {
    current_age += inc_time;
    update(current_age, "main");
-   circle.set(current_age / 45);
+   circle.set(1 - (23 - current_age) / 4);
 }, inc_time * ms_per_year);
 
 
@@ -388,17 +394,61 @@ document.getElementById("main").onclick = function() {
 </body>
 </html>
 </div>
-<div id="outline-container-org3a6d369" class="outline-3">
-<h3 id="org3a6d369">General: <a href="https://ba.hse.ru/method2017">https://ba.hse.ru/method2017</a></h3>
 </div>
-<div id="outline-container-org7af159f" class="outline-3">
-<h3 id="org7af159f">M: <a href="http://olymp.hse.ru/mmo/tasks-math">http://olymp.hse.ru/mmo/tasks-math</a></h3>
+<div id="outline-container-org9793ab9" class="outline-2">
+<h2 id="org9793ab9">Map</h2>
+<div class="outline-text-2" id="text-org9793ab9">
+</div><div id="outline-container-orge907862" class="outline-3">
+<h3 id="orge907862">Agenda</h3>
+<div class="outline-text-3" id="text-orge907862">
+</div><div id="outline-container-org607f7af" class="outline-4">
+<h4 id="org607f7af">Networks</h4>
+<div class="outline-text-4" id="text-org607f7af">
+</div><ul class="org-ul"><li><a id="orgcbd2ff5"></a>Books<br /><ul class="org-ul"><li><a id="orgcd532bc"></a><a href="file:///home/sdll/werke/agenda/gt/%5BMark_Newman%5D_Networks_An_Introduction(b-ok.org).pdf">Newman</a><br /></li>
+<li><a id="org0f5a4f6"></a><a href="file:///home/sdll/werke/agenda/gt/(Graduate%20Texts%20in%20Mathematics)%20Bela%20Bollobas-Modern%20Graph%20Theory-Springer%20(2002).pdf">Bollobas</a><br /></li></ul></li></ul>
 </div>
-<div id="outline-container-org26400a1" class="outline-3">
-<h3 id="org26400a1">P: <a href="http://olymp.hse.ru/mmo/tasks-physics">http://olymp.hse.ru/mmo/tasks-physics</a></h3>
+<div id="outline-container-org669767e" class="outline-4">
+<h4 id="org669767e">Optimisation</h4>
+<div class="outline-text-4" id="text-org669767e">
+</div><ul class="org-ul"><li><a id="orge337401"></a>Books<br /><ul class="org-ul"><li><a id="orge57e194"></a><a href="file:///home/sdll/werke/agenda/co/1405.4980.pdf">Bubeck</a><br /></li></ul></li>
+<li><a id="orgd740225"></a>Cheeger constant<br /><ul class="org-ul"><li><a id="org449102a"></a><a href="file:///home/sdll/werke/agenda/papers/Donetti_2006_J._Stat._Mech._2006_P08007.pdf">Optimal Network Topologies</a><br /></li></ul></li>
+<li><a id="org09b9e64"></a>Concentration of measure<br /><ul class="org-ul"><li><a id="org898ec7e"></a>Isoperimetric inequality<br /></li>
+<li><a id="org0348bdd"></a>Lipschitz constant<br /></li></ul></li></ul>
 </div>
-<div id="outline-container-org6fbeb1f" class="outline-3">
-<h3 id="org6fbeb1f">CS: <a href="http://olymp.hse.ru/mmo/tasks-it">http://olymp.hse.ru/mmo/tasks-it</a></h3>
+<div id="outline-container-orgb33a355" class="outline-4">
+<h4 id="orgb33a355">ML</h4>
+<div class="outline-text-4" id="text-orgb33a355">
+</div><ul class="org-ul"><li><a id="org7efcdd1"></a>Links<br /><ul class="org-ul"><li><a id="orgaeda09c"></a><a href="http://setosa.io/ev/principal-component-analysis/">PCA Explained Visually</a><br /></li></ul></li>
+<li><a id="org7ccc345"></a>Autoencoders and a method of independent components<br /></li>
+<li><a id="org22cd5c6"></a>Books:<br /><ul class="org-ul"><li><a id="org66541d1"></a><a href="file:///home/sdll/werke/agenda/ml/Ian%20Goodfellow,%20Yoshua%20Bengio,%20Aaron%20Courville-Deep%20Learning-The%20MIT%20Press%20(2016).pdf">Goodfellow et al</a><br /></li></ul></li>
+<li><a id="org41103bf"></a>Courses:<br /><ul class="org-ul"><li><a id="org95b2d8a"></a><a href="http://cs231n.github.io/">Convolutional Neural Networks for Image Recognition</a><br /></li>
+<li><a id="orgdac0735"></a><a href="http://vision.stanford.edu/teaching/cs231n/index.html">CS231n: Convolutional Neural Networks for Visual Recognition</a><br /></li>
+<li><a id="org9bd240b"></a><a href="http://cs224d.stanford.edu/index.html">CS224d: Deep Learning for Natural Language Processing, Richard Socher, Stanford</a><br /></li>
+<li><a id="orga782430"></a><a href="https://www.coursera.org/course/neuralnets">Neural Networks for Machine Learning, Geoffrey Hinton</a><br /></li>
+<li><a id="orga7d3557"></a><a href="http://eclass.cc/courselists/111_computer_vision_and_navigation">CV Courses</a><br /></li>
+<li><a id="org94c867d"></a><a href="http://eclass.cc/courselists/117_deep_learning">DL Courses</a><br /></li>
+<li><a id="org0618242"></a>“Deep Learning”, Ian Goodfellow, Yoshua Bengio and Aaron Courville (<a href="http://www.deeplearningbook.org/">http://www.deeplearningbook.org/</a>)<br /></li></ul></li>
+<li><a id="org2ed3470"></a>Articles<br /><ul class="org-ul"><li><a id="org440c885"></a>General<br /><ul class="org-ul"><li><a id="org6463cc3"></a><a href="http://www.asimovinstitute.org/neural-network-zoo/">NN Zoo</a><br /></li></ul></li>
+<li><a id="orge3b18d6"></a>Autoencoders<br /><ul class="org-ul"><li><a id="org00bc874"></a><a href="https://blog.keras.io/building-autoencoders-in-keras.html">in Keras</a><br /></li></ul></li>
+<li><a id="orgb3f6d32"></a>FNN<br /><ul class="org-ul"><li><a id="org4dc4291"></a><a href="https://research.fb.com/learning-to-segment/">FB Post on Segmentation</a><br /></li></ul></li>
+<li><a id="org0e8ee86"></a>t-SNE<br /><ul class="org-ul"><li><a id="orgf03ff5a"></a><a href="https://www.oreilly.com/learning/an-illustrated-introduction-to-the-t-sne-algorithm">An Illustrated Intro To The t-Sne</a><br /></li>
+<li><a id="org8b2e002"></a><a href="https://distill.pub/2016/misread-tsne/">How to Use t-SNE Effectively</a><br /></li></ul></li>
+<li><a id="org8508d55"></a>RNN<br /><ul class="org-ul"><li><a id="org3b85474"></a><a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">Unreasonable Effectiveness of RNN</a><br /></li>
+<li><a id="org8018297"></a>LSTM<br /><ul class="org-ul"><li><a id="org17d0cfd"></a><a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding LSTM Networks</a><br /></li></ul></li></ul></li></ul></li>
+<li><a id="orgbdf0090"></a>Papers<br /><ul class="org-ul"><li><a id="org713f613"></a>Petro Domingos: <a href="file:///home/sdll/werke/agenda/papers/cacm12.pdf">A Few Useful Things to Know about Machine Learning</a><br /></li></ul></li></ul>
+</div>
+<div id="outline-container-orgfe55322" class="outline-4">
+<h4 id="orgfe55322">Graph Optimization</h4>
+<div class="outline-text-4" id="text-orgfe55322">
+</div><ul class="org-ul"><li><a id="orgddcf363"></a>Invariant properties of Laplacian and non-Laplacian matrices<br /></li></ul>
+</div>
+<div id="outline-container-orgd96079a" class="outline-4">
+<h4 id="orgd96079a">Bioinf</h4>
+<div class="outline-text-4" id="text-orgd96079a">
+</div><ul class="org-ul"><li><a id="org6989b67"></a>Hamiltonian cycles and sequencing<br /></li>
+<li><a id="org59aa171"></a>Anton Korobeynikov, IonHammer<br /></li>
+<li><a id="org1371b72"></a>de Brujin graph<br /></li></ul>
+</div>
 </div>
 </div>
 </div>

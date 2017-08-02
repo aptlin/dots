@@ -224,6 +224,8 @@ myAlternativeBrowser      = "chromium"
 myAlternativeBrowserClass = "Chromium-browser"
 myMessenger               = "/home/sdll/bin/telegram"
 myMessengerClass          = "TelegramDesktop"
+mySlack                   = "slack"
+mySlackClass              = "Slack"
 myReader                  = myTerminal ++ " -x 'ranger /home/sdll/werke/agenda'"
 myStatusBar               = "xmobar -x0 /home/sdll/.xmonad/xmobar.hs"
 --myLauncher              = "dmenu_run"
@@ -999,6 +1001,7 @@ myKeys conf = let
              , ("M-o"        , addName "Reader"        $ spawn myReader)
              , ("M-z"        , addName "Messenger"     $ runOrRaise myMessenger (className =? "TelegramDesktop"))
              , ("M-s"        , addName "Screenlock"    $ spawn "slock")
+             , ("M-S-z"      , addName "Slack"         $ runOrRaise mySlack (className =? mySlackClass))
     ] ^++^
 
     -----------------------------------------------------------------------
