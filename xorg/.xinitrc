@@ -5,6 +5,6 @@ stalonetray &
 xautolock -time 10 -locker slock &
 emacs --daemon &
 syncthing &
-wicd-gtk &
+cmst &
 exec xmonad
 
