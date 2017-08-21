@@ -13,3 +13,6 @@
 [submodule "latex/texmf/tex/latex/stex"]
 	path = latex/texmf/tex/latex/stex
 	url = https://github.com/sdll/stex
+[submodule "utils/bin/styleguide"]
+	path = utils/bin/styleguide
+	url = https://github.com/google/styleguide

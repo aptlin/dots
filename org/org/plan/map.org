@@ -145,6 +145,19 @@ document.getElementById("main").onclick = function() {
 </html>
 #+END_EXPORT
 * Map
+** Reading list
+*** Climate Change
+- https://www.weforum.org/agenda/archive/climate-change/?utm_content=buffer16e75&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+*** Exchange
+- https://cs.hse.ru/international_program
+- https://studyabroad.hse.ru/
+- https://www.hse.ru/ba/ami/mobility
+
+*** Elisp
+- https://blog.aaronbieber.com/2016/08/07/getting-started-with-emacs-lisp.html
+- http://ergoemacs.org/emacs/elisp.html
+
+
 ** Places
 *** [[file:~/dev/sdll/pages/][sdll]]
 ** Agenda
