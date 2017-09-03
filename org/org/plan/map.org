@@ -156,8 +156,6 @@ document.getElementById("main").onclick = function() {
 *** Elisp
 - https://blog.aaronbieber.com/2016/08/07/getting-started-with-emacs-lisp.html
 - http://ergoemacs.org/emacs/elisp.html
-
-
 ** Places
 *** [[file:~/dev/sdll/pages/][sdll]]
 ** Agenda
