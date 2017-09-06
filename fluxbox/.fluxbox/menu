@@ -1,0 +1,53 @@
+[begin] (FluxBox)
+	[submenu] (Development)
+		[exec] (DDD) {ddd} <~/.fluxbox/icons/ddd.xpm>
+		[exec] (GDB) {konsole -e gdb} <~/.fluxbox/icons/gdb.png>
+		[exec] (GVim) {gvim} <~/.fluxbox/icons/gvim.png>
+		[exec] (KCachegrind) {kcachegrind} <~/.fluxbox/icons/kcachegrind.png>
+		[exec] (KDiff3) {kdiff3} <~/.fluxbox/icons/kdiff3.png>
+		[exec] (Kompare) {kompare} <~/.fluxbox/icons/kompare.png>
+	[end]
+	[submenu] (Graphics)
+		[exec] (GIMP) {gimp} <~/.fluxbox/icons/gimp.png>
+		[exec] (Gwenview) {gwenview} <~/.fluxbox/icons/gwenview.png>
+		[exec] (Inkscape) {inkscape} <~/.fluxbox/icons/inkscape.png>
+		[exec] (Spectacle) {spectacle} <~/.fluxbox/icons/spectacle.png>
+		[exec] (XSane} <~/.fluxbox/icons/xsane.xpm>
+	[end]
+	[submenu] (Multimedia)
+		[exec] (mpv) {mpv} <~/.fluxbox/icons/mpv.png>
+		[exec] (VLC) {vlc} <~/.fluxbox/icons/vlc.png>
+	[end]
+	[submenu] (Network)
+		[exec] (Chromium) {chromium} <~/.fluxbox/icons/chromium.png>
+		[exec] (Firefox) {firefox} <~/.fluxbox/icons/firefox.png>
+		[exec] (Wicd) {wicd-client} <~/.fluxbox/icons/wicd.png>
+	[end]
+	[submenu] (Office)
+		[exec] (LibreOffice Calc) {localc} <~/.fluxbox/icons/libreoffice-calc.png>
+		[exec] (LibreOffice Draw) {lodraw} <~/.fluxbox/icons/libreoffice-draw.png>
+		[exec] (LibreOffice Impress) {loimpress} <~/.fluxbox/icons/libreoffice-impress.png>
+		[exec] (LibreOffice Writer) {lowriter} <~/.fluxbox/icons/libreoffice-writer.png>
+	[end]
+	[submenu] (System)
+		[submenu] (Settings)
+		[exec] (Htop) {konsole -e htop} <~/.fluxbox/icons/htop.png>
+		[exec] (VirtualBox) {VirtualBox} <~/.fluxbox/icons/virtualbox.png>
+		[exec] (Wireshark) {wireshark} <~/.fluxbox/icons/wireshark.png>
+	[end]
+	[separator]
+	[submenu] (FluxBox)
+		[workspaces] (Workspaces)
+		[submenu] (Styles)
+			[stylesdir] (/usr/share/fluxbox/styles)
+			[stylesdir] (~/.fluxbox/styles)
+		[end]
+		[config] (Configure)
+		[reconfig] (Reconfig)
+		[restart] (Restart)
+	[end]
+	[separator]
+	[exit] (Logout) <~/.fluxbox/icons/system-log-out.png>
+	[exec] (Reboot) {sudo /usr/sbin/reboot} <~/.fluxbox/icons/system-reboot.png>
+	[exec] (Shutdown) {sudo /usr/sbin/halt} <~/.fluxbox/icons/system-shutdown.png>
+[end]
