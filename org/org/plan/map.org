@@ -146,6 +146,8 @@ document.getElementById("main").onclick = function() {
 #+END_EXPORT
 * Map
 ** Reading list
+*** Applied Cryptography
+- [[http://mailchi.mp/onelanday/the-morning-paper-rem-resource-efficient-mining-for-blockchains?e=437fe99e0d][REM]]
 *** Climate Change
 - https://www.weforum.org/agenda/archive/climate-change/?utm_content=buffer16e75&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
 *** Exchange

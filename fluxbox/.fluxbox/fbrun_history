@@ -1,5 +1,7 @@
-:sfcconnman-ui-gtk
+:sfconnman-ui-gtk
+
 
 firefox
 connman-ui
 connman-ui-gtk
+vlc
