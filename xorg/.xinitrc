@@ -15,5 +15,6 @@ emacs --daemon &
 xautolock -time 10 -locker slock &
 connman-ui-gtk &
 wmacpi &
+wmnd &
 wmcpuload &
 exec fluxbox

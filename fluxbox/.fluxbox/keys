@@ -90,18 +90,21 @@ Mod4 11 :Workspace 11
 Mod4 12 :Workspace 12
 
 # Send the current window to a specific workspace.
-Mod4 Shift F1 :SendToWorkspace 1
-Mod4 Shift F2 :SendToWorkspace 2
-Mod4 Shift F3 :SendToWorkspace 3
-Mod4 Shift F4 :SendToWorkspace 4
-Mod4 Shift F5 :SendToWorkspace 5
-Mod4 Shift F6 :SendToWorkspace 
-Mod4 Shift F7 :SendToWorkspace 7
-Mod4 F1 :Exec emacsclient -c --alternate-editor= 
+Mod4 Shift 1 :SendToWorkspace 1
+Mod4 Shift 2 :SendToWorkspace 2
+Mod4 Shift 3 :SendToWorkspace 3
+Mod4 Shift 4 :SendToWorkspace 4
+Mod4 Shift 5 :SendToWorkspace 5
+Mod4 Shift 6 :SendToWorkspace 
+Mod4 Shift 7 :SendToWorkspace 7
+Mod4 F2 :Exec emacsclient -c --alternate-editor= 
 Mod4 F4 :Exec ~/.fluxbox/scripts/activate-window.sh firefox
 Mod4 F3 :Exec ~/.fluxbox/scripts/activate-window.sh chromium
-Mod4 F2 :Exec ~/.fluxbox/scripts/activate-window.sh sakura
+Mod4 F1 :Exec stterm -f "Liberation Mono:size=36" -e tmux
 Mod4 z  :Exec ~/bin/telegram
+Mod4 Return :Exec stterm -f "Liberation Mono:size=36" -e tmux
+Mod4 r :Exec stterm -f "Liberation Mono:size=36" -e ranger
+Mod4 n :Exec stterm -f "Liberation Mono:size=36" -e setnet
 # Menus.
 OnDesktop Mouse1 :HideMenus
 OnDesktop Mouse2 :WorkspaceMenu

@@ -1,14 +1,9 @@
+[app] (name!=fbrun)
+  [Maximized] {yes}
+[end]
 [app] (name=fbrun)
   [Position] (CENTER) {0 0}
   [Layer] {2}
-[end]
-[app] (name=sakura) (class=Sakura)
-  [Maximized] {yes}
-  [Deco] {BORDER}
-[end]
-[app] (name=emacs) (class=Emacs)
-  [Maximized] {yes}
-  [Deco] {BORDER}
 [end]
 [app] (name=Navigator) (class=Firefox) (role=browser)
   [Maximized] {yes}
