@@ -16,3 +16,6 @@
 [submodule "utils/bin/styleguide"]
 	path = utils/bin/styleguide
 	url = https://github.com/google/styleguide
+[submodule "sh/.config/bash/lib/sexy-bash-prompt"]
+	path = sh/.config/bash/lib/sexy-bash-prompt
+	url = https://github.com/twolfson/sexy-bash-prompt

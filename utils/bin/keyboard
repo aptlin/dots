@@ -1,0 +1,4 @@
+#!/bin/sh
+setxkbmap -layout us,ru\
+          -variant dvorak, \
+          -option grp:shifts_toggle,ctrl:nocaps

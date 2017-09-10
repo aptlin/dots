@@ -1,9 +1,20 @@
 alias ..='cd ..'
-alias bace='rsync -aaxv --exclude={/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /etc /media/A/REC/etc$(date +%m%y)'
-alias bach='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /home /media/A/REC/home$(date +%m%y)'
-alias bacu="bach; bace"
-alias gmor="nix-shell -p python35Packages.pyperclip --run 'pushd ~/TMP/PROG/M/; ~/TMP/PROG/M/goodmorning.py; popd'";
-alias cw="sudo systemctl restart wpa_supplicant.service;sudo systemctl restart connman.service";
+# alias bace='rsync -aaxv --exclude={/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /etc /media/A/REC/etc$(date +%m%y)'
+# alias bach='rsync -aaxv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/boot/*","/opt/*","/usr/*","/bin/*","/sbin"} /home /media/A/REC/home$(date +%m%y)'
+alias bacu='rsync -aaxv \
+                  --exclude={"/dev/*",\
+                             "/proc/*",\
+                             "/sys/*",\
+                             "/tmp/*",\
+                             "/run/*",\
+                             "/mnt/*",\
+                             "/media/*",\
+                             "/lost+found",\
+                             "/boot/*",\
+                             "/opt/*",\
+                             "/usr/*",\
+                             "/bin/*",\
+                             "/sbin"} /home /media/usb1/REC/home-devuan'
 alias sys="sudo systemctl";
 alias sysu="systemctl --user";
 alias ls1="ls -1";

@@ -4,14 +4,13 @@ OnDesktop Mouse2 :WorkspaceMenu
 OnDesktop Mouse3 :RootMenu
 Control Mod4 space :RootMenu
 
-# Lock the system.
-Mod4 l :Exec ~/.fluxbox/scripts/lock-screen.sh
-
 # Reload the configuration.
 Mod4 Shift r :Reconfigure
 
 # Make a screenshot by pressing PrintScreen.
-Mod4 i :Exec spectacle
+Mod4 i :Exec ~/bin/screenshot
+
+Mod4 f :Exec ~/bin/keyboard
 
 # Open a dialog to run programs.
 Alt F2 :Exec fbrun
@@ -62,7 +61,7 @@ OnTitlebar Mouse3 :WindowMenu
 
 # Move focus between screens.
 Mod4 h :Exec ~/.fluxbox/scripts/switch-screen-focus.sh 0
-Mod 4 l :Exec ~/.fluxbox/scripts/switch-screen-focus.sh 1
+Mod4 l :Exec ~/.fluxbox/scripts/switch-screen-focus.sh 1
 # Alternative:
 Mod4 Left :Exec ~/.fluxbox/scripts/switch-screen-focus.sh 0
 Mod4 Right :Exec ~/.fluxbox/scripts/switch-screen-focus.sh 1
@@ -104,6 +103,7 @@ Mod4 F1 :Exec stterm -f "Liberation Mono:size=36" -e tmux
 Mod4 z  :Exec ~/bin/telegram
 Mod4 Return :Exec stterm -f "Liberation Mono:size=36" -e tmux
 Mod4 r :Exec stterm -f "Liberation Mono:size=36" -e ranger
+Mod4 o :Exec emacsclient -c --alternate-editor= 
 Mod4 n :Exec stterm -f "Liberation Mono:size=36" -e setnet
 # Menus.
 OnDesktop Mouse1 :HideMenus
@@ -116,9 +116,6 @@ Control Mod4 l :Exec ~/.fluxbox/scripts/lock-screen.sh
 
 # Reload the configuration.
 Control Mod4 r :Reconfigure
-
-# Make a screenshot by pressing PrintScreen.
-Print :Exec spectacle
 
 # Open a dialog to run programs.
 Alt F2 :Exec fbrun

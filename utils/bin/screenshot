@@ -1,0 +1,6 @@
+#!/bin/sh
+SCREENSHOTS_DIR=~/tmp/screenshots
+mkdir -p $SCREENSHOTS_DIR
+
+scrot -s $SCREENSHOTS_DIR/$(date "+%d-%m-%y-at-%H-%M-%S").png
+
