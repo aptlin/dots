@@ -13,8 +13,9 @@ setxkbmap -layout us,ru\
 xbindkeys &
 emacs --daemon &
 xautolock -time 10 -locker slock &
-connman-ui-gtk &
-wmacpi &
-wmnd &
-wmcpuload &
-exec fluxbox
+#wmacpi &
+#wmnd &
+#wmcpuload &
+exec spectrwm
+#!/bin/sh
+

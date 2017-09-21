@@ -97,7 +97,7 @@ Mod4 Shift 5 :SendToWorkspace 5
 Mod4 Shift 6 :SendToWorkspace 
 Mod4 Shift 7 :SendToWorkspace 7
 Mod4 F2 :Exec emacsclient -c --alternate-editor= 
-Mod4 F4 :Exec ~/.fluxbox/scripts/activate-window.sh firefox
+Mod4 F4 :Exec ~/.fluxbox/scripts/activate-window.sh nightly
 Mod4 F3 :Exec ~/.fluxbox/scripts/activate-window.sh chromium
 Mod4 F1 :Exec stterm -f "Liberation Mono:size=36" -e tmux
 Mod4 z  :Exec ~/bin/telegram

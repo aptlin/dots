@@ -25,3 +25,4 @@ xmonad/.xmonad/history
 /xmonad/.xmonad/lib/*
 sh/org/PKG/*
 fluxbox/.fluxbox/fbrun_history
+/ranger/.config/ranger/commands.pyo

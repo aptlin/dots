@@ -1,19 +1,13 @@
-open_with libreoffice
-open_with q
-copy ~/ucas2015.pdf
-q
-w
-search wer
-WE
-search WE
-search we
-search DOTS
-shell
-search DOT
-execute_command ec analysis.org
-search dot
-shell nb
-search tmp
-searc
-search irony
+rename cs-and-dev-2017-2018.pdf
+
 delete
+mkdir economics
+mkdir materials
+mkdir syllabus
+open_with h
+open_with ec
+open_with vi
+open_with jjjjj
+mkdir ipod
+shell zathura Kudryavtsev-et-al-1.djvu 
+shell

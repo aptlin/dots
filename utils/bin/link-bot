@@ -4,13 +4,6 @@ source ~/secrets/bots.keys
 BOT_NAME=$1
 NOW_ADDRESS=$(now ls | grep -o $BOT_NAME'.*.now.sh')
 
-now rm $NOW_ADDRESS
-now --public
-
-NOW_ADDRESS=$(now ls | grep -o $BOT_NAME'.*.now.sh')
-
-now scale $NOW_ADDRESS 1
-
 curl -F "url="$NOW_ADDRESS"/secret-path"\
      https://api.telegram.org/bot$BOT_API_KEY/setWebhook
 
