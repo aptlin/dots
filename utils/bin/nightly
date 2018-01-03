@@ -1,2 +1,2 @@
 #!/bin/sh
-/home/sdll/tmp/dev/nightly/firefox/firefox &
+/home/sdll/tmp/dev/firefox/firefox &

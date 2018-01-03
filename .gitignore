@@ -26,3 +26,4 @@ xmonad/.xmonad/history
 sh/org/PKG/*
 fluxbox/.fluxbox/fbrun_history
 /ranger/.config/ranger/commands.pyo
+*.swp

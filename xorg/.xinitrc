@@ -7,15 +7,16 @@
 #syncthing &
 #cmst &
 #exec xmonad
-setxkbmap -layout us,ru\
-          -variant dvorak, \
-          -option grp:shifts_toggle,ctrl:nocaps
+# setxkbmap -layout us,ru\
+#           -variant dvorak, \
+#           -option grp:shifts_toggle,ctrl:nocaps
+keyboard &
 xbindkeys &
 emacs --daemon &
 xautolock -time 10 -locker slock &
 #wmacpi &
 #wmnd &
 #wmcpuload &
-exec spectrwm
+slstatus &
+exec dwm
 #!/bin/sh
-

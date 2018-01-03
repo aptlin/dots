@@ -61,12 +61,12 @@
 ! Xft settings
 !-------------------------------------------------------------------------------
 
-Xft.antialias:  true
+Xft.antialias:  1
 Xft.dpi:        227
 Xft.rgba:       rgb
 Xft.hinting:    true
-Xft.hintstyle:  hintslight
-Xft.autohint:   false
+Xft.hintstyle:  hintnone
+Xft.autohint:   0
 Xft.lcdfilter:  lcddefault
 Xcursor.size:   16
 Xcursor.theme:  Adwaita
