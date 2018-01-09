@@ -10,14 +10,14 @@ cd $exercise
 touch src/$exercise.cpp
 
 cat <<EOM > $makefile
-cmake_minimum_required(VERSION 3.7)
+cmake_minimum_required(VERSION 3.5)
 project("$exercise")
 file(GLOB ALL_SOURCE_FILES src/*.cpp)
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 include($cpplintrule)
 include_directories(src src/include)
-add_executable($exercise src/$exercise.cpp)
+add_executable(\${PROJECT_NAME} src/\${PROJECT_NAME}.cpp)
 #add_dependencies()
 EOM
 

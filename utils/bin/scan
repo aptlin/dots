@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo scanimage --format tiff --batch=$(date +%Y%m%d_%H%M%S)_p%04d.tiff --batch-prompt --mode Gray --resolution 150
+convert *.tiff tmp-$1.pdf
+ghostscript -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 \
+            -dNOPAUSE -dQUIET -dBATCH -dPDFSETTINGS=/screen \
+            -sOutputFile=$1.pdf \
+            illarionov-tmp-$1.pdf
+sudo chown $(id -u -n):$(id -u -n) $1.pdf

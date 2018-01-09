@@ -19,6 +19,7 @@ alias sys="sudo systemctl";
 alias sysu="systemctl --user";
 alias ls1="ls -1";
 alias reload="source /etc/zshrc";
+alias feh="feh --magick-timeout 1";
 alias ga="git add";
 alias gb="git branch";
 alias gc="git checkout";
